@@ -1,53 +1,52 @@
+@prefix : <http://www.domainkg.com/base#> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://example.org/parking#> .
+@prefix ns: <http://www.domainkg.com/parking_ontology/concepts#> .
+@prefix ins: <http://www.domainkg.com/parking_ontology/instances#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@base <http://example.org/parking#> .
 
-<http://example.org/parking#> rdf:type owl:Ontology ;
-    mod:createdWith <https://chowlk.linkeddata.es/> .
+: a owl:Ontology .
 
-<http://example.org/parking#Distrito1> rdf:type ns:Distrito ;
-    rdfs:label "Centro" .
+ins:Distrito1 a ns:Distrito ;
+    ns:tieneNombre "Salamanca" ;
+    ns:tieneCodigo "02" ;
+    rdfs:label "Distrito Salamanca" .
 
-<http://example.org/parking#Barrio1> rdf:type ns:Barrio ;
-    rdfs:label "Santo Domingo" ;
-    ns:estaEnDistrito <http://example.org/parking#Distrito1> .
+ins:Barrio1 a ns:Barrio ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:tieneCodigo "02-03" ;
+    rdfs:label "Recoletos" .
 
-<http://example.org/parking#Calle1> rdf:type ns:Calle ;
-    rdfs:label "Gran Vía" ;
-    ns:estaEnDistrito <http://example.org/parking#Distrito1> ;
-    ns:estaEnBarrio <http://example.org/parking#Barrio1> .
+ins:Direccion1 a ns:Direccion1 ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:nombreVia "Calle de Goya" ;
+    ns:numeroVia "26" ;
+    rdfs:label "Calle de Goya, 26" .
 
-<http://example.org/parking#Metro1> rdf:type ns:Metro ;
-    rdfs:label "Línea 3" .
-<http://example.org/parking#Bus1> rdf:type ns:Bus ;
-    rdfs:label "Línea 133" .
+ins:Direccion2 a ns:Direccion1 ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:nombreVia "Calle de Serrano" ;
+    ns:numeroVia "22" ;
+    rdfs:label "Calle de Serrano, 22" .
 
-<http://example.org/parking#Aparcamiento1> rdf:type ns:AparcamientosPúblicos ;
-    rdfs:label "Aparcamiento Santo Domingo" ;
-    ns:estaEnCalle <http://example.org/parking#Calle1> ;
-    ns:estaEnBarrio <http://example.org/parking#Barrio1> ;
+ins:AparcamientoPublico1 a ns:AparcamientosPúblicos ;
+    ns:estaEnDireccion ins:Direccion1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:estaEnDistrito ins:Distrito1;
     ns:esAccesible true ;
-    ns:tieneConexion <http://example.org/parking#Metro1> ;
-    ns:tieneConexion <http://example.org/parking#Bus1> ;
-    ns:tieneHorario "24/7"^^xsd:string ;
-    ns:tieneNombre "Aparcamiento Santo Domingo"^^xsd:string ;
-    ns:tienePlazas "100"^^xsd:int .
+    ns:tieneHorario "Abierto 24 horas";
+    ns:tieneNombre "Aparcamiento Goya";
+    ns:tienePlazas "100";
+    rdfs:label "Aparcamiento Goya con 100 plazas" .
 
-<http://example.org/parking#AparcamientoSER1> rdf:type ns:aparcamientoSER ;
-    rdfs:label "Aparcamiento SER Gran Vía" ;
-    ns:estaEnCalle <http://example.org/parking#Calle1> ;
-    ns:estaEnBarrio <http://example.org/parking#Barrio1> ;
-    ns:tieneColor "Verde"^^xsd:string ;
-    ns:seAparcaEn "Batería"^^xsd:string ;
-    ns:tienePlazas "150"^^xsd:int .
-
-<http://example.org/parking#AparcamientoMR1> rdf:type ns:AparcamientoMR ;
-    rdfs:label "Aparcamiento Público Gran Vía" ;
-    ns:estaEnCalle <http://example.org/parking#Calle1> ;
-    ns:estaEnBarrio <http://example.org/parking#Barrio1> ;
-    ns:seAparcaEn "Línea"^^xsd:string ;
-    ns:tienePlazas "300"^^xsd:int .
+ins:AparcamientoMR1 a ns:aparcamientoSER ;
+    ns:estaEnDireccion ins:Direccion2 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:estaEnDistrito ins:Distrito1;
+    ns:tieneColor "Verde";
+    ns:seAparcaEn "Batería";
+    ns:tienePlazas "150";
+    rdfs:label "Zona de estacionamiento Regulado en Serrano" .

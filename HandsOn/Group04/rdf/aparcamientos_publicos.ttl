@@ -1,0 +1,1183 @@
+@prefix ns1: <http://www.domainkg.com/parking_ontology/resources#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.domainkg.com/parking_ontology/instances#A-1> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#LAS%20AGUILAS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-1> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#LATINA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento disuasorio Aviación Española" ;
+    ns1:tienePlazas 344 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-10> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-10> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Brasil" ;
+    ns1:tienePlazas 226 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-11> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#EMBAJADORES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-11> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Casino de la Reina" ;
+    ns1:tienePlazas 135 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-12> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-12> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneHorario "El horario de apertura para la parte del aparcamiento rotacional es de lunes a viernes de 9:00h a 20:40h. Sábados de 9:00 a 14:30h." ;
+    ns1:tieneNombre "Aparcamiento mixto. Condesa de Gavia" ;
+    ns1:tienePlazas 146 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-13> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ARAVACA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-13> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MONCLOA-ARAVACA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Corona Boreal" ;
+    ns1:tienePlazas 125 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-14> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PACIFICO> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-14> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Daoíz y Velarde" ;
+    ns1:tienePlazas 235 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-15> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#LISTA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-15> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Díaz Porlier" ;
+    ns1:tienePlazas 203 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-16> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#MEDIA%20LEGUA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-16> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MORATALAZ> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Encuentro" ;
+    ns1:tienePlazas 104 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-17> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-17> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Felipe II" ;
+    ns1:tienePlazas 1175 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-18> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ADELFAS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-18> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Fernández Shaw" ;
+    ns1:tienePlazas 245 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-19> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#TRAFALGAR> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-19> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Fuencarral" ;
+    ns1:tienePlazas 410 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-2> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ROSAS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-2> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SAN%20BLAS-CANILLEJAS> ;
+    ns1:tieneHorario "Horario de apertura de 6:00 h a 22:00 h los días laborables excepto los días de partido en el estadio Metropolitano" ;
+    ns1:tieneNombre "Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b" ;
+    ns1:tienePlazas 3011 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-20> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-20> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Hernani" ;
+    ns1:tienePlazas 115 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-21> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CORTES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-21> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Jacinto Benavente" ;
+    ns1:tienePlazas 285 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-22> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTILLEJOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-22> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. José Castán Tobeñas" ;
+    ns1:tienePlazas 226 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-23> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTELLANA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-23> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Marqués de Salamanca" ;
+    ns1:tienePlazas 356 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-24> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SIMANCAS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-24> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SAN%20BLAS-CANILLEJAS> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Miguel Yuste" ;
+    ns1:tienePlazas 168 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-25> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#LOS%20JERONIMOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-25> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Montalbán" ;
+    ns1:tienePlazas 130 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-26> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-26> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Orense" ;
+    ns1:tienePlazas 129 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-27> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-27> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella'" ;
+    ns1:tienePlazas 107 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-28> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PALACIO> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-28> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Plaza de Oriente" ;
+    ns1:tienePlazas 242 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-29> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PALACIO> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-29> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneNombre "Aparcamiento mixto. Plaza de Santo Domingo" ;
+    ns1:tienePlazas 320 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-3> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#VALDEFUENTES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-3> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#HORTALEZA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento disuasorio Fuente de la Mora" ;
+    ns1:tienePlazas 368 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-30> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-30> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Plaza Mayor" ;
+    ns1:tienePlazas 415 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-31> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-31> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneHorario "De lunes a domingo servicio ininterrumpidoAbierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Presidente Carmona" ;
+    ns1:tienePlazas 127 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-32> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-32> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Recoletos" ;
+    ns1:tienePlazas 102 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-33> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#NUEVA%20ESPA%C3%91A> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-33> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. República Dominicana" ;
+    ns1:tienePlazas 209 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-34> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#NI%C3%91O%20JESUS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-34> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Reyes Magos" ;
+    ns1:tienePlazas 356 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-35> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#GUINDALERA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-35> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. San Cayetano" ;
+    ns1:tienePlazas 222 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-36> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTILLEJOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-36> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. San Germán II (antes General Yagüe)" ;
+    ns1:tienePlazas 419 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-37> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#EMBAJADORES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-37> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Sánchez Bustillo" ;
+    ns1:tienePlazas 131 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-38> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTELLANA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-38> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Serrano I" ;
+    ns1:tienePlazas 307 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-39> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-39> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Serrano II" ;
+    ns1:tienePlazas 379 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-4> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#BUENAVISTA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-4> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CARABANCHEL> ;
+    ns1:tieneNombre "Aparcamiento disuasorio Islazul" ;
+    ns1:tienePlazas 224 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-40> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-40> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Serrano III" ;
+    ns1:tienePlazas 261 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-41> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-41> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Sevilla" ;
+    ns1:tienePlazas 649 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-42> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-42> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Velázquez - Ayala" ;
+    ns1:tienePlazas 443 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-43> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-43> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Velázquez - Jorge Juan" ;
+    ns1:tienePlazas 548 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-44> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SAN%20PASCUAL> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-44> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CIUDAD%20LINEAL> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Verdaguer y García" ;
+    ns1:tienePlazas 83 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-45> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ALMAGRO> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-45> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Almagro" ;
+    ns1:tienePlazas 463 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-46> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CIUDAD%20JARDIN> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-46> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara)" ;
+    ns1:tienePlazas 376 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-47> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-47> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Descalzas" ;
+    ns1:tienePlazas 400 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-48> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#EMBAJADORES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-48> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Glorieta Puerta de Toledo" ;
+    ns1:tienePlazas 240 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-49> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CORTES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-49> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Las Cortes" ;
+    ns1:tienePlazas 480 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-5> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#FUENTELARREINA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-5> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#FUENCARRAL-EL%20PARDO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento disuasorio Pitis" ;
+    ns1:tienePlazas 402 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-50> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#UNIVERSIDAD> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-50> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Luna - Tudescos (cerrado)" ;
+    ns1:tienePlazas 481 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-51> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ARGUELLES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-51> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MONCLOA-ARAVACA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Marqués de Urquijo" ;
+    ns1:tienePlazas 482 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-52> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#UNIVERSIDAD> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-52> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Mostenses" ;
+    ns1:tienePlazas 361 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-53> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CIUDAD%20JARDIN> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-53> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Museo de la Ciudad" ;
+    ns1:tienePlazas 147 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-54> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#TRAFALGAR> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-54> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Olavide" ;
+    ns1:tienePlazas 397 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-55> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-55> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Plaza de Colón" ;
+    ns1:tienePlazas 611 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-56> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PALACIO> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-56> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Plaza de España" ;
+    ns1:tienePlazas 800 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-57> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-57> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Plaza del Carmen (cerrado)" ;
+    ns1:tienePlazas 450 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-58> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-58> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Plaza del Rey" ;
+    ns1:tienePlazas 170 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-59> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#IMPERIAL> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-59> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#ARGANZUELA> ;
+    ns1:tieneHorario "Actualmente Cerrado" ;
+    ns1:tieneNombre "Aparcamiento público. San Epifanio" ;
+    ns1:tienePlazas 501 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-6> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#GOYA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-6> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Alcántara" ;
+    ns1:tienePlazas 121 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-60> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CORTES> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-60> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Santa Ana (cerrado)" ;
+    ns1:tienePlazas 325 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-61> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#MOSCARDO> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-61> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#USERA> ;
+    ns1:tieneNombre "Aparcamiento público. Usera" ;
+    ns1:tienePlazas 36 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-62> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTELLANA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-62> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Velázquez - Juan Bravo" ;
+    ns1:tienePlazas 371 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-63> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible true ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-63> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento público. Villa de París" ;
+    ns1:tienePlazas 169 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-64> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-64> .
+
+<http://www.domainkg.com/parking_ontology/instances#A-7> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-7> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneHorario "Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Arquitecto Ribera" ;
+    ns1:tienePlazas 318 .
+
+<http://www.domainkg.com/parking_ontology/instances#A-8> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PROSPERIDAD> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-8> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:tieneHorario "Plazas: 261 públicas y Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Avenida de América (intercambiador)" .
+
+<http://www.domainkg.com/parking_ontology/instances#A-9> a ns1:AparcamientoPúblico ;
+    ns1:esAccesible false ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PUERTA%20DEL%20ANGEL> ;
+    ns1:estaEnDireccion <http://www.domainkg.com/parking_ontology/instances#direccion_A-9> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#LATINA> ;
+    ns1:tieneHorario "Horario de apertura de 6:00 h a 22:00 h los días laborables.Abierto 24 horas" ;
+    ns1:tieneNombre "Aparcamiento mixto. Avenida de Portugal" ;
+    ns1:tienePlazas 428 .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-1> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#LAS%20AGUILAS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#LATINA> ;
+    ns1:nombreVia "CALLE FUENTE DE LIMA" ;
+    ns1:numeroVia "5" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-10> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:nombreVia "CALLE SAN GERMAN" ;
+    ns1:numeroVia "7" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-11> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#EMBAJADORES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "CALLE CASINO" ;
+    ns1:numeroVia "3" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-12> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:nombreVia "PLAZA CONDESA DE GAVIA" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-13> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ARAVACA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MONCLOA-ARAVACA> ;
+    ns1:nombreVia "CALLE PEREZ DE VICTORIA" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-14> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PACIFICO> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:nombreVia "AVENIDA CIUDAD DE BARCELONA" ;
+    ns1:numeroVia "156" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-15> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#LISTA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE DIEGO DE LEON" ;
+    ns1:numeroVia "64" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-16> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#MEDIA%20LEGUA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MORATALAZ> ;
+    ns1:nombreVia "PLAZA ENCUENTRO" ;
+    ns1:numeroVia "5" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-17> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE GOYA" ;
+    ns1:numeroVia "88" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-18> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ADELFAS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:nombreVia "CALLE CARLOS Y GUILLERMO FERNANDEZ SHAW" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-19> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#TRAFALGAR> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:nombreVia "CALLE FUENCARRAL" ;
+    ns1:numeroVia "121" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-2> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ROSAS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SAN%20BLAS-CANILLEJAS> ;
+    ns1:nombreVia "AVENIDA ARCENTALES" ;
+    ns1:numeroVia "37" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-20> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:nombreVia "CALLE HERNANI" ;
+    ns1:numeroVia "79" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-21> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CORTES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA JACINTO BENAVENTE" ;
+    ns1:numeroVia "6" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-22> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTILLEJOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:nombreVia "CALLE POETA JOAN MARAGALL" ;
+    ns1:numeroVia "57" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-23> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTELLANA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "PLAZA MARQUES DE SALAMANCA" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-24> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SIMANCAS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SAN%20BLAS-CANILLEJAS> ;
+    ns1:nombreVia "CALLE MIGUEL YUSTE" ;
+    ns1:numeroVia "64" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-25> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#LOS%20JERONIMOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:nombreVia "CALLE MONTALBAN" ;
+    ns1:numeroVia "4" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-26> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:nombreVia "AVENIDA BRASIL" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-27> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA PEDRO ZEROLO" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-28> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PALACIO> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA ORIENTE" ;
+    ns1:numeroVia "9" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-29> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PALACIO> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA SANTO DOMINGO" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-3> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#VALDEFUENTES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#HORTALEZA> ;
+    ns1:nombreVia "AVENIDA MANOTERAS" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-30> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA MAYOR" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-31> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:nombreVia "AVENIDA GENERAL PERON" ;
+    ns1:numeroVia "21" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-32> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "PASEO RECOLETOS" ;
+    ns1:numeroVia "4" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-33> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#NUEVA%20ESPA%C3%91A> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:nombreVia "PLAZA REPUBLICA DOMINICANA" ;
+    ns1:numeroVia "6" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-34> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#NI%C3%91O%20JESUS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:nombreVia "PLAZA REYES MAGOS" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-35> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#GUINDALERA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "PLAZA SAN CAYETANO" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-36> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTILLEJOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:nombreVia "CALLE ORENSE" ;
+    ns1:numeroVia "48" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-37> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#EMBAJADORES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "CALLE SANCHEZ BUSTILLO" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-38> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTELLANA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE SERRANO" ;
+    ns1:numeroVia "84" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-39> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE SERRANO" ;
+    ns1:numeroVia "44" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-4> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#BUENAVISTA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CARABANCHEL> ;
+    ns1:nombreVia "CALLE CALDERILLA" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-40> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE SERRANO" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-41> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "CALLE ALCALA" ;
+    ns1:numeroVia "15" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-42> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE VELAZQUEZ" ;
+    ns1:numeroVia "47" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-43> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE VELAZQUEZ" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-44> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SAN%20PASCUAL> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CIUDAD%20LINEAL> ;
+    ns1:nombreVia "CALLE VERDAGUER Y GARCIA" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-45> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ALMAGRO> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:nombreVia "CALLE ALMAGRO" ;
+    ns1:numeroVia "24" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-46> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CIUDAD%20JARDIN> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:nombreVia "CALLE CARTAGENA" ;
+    ns1:numeroVia "178" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-47> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA DESCALZAS" ;
+    ns1:numeroVia "3" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-48> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#EMBAJADORES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "GLORIETA PUERTA DE TOLEDO" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-49> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CORTES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA CORTES" ;
+    ns1:numeroVia "13" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-5> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#FUENTELARREINA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#FUENCARRAL-EL%20PARDO> ;
+    ns1:nombreVia "CALLE GLORIA FUERTES" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-50> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#UNIVERSIDAD> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA SANTA MARIA SOLEDAD TORRES ACOSTA" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-51> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#ARGUELLES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MONCLOA-ARAVACA> ;
+    ns1:nombreVia "CALLE MARQUES DE URQUIJO" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-52> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#UNIVERSIDAD> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "CALLE GARCIA MOLINAS" ;
+    ns1:numeroVia "4" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-53> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CIUDAD%20JARDIN> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:nombreVia "CALLE PRINCIPE DE VERGARA" ;
+    ns1:numeroVia "134" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-54> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#TRAFALGAR> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:nombreVia "PLAZA OLAVIDE" ;
+    ns1:numeroVia "17" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-55> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#RECOLETOS> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE GOYA" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-56> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PALACIO> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA ESPAÑA" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-57> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#SOL> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA CARMEN" ;
+    ns1:numeroVia "10" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-58> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA REY" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-59> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#IMPERIAL> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#ARGANZUELA> ;
+    ns1:nombreVia "CALLE SAN EPIFANIO" ;
+    ns1:numeroVia "9" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-6> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#GOYA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE ALCANTARA" ;
+    ns1:numeroVia "26" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-60> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CORTES> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA SANTA ANA" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-61> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#MOSCARDO> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#USERA> ;
+    ns1:nombreVia "CALLE AMPARO USERA" ;
+    ns1:numeroVia "46" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-62> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#CASTELLANA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:nombreVia "CALLE VELAZQUEZ" ;
+    ns1:numeroVia "88" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-63> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "PLAZA VILLA DE PARIS" ;
+    ns1:numeroVia "1" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-64> a ns1:Direccion .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-7> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#JUSTICIA> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:nombreVia "CALLE BARCELO" ;
+    ns1:numeroVia "2" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-8> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PROSPERIDAD> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:nombreVia "AVENIDA AMERICA" ;
+    ns1:numeroVia "9" .
+
+<http://www.domainkg.com/parking_ontology/instances#direccion_A-9> a ns1:Direccion ;
+    ns1:estaEnBarrio <http://www.domainkg.com/parking_ontology/instances#PUERTA%20DEL%20ANGEL> ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#LATINA> ;
+    ns1:nombreVia "AVENIDA PORTUGAL" ;
+    ns1:numeroVia "155" .
+
+<http://www.domainkg.com/parking_ontology/instances#ADELFAS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneCodigo "03-02" ;
+    ns1:tieneNombre "ADELFAS" .
+
+<http://www.domainkg.com/parking_ontology/instances#ALMAGRO> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:tieneCodigo "07-04" ;
+    ns1:tieneNombre "ALMAGRO" .
+
+<http://www.domainkg.com/parking_ontology/instances#ARAVACA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MONCLOA-ARAVACA> ;
+    ns1:tieneCodigo "09-07" ;
+    ns1:tieneNombre "ARAVACA" .
+
+<http://www.domainkg.com/parking_ontology/instances#ARGUELLES> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MONCLOA-ARAVACA> ;
+    ns1:tieneCodigo "09-02" ;
+    ns1:tieneNombre "ARGUELLES" .
+
+<http://www.domainkg.com/parking_ontology/instances#BUENAVISTA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CARABANCHEL> ;
+    ns1:tieneCodigo "11-06" ;
+    ns1:tieneNombre "BUENAVISTA" .
+
+<http://www.domainkg.com/parking_ontology/instances#FUENTELARREINA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#FUENCARRAL-EL%20PARDO> ;
+    ns1:tieneCodigo "08-02" ;
+    ns1:tieneNombre "FUENTELARREINA" .
+
+<http://www.domainkg.com/parking_ontology/instances#GOYA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneCodigo "04-02" ;
+    ns1:tieneNombre "GOYA" .
+
+<http://www.domainkg.com/parking_ontology/instances#GUINDALERA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneCodigo "04-04" ;
+    ns1:tieneNombre "GUINDALERA" .
+
+<http://www.domainkg.com/parking_ontology/instances#IMPERIAL> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#ARGANZUELA> ;
+    ns1:tieneCodigo "02-01" ;
+    ns1:tieneNombre "IMPERIAL" .
+
+<http://www.domainkg.com/parking_ontology/instances#LAS%20AGUILAS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#LATINA> ;
+    ns1:tieneCodigo "10-07" ;
+    ns1:tieneNombre "LAS AGUILAS" .
+
+<http://www.domainkg.com/parking_ontology/instances#LISTA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneCodigo "04-05" ;
+    ns1:tieneNombre "LISTA" .
+
+<http://www.domainkg.com/parking_ontology/instances#LOS%20JERONIMOS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneCodigo "03-05" ;
+    ns1:tieneNombre "LOS JERONIMOS" .
+
+<http://www.domainkg.com/parking_ontology/instances#MEDIA%20LEGUA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#MORATALAZ> ;
+    ns1:tieneCodigo "14-04" ;
+    ns1:tieneNombre "MEDIA LEGUA" .
+
+<http://www.domainkg.com/parking_ontology/instances#MOSCARDO> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#USERA> ;
+    ns1:tieneCodigo "12-05" ;
+    ns1:tieneNombre "MOSCARDO" .
+
+<http://www.domainkg.com/parking_ontology/instances#NI%C3%91O%20JESUS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneCodigo "03-06" ;
+    ns1:tieneNombre "NIÑO JESUS" .
+
+<http://www.domainkg.com/parking_ontology/instances#NUEVA%20ESPA%C3%91A> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:tieneCodigo "05-05" ;
+    ns1:tieneNombre "NUEVA ESPAÑA" .
+
+<http://www.domainkg.com/parking_ontology/instances#PACIFICO> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#RETIRO> ;
+    ns1:tieneCodigo "03-01" ;
+    ns1:tieneNombre "PACIFICO" .
+
+<http://www.domainkg.com/parking_ontology/instances#PROSPERIDAD> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:tieneCodigo "05-02" ;
+    ns1:tieneNombre "PROSPERIDAD" .
+
+<http://www.domainkg.com/parking_ontology/instances#PUERTA%20DEL%20ANGEL> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#LATINA> ;
+    ns1:tieneCodigo "10-02" ;
+    ns1:tieneNombre "PUERTA DEL ANGEL" .
+
+<http://www.domainkg.com/parking_ontology/instances#ROSAS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SAN%20BLAS-CANILLEJAS> ;
+    ns1:tieneCodigo "20-05" ;
+    ns1:tieneNombre "ROSAS" .
+
+<http://www.domainkg.com/parking_ontology/instances#SAN%20PASCUAL> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CIUDAD%20LINEAL> ;
+    ns1:tieneCodigo "15-05" ;
+    ns1:tieneNombre "SAN PASCUAL" .
+
+<http://www.domainkg.com/parking_ontology/instances#SIMANCAS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SAN%20BLAS-CANILLEJAS> ;
+    ns1:tieneCodigo "20-01" ;
+    ns1:tieneNombre "SIMANCAS" .
+
+<http://www.domainkg.com/parking_ontology/instances#VALDEFUENTES> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#HORTALEZA> ;
+    ns1:tieneCodigo "16-06" ;
+    ns1:tieneNombre "VALDEFUENTES" .
+
+<http://www.domainkg.com/parking_ontology/instances#ARGANZUELA> a ns1:Distrito ;
+    ns1:tieneCodigo "02" ;
+    ns1:tieneNombre "ARGANZUELA" .
+
+<http://www.domainkg.com/parking_ontology/instances#CARABANCHEL> a ns1:Distrito ;
+    ns1:tieneCodigo "11" ;
+    ns1:tieneNombre "CARABANCHEL" .
+
+<http://www.domainkg.com/parking_ontology/instances#CIUDAD%20LINEAL> a ns1:Distrito ;
+    ns1:tieneCodigo "15" ;
+    ns1:tieneNombre "CIUDAD LINEAL" .
+
+<http://www.domainkg.com/parking_ontology/instances#FUENCARRAL-EL%20PARDO> a ns1:Distrito ;
+    ns1:tieneCodigo "08" ;
+    ns1:tieneNombre "FUENCARRAL-EL PARDO" .
+
+<http://www.domainkg.com/parking_ontology/instances#HORTALEZA> a ns1:Distrito ;
+    ns1:tieneCodigo "16" ;
+    ns1:tieneNombre "HORTALEZA" .
+
+<http://www.domainkg.com/parking_ontology/instances#MORATALAZ> a ns1:Distrito ;
+    ns1:tieneCodigo "14" ;
+    ns1:tieneNombre "MORATALAZ" .
+
+<http://www.domainkg.com/parking_ontology/instances#USERA> a ns1:Distrito ;
+    ns1:tieneCodigo "12" ;
+    ns1:tieneNombre "USERA" .
+
+<http://www.domainkg.com/parking_ontology/instances#CASTILLEJOS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneCodigo "06-03" ;
+    ns1:tieneNombre "CASTILLEJOS" .
+
+<http://www.domainkg.com/parking_ontology/instances#CIUDAD%20JARDIN> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> ;
+    ns1:tieneCodigo "05-03" ;
+    ns1:tieneNombre "CIUDAD JARDIN" .
+
+<http://www.domainkg.com/parking_ontology/instances#TRAFALGAR> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CHAMBERI> ;
+    ns1:tieneCodigo "07-03" ;
+    ns1:tieneNombre "TRAFALGAR" .
+
+<http://www.domainkg.com/parking_ontology/instances#UNIVERSIDAD> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneCodigo "01-05" ;
+    ns1:tieneNombre "UNIVERSIDAD" .
+
+<http://www.domainkg.com/parking_ontology/instances#CASTELLANA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneCodigo "04-06" ;
+    ns1:tieneNombre "CASTELLANA" .
+
+<http://www.domainkg.com/parking_ontology/instances#CORTES> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneCodigo "01-03" ;
+    ns1:tieneNombre "CORTES" .
+
+<http://www.domainkg.com/parking_ontology/instances#EMBAJADORES> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneCodigo "01-02" ;
+    ns1:tieneNombre "EMBAJADORES" .
+
+<http://www.domainkg.com/parking_ontology/instances#LATINA> a ns1:Distrito ;
+    ns1:tieneCodigo "10" ;
+    ns1:tieneNombre "LATINA" .
+
+<http://www.domainkg.com/parking_ontology/instances#MONCLOA-ARAVACA> a ns1:Distrito ;
+    ns1:tieneCodigo "09" ;
+    ns1:tieneNombre "MONCLOA-ARAVACA" .
+
+<http://www.domainkg.com/parking_ontology/instances#PALACIO> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneCodigo "01-01" ;
+    ns1:tieneNombre "PALACIO" .
+
+<http://www.domainkg.com/parking_ontology/instances#SAN%20BLAS-CANILLEJAS> a ns1:Distrito ;
+    ns1:tieneCodigo "20" ;
+    ns1:tieneNombre "SAN BLAS-CANILLEJAS" .
+
+<http://www.domainkg.com/parking_ontology/instances#CHAMBERI> a ns1:Distrito ;
+    ns1:tieneCodigo "07" ;
+    ns1:tieneNombre "CHAMBERI" .
+
+<http://www.domainkg.com/parking_ontology/instances#JUSTICIA> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneCodigo "01-04",
+        "13-04" ;
+    ns1:tieneNombre "JUSTICIA" .
+
+<http://www.domainkg.com/parking_ontology/instances#SOL> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#CENTRO> ;
+    ns1:tieneCodigo "01-06" ;
+    ns1:tieneNombre "SOL" .
+
+<http://www.domainkg.com/parking_ontology/instances#CUATRO%20CAMINOS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#TETUAN> ;
+    ns1:tieneCodigo "06-02" ;
+    ns1:tieneNombre "CUATRO CAMINOS" .
+
+<http://www.domainkg.com/parking_ontology/instances#CHAMARTIN> a ns1:Distrito ;
+    ns1:tieneCodigo "05" ;
+    ns1:tieneNombre "CHAMARTIN" .
+
+<http://www.domainkg.com/parking_ontology/instances#RETIRO> a ns1:Distrito ;
+    ns1:tieneCodigo "03" ;
+    ns1:tieneNombre "RETIRO" .
+
+<http://www.domainkg.com/parking_ontology/instances#RECOLETOS> a ns1:Barrio ;
+    ns1:estaEnDistrito <http://www.domainkg.com/parking_ontology/instances#SALAMANCA> ;
+    ns1:tieneCodigo "04-01" ;
+    ns1:tieneNombre "RECOLETOS" .
+
+<http://www.domainkg.com/parking_ontology/instances#TETUAN> a ns1:Distrito ;
+    ns1:tieneCodigo "06" ;
+    ns1:tieneNombre "TETUAN" .
+
+<http://www.domainkg.com/parking_ontology/instances#SALAMANCA> a ns1:Distrito ;
+    ns1:tieneCodigo "04" ;
+    ns1:tieneNombre "SALAMANCA" .
+
+<http://www.domainkg.com/parking_ontology/instances#CENTRO> a ns1:Distrito ;
+    ns1:tieneCodigo "01",
+        "13" ;
+    ns1:tieneNombre "CENTRO" .
+

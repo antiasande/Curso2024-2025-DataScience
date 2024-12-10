@@ -51,16 +51,6 @@
   },
   {
     "op": "core/column-removal",
-    "columnName": "COD-BARRIO",
-    "description": "Remove column COD-BARRIO"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "COD-DISTRITO",
-    "description": "Remove column COD-DISTRITO"
-  },
-  {
-    "op": "core/column-removal",
     "columnName": "COORDENADA-X",
     "description": "Remove column COORDENADA-X"
   },
@@ -129,7 +119,9 @@
       "NUM",
       "CODIGO-POSTAL",
       "BARRIO",
-      "DISTRITO"
+      "COD-BARRIO",
+      "DISTRITO",
+      "COD-DISTRITO"
     ],
     "description": "Reorder columns"
   },
@@ -870,7 +862,9 @@
       "ACCESIBILIDAD",
       "CALLE",
       "BARRIO",
-      "DISTRITO"
+      "COD-BARRIO",
+      "DISTRITO",
+      "COD-DISTRITO"
     ],
     "description": "Reorder columns"
   },
@@ -897,7 +891,9 @@
       "ACCESIBILIDAD",
       "CALLE",
       "BARRIO",
-      "DISTRITO"
+      "COD-BARRIO",
+      "DISTRITO",
+      "COD-DISTRITO"
     ],
     "description": "Reorder columns"
   },
@@ -921,6 +917,63 @@
     "description": "Rename column DESCRIPCION 1 to PLAZAS"
   },
   {
+    "op": "core/column-removal",
+    "columnName": "TRANSPORTE",
+    "description": "Remove column TRANSPORTE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-BARRIO",
+    "expression": "grel:if(length(value) == 1, \"0\" + value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-BARRIO using expression grel:if(length(value) == 1, \"0\" + value, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-DISTRITO",
+    "expression": "grel:if(length(value) == 1, \"0\" + value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-DISTRITO using expression grel:if(length(value) == 1, \"0\" + value, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-BARRIO",
+    "expression": "grel:row.cells[\"COD-DISTRITO\"].value + \"-\" + value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-BARRIO using expression grel:row.cells[\"COD-DISTRITO\"].value + \"-\" + value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ACCESIBILIDAD",
+    "expression": "grel:value == \"1\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ACCESIBILIDAD using expression grel:value == \"1\""
+  },
+  {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -940,9 +993,30 @@
     "description": "Move column ID to position 0"
   },
   {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ", ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column CALLE by separator"
+  },
+  {
     "op": "core/column-rename",
-    "oldColumnName": "calle",
-    "newColumnName": "CALLE",
-    "description": "Rename column calle to CALLE"
+    "oldColumnName": "CALLE 2",
+    "newColumnName": "NUMERO",
+    "description": "Rename column CALLE 2 to NUMERO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CALLE 1",
+    "newColumnName": "VIA",
+    "description": "Rename column CALLE 1 to VIA"
   }
 ]

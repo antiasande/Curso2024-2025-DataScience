@@ -1,0 +1,139 @@
+@prefix ns: <http://dominiowebsemantica.linkeddata.com/traffic/> .
+@prefix : <http://dominiowebsemantica.linkeddata.com/traffic/ontology/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology ;
+mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:cod_lesividad a owl:DatatypeProperty ;
+    rdfs:label "cod_lesividad" ;
+    rdfs:domain ns:Lesividad ;
+    rdfs:range xsd:string .
+
+ns:lesividad a owl:DatatypeProperty ;
+    rdfs:label "lesividad" ;
+    rdfs:domain ns:Lesividad ;
+    rdfs:range xsd:string .
+
+ns:coordenadas a owl:DatatypeProperty ;
+    rdfs:label "coordenadas" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range xsd:string .
+
+ns:distritoNum a owl:DatatypeProperty ;
+    rdfs:label "distritoNum" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range xsd:string .
+
+ns:localizacion_numero a owl:DatatypeProperty ;
+    rdfs:label "localizacion_numero" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range xsd:string .
+
+ns:estado_meteorologico a owl:DatatypeProperty ;
+    rdfs:label "estado_meteorologico" ;
+    rdfs:domain ns:EstadoMeteorológico ;
+    rdfs:range xsd:string .
+
+ns:fecha a owl:DatatypeProperty ;
+    rdfs:label "fecha" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:date .
+
+ns:hora a owl:DatatypeProperty ;
+    rdfs:label "hora" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:time .
+
+ns:num_expediente a owl:DatatypeProperty ;
+    rdfs:label "num_expediente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
+
+ns:tipo_accidente a owl:DatatypeProperty ;
+    rdfs:label "tipo_accidente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
+
+ns:positiva_alcohol a owl:DatatypeProperty ;
+    rdfs:label "positiva_alcohol" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:boolean .
+
+ns:positiva_droga a owl:DatatypeProperty ;
+    rdfs:label "positiva_droga" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:boolean .
+
+ns:rango_edad a owl:DatatypeProperty ;
+    rdfs:label "rango_edad" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:sexo a owl:DatatypeProperty ;
+    rdfs:label "sexo" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:tipo_persona a owl:DatatypeProperty ;
+    rdfs:label "tipo_persona" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:tipo_vehiculo a owl:DatatypeProperty ;
+    rdfs:label "tipo_vehiculo" ;
+    rdfs:domain ns:Vehiculo ;
+    rdfs:range xsd:string .
+
+
+ns:InvolucraVehiculo a owl:ObjectProperty ;
+rdfs:label "involucra vehiculo" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:Vehiculo .
+
+ns:ParticipaPersona a owl:ObjectProperty ;
+rdfs:label "participa persona" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:Persona .
+
+ns:TieneEstadoMeteorológico a owl:ObjectProperty ;
+rdfs:label "tiene estado meteorológico" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:EstadoMeteorológico .
+
+ns:TieneLesividad a owl:ObjectProperty ;
+rdfs:label "tiene lesividad" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:Lesividad .
+
+ns: OcurreEn a owl:ObjectProperty ;
+rdfs:label "  ocurre en" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:Direccion .
+
+
+
+ns:Direccion a owl:Class ;
+rdfs:label "Direccion" .
+
+ns:EstadoMeteorológico a owl:Class ;
+rdfs:label "Estado Meteorológico" .
+
+ns:Lesividad a owl:Class ;
+rdfs:label "Lesividad" .
+
+ns:Persona a owl:Class ;
+rdfs:label "Persona" .
+
+ns:Vehiculo a owl:Class ;
+rdfs:label "Vehiculo" .
+
+ns:Accidente a owl:Class ;
+rdfs:label "Accidente" .
+
+
+
+

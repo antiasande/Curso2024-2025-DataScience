@@ -1,0 +1,56 @@
+PREFIX ex: <http://zonawifi.linkeddata.org#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?subject
+WHERE {
+  {
+    ?subject rdf:type ex:Longitud .
+  }
+  UNION
+  {
+    ?subject rdf:type ex:Telefono .
+  }
+  UNION
+  {
+    ?subject rdf:type ex:EntidadWifi .
+  }
+  UNION
+  {
+    ?subject ex:accesibilidad ?accesibilidad .
+    FILTER(?accesibilidad = 5)
+  }
+  UNION
+  {
+    ?subject ex:equipamiento ?equipamiento .
+  }
+  UNION
+ {
+    ?subject rdf:type ex:estarenVia .
+    ?subject ex:estarEnVia ?via .
+    FILTER(STRSTARTS(STR(?via), "http://zonawifi.linkeddata.org#CALLE"))
+  }
+  UNION
+  {
+    ?subject ex:horario ?horario .
+  }
+  UNION
+  {
+    ?subject ex:llegarConTransporte ?transporte .
+    FILTER(CONTAINS(STR(?transporte), "Metro_de_Madrid"))
+  }
+  UNION
+  {
+    ?subject rdf:type ex:serDeTipo  .
+  }
+  UNION
+  {
+    ?subject rdf:type ex:tenerCoordenaX  .
+  }
+  UNION
+  {
+    ?subject rdf:type ex:tenerCoordenaY  .
+  }
+  
+}
+
+

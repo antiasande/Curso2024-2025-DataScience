@@ -1,31 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Application Requirements</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos de la Aplicación - Smart City Health & Safety App</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #004d7a;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #002244;
+        }
+        .section {
+            margin: 20px auto;
+            max-width: 80%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .subsection {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5ff;
+            border-radius: 8px;
+            border-left: 4px solid #004d7a;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Application Requirements for Smart City Health & Safety App</h1>
 
-    <h2>Descripción de la Aplicación</h2>
-    <p>La aplicación está diseñada para mejorar la respuesta de los servicios de emergencia y la accesibilidad a los desfibriladores externos y centros de salud en una ciudad inteligente. Los usuarios, que pueden incluir tanto ciudadanos como personal de emergencias, podrán visualizar la ubicación de centros de salud y de desfibriladores disponibles en tiempo real. La aplicación también permitirá la planificación de rutas óptimas hacia los desfibriladores y centros de salud en función del tráfico en tiempo real y otros factores relevantes.</p>
+<h1>Requisitos de la Aplicación - Smart City Health & Safety App</h1>
 
-    <h2>Funcionalidades Clave</h2>
+<!-- Sección 1: Descripción de la Aplicación -->
+<div class="section">
+    <h2>1. Descripción de la Aplicación</h2>
+    <p>
+        La aplicación está diseñada para mejorar la respuesta de los servicios de emergencia y la accesibilidad a los desfibriladores externos y centros de salud en una ciudad inteligente. Los usuarios también podrán buscar servicios disponibles tales como cardiología o vacunación además de los de urgencias.
+    </p>
+</div>
+
+<!-- Sección 2: Funcionalidades Clave -->
+<div class="section">
+    <h2>2. Funcionalidades Clave</h2>
     <ul>
         <li><strong>Localización de Centros de Salud:</strong> Visualización de todos los centros de salud en un mapa, filtrados por tipo de atención (hospitales, clínicas, centros de especialidad) y dependencia (pública o privada).</li>
         <li><strong>Disponibilidad de Desfibriladores Externos:</strong> Visualización en tiempo real de la ubicación y disponibilidad de desfibriladores externos en distintos puntos de la ciudad, incluyendo rutas sugeridas para acceder a ellos de manera rápida en caso de emergencia.</li>
-        <li><strong>Planificación de Rutas Óptimas:</strong> Planificación de rutas optimizadas hacia desfibriladores y centros de salud en función de los datos de tráfico y la distancia desde la ubicación actual del usuario.</li>
         <li><strong>Consulta de Servicios:</strong> Opción para que los ciudadanos consulten los servicios médicos disponibles en cada centro, como cardiología, urgencias, pediatría, entre otros.</li>
     </ul>
+</div>
 
-    <h2>Descripción de la Interfaz de Usuario</h2>
-    <p>La interfaz de usuario está diseñada para ser intuitiva y accesible, enfocada en facilitar la rápida obtención de información crítica.</p>
+<!-- Sección 3: Descripción de la Interfaz de Usuario -->
+<div class="section">
+    <h2>3. Descripción de la Interfaz de Usuario</h2>
+    <p>
+        La interfaz de usuario está diseñada para ser intuitiva y accesible, enfocada en facilitar la rápida obtención de información crítica.
+    </p>
+    <div class="subsection">
+        <h3>3.1 Mock-ups de la Interfaz</h3>
+        <ul>
+            <li><strong>Pantalla de Inicio:</strong> Muestra un mapa interactivo de la ciudad con marcadores para los centros de salud y los desfibriladores externos. Incluye opciones para filtrar centros de salud por tipo y dependencia, y para visualizar la disponibilidad de los desfibriladores en tiempo real.</li>
+            <li><strong>Detalle del Centro de Salud o Desfibrilador:</strong> Al seleccionar un marcador en el mapa, se abre una ventana con información detallada. En el caso de los centros de salud, se muestran dirección y servicios disponibles. Para los desfibriladores, se muestra la ubicación exacta, titularidad privada o pública y cualquier otra información relevante.</li>
+            <li><strong>Búsqueda y Filtrado:</strong> Barra de búsqueda para encontrar centros específicos, desfibriladores o servicios médicos, con filtros adicionales para ajustar los resultados según la disponibilidad o el tipo de centro.</li>
+        </ul>
+    </div>
+</div>
 
-    <h3>Mock-ups de la Interfaz</h3>
-    <ul>
-        <li><strong>Pantalla de Inicio:</strong> Muestra un mapa interactivo de la ciudad con marcadores para los centros de salud y los desfibriladores externos. Incluye opciones para filtrar centros de salud por tipo y dependencia, y para visualizar la disponibilidad de los desfibriladores en tiempo real.</li>
-        <li><strong>Detalle del Centro de Salud o Desfibrilador:</strong> Al seleccionar un marcador en el mapa, se abre una ventana con información detallada. En el caso de los centros de salud, se muestran dirección, tipo de atención, servicios disponibles, horarios y contacto. Para los desfibriladores, se muestra la ubicación exacta, horarios de acceso y cualquier otra información relevante.</li>
-        <li><strong>Ruta de Emergencia:</strong> Los servicios de emergencia o ciudadanos pueden seleccionar una ubicación y el destino (centro de salud o desfibrilador) para obtener la ruta más rápida, considerando las condiciones actuales del tráfico.</li>
-        <li><strong>Búsqueda y Filtrado:</strong> Barra de búsqueda para encontrar centros específicos, desfibriladores o servicios médicos, con filtros adicionales para ajustar los resultados según la disponibilidad o el tipo de centro.</li>
-    </ul>
 </body>
 </html>

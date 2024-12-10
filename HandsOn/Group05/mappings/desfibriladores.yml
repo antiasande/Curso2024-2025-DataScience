@@ -1,80 +1,91 @@
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/rml#ql#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  clpr: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties#"
+  is: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+
 mappings:
   DesfibriladoresMapping:
     logicalSource:
       source: "desfibriladores-updated.csv"
-      referenceFormulation: "ql:CSV"
+      referenceFormulation: ql:CSV
     subjectMap:
       template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#desfibrilador_{codigo_dea}"
-      class: "rsc:Desfibrilador"
-    predicateObjectMap:
-      - predicate: "rsc:idDesfibrilador"
+      class: clpr:Desfibrilador
+    predicateObjectMaps:
+      - predicate: clpr:idDesfibrilador
         objectMap:
           reference: "codigo_dea"
-      - predicate: "rsc:albergadoEn"
+      - predicate: clpr:albergadoEn
         objectMap:
           template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#establecimiento_{codigo_dea}"
 
   EstablecimientoMapping:
     logicalSource:
       source: "desfibriladores-updated.csv"
-      referenceFormulation: "ql:CSV"
+      referenceFormulation: ql:CSV
     subjectMap:
       template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#establecimiento_{codigo_dea}"
-      class: "rsc:Establecimiento"
-    predicateObjectMap:
-      - predicate: "rsc:tipoEstablecimiento"
+      class: clpr:Establecimiento
+    predicateObjectMaps:
+      - predicate: clpr:tipoEstablecimiento
         objectMap:
           reference: "tipo_establecimiento"
-      - predicate: "rsc:tipoTitularidad"
+      - predicate: clpr:tipoTitularidad
         objectMap:
           reference: "tipo_titularidad"
 
   DireccionesMapping:
     logicalSource:
       source: "desfibriladores-updated.csv"
-      referenceFormulation: "ql:CSV"
+      referenceFormulation: ql:CSV
     subjectMap:
       template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#{direccion_completa}"
-      class: "rsc:Direccion"
-    predicateObjectMap:
-      - predicate: "rdfs:label"
+      class: clpr:Direccion
+    predicateObjectMaps:
+      - predicate: rdfs:label
         objectMap:
           reference: "direccion_completa"
-          datatype: "xsd:string"
-      - predicate: "rsc:tipoDireccion"
+          datatype: xsd:string
+      - predicate: clpr:tipoDireccion
         objectMap:
           reference: "direccion_via_codigo"
-      - predicate: "rsc:nombreDireccion"
+          datatype: xsd:string
+      - predicate: clpr:nombreDireccion
         objectMap:
           reference: "direccion_via_nombre"
-      - predicate: "rsc:numeroDireccion"
+          datatype: xsd:string
+      - predicate: clpr:numeroDireccion
         objectMap:
           reference: "direccion_portal_numero"
-          datatype: "xsd:string"
-      - predicate: "rsc:codigoPostal"
+          datatype: xsd:integer
+      - predicate: clpr:codigoPostal
         objectMap:
           reference: "direccion_codigo_postal"
-          datatype: "xsd:integer"
-      - predicate: "rsc:coordenadaX"
+          datatype: xsd:integer
+      - predicate: clpr:coordenadaX
         objectMap:
           reference: "direccion_coordenada_x"
-          datatype: "xsd:string"
-      - predicate: "rsc:coordenadaY"
+          datatype: xsd:integer
+      - predicate: clpr:coordenadaY
         objectMap:
           reference: "direccion_coordenada_y"
-          datatype: "xsd:string"
-      - predicate: "rsc:perteneceA"
+          datatype: xsd:integer
+      - predicate: clpr:perteneceA
         objectMap:
           template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#{municipio_nombre}"
 
   MunicipiosMapping:
     logicalSource:
       source: "desfibriladores-updated.csv"
-      referenceFormulation: "ql:CSV"
+      referenceFormulation: ql:CSV
     subjectMap:
       template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#{municipio_nombre}"
-      class: "rsc:Municipio"
-    predicateObjectMap:
-      - predicate: "rdfs:label"
+      class: clpr:Municipio
+    predicateObjectMaps:
+      - predicate: rdfs:label
         objectMap:
           reference: "municipio_nombre"

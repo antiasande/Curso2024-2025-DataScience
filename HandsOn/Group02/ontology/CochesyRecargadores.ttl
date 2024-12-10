@@ -19,10 +19,12 @@
     rdfs:label "Distrito" .
 
 <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> rdf:type owl:Class ;
-    rdfs:label "Id Punto de Recarga" .
+    rdfs:label "Id Punto de Recarga" ;
+    rdfs:range xsd:integer .
 
 <http://www.owl-ontologies.com/ns#IdVehiculo> rdf:type owl:Class ;
-    rdfs:label "Id Vehículo" .
+    rdfs:label "Id Vehículo" ;
+    rdfs:range xsd:integer .
 
 <http://www.owl-ontologies.com/ns#PotenciaDeEnchufe> rdf:type owl:Class ;
     rdfs:label "Potencia del enchufe" .

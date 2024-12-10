@@ -1,0 +1,110 @@
+PREFIX rr: <http://www.w3.org/ns/r2rml#>.
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>.
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#>.
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>.
+PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+PREFIX vf: <http://londonschool.linkeddata.es/school/ontology#>.
+PREFIX hv: <http://londonhousing.linkeddata.es/house/ontology#>.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>.
+
+SELECT ?school ?id
+    WHERE {
+        ?id vf:hasName ?school
+    }
+
+SELECT ?school ?gender
+    WHERE {
+        ?id vf:hasName ?school .
+        ?id vf:hasGender ?gender .
+    }
+
+SELECT ?school ?status
+    WHERE {
+        ?id vf:hasName ?school .
+        ?id vf:hasStatus ?status .
+    }
+
+SELECT ?school ?type
+    WHERE {
+        ?id vf:hasName ?school .
+        ?id vf:hasType ?type .
+    }
+
+SELECT ?school ?phase
+    WHERE {
+        ?id vf:hasName ?school .
+        ?id vf:hasPhase ?phase .
+    }
+
+SELECT ?school ?town
+    WHERE {
+        ?id vf:hasName ?school .
+        ?id vf:placedIn ?town .
+    }
+
+SELECT ?school ?lat
+    WHERE {
+        ?id vf:hasName ?school .
+        ?id wgs84_pos:lat ?lat .
+    }
+
+SELECT ?school ?long
+    WHERE {
+        ?id vf:hasName ?school .
+        ?id wgs84_pos:long ?long .
+    }
+
+SELECT ?id ?price
+    WHERE {
+        ?id hv:hasAveragePrice ?price .
+        FILTER(?price > ''' + 500000 + ''')
+    }
+    ORDER BY DESC(?price)
+
+
+SELECT ?town ?price (COUNT(DISTINCT ?schools) AS ?schoolCount) 
+    WHERE {
+        ?schools vf:linkTowns ?house.
+        ?house hv:dateRecorded ?date .
+        ?house hv:hasAveragePrice ?price .
+        ?schools vf:placedIn ?town
+        FILTER (?date = "2016-01-01T00:00:00Z"^^xsd:dateTime)
+    }
+    GROUP BY ?town
+    ORDER BY DESC(?schoolCount) DESC (?price)
+    LIMIT 10
+
+
+SELECT ?Type (GROUP_CONCAT(?School; SEPARATOR=", ") AS ?Schools)
+WHERE {
+    ?id vf:hasName ?School .
+    ?id vf:hasType ?Type .
+    ?id vf:hasGender ?Gender .
+    FILTER(?Gender = "Boys")
+}
+GROUP BY ?Type
+
+SELECT ?casas ?phase
+    WHERE {
+        ?id hv:placedIn ?casas .
+    }
+
+SELECT ?casas ?phase
+    WHERE {
+        ?id hv:hasHouseId ?casas .
+    }
+
+SELECT ?casas ?phase
+    WHERE {
+        ?id hv:dateRecorded ?casas .
+    }
+
+SELECT ?casas ?phase
+    WHERE {
+        ?id hv:hasAveragePrice ?casas .
+    }
+
+SELECT ?casas ?phase
+    WHERE {
+        ?id hv:sold ?casas .
+    }

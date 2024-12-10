@@ -2,7 +2,7 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix ql: <http://semweb.mmlab.be/ns/rml#ql#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rsc: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/resources#> .
+@prefix clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties#> .
 @prefix is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -13,14 +13,14 @@
     ];
     rr:subjectMap [
         rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#desfibrilador_{codigo_dea}";
-        rr:class rsc:Desfibrilador
+        rr:class clpr:Desfibrilador
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:idDesfibrilador;
+        rr:predicate clpr:idDesfibrilador;
         rr:objectMap [ rml:reference "codigo_dea" ]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:albergadoEn;
+        rr:predicate clpr:albergadoEn;
         rr:objectMap [
             rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#establecimiento_{codigo_dea}"
         ]
@@ -33,14 +33,14 @@
     ];
     rr:subjectMap [
         rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#establecimiento_{codigo_dea}";
-        rr:class rsc:Establecimiento
+        rr:class clpr:Establecimiento
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:tipoEstablecimiento;
+        rr:predicate clpr:tipoEstablecimiento;
         rr:objectMap [ rml:reference "tipo_establecimiento" ]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:tipoTitularidad;
+        rr:predicate clpr:tipoTitularidad;
         rr:objectMap [ rml:reference "tipo_titularidad" ]
     ].
 
@@ -51,7 +51,7 @@
     ];
     rr:subjectMap [
         rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#{direccion_completa}";
-        rr:class rsc:Direccion
+        rr:class clpr:Direccion
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -59,43 +59,45 @@
                     rr:datatype xsd:string]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:tipoDireccion;
-        rr:objectMap [ rml:reference "direccion_via_codigo" ]
+        rr:predicate clpr:tipoDireccion;
+        rr:objectMap [ rml:reference "direccion_via_codigo" ;
+                    rr:datatype xsd:string]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:nombreDireccion;
-        rr:objectMap [ rml:reference "direccion_via_nombre" ]
+        rr:predicate clpr:nombreDireccion;
+        rr:objectMap [ rml:reference "direccion_via_nombre" ;
+                    rr:datatype xsd:string]                
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:numeroDireccion;
+        rr:predicate clpr:numeroDireccion;
         rr:objectMap [
             rml:reference "direccion_portal_numero";
-            rr:datatype xsd:string
+            rr:datatype xsd:integer
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:codigoPostal;
+        rr:predicate clpr:codigoPostal;
         rr:objectMap [
             rml:reference "direccion_codigo_postal";
             rr:datatype xsd:integer
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:coordenadaX;
+        rr:predicate clpr:coordenadaX;
         rr:objectMap [
             rml:reference "direccion_coordenada_x";
-            rr:datatype xsd:string
+            rr:datatype xsd:integer
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:coordenadaY;
+        rr:predicate clpr:coordenadaY;
         rr:objectMap [
             rml:reference "direccion_coordenada_y";
-            rr:datatype xsd:string
+            rr:datatype xsd:integer
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicate rsc:perteneceA;
+        rr:predicate clpr:perteneceA;
         rr:objectMap [
             rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#{municipio_nombre}"
         ]
@@ -108,7 +110,7 @@
     ];
     rr:subjectMap [
         rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#{municipio_nombre}";
-        rr:class rsc:Municipio
+        rr:class clpr:Municipio
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;

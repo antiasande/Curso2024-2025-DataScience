@@ -1,0 +1,131 @@
+prefixes:
+  base: http://namespace.com#
+  ns: http://zonawifi.linkeddata.org#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  
+mappings:
+  zonasdewifi:
+    sources:
+      - [216619-0-wifi-municipal-updated.csv~csv]
+    s: ns:$(EntidadWifi)
+    po:
+      - [a,ns:EntidadWifi ]
+      - [ns:accesibilidad, $(ACCESIBILIDAD),xsd:string]
+      - [ns:equipamiento,$(EQUIPAMIENTO),xsd:string]
+      - [ns:horario,$(HORARIO),xsd:string]
+      - [ns:email,$(EMAIL),xsd:string] 
+      - [ns:urlDeContenido, $(CONTENT-URL),xsd:string]
+      - [ns:tenerNombre, ns:$(NombreEntidad)]     
+      - [ns:tenerCoordenaX, ns:$(COORDENADA-X)]  
+      - [ns:tenerCoordenaY, ns:$(COORDENADA-Y)]  
+      - [ns:tenerLongitud, ns:$(LONGITUD)]   
+      - [ns:tenerLatitud, ns:$(LATITUD)]    
+      - [ns:serDeTipo, ns:$(EntidadWifi)/$(TipoEntidadWifi)]      
+      - [ns:tenerTelefono, ns:$(TELEFONO)]      
+      - [ns:llegarConTransporte, ns:$(EntidadWifi)/$(TRANSPORTE_1)]
+      - [ns:llegarConTransporte, ns:$(EntidadWifi)/$(TRANSPORTE_2)]
+      - [ns:estarEnVia, ns:$(EntidadWifi)/$(VIA)]
+
+
+
+  Nombre_entidad:
+     sources:
+         - [216619-0-wifi-municipal-updated.csv~csv]
+     s: ns:$(NombreEntidad)
+     po:
+        - [a, ns:NombreEntidad]
+
+
+  Coordena_x:
+     sources:
+         - [216619-0-wifi-municipal-updated.csv~csv]
+     s: ns:$(COORDENADA-X)
+     po:
+        - [a, ns:CordenadaX]
+
+  Coordena_y:
+      sources:
+              - [216619-0-wifi-municipal-updated.csv~csv]
+      s: ns:$(COORDENADA-Y)
+      po:
+             - [a, ns:CoordenadaY]
+
+  Longitud:
+        sources:
+             - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(LONGITUD)
+        po:
+            - [a, ns:Longitud]
+
+  Latitud:
+        sources:
+             - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(LATITUD)
+        po:
+            - [a, ns:Latitud]
+  Tipoentidad:
+        sources:
+             - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(EntidadWifi)/$(TipoEntidadWifi)
+        po:
+            - [a, ns:TipoEntidadWifi]
+
+  Telefono:
+        sources:
+             - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(TELEFONO)
+        po:
+            - [a, ns:Telefono]
+  Transporte1_:
+        sources:
+              - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(EntidadWifi)/$(TRANSPORTE_1)
+        po:
+              - [ns:linea, $(Linea_1), xsd:string]
+              - [a, ns:Transporte]
+  Transporte_2:
+        source:
+              - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(EntidadWifi)/$(TRANSPORTE_2)
+        po:
+              - [ns:linea, $(Linea_2), xsd:string]
+              - [a, ns:Transporte]
+  Via:
+        source: 
+              - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(EntidadWifi)/$(VIA)
+        po:
+              - [a, ns:Via]
+              - [ns:numero, $(NUM), xsd:integer]
+              - [ns:tipoNum, $(TIPO-NUM), xsd:string]
+              - [ns:codigoPostal, $(CODIGO-POSTAL), xsd:string]
+              - [ns:estarEnBarrio, ns:$(BARRIO)]
+  Barrio:
+        source:
+              - [216619-0-wifi-municipal-updated.csv~csv]
+        s: ns:$(BARRIO)
+        po:
+              - [a, ns:Barrio]
+              - [ns:codigoBarrio, $(COD-BARRIO), xsd:string]
+              - [ns:estarEnDistrito, ns:$(DISTRITO)]
+  Distrito:
+      source:
+            - [216619-0-wifi-municipal-updated.csv~csv]
+      s: ns:$(DISTRITO)
+      po:
+            - [a, ns:Distrito]
+            - [ns:codigoDistrito, $(COD-DISTRITO), xsd:string]
+            - [ns:estarEnCiudad, ns:$(CIUDAD)]
+  Ciudad:
+      source:
+            - [216619-0-wifi-municipal-updated.csv~csv]
+      s: ns:$(CIUDAD)
+      po:
+            - [a, ns:Ciudad]
+            - [ns:estarEnProvincia, ns:$(PROVINCIA)]            
+  Provincia:
+      source:
+            - [216619-0-wifi-municipal-updated.csv~csv]
+      s: ns:$(PROVINCIA)
+      po:
+            - [a, ns:Provincia]

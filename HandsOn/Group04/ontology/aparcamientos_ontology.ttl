@@ -1,58 +1,63 @@
+@prefix : <http://www.domainkg.com/base#> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://example.org/parking#> .
+@prefix ns: <http://www.domainkg.com/parking_ontology/concepts#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns: a owl:Ontology ;
+: a owl:Ontology ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 ns:Barrio a owl:Class ;
     rdfs:label "Barrio" .
 
-ns:Bus a owl:Class ;
-    rdfs:label "Bus" ;
-    rdfs:subClassOf ns:Transporte .
-
-ns:Calle a owl:Class ;
-    rdfs:label "Calle" .
-
-ns:Cercanias a owl:Class ;
-    rdfs:label "Cercanías" ;
-    rdfs:subClassOf ns:Transporte .
+ns:Direccion a owl:Class ;
+    rdfs:label "Dirección" .
 
 ns:Distrito a owl:Class ;
     rdfs:label "Distrito" .
 
-ns:Metro a owl:Class ;
-    rdfs:label "Metro" ;
-    rdfs:subClassOf ns:Transporte .
+ns:AparcamientoMR a owl:Class ;
+    rdfs:label "Aparcamiento Movilidad Reducida" ;
+    rdfs:subClassOf ns:Aparcamiento .
 
-ns:Tranvia a owl:Class ;
-    rdfs:label "Tranvía" ;
-    rdfs:subClassOf ns:Transporte .
+ns:AparcamientoSER a owl:Class ;
+    rdfs:label "Aparcamiento en Zona de Servicio de Estacionamiento Regulado" ;
+    rdfs:subClassOf ns:Aparcamiento .
+
+ns:Aparcamiento a owl:Class ;
+    rdfs:label "Aparcamiento" .
+
+ns:AparcamientoPúblicos a owl:Class ;
+    rdfs:label "Aparcamiento Público" ;
+    rdfs:subClassOf ns:Aparcamiento .
 
 ns:esAccesible a owl:DatatypeProperty ;
     rdfs:label "es accesible" ;
-    rdfs:domain ns:AparcamientosPúblicos ;
+    rdfs:domain ns:AparcamientoPúblico ;
     rdfs:range xsd:boolean .
 
 ns:estaEnBarrio a owl:ObjectProperty ;
-    rdfs:label "está en barrio" ;
+    rdfs:label "está en el barrio" ;
+    rdfs:domain [a owl:Class;
+                 owl:unionOf (ns:Aparcamiento ns:Direccion)];
     rdfs:range ns:Barrio .
 
-ns:estaEnCalle a owl:ObjectProperty ;
-    rdfs:label "está en calle" ;
-    rdfs:range ns:Calle .
+ns:estaEnDireccion a owl:ObjectProperty ;
+    rdfs:label "su dirección es" ;
+    rdfs:domain ns:Aparcamiento;
+    rdfs:range ns:Direccion .
 
 ns:estaEnDistrito a owl:ObjectProperty ;
-    rdfs:label "está en distrito" ;
+    rdfs:label "está en el distrito" ;
+    rdfs:domain [a owl:Class;
+                 owl:unionOf (ns:Aparcamiento ns:Direccion ns:Barrio)];
     rdfs:range ns:Distrito .
 
 ns:seAparcaEn a owl:DatatypeProperty ;
     rdfs:label "se aparca en" ;
-    rdfs:domain ns:AparcamientoMR,
-        ns:aparcamientoSER ;
+    rdfs:domain [a owl:Class;
+                 owl:unionOf (ns:AparcamientoMR ns:AparcamientoSER)] ;
     rdfs:range xsd:string .
 
 ns:tieneColor a owl:DatatypeProperty ;
@@ -60,41 +65,32 @@ ns:tieneColor a owl:DatatypeProperty ;
     rdfs:domain ns:aparcamientoSER ;
     rdfs:range xsd:string .
 
-ns:tieneConexion a owl:ObjectProperty ;
-    rdfs:label "tiene conexion" ;
-    rdfs:domain ns:AparcamientosPúblicos ;
-    rdfs:range ns:Transporte .
-
 ns:tieneHorario a owl:DatatypeProperty ;
     rdfs:label "tiene horario" ;
-    rdfs:domain ns:AparcamientosPúblicos ;
+    rdfs:domain ns:AparcamientoPúblico ;
     rdfs:range xsd:string .
 
 ns:tieneNombre a owl:DatatypeProperty ;
     rdfs:label "tiene nombre" ;
-    rdfs:domain ns:AparcamientosPúblicos ;
+    rdfs:domain [a owl:Class;
+                 owl:unionOf (ns:AparcamientoPúblico ns:Distrito ns:Barrio)];
     rdfs:range xsd:string .
 
 ns:tienePlazas a owl:DatatypeProperty ;
     rdfs:label "tiene plazas" ;
     rdfs:domain ns:Aparcamiento ;
-    rdfs:range xsd:int .
+    rdfs:range xsd:string .
 
-ns:AparcamientoMR a owl:Class ;
-    rdfs:label "Aparcamiento M R" ;
-    rdfs:subClassOf ns:Aparcamiento .
+ns:nombreVia a owl:DatatypeProperty ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range xsd:string .
 
-ns:aparcamientoSER a owl:Class ;
-    rdfs:label "aparcamiento S E R" ;
-    rdfs:subClassOf ns:Aparcamiento .
+ns:numeroVia a owl:DatatypeProperty ;
+    rdfs:label "número" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range xsd:string .
 
-ns:Aparcamiento a owl:Class ;
-    rdfs:label "Aparcamiento" .
-
-ns:AparcamientosPúblicos a owl:Class ;
-    rdfs:label "Aparcamientos Públicos" ;
-    rdfs:subClassOf ns:Aparcamiento .
-
-ns:Transporte a owl:Class ;
-    rdfs:label "Transporte" .
-
+ns:tieneCodigo a owl:DatatypeProperty ;
+    rdfs:domain [a owl:Class;
+                 owl:unionOf (ns:Distrito ns:Barrio)];
+    rdfs:range xsd:string .

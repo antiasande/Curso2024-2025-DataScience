@@ -1,0 +1,98 @@
+@prefix :      <https://www.dominiowebsemant.com/ontology/CercaniasMalaga#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+:LOSPRADOS  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5846635" .
+
+:VICTORIAKENT  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q8842201" .
+
+:Torremolinos  rdf:type  :Poblacion;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q492737" .
+
+:PIZARRA  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5846921" .
+
+:LOSALAMOS  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5846641" .
+
+:Cártama  rdf:type  :Poblacion;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q935266" .
+
+:Pizarra  rdf:type  :Poblacion;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q1657599" .
+
+:MALAGAMARIAZAMBRANO  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q801214" .
+
+:PLAZAMAYOR  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q8841487" .
+
+:GUADALHORCE  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q959331" .
+
+:BENALMADENA-ARROYODELAMIEL
+        rdf:type    :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5845802" .
+
+:TORREBLANCA  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5672229" .
+
+:TORREMOLINOS  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5847350" .
+
+:ALORA  rdf:type    :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q8842737" .
+
+:CAMPANILLAS  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5845932" .
+
+:Álora  rdf:type    :Poblacion;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q250746" .
+
+:ALJAIMA  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5845653" .
+
+:CARTAMA  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5846106" .
+
+:LACOLINA  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5846469" .
+
+:LOSBOLICHES  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q8840986" .
+
+:CARVAJAL  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5845978" .
+
+:AEROPUERTO  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q8779199" .
+
+:Benalmádena  rdf:type  :Poblacion;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q488869" .
+
+:ELPINILLO  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5846177" .
+
+:FUENGIROLA  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q11681648" .
+
+:MONTEMARALTO  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5846743" .
+
+:TORREMUELLE  rdf:type  :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q5847352" .
+
+:MALAGA-CENTROALAMEDA
+        rdf:type    :Estación;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q604972" .
+
+:Fuengirola  rdf:type  :Poblacion;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q492735" .
+
+:Málaga  rdf:type   :Provincia , :Poblacion;
+        owl:sameAs  "https://www.wikidata.org/wiki/Q95028" , "https://www.wikidata.org/wiki/Q8851" .

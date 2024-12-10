@@ -1,0 +1,92 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  tm-ont: http://turismo.mad.es/cultural/ontology/ont1#
+  tm: http://turismo.mad.es/cultural/resource/  
+  tm-mon: http://turismo.mad.es/cultural/resource/Monument/
+  tm-add: http://turismo.mad.es/cultural/resource/Address/ 
+  tm-dis: http://turismo.mad.es/cultural/resource/District/
+  tm-nei: http://turismo.mad.es/cultural/resource/Neighborhood/
+  tm-str: http://turismo.mad.es/cultural/resource/Street/ 
+  db: http://dbpedia.org/resource/classes#
+  gn: http://www.geonames.org/ontology#
+
+ 
+mappings:
+  monument:
+    sources:
+      - ['monument_data-with-links.csv~csv']
+    s: tm-mon:$(NOMBRE)
+    po:
+      - [a, db:Monument]
+      - [tm-ont:hasId,$(PK),xsd:integer]
+      - [tm-ont:hasName,$(NOMBRE),xsd:string]
+      - [tm-ont:hasSubtype,$(SUBTIPO),xsd:string]
+      - [tm-ont:hasDescription,$(DESCRIPCION),xsd:string]
+      - [tm-ont:hasConstructionDate,$(FECHA),xsd:string]
+      - [tm-ont:hasAuthor,$(AUTORES),xsd:string]
+      - [tm-ont:hasPdf,$(PDF),xsd:string]
+      - [tm-ont:hasUrl,$(CONTENT-URL),xsd:anyURI]
+      - [tm-ont:hasAddress, tm-add:$(ID)~iri]
+      - [owl:sameAs, $(NOMBRE_RECON)~iri]
+       
+
+  address:
+    sources:
+      - ['monument_data-with-links.csv~csv']
+    s: tm-add:$(ID)
+    po:
+      - [a, tm-ont:Address]
+      - [tm-ont-:hasNumberType,$(TIPO-NUM),xsd:string]
+      - [tm-ont:hasStreetNumber,$(NUM),xsd:integer]
+      - [tm-ont-:hasLocality,$(LOCALIDAD),xsd:string]
+      - [tm-ont-:hasProvince,$(PROVINCIA),xsd:string]
+      - [tm-ont:hasPostalCode,$(CODIGO-POSTAL),xsd:integer]
+      - [tm-ont:hasCoordX,$(COORDENADA-X),xsd:integer]
+      - [tm-ont:hasCoordY,$(COORDENADA-Y),xsd:integer]
+      - [tm-ont:hasLongitude,$(LONGITUD),xsd:decimal]
+      - [tm-ont:hasLatitude,$(LATITUD),xsd:decimal]
+      - [tm-ont:hasStreet, tm-str:$(NOMBRE-VIA)~iri]
+      - [tm-ont:hasNeighborhood, tm-nei:$(BARRIO)~iri]
+      - [tm-ont:hasDistrict, tm-dis:$(DISTRITO)~iri]
+
+
+  street:
+    sources:
+      - ['monument_data-with-links.csv~csv']
+    s: tm-str:$(NOMBRE-VIA)
+    po:
+      - [a, gn:Street]
+      - [tm-ont:hasStreetName,$(NOMBRE-VIA),xsd:string]
+      - [tm-ont:hasStreetType,$(CLASE-VIAL),xsd:string]
+
+
+  neighborhood:
+    sources:
+      - ['monument_data-with-links.csv~csv']
+    s: tm-nei:$(BARRIO)
+    po:
+      - [a, gn:Neighborhood]
+      - [tm-ont:hasNeighborhoodCode,$(COD-BARRIO),xsd:integer]
+      - [tm-ont:hasNeighborhoodName,$(BARRIO),xsd:string] 
+      - [owl:sameAs, $(BARRIO_RECON)~iri] 
+       
+
+
+  district:
+    sources:
+      - ['monument_data-with-links.csv~csv']
+    s: tm-dis:$(DISTRITO)
+    po:
+      - [a, tm:District]
+      - [tm-ont:hasDistrictCode,$(COD-DISTRITO),xsd:integer]
+      - [tm-ont:hasDistrictName,$(DISTRITO),xsd:string]
+      - [owl:sameAs, $(DISTRITO_RECON)~iri]

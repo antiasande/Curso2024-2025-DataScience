@@ -228,10 +228,242 @@
     "description": "Move column ID to position 0"
   },
   {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "grel:value.replace(/^\\d+\\s/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Distrito using expression grel:value.replace(/^\\d+\\s/, \"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column Barrio by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio 2",
+    "newColumnName": "Barrio",
+    "description": "Rename column Barrio 2 to Barrio"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio 1",
+    "guessCellType": false,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "-",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column Barrio 1 by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio 1 1",
+    "expression": "grel:if(isBlank(value), \"unknown\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Barrio 1 1 using expression grel:if(isBlank(value), \"unknown\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio 1 2",
+    "expression": "grel:if(isBlank(value), \"unknown\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Barrio 1 2 using expression grel:if(isBlank(value), \"unknown\", value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio 1 1",
+    "newColumnName": "Código_Distrito",
+    "description": "Rename column Barrio 1 1 to Código_Distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio 1 2",
+    "newColumnName": "Código_Barrio",
+    "description": "Rename column Barrio 1 2 to Código_Barrio"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Dirección",
+    "guessCellType": false,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column Dirección by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Dirección 1",
+    "newColumnName": "Calle",
+    "description": "Rename column Dirección 1 to Calle"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Calle",
+    "newColumnName": "Vía",
+    "description": "Rename column Calle to Vía"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Dirección 2",
+    "newColumnName": "Número",
+    "description": "Rename column Dirección 2 to Número"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Tipo de Reserva",
+    "description": "Remove column Tipo de Reserva"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Código_Distrito",
+    "expression": "join ([coalesce(cells['Código_Distrito'].value,''),coalesce(cells['Código_Barrio'].value,'')],'-')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Código_Distrito using expression join ([coalesce(cells['Código_Distrito'].value,''),coalesce(cells['Código_Barrio'].value,'')],'-')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Código_Barrio",
+    "description": "Remove column Código_Barrio"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Código_Distrito",
+    "guessCellType": false,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": "-",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Código_Distrito by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Código_Distrito 2",
+    "description": "Remove column Código_Distrito 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Código_Distrito",
+    "expression": "grel:if(value == \"unknown-unknown\", \"unknown\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Código_Distrito using expression grel:if(value == \"unknown-unknown\", \"unknown\", value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Código_Distrito",
+    "newColumnName": "Código_Barrio",
+    "description": "Rename column Código_Distrito to Código_Barrio"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Código_Distrito 1",
+    "newColumnName": "Código_Distrito",
+    "description": "Rename column Código_Distrito 1 to Código_Distrito"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Código_Barrio",
+    "expression": "grel:if(value == \"unknown\", \"\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Código_Barrio using expression grel:if(value == \"unknown\", \"\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Código_Distrito",
+    "expression": "grel:if(value == \"unknown\", \"\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Código_Distrito using expression grel:if(value == \"unknown\", \"\", value)"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "ID",
+    "index": 0,
+    "description": "Move column ID to position 0"
+  },
+  {
     "op": "core/column-rename",
     "oldColumnName": "Distrito",
     "newColumnName": "DISTRITO",
     "description": "Rename column Distrito to DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Código_Barrio",
+    "newColumnName": "COD-BARRIO",
+    "description": "Rename column Código_Barrio to COD-BARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Código_Distrito",
+    "newColumnName": "COD-DISTRITO",
+    "description": "Rename column Código_Distrito to COD-DISTRITO"
   },
   {
     "op": "core/column-rename",
@@ -241,26 +473,513 @@
   },
   {
     "op": "core/column-rename",
-    "oldColumnName": "Dirección",
-    "newColumnName": "CALLE",
-    "description": "Rename column Dirección to CALLE"
+    "oldColumnName": "Vía",
+    "newColumnName": "VIA",
+    "description": "Rename column Vía to VIA"
   },
   {
     "op": "core/column-rename",
-    "oldColumnName": "Tipo de Reserva",
-    "newColumnName": "TIPO_DE_RESERVA",
-    "description": "Rename column Tipo de Reserva to TIPO_DE_RESERVA"
+    "oldColumnName": "Número",
+    "newColumnName": "NUMERO",
+    "description": "Rename column Número to NUMERO"
   },
   {
     "op": "core/column-rename",
     "oldColumnName": "Línea / Batería",
-    "newColumnName": "LINEA_BATERIA",
-    "description": "Rename column Línea / Batería to LINEA_BATERIA"
+    "newColumnName": "L-B",
+    "description": "Rename column Línea / Batería to L-B"
   },
   {
     "op": "core/column-rename",
     "oldColumnName": "Número de Plazas",
     "newColumnName": "PLAZAS",
     "description": "Rename column Número de Plazas to PLAZAS"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Sin Asignar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sin Asignar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMERO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Fte 7",
+          " FTE 7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Fte 7"
+      },
+      {
+        "from": [
+          " Fte 9",
+          " FTE 9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Fte 9"
+      }
+    ],
+    "description": "Mass edit cells in column NUMERO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMERO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " 27 B",
+          " 27B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 27 B"
+      },
+      {
+        "from": [
+          " 27 A",
+          " 27A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 27 A"
+      },
+      {
+        "from": [
+          " 26 A",
+          " 26A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 26 A"
+      },
+      {
+        "from": [
+          " 12 B",
+          " 12B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 12 B"
+      },
+      {
+        "from": [
+          " 22 B",
+          " 22B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 22 B"
+      },
+      {
+        "from": [
+          " Fte 17",
+          " Fte17"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Fte 17"
+      },
+      {
+        "from": [
+          " 2 A",
+          " 2A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 2 A"
+      },
+      {
+        "from": [
+          " 4 B",
+          " 4B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 4 B"
+      },
+      {
+        "from": [
+          " 6 A",
+          " 6A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 6 A"
+      },
+      {
+        "from": [
+          " 8 C",
+          " 8C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 8 C"
+      },
+      {
+        "from": [
+          " 9 A",
+          " 9A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 9 A"
+      },
+      {
+        "from": [
+          " 10 B",
+          " 10B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 10 B"
+      },
+      {
+        "from": [
+          " 15 B",
+          " 15B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 15 B"
+      },
+      {
+        "from": [
+          " 20 B",
+          " 20B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 20 B"
+      }
+    ],
+    "description": "Mass edit cells in column NUMERO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "BARRIO",
+          "expression": "value",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CAÑAVERAL",
+                "l": "CAÑAVERAL"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " VICÁLVARO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VICÁLVARO"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO",
+          "expression": "value",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VICÁLVARO",
+                "l": "VICÁLVARO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO",
+          "expression": "value",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CAÑAVERAL",
+                "l": "CAÑAVERAL"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COD-BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "19-04"
+      }
+    ],
+    "description": "Mass edit cells in column COD-BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VICÁLVARO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " VICÁLVARO"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": " VILLA DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": " VALDECARROS"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO",
+          "expression": "value",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": " VILLA DE VALLECAS",
+                "l": " VILLA DE VALLECAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COD-DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "18"
+      }
+    ],
+    "description": "Mass edit cells in column COD-DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO",
+          "expression": "value",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": " VILLA DE VALLECAS",
+                "l": " VILLA DE VALLECAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COD-DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "18"
+      }
+    ],
+    "description": "Mass edit cells in column COD-DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO",
+          "expression": "value",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": " VILLA DE VALLECAS",
+                "l": " VILLA DE VALLECAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COD-BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "18-04"
+      }
+    ],
+    "description": "Mass edit cells in column COD-BARRIO"
   }
 ]

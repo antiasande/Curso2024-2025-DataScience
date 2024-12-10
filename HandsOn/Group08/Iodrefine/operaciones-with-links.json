@@ -1,0 +1,695 @@
+[
+	{
+		"op": "core/recon",
+		"engineConfig": {
+			"facets": [],
+			"mode": "row-based"
+		},
+		"columnName": "DESCRIPCION",
+		"config": {
+			"mode": "standard-service",
+			"service": "https://wikidata.reconci.link/en/api",
+			"identifierSpace": "http://www.wikidata.org/entity/",
+			"schemaSpace": "http://www.wikidata.org/prop/direct/",
+			"type": {
+				"id": "Q55488",
+				"name": "railway station"
+			},
+			"autoMatch": true,
+			"batchSize": 10,
+			"columnDetails": [],
+			"limit": 0
+		},
+		"description": "Reconcile cells in column DESCRIPCION to type Q55488"
+	},
+	{
+		"op": "core/recon",
+		"engineConfig": {
+			"facets": [],
+			"mode": "row-based"
+		},
+		"columnName": "POBLACION",
+		"config": {
+			"mode": "standard-service",
+			"service": "https://wikidata.reconci.link/en/api",
+			"identifierSpace": "http://www.wikidata.org/entity/",
+			"schemaSpace": "http://www.wikidata.org/prop/direct/",
+			"type": {
+				"id": "Q2074737",
+				"name": "municipality of Spain"
+			},
+			"autoMatch": true,
+			"batchSize": 10,
+			"columnDetails": [],
+			"limit": 0
+		},
+		"description": "Reconcile cells in column POBLACION to type Q2074737"
+	},
+	{
+		"op": "core/recon",
+		"engineConfig": {
+			"facets": [],
+			"mode": "row-based"
+		},
+		"columnName": "PROVINCIA",
+		"config": {
+			"mode": "standard-service",
+			"service": "https://wikidata.reconci.link/en/api",
+			"identifierSpace": "http://www.wikidata.org/entity/",
+			"schemaSpace": "http://www.wikidata.org/prop/direct/",
+			"type": {
+				"id": "Q162620",
+				"name": "province of Spain"
+			},
+			"autoMatch": true,
+			"batchSize": 10,
+			"columnDetails": [],
+			"limit": 0
+		},
+		"description": "Reconcile cells in column PROVINCIA to type Q162620"
+	},
+	{
+		"op": "core/column-addition",
+		"engineConfig": {
+			"facets": [
+				{
+					"type": "list",
+					"name": "DESCRIPCION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "DESCRIPCION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "POBLACION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "POBLACION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "PROVINCIA: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "PROVINCIA",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				}
+			],
+			"mode": "row-based"
+		},
+		"baseColumnName": "DESCRIPCION",
+		"expression": "grel:cell.recon.match.id",
+		"onError": "set-to-blank",
+		"newColumnName": "Wikidata train",
+		"columnInsertIndex": 2,
+		"description": "Create column Wikidata train at index 2 based on column DESCRIPCION using expression grel:cell.recon.match.id"
+	},
+	{
+		"op": "core/column-removal",
+		"columnName": "Wikidata train",
+		"description": "Remove column Wikidata train"
+	},
+	{
+		"op": "core/column-addition",
+		"engineConfig": {
+			"facets": [
+				{
+					"type": "list",
+					"name": "DESCRIPCION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "DESCRIPCION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "POBLACION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "POBLACION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "PROVINCIA: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "PROVINCIA",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				}
+			],
+			"mode": "row-based"
+		},
+		"baseColumnName": "DESCRIPCION",
+		"expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+		"onError": "set-to-blank",
+		"newColumnName": "Wikidata station URI",
+		"columnInsertIndex": 2,
+		"description": "Create column Wikidata station URI at index 2 based on column DESCRIPCION using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+	},
+	{
+		"op": "core/column-addition",
+		"engineConfig": {
+			"facets": [
+				{
+					"type": "list",
+					"name": "DESCRIPCION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "DESCRIPCION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "POBLACION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "POBLACION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "PROVINCIA: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "PROVINCIA",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				}
+			],
+			"mode": "row-based"
+		},
+		"baseColumnName": "POBLACION",
+		"expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+		"onError": "set-to-blank",
+		"newColumnName": "Wikidata poblacion URI",
+		"columnInsertIndex": 8,
+		"description": "Create column Wikidata poblacion URI at index 8 based on column POBLACION using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+	},
+	{
+		"op": "core/column-addition",
+		"engineConfig": {
+			"facets": [
+				{
+					"type": "list",
+					"name": "DESCRIPCION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "DESCRIPCION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "POBLACION: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "POBLACION",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				},
+				{
+					"type": "list",
+					"name": "PROVINCIA: judgment",
+					"expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+					"columnName": "PROVINCIA",
+					"invert": false,
+					"omitBlank": false,
+					"omitError": false,
+					"selection": [
+						{
+							"v": {
+								"v": "matched",
+								"l": "matched"
+							}
+						}
+					],
+					"selectBlank": false,
+					"selectError": false
+				}
+			],
+			"mode": "row-based"
+		},
+		"baseColumnName": "PROVINCIA",
+		"expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+		"onError": "set-to-blank",
+		"newColumnName": "Wikidata provincia URI",
+		"columnInsertIndex": 10,
+		"description": "Create column Wikidata provincia URI at index 10 based on column PROVINCIA using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+	},
+	{
+		"op": "rdf-transform/save-rdf-transform",
+		"rdf-transform": {
+			"baseIRI": "https://www.dominiowebsemant.com/ontology/CercaniasMalaga#",
+			"namespaces": {
+				"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+				"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+				"owl": "http://www.w3.org/2002/07/owl#",
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"vcard": "http://www.w3.org/2006/vcard/ns#"
+			},
+			"subjectMappings": [
+				{
+					"valueSource": {
+						"source": "column",
+						"columnName": "DESCRIPCION"
+					},
+					"typeMappings": [
+						{
+							"prefix": "",
+							"valueSource": {
+								"source": "constant",
+								"constant": "Estación"
+							}
+						}
+					],
+					"propertyMappings": [
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata station URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						},
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata poblacion URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						},
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata provincia URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"version": "2.2.0",
+			"extension": "RDFTransform"
+		}
+	},
+	{
+		"op": "rdf-transform/save-rdf-transform",
+		"rdf-transform": {
+			"baseIRI": "https://www.dominiowebsemant.com/ontology/CercaniasMalaga#",
+			"namespaces": {
+				"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+				"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+				"owl": "http://www.w3.org/2002/07/owl#",
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"vcard": "http://www.w3.org/2006/vcard/ns#"
+			},
+			"subjectMappings": [
+				{
+					"valueSource": {
+						"source": "column",
+						"columnName": "DESCRIPCION"
+					},
+					"typeMappings": [
+						{
+							"prefix": "",
+							"valueSource": {
+								"source": "constant",
+								"constant": "Estación"
+							}
+						}
+					],
+					"propertyMappings": [
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata station URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"valueSource": {
+						"source": "column",
+						"columnName": "POBLACION"
+					},
+					"typeMappings": [
+						{
+							"prefix": "",
+							"valueSource": {
+								"source": "constant",
+								"constant": "Poblacion"
+							}
+						}
+					],
+					"propertyMappings": [
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata poblacion URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"valueSource": {
+						"source": "column",
+						"columnName": "PROVINCIA"
+					},
+					"typeMappings": [
+						{
+							"prefix": "",
+							"valueSource": {
+								"source": "constant",
+								"constant": "Provincia"
+							}
+						}
+					],
+					"propertyMappings": [
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata provincia URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"version": "2.2.0",
+			"extension": "RDFTransform"
+		}
+	},
+	{
+		"op": "rdf-transform/save-rdf-transform",
+		"rdf-transform": {
+			"baseIRI": "https://www.dominiowebsemant.com/ontology/CercaniasMalaga#",
+			"namespaces": {
+				"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+				"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+				"owl": "http://www.w3.org/2002/07/owl#",
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"vcard": "http://www.w3.org/2006/vcard/ns#"
+			},
+			"subjectMappings": [
+				{
+					"prefix": "",
+					"valueSource": {
+						"source": "column",
+						"columnName": "DESCRIPCION"
+					},
+					"typeMappings": [
+						{
+							"prefix": "",
+							"valueSource": {
+								"source": "constant",
+								"constant": "Estación"
+							}
+						}
+					],
+					"propertyMappings": [
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata station URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"prefix": "",
+					"valueSource": {
+						"source": "column",
+						"columnName": "POBLACION"
+					},
+					"typeMappings": [
+						{
+							"prefix": "",
+							"valueSource": {
+								"source": "constant",
+								"constant": "Poblacion"
+							}
+						}
+					],
+					"propertyMappings": [
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata poblacion URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"prefix": "",
+					"valueSource": {
+						"source": "column",
+						"columnName": "PROVINCIA"
+					},
+					"typeMappings": [
+						{
+							"prefix": "",
+							"valueSource": {
+								"source": "constant",
+								"constant": "Provincia"
+							}
+						}
+					],
+					"propertyMappings": [
+						{
+							"prefix": "owl",
+							"valueSource": {
+								"source": "constant",
+								"constant": "sameAs"
+							},
+							"objectMappings": [
+								{
+									"valueSource": {
+										"source": "column",
+										"columnName": "Wikidata provincia URI"
+									},
+									"valueType": {
+										"type": "literal"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"version": "2.2.0",
+			"extension": "RDFTransform"
+		}
+	}
+]

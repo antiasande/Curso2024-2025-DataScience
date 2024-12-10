@@ -16,6 +16,10 @@ base: a owl:Ontology ;
     owl:versionInfo "0.0.1" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
+tm:Lighting a owl:Class ;
+    rdfs:label "Lighting" ;
+    rdfs:subClassOf tm:CulturalSiteLocation .
+
 tm:Monument a owl:Class ;
     rdfs:label "Monument" ;
     rdfs:subClassOf tm:CulturalSite .
@@ -30,15 +34,17 @@ tm:Venue a owl:Class ;
 
 tm:hasAccessDescription a owl:DatatypeProperty ;
     rdfs:label "has access description" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasAccessibility a owl:DatatypeProperty ;
     rdfs:label "has accessibility" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasActivity a owl:ObjectProperty ;
     rdfs:label "has activity" ;
-    rdfs:domain tm:Events ;
+    rdfs:domain tm:Event ;
     rdfs:range tm:Activity .
 
 tm:hasAddress a owl:ObjectProperty ;
@@ -46,268 +52,304 @@ tm:hasAddress a owl:ObjectProperty ;
     rdfs:domain tm:CulturalSite ;
     rdfs:range tm:Address .
 
-tm:hasAddressLocation a owl:ObjectProperty ;
-    rdfs:label "has address location" ;
-    rdfs:domain tm:Address ;
-    rdfs:range tm:Location .
-
 tm:hasAudience a owl:DatatypeProperty ;
     rdfs:label "has audience" ;
+    rdfs:domain tm:Activity ;
     rdfs:range xsd:string .
 
 tm:hasAuthor a owl:DatatypeProperty ;
     rdfs:label "has author" ;
+    rdfs:domain tm:Monument ;
     rdfs:range xsd:string .
 
 tm:hasComment a owl:DatatypeProperty ;
     rdfs:label "has comment" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:string .
 
 tm:hasConstructionDate a owl:DatatypeProperty ;
     rdfs:label "has construction date" ;
+    rdfs:domain tm:Monument ;
     rdfs:range xsd:string .
 
 tm:hasCoordX a owl:DatatypeProperty ;
     rdfs:label "has coord x" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:integer .
 
 tm:hasCoordY a owl:DatatypeProperty ;
     rdfs:label "has coord y" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:integer .
 
 tm:hasDaysOfOccurrence a owl:DatatypeProperty ;
     rdfs:label "has days of occurrence" ;
+    rdfs:domain tm:Event ;
     rdfs:range xsd:string .
 
 tm:hasDescription a owl:DatatypeProperty ;
     rdfs:label "has description" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasDesigner a owl:DatatypeProperty ;
     rdfs:label "has designer" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:string .
 
 tm:hasDistrict a owl:ObjectProperty ;
     rdfs:label "has district" ;
-    rdfs:domain tm:Location ;
+    rdfs:domain tm:CulturalSiteLocation ;
     rdfs:range tm:District .
 
 tm:hasDistrictCode a owl:DatatypeProperty ;
     rdfs:label "has district code" ;
+    rdfs:domain tm:District ;
     rdfs:range xsd:integer .
 
 tm:hasDistrictName a owl:DatatypeProperty ;
     rdfs:label "has district name" ;
+    rdfs:domain tm:District ;
     rdfs:range xsd:string .
 
 tm:hasDoor a owl:DatatypeProperty ;
     rdfs:label "has door" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasElementId a owl:DatatypeProperty ;
     rdfs:label "has element id" ;
-    rdfs:range xsd:integer,
-        xsd:string .
+    rdfs:domain tm:Lighting ;
+    rdfs:range xsd:integer .
 
 tm:hasEmail a owl:DatatypeProperty ;
     rdfs:label "has email" ;
+    rdfs:domain tm:ContactInformation ;
     rdfs:range xsd:string .
 
 tm:hasEndDate a owl:DatatypeProperty ;
     rdfs:label "has end date" ;
+    rdfs:domain tm:Event ;
     rdfs:range xsd:dateTime .
 
 tm:hasEquipment a owl:DatatypeProperty ;
     rdfs:label "has equipment" ;
+    rdfs:domain tm:Venue ;
     rdfs:range xsd:string .
-
-tm:hasEventId a owl:DatatypeProperty ;
-    rdfs:label "has event id" ;
-    rdfs:range xsd:integer .
 
 tm:hasExcludedDays a owl:DatatypeProperty ;
     rdfs:label "has excluded days" ;
+    rdfs:domain tm:Event ;
     rdfs:range xsd:string .
 
 tm:hasFacilities a owl:DatatypeProperty ;
     rdfs:label "has facilities" ;
+    rdfs:domain tm:Museum ;
     rdfs:range xsd:string .
 
 tm:hasFaxNumber a owl:DatatypeProperty ;
     rdfs:label "has fax number" ;
+    rdfs:domain tm:ContactInformation ;
     rdfs:range xsd:integer .
 
 tm:hasFloorNumber a owl:DatatypeProperty ;
     rdfs:label "has floor number" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:integer .
 
 tm:hasFreeAdmission a owl:DatatypeProperty ;
     rdfs:label "has free admission" ;
-    rdfs:range xsd:integer .
-
-tm:hasId a owl:DatatypeProperty ;
-    rdfs:label "has id" ;
+    rdfs:domain tm:Event ;
     rdfs:range xsd:integer .
 
 tm:hasLatitude a owl:DatatypeProperty ;
     rdfs:label "has latitude" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:decimal .
 
 tm:hasLength a owl:DatatypeProperty ;
     rdfs:label "has length" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:integer .
 
 tm:hasLocality a owl:DatatypeProperty ;
     rdfs:label "has locality" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
-tm:hasLocation a owl:ObjectProperty ;
-    rdfs:label "has location" ;
-    rdfs:domain tm:Lighting ;
-    rdfs:range tm:Location .
-
 tm:hasLongitude a owl:DatatypeProperty ;
-    rdfs:label "has longitude" .
+    rdfs:label "has longitude" ; 
+    rdfs:domain tm:Address ;
+    rdfs:range xsd:decimal .
 
 tm:hasMotive a owl:DatatypeProperty ;
     rdfs:label "has motive" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:string .
 
 tm:hasName a owl:DatatypeProperty ;
     rdfs:label "has name" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasNearbyTransport a owl:DatatypeProperty ;
     rdfs:label "has nearby transport" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasNearbyTransportDescription a owl:DatatypeProperty ;
     rdfs:label "has nearby transport description" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasNeighborhood a owl:ObjectProperty ;
     rdfs:label "has neighborhood" ;
-    rdfs:domain tm:Location ;
+    rdfs:domain tm:CulturalSiteLocation ;
     rdfs:range tm:Neighborhood .
 
 tm:hasNeighborhoodCode a owl:DatatypeProperty ;
     rdfs:label "has neighborhood code" ;
+    rdfs:domain tm:Neighborhood ;
     rdfs:range xsd:integer .
 
 tm:hasNeighborhoodName a owl:DatatypeProperty ;
     rdfs:label "has neighborhood name" ;
+    rdfs:domain tm:Neighborhood ;
     rdfs:range xsd:string .
 
 tm:hasNumberOfElements a owl:DatatypeProperty ;
     rdfs:label "has number of elements" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:integer .
 
 tm:hasNumberType a owl:DatatypeProperty ;
     rdfs:label "has number type" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasOpeningHours a owl:DatatypeProperty ;
     rdfs:label "has opening hours" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasOrganismType a owl:DatatypeProperty ;
     rdfs:label "has organism type" ;
+    rdfs:domain tm:ContactInformation ;
     rdfs:range xsd:anyURI .
 
 tm:hasOrientation a owl:DatatypeProperty ;
     rdfs:label "has orientation" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasPdf a owl:DatatypeProperty ;
     rdfs:label "has pdf" ;
+    rdfs:domain tm:Monument ;
     rdfs:range xsd:string .
-
-tm:hasPhoneNumber a owl:DatatypeProperty ;
-    rdfs:label "has phone number" ;
-    rdfs:range xsd:integer .
 
 tm:hasPostalCode a owl:DatatypeProperty ;
     rdfs:label "has postal code" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:integer .
 
 tm:hasPrice a owl:DatatypeProperty ;
     rdfs:label "has price" ;
+    rdfs:domain tm:Event ;
     rdfs:range xsd:float .
 
 tm:hasPromoter a owl:DatatypeProperty ;
     rdfs:label "has promoter" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:string .
 
 tm:hasProvince a owl:DatatypeProperty ;
     rdfs:label "has province" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasStairs a owl:DatatypeProperty ;
     rdfs:label "has stairs" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasStartDate a owl:DatatypeProperty ;
     rdfs:label "has start date" ;
+    rdfs:domain tm:Event ;
     rdfs:range xsd:string .
 
 tm:hasStartTime a owl:DatatypeProperty ;
     rdfs:label "has start time" ;
-    rdfs:range xsd:Time .
+    rdfs:domain tm:Event ;
+    rdfs:range xsd:time .
 
 tm:hasStreet a owl:ObjectProperty ;
     rdfs:label "has street" ;
-    rdfs:domain tm:Location ;
+    rdfs:domain tm:CulturalSiteLocation ;
     rdfs:range tm:Street .
 
 tm:hasStreetClass a owl:DatatypeProperty ;
     rdfs:label "has street class" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasStreetName a owl:DatatypeProperty ;
     rdfs:label "has street name" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasStreetNumber a owl:DatatypeProperty ;
     rdfs:label "has street number" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasStreetType a owl:DatatypeProperty ;
     rdfs:label "has street type" ;
+    rdfs:domain tm:Address ;
     rdfs:range xsd:string .
 
 tm:hasSubtype a owl:DatatypeProperty ;
     rdfs:label "has subtype" ;
+    rdfs:domain tm:Monument ;
     rdfs:range xsd:string .
 
 tm:hasTelephone a owl:DatatypeProperty ;
     rdfs:label "has telephone" ;
+    rdfs:domain tm:ContactInformation ;
     rdfs:range xsd:integer .
 
 tm:hasText a owl:DatatypeProperty ;
     rdfs:label "has text" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:string .
 
 tm:hasTitle a owl:DatatypeProperty ;
     rdfs:label "has title" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:string .
 
 tm:hasType a owl:DatatypeProperty ;
     rdfs:label "has type" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:string .
 
 tm:hasUrl a owl:DatatypeProperty ;
-    rdfs:label "has url" .
+    rdfs:label "has url" ;
+    rdfs:domain tm:ContactInformation ;
+    rdfs:range xsd:anyURI .
 
 tm:hastId a owl:DatatypeProperty ;
     rdfs:label "hast id" ;
+    rdfs:domain tm:DescriptiveEntity ;
     rdfs:range xsd:integer .
 
 tm:isLongDuration a owl:DatatypeProperty ;
     rdfs:label "is long duration" ;
+    rdfs:domain tm:Event ;
     rdfs:range xsd:integer .
 
 tm:isNew a owl:DatatypeProperty ;
     rdfs:label "is new" ;
+    rdfs:domain tm:Lighting ;
     rdfs:range xsd:string .
 
 tm:takesPlaceAtInstallation a owl:ObjectProperty ;
@@ -317,18 +359,25 @@ tm:takesPlaceAtInstallation a owl:ObjectProperty ;
 
 owl:versionInfo a owl:AnnotationProperty .
 
+base:ContactInformation a owl:Class ;
+    rdfs:label "Contact Information" .
+
+base:DescriptiveEntity a owl:Class ;
+    rdfs:label "Descriptive Entity" .
+
+tm:Address a owl:Class ;
+    rdfs:label "Address" ;
+    rdfs:subClassOf tm:CulturalSiteLocation .
+
 tm:District a owl:Class ;
     rdfs:label "District" .
 
-tm:Events a owl:Class ;
-    rdfs:label "Events" .
+tm:Event a owl:Class ;
+    rdfs:label "Event" .
 
 tm:Installation a owl:Class ;
     rdfs:label "Installation" ;
     rdfs:subClassOf tm:CulturalSite .
-
-tm:Lighting a owl:Class ;
-    rdfs:label "Lighting" .
 
 tm:Neighborhood a owl:Class ;
     rdfs:label "Neighborhood" .
@@ -339,12 +388,11 @@ tm:Street a owl:Class ;
 tm:Activity a owl:Class ;
     rdfs:label "Activity" .
 
-tm:Address a owl:Class ;
-    rdfs:label "Address" .
-
 tm:CulturalSite a owl:Class ;
-    rdfs:label "Cultural Site" .
+    rdfs:label "Cultural Site" ;
+    rdfs:subClassOf base:ContactInformation,
+        base:DescriptiveEntity .
 
-tm:Location a owl:Class ;
-    rdfs:label "Location" .
+tm:CulturalSiteLocation a owl:Class ;
+    rdfs:label "Cultural Site Location" .
 

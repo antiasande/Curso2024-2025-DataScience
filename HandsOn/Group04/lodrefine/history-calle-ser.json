@@ -100,6 +100,134 @@
     "description": "Text transform on cells in column calle using expression grel:value.replace(/,(?!\\d)/, '')"
   },
   {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column calle by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle 2",
+    "expression": "grel:value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle 2 using expression grel:value"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "calle 2",
+    "newColumnName": "Número",
+    "description": "Rename column calle 2 to Número"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "grel:value.replace(/\\s+/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito using expression grel:value.replace(/\\s+/, \" \")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "guessCellType": false,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column distrito by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "distrito 3",
+    "description": "Remove column distrito 3"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "distrito 1",
+    "newColumnName": "codigo_distrito",
+    "description": "Rename column distrito 1 to codigo_distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "distrito 2",
+    "newColumnName": "distrito",
+    "description": "Rename column distrito 2 to distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "calle 1",
+    "newColumnName": "calle",
+    "description": "Rename column calle 1 to calle"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número",
+    "newColumnName": "número",
+    "description": "Rename column Número to número"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "guessCellType": false,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column barrio by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "barrio 3",
+    "description": "Remove column barrio 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "barrio 4",
+    "description": "Remove column barrio 4"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "barrio 1",
+    "newColumnName": "codigo_barrio",
+    "description": "Rename column barrio 1 to codigo_barrio"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "barrio 2",
+    "newColumnName": "barrio",
+    "description": "Rename column barrio 2 to barrio"
+  },
+  {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -120,9 +248,21 @@
   },
   {
     "op": "core/column-rename",
+    "oldColumnName": "codigo_distrito",
+    "newColumnName": "COD-DISTRITO",
+    "description": "Rename column codigo_distrito to COD-DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
     "oldColumnName": "distrito",
     "newColumnName": "DISTRITO",
     "description": "Rename column distrito to DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "codigo_barrio",
+    "newColumnName": "COD-BARRIO",
+    "description": "Rename column codigo_barrio to COD-BARRIO"
   },
   {
     "op": "core/column-rename",
@@ -133,8 +273,14 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "calle",
-    "newColumnName": "CALLE",
-    "description": "Rename column calle to CALLE"
+    "newColumnName": "VIA",
+    "description": "Rename column calle to VIA"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "número",
+    "newColumnName": "NUMERO",
+    "description": "Rename column número to NUMERO"
   },
   {
     "op": "core/column-rename",
@@ -145,8 +291,8 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "bateria_linea",
-    "newColumnName": "BATERIA_LINEA",
-    "description": "Rename column bateria_linea to BATERIA_LINEA"
+    "newColumnName": "L-B",
+    "description": "Rename column bateria_linea to L-B"
   },
   {
     "op": "core/column-rename",

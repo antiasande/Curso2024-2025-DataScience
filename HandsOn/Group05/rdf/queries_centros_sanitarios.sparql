@@ -1,5 +1,5 @@
 # Prefijos utilizados en las consultas
-PREFIX rsc: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/resources#>
+PREFIX clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties#>
 PREFIX is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -7,49 +7,45 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 # Contar el número total de centros de salud
 SELECT (COUNT(?centro) AS ?totalCentros) 
 WHERE {
-  ?centro a rsc:CentrodeSalud .
+  ?centro a clpr:CentrodeSalud .
 }
 
 # Contar el número de centros de salud especializados en rehabilitación
 SELECT (COUNT(?centro) AS ?totalCentros) 
 WHERE {
-  ?centro a rsc:CentrodeSalud ;
-          rsc:especializadoEn ?especialidad .
+  ?centro a clpr:CentrodeSalud ;
+          clpr:especializadoEn ?especialidad .
   FILTER(CONTAINS(STR(?especialidad), "rehabilitacion"))
 }
 
 # Cuántos centros de salud hay en el código postal 28001
 SELECT (COUNT(?centro) AS ?totalCentros) 
 WHERE {
-  ?centro a rsc:CentrodeSalud ;
-          rsc:localizadoEn ?ubicacion .
+  ?centro a clpr:CentrodeSalud ;
+          clpr:localizadoEn ?ubicacion .
   FILTER(CONTAINS(STR(?ubicacion), "28001"))
 }
 
 # Cuántos centros de salud hay en el municipio Ciempozuelos
 SELECT (COUNT(?centro) AS ?totalCentros) 
 WHERE {
-  ?centro a rsc:CentrodeSalud ;
-          rsc:localizadoEn ?ubicacion .
+  ?centro a clpr:CentrodeSalud ;
+          clpr:localizadoEn ?ubicacion .
   FILTER(CONTAINS(STR(?ubicacion), "Ciempozuelos"))
 }
 
 # Cuántos centros de salud de urgencias hay en el municipio de Madrid
 SELECT (COUNT(?centro) AS ?totalCentros) 
 WHERE {
-  ?centro a rsc:CentrodeSalud ;
-          rsc:especializadoEn ?especialidad ;
-          rsc:localizadoEn ?ubicacion .
-  ?especialidad a rsc:Urgencias .
+  ?centro a clpr:CentrodeSalud ;
+          clpr:especializadoEn ?especialidad ;
+          clpr:localizadoEn ?ubicacion .
+  ?especialidad a clpr:Urgencias .
   FILTER(CONTAINS(LCASE(STR(?ubicacion)), "madrid"))
 }
 
 # Cuántos centros de salud con farmacia hay en el municipio de Leganés y dónde están
-SELECT ?centro ?ubicacion 
+SELECT DISTINCT ?especialidad 
 WHERE {
-  ?centro a rsc:CentrodeSalud ;
-          rsc:especializadoEn ?especialidad ;
-          rsc:localizadoEn ?ubicacion .
-  ?especialidad a rsc:Farmacia .
-  FILTER(CONTAINS(LCASE(STR(?ubicacion)), "leganés"))
+  ?centro clpr:especializadoEn ?especialidad .
 }

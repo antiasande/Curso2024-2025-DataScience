@@ -1,0 +1,31 @@
+PREFIX ex: <http://zonawifi.linkeddata.org#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?subject
+WHERE {
+  {
+    ?subject ex:estarEnCiudad ?ciudad .
+    FILTER(?ciudad = "http://zonawifi.linkeddata.org#MADRID")
+  }
+  UNION
+  {
+    ?subject rdf:estarEnDistrito ex:estarEnDistrito  .
+  }
+  UNION
+  {
+    ?subject rdf:CoordendaX ex:CoordendaX  .
+  }
+  UNION
+  {
+    ?subject rdf:CoordendaY ex:CoordendaY  .
+  }
+  UNION
+  {
+    ?subject rdf:type ex:Provincia .
+    FILTER(?subject = ex:MADRID)
+  }
+  UNION
+  {
+    ?subject rdf:Latidud ex:Latidud  .
+  }
+}

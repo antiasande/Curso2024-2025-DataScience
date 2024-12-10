@@ -1,0 +1,45 @@
+PREFIX ns: <http://www.domainkg.com/parking_ontology/resources#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+# Obtener los barrios con su nombre, código y distrito asociado
+SELECT ?barrio ?nombreBarrio ?codigoBarrio ?distrito
+WHERE {
+  ?barrio a ns:Barrio ;
+          ns:tieneNombre ?nombreBarrio ;
+          ns:tieneCodigo ?codigoBarrio ;
+          ns:estaEnDistrito ?distrito .
+}
+
+
+# Obtener las direcciones en el barrio Embajadores con su nombre y número de vía
+SELECT ?direccion ?nombreVia ?numeroVia
+WHERE {
+  ?direccion a ns:Direccion ;
+             ns:nombreVia ?nombreVia ;
+             ns:numeroVia ?numeroVia ;
+             ns:estaEnBarrio ?barrio .
+  ?barrio ns:tieneNombre ?nombreBarrio .
+  FILTER(?nombreBarrio) = "EMBAJADORES") 
+}
+
+
+# Obtener la dirección y el número de plazzas de los aparcamientos con color verde
+SELECT ?aparcamiento ?nombre ?plazas ?color ?barrio ?distrito ?direccion
+WHERE {
+  ?aparcamiento a ns:AparcamientoSER ;
+                ns:tienePlazas ?plazas ;
+                ns:tieneColor ?color ;
+                ns:estaEnDireccion ?direccion .
+  FILTER(LCASE(?color) = "verde")  # Filtra solo aparcamientos con color verde
+}
+
+
+# Obtener la cantidad de aparcamientos en cada distrito 
+SELECT ?distrito (COUNT(?aparcamiento) AS ?numAparcamientos)
+WHERE {
+  ?aparcamiento a ns:AparcamientoSER ;
+                ns:estaEnDistrito ?distrito .
+}
+GROUP BY ?distrito
+ORDER BY DESC(?numAparcamientos)

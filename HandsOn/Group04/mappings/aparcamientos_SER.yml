@@ -1,0 +1,46 @@
+prefixes:
+  rr: <http://www.w3.org/ns/r2rml#>
+  rml: <http://semweb.mmlab.be/ns/rml#>
+  ql: <http://semweb.mmlab.be/ns/ql#>
+  xsd: <http://www.w3.org/2001/XMLSchema#>
+  ns: <http://www.domainkg.com/parking_ontology/resources#>
+
+mappings:
+  DistritosMap:
+    sources:
+      - ["csv/calles_SER_2024-updated.csv~csv"]
+    s: "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"
+    po:
+      - [ns:tieneNombre, $(DISTRITO)]
+      - [ns:tieneCodigo, $(COD-DISTRITO)]
+
+  BarriosMap:
+    sources:
+      - ["csv/calles_SER_2024-updated.csv~csv"]
+    s: "http://www.domainkg.com/parking_ontology/instances#$(BARRIO)"
+    po:
+      - [ns:tieneNombre, $(BARRIO)]
+      - [ns:tieneCodigo, $(COD-BARRIO)]
+      - [ns:estaEnDistrito, "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"]
+
+  DireccionesMap:
+    sources:
+      - ["csv/calles_SER_2024-updated.csv~csv"]
+    s: "http://www.domainkg.com/parking_ontology/instances#direccion_$(ID)"
+    po:
+      - [ns:nombreVia, $(VIA)]
+      - [ns:numeroVia, $(NUMERO)]
+      - [ns:estaEnDistrito, "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"]
+      - [ns:estaEnBarrio, "http://www.domainkg.com/parking_ontology/instances#$(BARRIO)"]
+
+  AparcamientoSERMap:
+    sources:
+      - ["csv/calles_SER_2024-updated.csv~csv"]
+    s: "http://www.domainkg.com/parking_ontology/instances#$(ID)"
+    po:
+      - [ns:tienePlazas, $(PLAZAS), xsd:integer]
+      - [ns:estaEnDistrito, "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"]
+      - [ns:estaEnBarrio, "http://www.domainkg.com/parking_ontology/instances#$(BARRIO)"]
+      - [ns:estaEnDireccion, "http://www.domainkg.com/parking_ontology/instances#direccion_$(ID)"]
+      - [ns:tieneColor, $(COLOR)]
+      - [ns:seAparcaEn, $(L-B)]

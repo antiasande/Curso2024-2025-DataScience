@@ -106,7 +106,8 @@
             <tr><td>municipio_nombre</td><td>Nombre del municipio</td><td>String</td><td>Sin rango</td><td>1268 Campos vacíos</td></tr>
             <tr><td>direccion_via_codigo</td><td>Tipo de dirección</td><td>String</td><td>Sin rango</td><td>1266 Campos vacíos</td></tr>
             <tr><td>direccion_via_nombre</td><td>Nombre de la dirección</td><td>String</td><td>Sin rango</td><td>16 Campos vacíos</td></tr>
-            <tr><td>direccion_codigo_postal</td><td>Número del codigo postal</td><td>Float</td><td>110.0 - 28991.0</td><td>1424 Campos vacíos</td></tr>
+            <tr><td></td>direccion_portal_numero<td>Número del portal</td><td>Integer</td><td>Sin rango</td><td>Algunos campos vacíos</td></tr>
+            <tr><td>direccion_codigo_postal</td><td>Número del codigo postal</td><td>Integer</td><td>110.0 - 28991.0</td><td>1424 Campos vacíos</td></tr>
             <tr><td>direccion_coordenada_x</td><td>Coordenadas x</td><td>Integer</td><td>371357 - 490842</td><td>Sin problemas</td></tr>
             <tr><td>direccion_coordenada_y</td><td>Coordenadas y</td><td>Integer</td><td>431875 - 4547515</td><td>Sin problemas</td></tr>
             <tr><td>codigo_dea</td><td>Identificador</td><td>String</td><td>Sin rango</td><td>Sin problemas</td></tr>
@@ -129,10 +130,10 @@
             <tr><td>municipio_nombre</td><td>Nombre del municipio</td><td>String</td><td>Sin rango</td><td>77 Campos vacíos</td></tr>
             <tr><td>direccion_vial_tipo</td><td>Tipo de direccion</td><td>String</td><td>Sin rango</td><td>77 Campos vacíos</td></tr>
             <tr><td>direccion_vial_nombre</td><td>Nombre de la dirección</td><td>String</td><td>Sin rango</td><td>44 Campos vacíos</td></tr>
-            <tr><td>direccion_vial_nro</td><td>Número de la dirección</td><td>String</td><td>0-2300</td><td>86 Campos vacíos</td></tr>
-            <tr><td>direccion_codigo_postal</td><td>Número del código postal</td><td>Float</td><td>28001.0 - 28991.0</td><td>101 Campos vacíos</td></tr>
-            <tr><td>localizacion_coordenada_x</td><td>Coordenada x</td><td>Float</td><td>-109.0 - 491756.0</td><td>351 Campos vacíos</td></tr>
-            <tr><td>localizacion_coordenada_y</td><td>Coordenada_y</td><td>Float</td><td>-208.0 - 4553928.0</td><td>351 Campos vacíos</td></tr>
+            <tr><td>direccion_vial_nro</td><td>Número de la dirección</td><td>Integer</td><td>0-2300</td><td>86 Campos vacíos</td></tr>
+            <tr><td>direccion_codigo_postal</td><td>Número del código postal</td><td>Integer</td><td>28001.0 - 28991.0</td><td>101 Campos vacíos</td></tr>
+            <tr><td>localizacion_coordenada_x</td><td>Coordenada x</td><td>Integer</td><td>-109.0 - 491756.0</td><td>351 Campos vacíos</td></tr>
+            <tr><td>localizacion_coordenada_y</td><td>Coordenada_y</td><td>Integer</td><td>-208.0 - 4553928.0</td><td>351 Campos vacíos</td></tr>
         </table>
         <div>
             <button onclick="window.location.href='https://datos.comunidad.madrid/dataset/centros_servicios_establecimientos_sanitarios'">
@@ -180,19 +181,13 @@
 
     <div class="subsection">
         <p>
-            Para la estrategia de nombrado hemos generado tres prefijos:
+            Para la estrategia de nombrado hemos generado dos prefijos:
         </p>
         <ul>
             <li>
-                <strong>Creación de clases (<code>cls</code>)</strong>: 
-                <a href="http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classes#">
-                    http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classes#
-                </a>
-            </li>
-            <li>
-                <strong>Creación de propiedades (<code>pr</code>)</strong>:
-                <a href="http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/properties#">
-                    http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/properties#
+                <strong>Creación de clases y propiedades(<code>clpr</code>)</strong>: 
+                <a href="http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties#>">
+                    http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties#
                 </a>
             </li>
             <li>

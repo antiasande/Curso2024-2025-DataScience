@@ -1,0 +1,48 @@
+PREFIX ns: <http://owl-ontologies.com/ns#>
+PREFIX distritos: <http://example.org/distritos/>
+PREFIX barrios: <http://example.org/barrios/>
+PREFIX operadores: <http://example.org/operadores/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# Todas las clases
+SELECT ?class WHERE {
+    ?class rdf:type owl:Class
+    }
+
+# Cargadores en el barrio de Hispanoamérica
+SELECT ?cargador WHERE {
+    ?cargador ns:estaEn barrios:Hispanoamerica
+    }
+
+# Cargadores dentro del distrito de Salamanca, operados por Repsol y con un convenio de vía pública.
+SELECT ?cargador WHERE {
+    ?barrio ns:dentroDe distritos:Salamanca .
+    ?cargador ns:estaEn ?barrio .
+    ?cargador ns:gestionDe "Convenio vía pública" .
+    ?cargador ns:tieneOperador operadores:REPSOL
+    }
+
+# Cargadores de 100 kW de potencia máxima operados por Iberdrola con 3 equipos.
+SELECT ?cargador WHERE {
+    ?cargador ns:tieneOperador operadores:IBERDROLA .
+    ?cargador ns:esDe "100 kW"^^rdfs:Literal .
+    ?cargador ns:numeroEquipos "3"^^xsd:integer .
+    }
+
+# Wikidata de todos los distritos
+SELECT ?distrito ?wikidata WHERE {
+    ?distrito rdf:type ns:Distrito .
+    ?distrito owl:sameAs ?wikidata
+    }
+
+# Wikidata de todos los operadores reconciliados que tienen al menos un cargador en el distrito de Chamartin
+SELECT DISTINCT ?operador ?wikidata WHERE {
+    ?operador rdf:type ns:Operador .
+    ?barrio ns:dentroDe distritos:Chamartin .
+    ?cargador ns:estaEn ?barrio .
+    ?cargador ns:tieneOperador ?operador .
+    ?operador owl:sameAs ?wikidata
+    }

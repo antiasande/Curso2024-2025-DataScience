@@ -1,0 +1,207 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "no_of_crimes",
+    "description": "Remove column no_of_crimes"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "borough_flag",
+    "description": "Remove column borough_flag"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "houses_sold",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column houses_sold using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "code",
+    "description": "Remove column code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "houses_sold",
+    "newColumnName": "HousesSold",
+    "description": "Rename column houses_sold to HousesSold"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "average_price",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column average_price using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "average_price",
+    "newColumnName": "AveragePrice",
+    "description": "Rename column average_price to AveragePrice"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "area",
+    "newColumnName": "Town",
+    "description": "Rename column area to Town"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "date",
+    "newColumnName": "Date",
+    "description": "Rename column date to Date"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Date using expression value.toDate()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Date",
+    "expression": "grel:cells[\"Town\"].value + value",
+    "onError": "set-to-blank",
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "description": "Create column Id at index 1 based on column Date using expression grel:cells[\"Town\"].value + value"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Id",
+    "index": 0,
+    "description": "Move column Id to position 0"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Date using expression value.toDate()"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Town",
+          "expression": "value",
+          "columnName": "Town",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "enfield",
+                "l": "enfield"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "HousesSold",
+    "description": "Blank down cells in column HousesSold"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Town",
+          "expression": "value",
+          "columnName": "Town",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "enfield",
+                "l": "enfield"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "HousesSold",
+    "description": "Blank down cells in column HousesSold"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Town",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Town using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Id",
+    "description": "Remove column Id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Date",
+    "expression": "grel:cells[\"Town\"].value.replace(/\\s+/, \"\") + cells[\"Date\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "description": "Create column Id at index 1 based on column Date using expression grel:cells[\"Town\"].value.replace(/\\s+/, \"\") + cells[\"Date\"].value"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Id",
+    "index": 0,
+    "description": "Move column Id to position 0"
+  }
+]

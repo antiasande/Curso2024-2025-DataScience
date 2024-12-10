@@ -1,5 +1,5 @@
 @prefix : <http://www.knowledgegraphs/ontology/> .
-@prefix rsc: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/resources#> .
+@prefix clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties#> .
 @prefix is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,50 +8,45 @@
 @base <http://www.knowledgegraphs/ontology/> .
 
 : a owl:Ontology .
-
-is:EndocrinologiaCH0018 a rsc:Endocrinologia ;
-    rdfs:label "Endocrinología CH0018" .
-
-is:Parla a rsc:Municipio ;
+is:Parla a clpr:Municipio ;
     rdfs:label "Parla" .
 
-is:Direccion1 a rsc:Direccion ;
-    rdfs:label "Direccion 1" ;
-    rsc:perteneceA is:Parla ;
-    rsc:tipoDireccion "Calle"^^xsd:string ;
-    rsc:nombreDireccion "de Juan Bravo"^^xsd:string ;
-    rsc:numeroDireccion 49 ;
-    rsc:codigoPostal 28006 ;
-    rsc:coordenadaX 442633.0 ;
-    rsc:coordenadaY 447600.0 .
+is:Calle_de_Juan_Bravo_39_28006_Madrid a clpr:Direccion ;
+    rdfs:label "Calle de Juan Bravo 39 28006 Madrid" ;
+    clpr:perteneceA is:Parla ;
+    clpr:tipoDireccion "Calle"^^xsd:string ;
+    clpr:nombreDireccion "de Juan Bravo"^^xsd:string ;
+    clpr:numeroDireccion 49 ;
+    clpr:codigoPostal 28006 ;
+    clpr:coordenadaX 442633.0 ;
+    clpr:coordenadaY 447600.0 .
 
-is:CentrodeSalud1 rdf:type rsc:CentrodeSalud ;
-    rdfs:label "Centro de salud 1" ;
-    rsc:especializadoEn is:EndocrinologiaCH0018 ;
-    rsc:localizadoEn is:Direccion1 ;
-    rsc:idCentro "SS01607"^^xsd:string ;
-    rsc:tipoCentro "Hospital general"^^xsd:string .
+is:centro_CH0018 a clpr:CentrodeSalud ;
+    clpr:especializadoEn is:endocrinologia ;
+    clpr:localizadoEn is:Direccion1 ;
+    clpr:idCentro "CH0018"^^xsd:string ;
+    clpr:tipoCentro "Hospital general"^^xsd:string .
 
-is:Establecimiento1 a rsc:Establecimiento ;
-    rdfs:label "Establecimiento 1" ;
-    rsc:tipoEstablecimiento "Otros"^^xsd:string ;
-    rsc:tipoTitularidad "rscivada"^^xsd:string .
+is:establecimiento_2018_1577 a clpr:Establecimiento ;
+    rdfs:label "Establecimiento 2018-1577" ;
+    clpr:tipoEstablecimiento "Otros"^^xsd:string ;
+    clpr:tipoTitularidad "Privada"^^xsd:string .
 
-is:Madrid a rsc:Municipio ;
+is:Madrid a clpr:Municipio ;
     rdfs:label "Madrid" .
 
-is:Direccion2 a rsc:Direccion ;
-    rdfs:label "Direccion 2" ;
-    rsc:perteneceA is:Madrid ;
-    rsc:tipoDireccion "Calle"^^xsd:string ;
-    rsc:nombreDireccion "de Suero de Quiñones"^^xsd:string ;
-    rsc:numeroDireccion 34 ;
-    rsc:codigoPostal 28002 ;
-    rsc:coordenadaX 443575.0 ;
-    rsc:coordenadaY 4477573.0 .
+is:Calle_de_Suero_de_Quiñones_34_28002_Madrid a clpr:Direccion ;
+    rdfs:label "Calle de Suero de Quiñones 34 28002 Madrid" ;
+    clpr:perteneceA is:Madrid ;
+    clpr:tipoDireccion "Calle"^^xsd:string ;
+    clpr:nombreDireccion "de Suero de Quiñones"^^xsd:string ;
+    clpr:numeroDireccion 34 ;
+    clpr:codigoPostal 28002 ;
+    clpr:coordenadaX 443575.0 ;
+    clpr:coordenadaY 4477573.0 .
 
-is:Desfibrilador1 a rsc:Desfibrilador ;
+is:desfibrilador_2018_1577 a clpr:Desfibrilador ;
     rdfs:label "Desfibrilador 1" ;
-    rsc:albergadoEn is:Establecimiento1 ;
-    rsc:localizadoEn is:Direccion2 ;
-    rsc:idDesfibrilador "2018-1577"^^xsd:string .
+    clpr:albergadoEn is:establecimiento_2018_1577 ;
+    clpr:localizadoEn is:Calle_de_Suero_de_Quiñones_34_28002_Madrid ;
+    clpr:idDesfibrilador "2018-1577"^^xsd:string .
