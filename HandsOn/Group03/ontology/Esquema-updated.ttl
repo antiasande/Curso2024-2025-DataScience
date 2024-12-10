@@ -1,0 +1,100 @@
+@prefix ld: <http://london.linkeddata.es/ontology#> .
+@prefix schema: <http://schema.org/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+# Classes
+
+ld:House a owl:Class ;
+    rdfs:label "House" .
+
+ld:School a owl:Class ;
+    rdfs:label "School" .
+
+ld:Town a owl:Class ;
+    rdfs:label "Town" .
+
+
+ld:School rdfs:subClassOf wgs84_pos:SpatialThing . 
+ld:House rdfs:subClassOf wgs84_pos:SpatialThing .
+
+
+# ObjectProperties
+
+ld:placedIn a owl:ObjectProperty ;
+    rdfs:label "placed in" ;
+    rdfs:domain ld:House ;
+    rdfs:range ld:Town .
+
+ld:placedIn a owl:ObjectProperty ;
+    rdfs:label "placed in" ;
+    rdfs:domain ld:School ;
+    rdfs:range ld:Town .
+
+# House Datatype Properties
+
+ld:averagePrice a owl:DatatypeProperty ;
+    rdfs:label "average price" ;
+    rdfs:domain ld:House ;
+    rdfs:range xsd:decimal .
+
+ld:dateRecorded a owl:DatatypeProperty ;
+    rdfs:label "date recorded" ;
+    rdfs:domain ld:House ;
+    rdfs:range xsd:dateTime .
+
+ld:housesSold a owl:DatatypeProperty ;
+    rdfs:label "houses sold" ;
+    rdfs:domain ld:House ;
+    rdfs:range xsd:integer .
+
+schema:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:domain ld:House ;
+    rdfs:range xsd:string .
+
+schema:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+# School Datatype Properties
+
+schema:name a owl:DatatypeProperty ;
+    rdfs:label "School name" ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+schema:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+ld:gender a owl:DatatypeProperty ;
+    rdfs:label "gender" ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+ld:phase a owl:DatatypeProperty ;
+    rdfs:label "phase" ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+ld:status a owl:DatatypeProperty ;
+    rdfs:label "status" ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+ld:type a owl:DatatypeProperty ;
+    rdfs:label "type" ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+schema:name a owl:DatatypeProperty ;
+    rdfs:label "Town name" ;
+    rdfs:domain ld:Town ;
+    rdfs:range xsd:string .
+

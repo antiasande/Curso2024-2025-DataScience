@@ -1,189 +1,30 @@
-@prefix : <http://www.w3.org/2001/XMLSchema#> .
+@prefix ld: <http://london.linkeddata.es/ontology#> .
+@prefix schema: <http://schema.org/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.#> .
-@prefix vf: <http://londonschool.linkeddata.es/school/ontology#>.#> .
-@prefix hv: <http://londonhousing.linkeddata.es/house/ontology#>.#> .
-@prefix ns: <http://www.w3.org/1999/02/22-rdf-syntax-ns>.#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix mod: <https://w3id.org/mod#> .
-@prefix Barnet1995-01-01T00: <http://www.owl-ontologies.com/Barnet1995-01-01T00#> .
-@prefix 1995-01-01T00: <http://www.owl-ontologies.com/1995-01-01T00#> .
-@base <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.w3.org/2001/XMLSchema#> rdf:type owl:Ontology ;
-			mod:createdWith <https://chowlk.linkeddata.es/> .
 
-#################################
-#    Object Properties
-#################################
+ld:Barnet a ld:Town ;
+	ld:townName "Barnet" .
 
-## ns:type
-ns:type rdf:type owl:ObjectProperty ;
-		rdfs:label "type" .
 
-## vf:hasSchoolId
-vf:hasSchoolId rdf:type owl:ObjectProperty ;
-		rdfs:range <#AyeshaSiddiaGirlSchoolSouthall> ;
-		rdfs:label "has school id" .
+ld:AyeshaSiddiaGirlSchool a ld:School ;
+	ld:Id "AyeshaSiddiaGirlSchoolSouthall" ;
+	ld:schoolName "Ayesha Siddia Girl School" ;
+	ld:address "165-169TheBroadway" ;
+	ld:gender "Girls" ;
+	ld:phase "Not applicable" ;
+	ld:status "Open" ;
+	ld:type "Other Independent School" ;
+	ld:long "-0.378496"^^xsd:decimal ;
+	ld:lat "51.5074997"^^xsd:decimal ;
+	ld:placedIn ld:Barnet .
 
-## vf:hasName
-vf:hasName rdf:type owl:ObjectProperty ;
-		rdfs:range <#AyeshaSiddiaGirlSchool> ;
-		rdfs:label "has name" .
-
-## vf:hasType
-vf:hasType rdf:type owl:ObjectProperty ;
-		rdfs:label "has type" .
-
-## vf:hasPhase
-vf:hasPhase rdf:type owl:ObjectProperty ;
-		rdfs:label "has phase" .
-
-## vf:hasAddress
-vf:hasAddress rdf:type owl:ObjectProperty ;
-		rdfs:label "has address" .
-
-## vf:hasTown
-vf:hasTown rdf:type owl:ObjectProperty ;
-		rdfs:label "has town" .
-
-## vf:hasStatus
-vf:hasStatus rdf:type owl:ObjectProperty ;
-		rdfs:label "has status" .
-
-## vf:hasGender
-vf:hasGender rdf:type owl:ObjectProperty ;
-		rdfs:label "has gender" .
-
-## vf:hasX
-vf:hasX rdf:type owl:ObjectProperty ;
-		rdfs:label "has x" .
-
-## vf:hasY
-vf:hasY rdf:type owl:ObjectProperty ;
-		rdfs:label "has y" .
-
-## ns:type
-ns:type rdf:type owl:ObjectProperty ;
-		rdfs:label "type" .
-
-## hv:placedIn
-hv:placedIn rdf:type owl:ObjectProperty ;
-		rdfs:label "placed in" .
-
-## hv:hasAveragePrice
-hv:hasAveragePrice rdf:type owl:ObjectProperty ;
-		rdfs:label "has average price" .
-
-## hv:sold
-hv:sold rdf:type owl:ObjectProperty ;
-		rdfs:label "sold" .
-
-## hv:Id
-hv:Id rdf:type owl:ObjectProperty ;
-		rdfs:label "id" .
-
-## vf:linkTowns
-vf:linkTowns rdf:type owl:ObjectProperty ;
-		rdfs:label "link towns" .
-
-## hv:dateRecorded
-hv:dateRecorded rdf:type owl:ObjectProperty ;
-		rdfs:label "date recorded" .
-
-#################################
-#    Data Properties
-#################################
-
-#################################
-#    Classes
-#################################
-
-## <#AyeshaSiddiaGirlSchoolSouthall>
-<#AyeshaSiddiaGirlSchoolSouthall> rdf:type owl:Class ;
-	rdfs:label "Ayesha Siddia Girl School Southall" .
-
-## <#AyeshaSiddiaGirlSchool>
-<#AyeshaSiddiaGirlSchool> rdf:type owl:Class ;
-	rdfs:label "Ayesha Siddia Girl School" .
-
-#################################
-#    Instances
-#################################
-
-## <#School1>
-<#School1> rdf:type owl:NamedIndividual .
-
-## vf:School
-vf:School rdf:type owl:NamedIndividual .
-
-## <#OtherIndependentSchool>
-<#OtherIndependentSchool> rdf:type owl:NamedIndividual .
-
-## <#Notapplicable>
-<#Notapplicable> rdf:type owl:NamedIndividual .
-
-## <#165-169TheBroadway>
-<#165-169TheBroadway> rdf:type owl:NamedIndividual .
-
-## <#Barnet>
-<#Barnet> rdf:type owl:NamedIndividual .
-
-## <#Open>
-<#Open> rdf:type owl:NamedIndividual .
-
-## <#Girls>
-<#Girls> rdf:type owl:NamedIndividual .
-
-## <#-0.378496>
-<#-0.378496> rdf:type owl:NamedIndividual .
-
-## <#51.5074997>
-<#51.5074997> rdf:type owl:NamedIndividual .
-
-## <#House1>
-<#House1> rdf:type owl:NamedIndividual .
-
-## hv:House
-hv:House rdf:type owl:NamedIndividual .
-
-## <#93285>
-<#93285> rdf:type owl:NamedIndividual .
-
-## <#332>
-<#332> rdf:type owl:NamedIndividual .
-
-## Barnet1995-01-01T00:00Z
-Barnet1995-01-01T00:00Z rdf:type owl:NamedIndividual .
-
-## <#Barnet>
-<#Barnet> rdf:type owl:NamedIndividual .
-
-## 1995-01-01T00:00
-1995-01-01T00:00 rdf:type owl:NamedIndividual .
-
-<#School1> ns:type vf:School .
-<#School1> vf:hasType <#OtherIndependentSchool> .
-<#School1> vf:hasAddress <#165-169TheBroadway> .
-<#School1> vf:hasTown <#Barnet> .
-<#School1> vf:hasStatus <#Open> .
-<#School1> vf:hasGender <#Girls> .
-<#School1> vf:hasX <#-0.378496> .
-<#School1> vf:hasY <#51.5074997> .
-<#Barnet> vf:linkTowns <#Barnet> .
-<#House1> ns:type hv:House .
-<#House1> hv:placedIn <#Barnet> .
-<#House1> hv:hasAveragePrice <#93285> .
-<#House1> hv:sold <#332> .
-<#House1> hv:Id Barnet1995-01-01T00:00Z .
-<#House1> hv:dateRecorded 1995-01-01T00:00 .
-#################################
-#    General Axioms
-#################################
-
+ld:Barnet1995-01-01T00:00Z a ld:House ;
+	ld:Id "Barnet1995-01-01T00:00Z" ;
+	ld:averagePrice "93285"^^xsd:integer ;
+	ld:dateRecorded "1995-01-01T00:00Z"^^xsd:dateTime ;
+	ld:housesSold "332"^^xsd:integer ;
+	ld:placedIn ld:Barnet . 

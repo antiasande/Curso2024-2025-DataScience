@@ -1,0 +1,34 @@
+@prefix ld: <http://london.linkeddata.es/ontology#> .
+@prefix schema: <http://schema.org/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+ld:Barnet a ld:Town ;
+	schema:name "Barnet" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2884709> .
+
+
+ld:AyeshaSiddiaGirlSchool a ld:School ;
+	schema:identifier "AyeshaSiddiaGirlSchoolSouthall" ;
+	schema:name "Ayesha Siddia Girl School" ;
+	schema:address "165-169TheBroadway" ;
+	ld:gender "Girls" ;
+	ld:phase "Not applicable" ;
+	ld:status "Open" ;
+	ld:type "Other Independent School" ;
+	wgs84_pos:long "-0.378496"^^xsd:decimal ;
+	wgs84_pos:lat "51.5074997"^^xsd:decimal ;
+	ld:placedIn ld:Barnet .
+	
+
+
+ld:Barnet1995-01-01T00:00Z a ld:House ;
+	schema:identifier "Barnet1995-01-01T00:00Z" ;
+	ld:averagePrice "93285"^^xsd:integer ;
+	ld:dateRecorded "1995-01-01T00:00Z"^^xsd:dateTime ;
+	ld:housesSold "332"^^xsd:integer ;
+	ld:placedIn ld:Barnet ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2884709> .
