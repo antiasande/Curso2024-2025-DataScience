@@ -28,7 +28,7 @@
         rr:objectMap [ rml:reference "centro_tipo" ]
     ];
     rr:predicateObjectMap [
-        rr:predicate clpr:localizadoEn;
+        rr:predicate schema:address;
         rr:objectMap [
             rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/direccion/{direccion_completa}"
         ]
