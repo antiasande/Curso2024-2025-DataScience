@@ -16,7 +16,10 @@ clpr:albergadoEn a owl:ObjectProperty ;
     rdfs:label "albergado en" .
 
 clpr:localizadoEn a owl:ObjectProperty ;
-    rdfs:domain clpr:CentrodeSalud ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (clpr:CentrodeSalud clpr:Desfibrilador)
+    ] ;
     rdfs:range clpr:Direccion ;
     rdfs:label "localizado en" .
 
@@ -167,10 +170,6 @@ clpr:Rehabilitacion a owl:Class ;
     rdfs:subClassOf clpr:Especialidad ;
     rdfs:label "Rehabilitación" .
 
-clpr:Reumatologia a owl:Class ;
-    rdfs:subClassOf clpr:Especialidad ;
-    rdfs:label "Reumatología" .
-
 clpr:Urgencias a owl:Class ;
     rdfs:subClassOf clpr:Especialidad ;
     rdfs:label "Urgencias" .
@@ -241,7 +240,7 @@ is:otorrinolaringologia a clpr:Otorrinolaringologia ;
 is:pediatria a clpr:Pediatria ;
     rdfs:label "Pediatría" .
 
-is:ssicologiaclinica a clpr:PsicologiaClinica ;
+is:psicologiaclinica a clpr:PsicologiaClinica ;
     rdfs:label "Psicología clínica" .
 
 is:psiquiatria a clpr:Psiquiatria ;

@@ -1,0 +1,251 @@
+@prefix : <http://www.knowledgegraphs/ontology/> .
+@prefix clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties/> .
+@prefix is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix db: <http://dbpedia.org/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://www.knowledgegraphs/ontology/> .
+
+: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+# Clase Hospital
+schema:Hospital a owl:Class ;
+    rdfs:label "Hospital" .
+
+# Clase Especialidad
+schema:MedicalSpecialty a owl:Class.
+
+# Clases especialidades medicas
+clpr:Alergologia a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Alergología" .
+
+schema:Cardiovascular a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Cardiología" .
+
+clpr:CirugiaMayorAmbulatoria a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Cirugía mayor ambulatoria" .
+
+clpr:CirugiaMenorAmbulatoria a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Cirugía menor ambulatoria" .
+
+schema:Dermatology a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Dermatología" .
+
+schema:Endocrine a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Endocrinología" .
+
+schema:Nursing a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Enfermería" .
+
+schema:PharmacySpecialty a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Farmacia" .
+
+schema:Physiotherapy a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Fisioterapia" .
+
+clpr:MedicinaGeneral a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Medicina general/de familia" .
+
+schema:Pulmonary a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Neumología" .
+
+schema:Neurologic a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Neurología" .
+
+schema:DietNutrition a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Nutrición y dietética" .
+
+schema:Oncologic a owl:Class;
+    rdf:subClassOf schema:MedicalSpecialty;
+    rdfs:label "Oncologia".
+
+schema:Otolaryngologic a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Otorrinolaringología" .
+
+schema:Pediatric a owl:Class ;
+    rdfs:subClassOf  schema:MedicalSpecialty;
+    rdfs:label "Pediatría" .
+    
+clpr:PsicologiaClinica a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Psicología clínica" .
+
+schema:Psychiatric a owl:Class;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Psiquiatria" .
+    
+clpr:Rehabilitacion a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty;
+    rdf:labe "Rehabilitacion".
+
+
+schema:Emergency a owl:Class;
+    rdf:subClassOf schema:MedicalSpecialty;
+    rdfs:label "Urgencias".
+
+clpr:Vacunacion a owl:Class ;
+    rdfs:subClassOf schema:MedicalSpecialty ;
+    rdfs:label "Vacunación" .
+
+# Clase Municipio
+db:Municipalities_of_Spain a owl:Class ;
+    rdfs:label "Municipio" .
+
+# Clase Establecimiento
+clpr:Establecimiento a owl:Class ;
+    rdfs:label "Establecimiento" .
+
+#Clase Desfibrilador
+clpr:Desfibrilador a owl:Class ;
+    rdfs:label "Desfibrilador" .
+
+# Clase Dirección
+schema:PostalAddress a owl:Class ;
+    rdfs:label "Dirección postal" .
+
+# Propiedades
+schema:identifier a owl:DatatypeProperty ;
+    rdfs:domain schema:Hospital ;
+    rdfs:range xsd:string ;
+    rdfs:label "id centro" .
+
+schema:address a owl:ObjectProperty ;
+    rdfs:domain [ 
+        a owl:Class ;
+        owl:unionOf (schema:Hospital clpr:Desfibrilador)
+    ] ;
+    rdfs:range schema:PostalAddress ;
+    rdfs:label "dirección" .
+
+schema:addressLocality a owl:DatatypeProperty ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range db:Municipalities_of_Spain ;
+    rdfs:label "localidad" .
+
+schema:streetAddress a owl:DatatypeProperty ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre de la calle" .
+
+schema:postalCode a owl:DatatypeProperty ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string ;
+    rdfs:label "código postal" .
+
+schema:geo a owl:ObjectProperty ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range schema:GeoCoordinates ;
+    rdfs:label "coordenadas geográficas" .
+
+schema:GeoCoordinates a owl:Class ;
+    rdfs:label "Coordenadas geográficas" .
+
+schema:latitude a owl:DatatypeProperty ;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:float ;
+    rdfs:label "latitud" .
+
+schema:longitude a owl:DatatypeProperty ;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:float ;
+    rdfs:label "longitud" .
+
+clpr:idDesfibrilador a owl:DatatypeProperty ;
+    rdfs:domain clpr:Desfibrilador ;
+    rdfs:range xsd:string ;
+    rdfs:label "id desfibrilador" .
+
+clpr:tipoEstablecimiento a owl:DatatypeProperty ;
+    rdfs:domain clpr:Establecimiento ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo establecimiento" .
+
+clpr:tipoTitularidad a owl:DatatypeProperty ;
+    rdfs:domain clpr:Establecimiento ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo titularidad" .
+
+# Instancias de Especialidades
+
+is:alergologia a clpr:Alergologia;
+    rdfs:label "Alergología" .
+
+is:cardiologia a schema:Cardiovascular ;
+    rdfs:label "Cardiología" .
+
+is:cirugiamayorambulatoria a clpr:CirugiaMayorAmbulatoria ;
+    rdfs:label "Cirugía mayor ambulatoria" .
+
+is:cirugiamenorambulatoria a clpr:CirugiaMenorAmbulatoria ;
+    rdfs:label "Cirugía menor ambulatoria" .
+
+is:dermatologia a schema:Dermatologyi ;
+    rdfs:label "Dermatología" .
+
+is:endocrinologia a schema:Endocrine;
+    rdfs:label "Endocrinología" .
+
+is:enfermeria a schema:Nursing ;
+    rdfs:label "Enfermería" .
+
+is:farmacia a schema:PharmacySpecialty;
+    rdfs:label "Farmacia" .
+
+is:fisioterapia a schema:Physiotherapy ;
+    rdfs:label "Fisioterapia" .
+
+is:medicinageneral a clpr:MedicinaGeneral ;
+    rdfs:label "Medicina general/de familia" .
+
+is:neumologia a schema:Pulmonary ;
+    rdfs:label "Neumología" .
+
+is:neurologia a schema:Neurologic ;
+    rdfs:label "Neurología" .
+
+is:nutricionydietetica a schema:DietNutrition ;
+    rdfs:label "Nutrición y Dietética" .
+
+is:oncologia a schema:Oncologic ;
+    rdfs:label "Oncología" .
+
+is:otorrinolaringologia a schema:Otolaryngologic ;
+    rdfs:label "Otorrinolaringología" .
+
+is:pediatria a schema:Pediatric ;
+    rdfs:label "Pediatría" .
+
+is:psicologiaclinica a clpr:PsicologiaClinica ;
+    rdfs:label "Psicología clínica" .
+
+is:psiquiatria a schema:Psychiatric ;
+    rdfs:label "Psiquiatría" .
+
+is:rehabilitacion a clpr:Rehabilitacion ;
+    rdfs:label "Rehabilitación" .
+
+is:urgencias a schema:Emergency ;
+    rdfs:label "Urgencias" .
+
+is:vacunacion a clpr:Vacunacion ;
+    rdfs:label "Vacunación" .
+
+
