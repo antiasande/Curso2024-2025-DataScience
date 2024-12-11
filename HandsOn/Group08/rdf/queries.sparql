@@ -3,8 +3,8 @@
     ?station a ns:Estación ;
              ns:codigoEstacion ?code ;
              ns:nombreEstacion ?name ;
-             ns:latitud ?latitude ;
-             ns:longitud ?longitude .
+             geo:lat ?latitude ;
+             geo:long ?longitude .
   }
 
   SELECT ?nucleo ?nucleoName ?station
@@ -22,5 +22,24 @@
              ns:localizadoEn ?address .
     ?address ns:nombreDireccion ?addressName .
   }
+
+
+  SELECT ?provincia ?poblacion
+  WHERE {
+    ?provincia a ns:Provincia .
+    ?poblacion a ns:Poblacion .
+    ?provincia ns:tienePoblacion ?poblacion .
+  }
+
+
+  SELECT ?segment ?interval ?station ?subidos ?bajados
+  WHERE {
+    ?segment a ns:Tramo ;
+    ns:intervalo ?interval ;
+    ns:tieneEstacion ?station ;
+    ns:viajerosSubidos ?subidos ;
+    ns:viajerosBajados ?bajados .
+  } LIMIT 10
+
 
   
