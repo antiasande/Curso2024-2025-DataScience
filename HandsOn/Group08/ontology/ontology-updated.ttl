@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
 : a owl:Ontology ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
@@ -20,7 +21,7 @@ ns:intervalo a owl:DatatypeProperty ;
 
 ns:latitud a owl:DatatypeProperty ;
     rdfs:domain ns:Estación ;
-    rdfs:range xsd:decimal ;
+    rdfs:range wgs:lat ;
     rdfs:label "latitud" .
 
 ns:localizadoEn a owl:ObjectProperty ;
@@ -30,7 +31,7 @@ ns:localizadoEn a owl:ObjectProperty ;
 
 ns:longitud a owl:DatatypeProperty ;
     rdfs:domain ns:Estación ;
-    rdfs:range xsd:decimal ;
+    rdfs:range wgs:long ;
     rdfs:label "longitud" .
 
 ns:nombreDireccion a owl:DatatypeProperty ;
