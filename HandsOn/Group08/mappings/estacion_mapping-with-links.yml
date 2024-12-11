@@ -8,7 +8,7 @@ prefixes:
 mappings:
   estacion_mapping:
     sources:
-      - [estaciones-updated-with-links.csv]
+      - [estaciones-updated-with-links.csv~csv]
     s: "https://www.dominiowebsemant.com/resource/Estacion/$(CÓDIGO)"
     po:
       - [a, ns:Estación]
@@ -37,7 +37,7 @@ mappings:
 
   direccion_mapping:
     sources:
-      - [estaciones-updated-with-links.csv]
+      - [estaciones-updated-with-links.csv~csv]
     s: "https://www.dominiowebsemant.com/resource/Direccion/$(CÓDIGO)"
     po:
       - [a, ns:Direccion]
@@ -46,7 +46,7 @@ mappings:
 
   poblacion_mapping:
     sources:
-      - [estaciones-updated-with-links.csv]
+      - [estaciones-updated-with-links.csv~csv]
     s: "https://www.dominiowebsemant.com/resource/Poblacion/$(POBLACION)"
     po:
       - [a, ns:Poblacion]
@@ -67,7 +67,7 @@ mappings:
       
   provincia_mapping:
     sources:
-      - [estaciones-updated-with-links.csv]
+      - [estaciones-updated-with-links.csv~csv]
     s: "https://www.dominiowebsemant.com/resource/Provincia/$(POBLACION)"
     po:
       - [a, ns:Provincia]
