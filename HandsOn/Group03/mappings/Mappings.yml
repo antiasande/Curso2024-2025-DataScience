@@ -11,7 +11,7 @@ mappings:
   TownTriplesMap: 
     sources:
       - ["all-schools-xy-2016-csv_updated.csv", '$']
-    s: http://londonhousing.linkeddata.es/town/resource/$(Town)
+    s: http://londonhousing.linkeddata.es/london/resource/town/$(Town)
     po:
       - [a, ld:Town]
       - [ld:townName, $(Town), xsd:string]
@@ -19,7 +19,7 @@ mappings:
   HousingTownTriplesMap: 
     sources:
       - ["housing_in_london_monthly_variables_updated.csv", '$']
-    s: http://londonhousing.linkeddata.es/town/resource/$(Town)
+    s: http://londonhousing.linkeddata.es/london/resource/town/$(Town)
     po:
       - [a, ld:Town]
       - [ld:townName, $(Town), xsd:string]
@@ -27,7 +27,7 @@ mappings:
   SchoolTriplesMap:
     sources:
       - ["all-schools-xy-2016-csv_updated.csv", '$']
-    s: http://londonschool.linkeddata.es/school/resource/$(Id)
+    s: http://londonschool.linkeddata.es/london/resource/school/$(Id)
     po:
       - [a, ld:School]
       - [ld:identifier, $(Id), xsd:string]
@@ -37,18 +37,18 @@ mappings:
       - [ld:address, $(Address), xsd:string]
       - [ld:status, $(Status), xsd:string]
       - [ld:gender, $(Gender), xsd:string]
-      - [ld:placedIn, http://londonhousing.linkeddata.es/town/resource/$(Town)]
+      - [ld:placedIn, http://londonhousing.linkeddata.es/london/resource/town/$(Town)]
       - [wgs84_pos:lat, $(x), xsd:decimal]
       - [wgs84_pos:long, $(y), xsd:decimal]
 
   HouseTriplesMap:
     sources:
       - ["housing_in_london_monthly_variables_updated.csv", '$']
-    s: http://londonhousing.linkeddata.es/house/resource/$(Id)
+    s: http://londonhousing.linkeddata.es/london/resource/house/$(Id)
     po:
       - [a, ld:House]
       - [ld:identifier, $(Id), xsd:string]
-      - [ld:placedIn, http://londonhousing.linkeddata.es/town/resource/$(Town)]
+      - [ld:placedIn, http://londonhousing.linkeddata.es/london/resource/town/$(Town)]
       - [ld:dateRecorded, $(Date), xsd:dateTime]
       - [ld:averagePrice, $(AveragePrice), xsd:integer]
       - [ld:housesSold, $(HousesSold), xsd:integer]

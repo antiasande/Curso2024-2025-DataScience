@@ -1,4 +1,4 @@
-@prefix ld: <http://london.linkeddata.es/ontology#> .
+@prefix ld: <http://london.linkeddata.es/london/ontology#> .
 @prefix schema: <http://schema.org/> .
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -26,7 +26,12 @@ ld:House rdfs:subClassOf wgs84_pos:SpatialThing .
 
 ld:placedIn a owl:ObjectProperty ;
     rdfs:label "placed in" ;
-    rdfs:domain [ owl:unionOf (ld:House ld:School) ] ;
+    rdfs:domain ld:House ;
+    rdfs:range ld:Town .
+
+ld:placedIn a owl:ObjectProperty ;
+    rdfs:label "placed in" ;
+    rdfs:domain ld:School ;
     rdfs:range ld:Town .
 
 

@@ -4,7 +4,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix ld: <http://schoolhouse.linkeddata.es/london/resource#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #### Town TriplesMap
 
@@ -14,7 +13,7 @@
     rml:referenceFormulation ql:CSV
   ] ;
   rr:subjectMap [
-    rr:template "http://london.linkeddata.es/town/resource/{Town}" ;
+    rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ;
     rr:class ld:Town
   ] ;
   rr:predicateObjectMap [
@@ -28,7 +27,7 @@
     rml:referenceFormulation ql:CSV
   ] ;
   rr:subjectMap [
-    rr:template "http://london.linkeddata.es/town/resource/{Town}" ;
+    rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ;
     rr:class ld:Town
   ] ;
   rr:predicateObjectMap [
@@ -44,7 +43,7 @@
     rml:referenceFormulation ql:CSV
   ] ;
   rr:subjectMap [
-    rr:template "http://londonschool.linkeddata.es/school/resource/{Id}" ;
+    rr:template "http://londonschool.linkeddata.es/london/resource/school/{Id}" ;
     rr:class ld:School
   ] ;
   rr:predicateObjectMap [
@@ -77,7 +76,7 @@
   ] ;
   rr:predicateObjectMap [
     rr:predicate ld:placedIn ;
-    rr:objectMap [ rr:template "http://london.linkeddata.es/town/resource/{Town}" ; rr:termType rr:IRI ]
+    rr:objectMap [ rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ; rr:termType rr:IRI ]
   ] ;
   rr:predicateObjectMap [
     rr:predicate wgs84_pos:lat ;
@@ -96,7 +95,7 @@
     rml:referenceFormulation ql:CSV
   ] ;
   rr:subjectMap [
-    rr:template "http://londonhousing.linkeddata.es/house/resource/{Id}" ;
+    rr:template "http://londonhousing.linkeddata.es/london/resource/house/{Id}" ;
     rr:class ld:House
   ] ;
   rr:predicateObjectMap [
@@ -105,7 +104,7 @@
   ] ;
   rr:predicateObjectMap [
     rr:predicate ld:placedIn ;
-    rr:objectMap [ rr:template "http://london.linkeddata.es/town/resource/{Town}" ; rr:termType rr:IRI ]
+    rr:objectMap [ rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ; rr:termType rr:IRI ]
   ] ;
   rr:predicateObjectMap [
     rr:predicate ld:dateRecorded ;

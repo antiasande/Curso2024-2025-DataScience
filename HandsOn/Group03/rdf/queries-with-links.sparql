@@ -53,27 +53,11 @@ SELECT ?sameAsURI ?town (COUNT(?town) AS ?townCount)
     GROUP BY ?sameAsURI
     ORDER BY DESC(?townCount)
 
-SELECT ?townName 
-           (SAMPLE(?school) AS ?school) 
-           (SAMPLE(?schoolSameAs) AS ?schoolSameAs) 
-           (SAMPLE(?house) AS ?house) 
-           (SAMPLE(?houseSameAs) AS ?houseSameAs)
+SELECT ?school ?town ?schoolURI ?townURI
     WHERE {
+        ?school a ld:School .
         ?school ld:placedIn ?town .
-        ?town ld:townName ?townName .
-        OPTIONAL { ?school owl:sameAs ?schoolSameAs . }
-        
-        ?house ld:placedIn ?town .
-        OPTIONAL { ?house owl:sameAs ?houseSameAs . }
-    }
-    GROUP BY ?townName
-
-SELECT ?townName (SAMPLE(?school) AS ?school) (SAMPLE(?sameAsURI) AS ?sameAsURI) (SAMPLE(?averagePrice) AS ?averagePrice)
-    WHERE {
-        ?school ld:placedIn ?town .
-        ?town ld:townName ?townName .
-        ?school owl:sameAs ?sameAsURI .
-        
-        ?house ld:placedIn ?town .
-        ?house ld:averagePrice ?averagePrice .
-    }
+        ?school owl:sameAs ?schoolURI .
+        ?town owl:sameAs ?townURI . 
+        
+    }
