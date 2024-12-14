@@ -183,6 +183,11 @@ clpr:tipoTitularidad a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     rdfs:label "tipo titularidad" .
 
+schema:medicalSpecialty  a owl:ObjectProperty ;
+    rdfs:domain schema:Hospital ;
+    rdfs:range schema:MedicalSpecialty ;
+    rdfs:label "especializado en" .
+
 # Instancias de Especialidades
 
 is:alergologia a clpr:Alergologia;
