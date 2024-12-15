@@ -3,22 +3,16 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix ont: <http://dominiowebsemantica.com/ontology/ont#> .
-@prefix resDist: <http://dominiowebsemantica.com/resource/Distrito/> .
-@prefix resSexo: <http://dominiowebsemantica.com/resource/Sexo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<#AccidentalidadMapping> a rr:TriplesMap ;
+<#AccidenteMapping> a rr:TriplesMap ;
     rml:logicalSource [
         rml:source "HandsOn/Group01/csv/accidentalidad-with-links.csv" ;
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://dominiowebsemantica.com/resource/Accidente/{ID}" ;
+        rr:template "http://dominiowebsemantica.com/resource/Accidente/{ID}";
         rr:class ont:Accidente
-    ]; 
-    rr:predicateObjectMap [
-        rr:predicate ont:id ;
-        rr:objectMap [ rml:reference "ID" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
     ];
     rr:predicateObjectMap [
         rr:predicate ont:numExpediente ;
@@ -29,24 +23,16 @@
         rr:objectMap [ rml:reference "fecha_hora" ; rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime> ]
     ];
     rr:predicateObjectMap [
-        rr:predicate ont:localizacion ;
-        rr:objectMap [ rml:reference "localizacion" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
-    ];
-    rr:predicateObjectMap [
-        rr:predicate ont:distrito ;
-        rr:objectMap [ rml:reference "distrito" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
-    ];
-    rr:predicateObjectMap [
         rr:predicate ont:tipoAccidente ;
         rr:objectMap [ rml:reference "tipoAccidente" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
     ];
     rr:predicateObjectMap [
-        rr:predicate geo:lat ;
-        rr:objectMap [ rml:reference "coordenadaY" ; rr:datatype <http://www.w3.org/2001/XMLSchema#decimal> ]
+        rr:predicate ont:estadoMeteorologico ;
+        rr:objectMap [ rml:reference "estadoMeteorologico" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
     ];
     rr:predicateObjectMap [
-        rr:predicate geo:long ;
-        rr:objectMap [ rml:reference "coordenadaX" ; rr:datatype <http://www.w3.org/2001/XMLSchema#decimal> ]
+        rr:predicate ont:tipoVehiculo ;
+        rr:objectMap [ rml:reference "tipoVehiculo" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
     ];
     rr:predicateObjectMap [
         rr:predicate ont:positivaAlcohol ;
@@ -57,6 +43,94 @@
         rr:objectMap [ rml:reference "positivaDroga" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
     ];
     rr:predicateObjectMap [
+        rr:predicate ont:personaImplicada ;
+        rr:objectMap [ rr:template "http://dominiowebsemantica.com/resource/Persona/{ID}" ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:accUbicadoEn ;
+        rr:objectMap [ rr:template "http://dominiowebsemantica.com/resource/Ubicacion/{localizacion}-{coordenadaX}-{coordenadaY}" ]
+    ] .
+    
+
+
+
+
+<#PersonaMapping> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "HandsOn/Group01/csv/accidentalidad-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://dominiowebsemantica.com/resource/Persona/{ID}";
+        rr:class ont:Persona
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:tipoPersona ;
+        rr:objectMap [ rml:reference "tipoPersona" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:edadMin ;
+        rr:objectMap [ rml:reference "edad_min" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:edadMax ;
+        rr:objectMap [ rml:reference "edad_max" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:sexo ;
+        rr:objectMap [ rml:reference "sexo" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:codLesividad ;
+        rr:objectMap [ rml:reference "cod_lesividad" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:lesividad ;
+        rr:objectMap [ rml:reference "lesividad" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ] .
+
+<#UbicacionMapping> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "HandsOn/Group01/csv/accidentalidad-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://dominiowebsemantica.com/resource/Ubicacion/{localizacion}-{coordenadaX}-{coordenadaY}";
+        rr:class ont:Ubicacion
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:localizacion ;
+        rr:objectMap [ rml:reference "localizacion" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:numero ;
+        rr:objectMap [ rml:reference "numero" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate geo:lat ;
+        rr:objectMap [ rml:reference "coordenadaY" ; rr:datatype <http://www.w3.org/2001/XMLSchema#decimal> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate geo:long ;
+        rr:objectMap [ rml:reference "coordenadaX" ; rr:datatype <http://www.w3.org/2001/XMLSchema#decimal> ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:tieneInfoDistrito ;
+        rr:objectMap [ rr:template "http://dominiowebsemantica.com/resource/InfoDistrito/{localizacion}-{coordenadaX}-{coordenadaY}" ]
+    ] .
+
+
+
+<#InfoDistritoMapping> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "HandsOn/Group01/csv/accidentalidad-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://dominiowebsemantica.com/resource/InfoDistrito/{localizacion}-{coordenadaX}-{coordenadaY}";
+        rr:class ont:InfoDistrito
+    ];
+    rr:predicateObjectMap [
         rr:predicateMap [ rr:constant owl:sameAs ] ;
         rr:objectMap [
             rml:reference "wikidata_distrito" ;
@@ -64,9 +138,11 @@
         ]
     ];
     rr:predicateObjectMap [
-        rr:predicateMap [ rr:constant owl:sameAs ] ;
-        rr:objectMap [
-            rml:reference "wikidata_sexo" ;
-            rr:termType rr:IRI
-        ]
+        rr:predicate ont:codDistrito ;
+        rr:objectMap [ rml:reference "codDistrito" ; rr:datatype <http://www.w3.org/2001/XMLSchema#integer> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:distrito ;
+        rr:objectMap [ rml:reference "distrito" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
     ] .
+    

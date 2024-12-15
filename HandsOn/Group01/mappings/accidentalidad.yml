@@ -1,36 +1,54 @@
 prefixes:
-  rr: <http://www.w3.org/ns/r2rml#>
-  ex: <http://example.com/ns#>
-  rml: <http://semweb.mmlab.be/ns/rml#>
-  geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-  ql: <http://semweb.mmlab.be/ns/ql#>
-  ont: <http://dominiowebsemantica.com/ontology/ont#>
-  resAcc: <http://dominiowebsemantica.com/resource/Accidente/>
-
-
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+  ont: http://dominiowebsemantica.com/ontology/ont#
 
 mappings:
-  AccidentalidadMapping:
+  AccidenteMapping:
     sources:
-      - ["csv/2024-Accidentalidad-updated.csv~csv"]
-    s: "resAcc:$(ID)"
+      - type: csv
+        name: HandsOn/Group01/csv/2024-Accidentalidad-updated.csv
+    s: http://dominiowebsemantica.com/resource/Accidente/{ID}
     po:
-      - [ ex:id, $(ID) ]
-      - [ ex:fechaHora, $(fecha_hora) ]
-      - [ ex:localizacion, $(localizacion) ]
-      - [ ex:numero, $(numero) ]
-      - [ ex:codDistrito, $(codDistrito) ]
-      - [ ex:distrito, $(distrito) ]
-      - [ ex:tipoAccidente, $(tipoAccidente) ]
-      - [ ex:estadoMeteorologico, $(estadoMeteorologico) ]
-      - [ ex:tipoVehiculo, $(tipoVehiculo) ]
-      - [ ex:tipoPersona, $(tipoPersona) ]
-      - [ ex:edadMin, $(edad_min) ]
-      - [ ex:edadMax, $(edad_max) ]
-      - [ ex:sexo, $(sexo) ]
-      - [ ex:codLesividad, $(cod_lesividad) ]
-      - [ ex:lesividad, $(lesividad) ]
-      - [ geo:lat, $(coordenadaY), xsd:decimal ]
-      - [ geo:long, $(coordenadaX), xsd:decimal ]
-      - [ ex:positivaAlcohol, $(positivaAlcohol) ]
-      - [ ex:positivaDroga, $(positivaDroga) ]
+      - [ont:numExpediente, $(numExpediente), xsd:string]
+      - [ont:fechaHora, $(fecha_hora), xsd:dateTime]
+      - [ont:tipoAccidente, $(tipoAccidente), xsd:string]
+      - [ont:estadoMeteorologico, $(estadoMeteorologico), xsd:string]
+      - [ont:tipoVehiculo, $(tipoVehiculo), xsd:string]
+      - [ont:positivaAlcohol, $(positivaAlcohol), xsd:boolean]
+      - [ont:positivaDroga, $(positivaDroga), xsd:string]
+
+  PersonaMapping:
+    sources:
+      - type: csv
+        name: HandsOn/Group01/csv/2024-Accidentalidad-updated.csv
+    s: http://dominiowebsemantica.com/resource/Persona/{ID}
+    po:
+      - [ont:tipoPersona, $(tipoPersona), xsd:string]
+      - [ont:edadMin, $(edad_min), xsd:string]
+      - [ont:edadMax, $(edad_max), xsd:string]
+      - [ont:sexo, $(sexo), xsd:string]
+      - [ont:codLesividad, $(cod_lesividad), xsd:string]
+      - [ont:lesividad, $(lesividad), xsd:string]
+
+  UbicacionMapping:
+    sources:
+      - type: csv
+        name: HandsOn/Group01/csv/2024-Accidentalidad-updated.csv
+    s: http://dominiowebsemantica.com/resource/Ubicacion/{ID}
+    po:
+      - [ont:localizacion, $(localizacion), xsd:string]
+      - [ont:numero, $(numero), xsd:string]
+      - [geo:lat, $(coordenadaY), xsd:decimal]
+      - [geo:long, $(coordenadaX), xsd:decimal]
+
+  InfoDistritoMapping:
+    sources:
+      - type: csv
+        name: HandsOn/Group01/csv/2024-Accidentalidad-updated.csv
+    s: http://dominiowebsemantica.com/resource/Accidente/{ID}
+    po:
+      - [ont:codDistrito, $(codDistrito), xsd:integer]
+      - [ont:distrito, $(distrito), xsd:string]

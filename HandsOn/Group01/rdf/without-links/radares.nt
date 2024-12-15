@@ -1,0 +1,495 @@
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/Radar/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/Radar/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#numRadar> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#numRadar> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.66014384"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#pk> "13+250" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "A-5 PK 4+000, SENTIDO ENTRADA" .
+<http://dominiowebsemantica.com/resource/Radar/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/26158a03-5544-4a84-b7e5-627946114044> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.65926082"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#numRadar> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#sentido> "Av Betanzos" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/Radar/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#carril> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada exterior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30, PTE. DE VENTAS. SENTIDO SUR A O´DONNELL P.K. 6,700" .
+<http://dominiowebsemantica.com/resource/Radar/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.71017703"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.712743"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#pk> "19+060" .
+<http://dominiowebsemantica.com/resource/Radar/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#numRadar> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#pk> "17+170" .
+<http://dominiowebsemantica.com/resource/Radar/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL M-30, SENTIDO NUDO SUR - PTE. DE LOS FRANCESES, (GTA. LEGAZPI - Pº STA. Mª DE LA CABEZA)" .
+<http://dominiowebsemantica.com/resource/Radar/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#pk> "10+300" .
+<http://dominiowebsemantica.com/resource/Radar/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.4001241953525"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "ENTRADA TÚNEL EN MARQUÉS DE MONISTROL, P.K. 19,060" .
+<http://dominiowebsemantica.com/resource/Radar/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#carretera> "AVENIDA DE CÓRDOBA" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.699691"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.712743"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.65929627"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.73482875"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#carretera> "Calle Sinesio Delgado" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.731092"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#pk> "P.K. 5+750 ----- P.K  4+000" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#carretera> "A5" .
+<http://dominiowebsemantica.com/resource/Radar/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.47934148"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#numRadar> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL BAIPÁS, SENTIDO NORTE A PTE. DE VENTAS (MÉNDEZ ÁLVARO-AVDA. DEL METITARRÁNEO)" .
+<http://dominiowebsemantica.com/resource/Radar/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/ab496ab3-29db-4718-bbb3-c399158e8190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#numRadar> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#pk> "10+300" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.696519"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#carretera> "Calle Sinesio Delgado" .
+<http://dominiowebsemantica.com/resource/Radar/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#carretera> "PASEO DE SANTA MARIA DE LA CABEZA" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "ENTRADA TÚNEL M-30, DESDE NUDO SUR HACIA PTE. DE LOS FRANCESES" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "PASEO DE STA. Mª DE LA CABEZA Nº 115, ENTRADA" .
+<http://dominiowebsemantica.com/resource/Radar/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/Radar/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#sentido> "Entrada" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#carretera> "Calle Sinesio Delgado" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.42763957"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#numRadar> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.397139"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#carril> "Salida, radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#carretera> "A5" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "PASEO DE LA CASTELLANA Nº 300, SALIDA" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#pk> "0+500" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL M-30, SENTIDO NUDO SUR - PTE. DE LOS FRANCESES, (PASADA SALIDA VIRGEN DEL PUERTO)" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#pk> "14+200" .
+<http://dominiowebsemantica.com/resource/Radar/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#sentido> "Ciudad Universitaria" .
+<http://dominiowebsemantica.com/resource/Radar/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#numRadar> "27"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#carretera> "A5" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.41664449"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#sentido> "Av Betanzos" .
+<http://dominiowebsemantica.com/resource/Radar/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#numRadar> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#carril> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/58042c68-20bc-4317-b83b-fd50df131eba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#carretera> "PASEO DE LA CASTELLANA" .
+<http://dominiowebsemantica.com/resource/Radar/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#numRadar> "31"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#pk> "4+150" .
+<http://dominiowebsemantica.com/resource/Radar/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#sentido> "Salida" .
+<http://dominiowebsemantica.com/resource/Radar/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.422839"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#pk> "15+010" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#pk> "27+300" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#carril> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> .
+<http://dominiowebsemantica.com/resource/Radar/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#numRadar> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#carril> "Todos" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#carril> "Todos" .
+<http://dominiowebsemantica.com/resource/Radar/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL BYPASS, SENTIDO A-3 A PTE. FRANCESES, (GTA. LEGAZPI - Pº STA. Mª DE LA CABEZA)" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.413797"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#sentido> "Av Betanzos" .
+<http://dominiowebsemantica.com/resource/Radar/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/36342261-0e86-417a-87f9-5a987ba80273> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 1" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#carril> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.467149"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#numRadar> "26"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#pk> "19+060" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.47279048"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.74574755307117"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#pk> "6+700" .
+<http://dominiowebsemantica.com/resource/Radar/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#sentido> "Tronco calzada exterior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#pk> "0+500" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#carril> "Entrada, radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> .
+<http://dominiowebsemantica.com/resource/Radar/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 2" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL AVDA. DE PORTUGAL, SENTIDO M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.37859"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30, ENLACE O´DONNELL SENTIDO NORTE A PTE. DE VENTAS PK 7,800" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo multicarril" .
+<http://dominiowebsemantica.com/resource/Radar/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#pk> "14+740" .
+<http://dominiowebsemantica.com/resource/Radar/987a72ff-f30c-4951-995f-70a3e31397a3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> .
+<http://dominiowebsemantica.com/resource/Radar/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.42618023"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.728241"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#pk> "19+900" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.669973"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "Sinesio Delgado, Sentido Ciudad Universitaria, Farolas 144 -152" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.467149"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#numRadar> "36"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30  MARQUÉS DE MONISTROL, SENTIDO PTE. DE LOS FRANCESES (PTE. DEL REY - PTE. FRANCESES) P.K. 19,800" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.394924"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#sentido> "Entrada de Madrid" .
+<http://dominiowebsemantica.com/resource/Radar/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#numRadar> "34"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.460303"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.41389"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada exterior" .
+<http://dominiowebsemantica.com/resource/Radar/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "A-5 PK 5+750, SENTIDO SALIDA" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.40744539"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "ENTRADA TÚNEL EN MARQUÉS DE MONISTROL, P.K. 19,060" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#carril> "Salida, radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 1" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.714454"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.47934175"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#numRadar> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#numRadar> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 1" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30, ENTRADA DE LA A-1, SENTIDO PUENTE DE VENTAS P.K. 0,500" .
+<http://dominiowebsemantica.com/resource/Radar/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.48048344"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#sentido> "Ciudad Universitaria" .
+<http://dominiowebsemantica.com/resource/Radar/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#carril> "Todos" .
+<http://dominiowebsemantica.com/resource/Radar/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.422937"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "A-5 PK 4,000, SALIDA" .
+<http://dominiowebsemantica.com/resource/Radar/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#numRadar> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.722988"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 1" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.4743471"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.469208"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.397323"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/Radar/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#numRadar> "28"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#pk> "4" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.39052318"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/Radar/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 4" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.39118"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#numRadar> "32"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.714454"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#numRadar> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#carril> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#sentido> "Entrada" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.727724"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL BAIPÁS, SENTIDO NORTE A PTE. DE VENTAS (MÉNDEZ ÁLVARO-AVDA. DEL METITARRÁNEO)" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#pk> "19+900" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 1" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.469208"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> .
+<http://dominiowebsemantica.com/resource/Radar/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> .
+<http://dominiowebsemantica.com/resource/Radar/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#numRadar> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30  SENTIDO CTRA DEL PARDO (AVDA. DE LA ILUSTRACIÓN - CTRA. DEL PARDO) P.K. 27,300" .
+<http://dominiowebsemantica.com/resource/Radar/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#numRadar> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.73089695"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#numRadar> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.66880283"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#sentido> "Tronco calzada exterior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30, ENTRADA DE LA A-1, SENTIDO PUENTE DE VENTAS P.K. 0,500" .
+<http://dominiowebsemantica.com/resource/Radar/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.403114"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#carretera> "PASO INFERIOR (Túnel)" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.67429089"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> .
+<http://dominiowebsemantica.com/resource/Radar/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.74530618"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "Sinesio Delgado, Sentido Av Betanzos, Farola 152- 143" .
+<http://dominiowebsemantica.com/resource/Radar/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 5" .
+<http://dominiowebsemantica.com/resource/Radar/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> .
+<http://dominiowebsemantica.com/resource/Radar/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#numRadar> "21"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.66006141"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/Radar/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#sentido> "Tronco calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.67433808"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/Radar/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#numRadar> "17"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#carretera> "Calle Sinesio Delgado" .
+<http://dominiowebsemantica.com/resource/Radar/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 2" .
+<http://dominiowebsemantica.com/resource/Radar/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> .
+<http://dominiowebsemantica.com/resource/Radar/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "Sinesio Delgado, Sentido Ciudad Universitaria, Farolas 144 -188" .
+<http://dominiowebsemantica.com/resource/Radar/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.73482875"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/a69555de-ab6b-4294-a168-253d34d75000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> .
+<http://dominiowebsemantica.com/resource/Radar/a8f3462d-9354-4049-8280-067b079d67ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.703274"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.38678654"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL AVDA. DE PORTUGAL, SENTIDO M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#pk> "P.K  4+000 ----- P.K. 5+750" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#pk> "Inicio: GLORIETA DE CÁDIZ\r\r\r\nFin: AVENIDA DE CÓRDOBA CON CALLE DOCTOR TOLOSA LATOUR" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#carril> "Todos" .
+<http://dominiowebsemantica.com/resource/Radar/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#numRadar> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#pk> "6+700" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#pk> "300" .
+<http://dominiowebsemantica.com/resource/Radar/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30 SENTIDO AVDA. DE LA ILUSTRACIÓN (CTRA. DEL PARDO - AVDA. DE LA ILUSTRACIÓN) P.K. 25,700" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada exterior" .
+<http://dominiowebsemantica.com/resource/Radar/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#sentido> "Entrada de Madrid" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.42763957"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.721414"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/Radar/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#numRadar> "19"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 1" .
+<http://dominiowebsemantica.com/resource/Radar/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 4" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "Sinesio Delgado, Sentido Av Betanzos, Farola 187-152" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo multicarril" .
+<http://dominiowebsemantica.com/resource/Radar/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#sentido> "Salida" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#pk> "25+700" .
+<http://dominiowebsemantica.com/resource/Radar/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#sentido> "Tronco calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#pk> "7+800" .
+<http://dominiowebsemantica.com/resource/Radar/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.4072412609861"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.73102"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#sentido> "Salida" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#numRadar> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "Sinesio Delgado, Sentido Av Betanzos, Farola 187-143" .
+<http://dominiowebsemantica.com/resource/Radar/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/26158a03-5544-4a84-b7e5-627946114044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.670048"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.45892328"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/a499522b-cadf-453d-ba6f-e04e61944086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL BYPASS, SENTIDO A3 A PTE. DE LOS FRANCESES, (Pº STA. Mª DE LA CABEZA - GTA. PIRÁMIDES)" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/a69555de-ab6b-4294-a168-253d34d75000> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/a69555de-ab6b-4294-a168-253d34d75000> .
+<http://dominiowebsemantica.com/resource/Radar/198699f7-04eb-42a7-b77f-aeaea486261b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "AVENIDA DE CÓRDOBA CON CALLE DOCTOR TOLOSA LATOUR, SENTIDO GLORIETA DE MÁLAGA" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30, PTE. DE VENTAS. SENTIDO SUR A O´DONNELL P.K. 6,700" .
+<http://dominiowebsemantica.com/resource/Radar/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> .
+<http://dominiowebsemantica.com/resource/Radar/36342261-0e86-417a-87f9-5a987ba80273> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.39657"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#numRadar> "33"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#numRadar> "22"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/Radar/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> .
+<http://dominiowebsemantica.com/resource/Radar/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.74545156"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/b6489c75-3671-4a2d-9d7d-455673656715> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 4" .
+<http://dominiowebsemantica.com/resource/Radar/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#carretera> "A5" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL M-30, SENTIDO PTE. DE LOS FRANCESES - A3 (PTE. SAN ISIDRO - GTA. MARQUÉS DE VADILLO)" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 3" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.76358611606955"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.727663"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada interior" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "Sinesio Delgado, Sentido Ciudad Universitaria, Farolas 152 - 188" .
+<http://dominiowebsemantica.com/resource/Radar/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30  MARQUÉS DE MONISTROL, SENTIDO PTE. DE LOS FRANCESES (PTE. DEL REY - PTE. FRANCESES) P.K. 19,800" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "PASO INFERIOR COSTA RICA, SENTIDO PRÍNCIPE DE VERGARA" .
+<http://dominiowebsemantica.com/resource/Radar/ab496ab3-29db-4718-bbb3-c399158e8190> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> .
+<http://dominiowebsemantica.com/resource/Radar/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.69499826"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "TÚNEL BYPASS, SENTIDO A3 A PTE. DE LOS FRANCESES, (ENLACE Pº STA. Mª DE LA CABEZA)" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://dominiowebsemantica.com/ontology/ont#carretera> "Calle Sinesio Delgado" .
+<http://dominiowebsemantica.com/resource/Radar/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#tipo> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#sentido> "Ciudad Universitaria" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#carretera> "A5" .
+<http://dominiowebsemantica.com/resource/Radar/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/Radar/99cf9946-36de-429f-adac-c04e08e9a7ca> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#numRadar> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/b2bee941-2a0b-4140-bddb-ad1143daa179> <http://dominiowebsemantica.com/ontology/ont#numRadar> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://dominiowebsemantica.com/ontology/ont#pk> "13+860" .
+<http://dominiowebsemantica.com/resource/Radar/a499522b-cadf-453d-ba6f-e04e61944086> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "90"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/Radar/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> .
+<http://dominiowebsemantica.com/resource/Radar/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> .
+<http://dominiowebsemantica.com/resource/Radar/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#numRadar> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> <http://dominiowebsemantica.com/ontology/ont#tipo> "Fijo" .
+<http://dominiowebsemantica.com/resource/Radar/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.68542793"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada exterior" .
+<http://dominiowebsemantica.com/resource/Radar/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#sentido> "Salida" .
+<http://dominiowebsemantica.com/resource/Radar/a8f3462d-9354-4049-8280-067b079d67ca> <http://dominiowebsemantica.com/ontology/ont#numRadar> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.42618971"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.40939"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/1530f4a9-9598-454c-b71f-a05e6755e03c> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> <http://dominiowebsemantica.com/ontology/ont#pk> "115" .
+<http://dominiowebsemantica.com/resource/Radar/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.728241"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#carril> "Radar de tramo" .
+<http://dominiowebsemantica.com/resource/Radar/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#ubicacion> "M-30, ENLACE O´DONNELL SENTIDO NORTE A PTE. DE VENTAS PK 7,800" .
+<http://dominiowebsemantica.com/resource/Radar/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.708108"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGGVC" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> <http://dominiowebsemantica.com/ontology/ont#pk> "4+150" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.460303"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.41663568"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#responsable> "DGP" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#carretera> "Calle Sinesio Delgado" .
+<http://dominiowebsemantica.com/resource/Radar/e73d2142-b471-41b8-9bcc-c55fb12f7672> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://dominiowebsemantica.com/ontology/ont#carril> "Fijo carril 1" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/Radar/77d1df58-8601-49ec-935c-c5c4b73e5afa> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> .
+<http://dominiowebsemantica.com/resource/Radar/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#numRadar> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#sentido> "Calzada exterior" .
+<http://dominiowebsemantica.com/resource/Radar/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/Radar/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#Radar> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> <http://dominiowebsemantica.com/ontology/ont#carretera> "M-30" .
+<http://dominiowebsemantica.com/resource/Radar/9e11ca65-4159-49ce-91a0-54d2a695f90c> <http://dominiowebsemantica.com/ontology/ont#radarUbicadoEn> <http://dominiowebsemantica.com/resource/infoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> <http://dominiowebsemantica.com/ontology/ont#pk> "7+800" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dominiowebsemantica.com/ontology/ont#InfoCarretera> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> <http://dominiowebsemantica.com/ontology/ont#pk> "16+530" .
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> <http://dominiowebsemantica.com/ontology/ont#coordenadaY> "40.397352"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/36342261-0e86-417a-87f9-5a987ba80273> <http://dominiowebsemantica.com/ontology/ont#numRadar> "29"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> <http://dominiowebsemantica.com/ontology/ont#coordenadaX> "-3.709684"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dominiowebsemantica.com/resource/Radar/1cac50a7-3593-466b-88ab-bdffe2eba924> <http://dominiowebsemantica.com/ontology/ont#velocidadLimite> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
