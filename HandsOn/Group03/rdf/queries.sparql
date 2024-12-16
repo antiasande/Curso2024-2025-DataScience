@@ -4,52 +4,51 @@ PREFIX ql: <http://semweb.mmlab.be/ns/ql#>.
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>.
 PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 PREFIX ld: <http://schoolhouse.linkeddata.es/london/resource#> .
-PREFIX schema: <http://schema.org/> . 
 
 SELECT ?school
     WHERE {
-        ?id schema:schoolName ?school
+        ?id ld:schoolName ?school
     }
 
 SELECT ?school ?gender
     WHERE {
-        ?id schema:schoolName ?school .
+        ?id ld:schoolName ?school .
         ?id ld:gender ?gender .
     }
 
 SELECT ?school ?status
     WHERE {
-        ?id schema:schoolName ?school .
+        ?id ld:schoolName ?school .
         ?id ld:status ?status .
     }
 
 SELECT ?school ?type
     WHERE {
-        ?id schema:schoolName ?school .
+        ?id ld:schoolName ?school .
         ?id ld:type ?type .
     }
 
 SELECT ?school ?phase
     WHERE {
-        ?id schema:schoolName ?school .
+        ?id ld:schoolName ?school .
         ?id ld:phase ?phase .
     }
 
 SELECT ?school ?town
     WHERE {
-        ?id schema:schoolName ?school .
+        ?id ld:schoolName ?school .
         ?id ld:placedIn ?town .
     }   
 
 SELECT ?school ?lat
     WHERE {
-        ?id schema:schoolName ?school .
+        ?id ld:schoolName ?school .
         ?id wgs84_pos:lat ?lat .
     }
 
 SELECT ?school ?long
     WHERE {
-        ?id schema:schoolName ?school .
+        ?id ld:schoolName ?school .
         ?id wgs84_pos:long ?long .
     }
 
@@ -60,7 +59,7 @@ SELECT ?casas
 
 SELECT ?casas 
     WHERE {
-        ?id schema:identifier ?casas .
+        ?id ld:identifier ?casas .
     }
 
 SELECT ?casas 
@@ -106,7 +105,7 @@ SELECT ?townName ?averagePrice (COUNT(?schools) AS ?schoolCount)
 SELECT ?type (GROUP_CONCAT(?name; SEPARATOR=", ") AS ?schoolname)
     WHERE {
         ?school a ld:School .
-        ?school schema:schoolName ?name .
+        ?school ld:schoolName ?name .
         ?school ld:type ?type .
         ?school ld:gender ?gender .
         FILTER(?gender = "Boys")
