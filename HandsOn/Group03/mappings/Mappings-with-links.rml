@@ -3,7 +3,7 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix ld: <http://schoolhouse.linkeddata.es/london/resource#> .
+@prefix ld: <http://london.linkeddata.es/london/resource#> .
 @prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
@@ -53,7 +53,7 @@
     rml:referenceFormulation ql:CSV
   ] ;
   rr:subjectMap [
-    rr:template "http://londonschool.linkeddata.es/london/resource/school/{Id}" ;
+    rr:template "http://london.linkeddata.es/london/resource/school/{Id}" ;
     rr:class ld:School
   ] ;
   rr:predicateObjectMap [
@@ -109,7 +109,7 @@
     rml:referenceFormulation ql:CSV
   ] ;
   rr:subjectMap [
-    rr:template "http://londonhousing.linkeddata.es/london/resource/house/{Id}" ;
+    rr:template "http://london.linkeddata.es/london/resource/house/{Id}" ;
     rr:class ld:House
   ] ;
   rr:predicateObjectMap [
