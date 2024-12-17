@@ -22,6 +22,9 @@ mappings:
       - predicate: clpr:albergadoEn
         objectMap:
           template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/establecimiento_{codigo_dea}"
+      - predicate: clpr:localizadoEn
+        objectMap:
+          template: "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/{direccion_completa}"
 
   EstablecimientoMapping:
     logicalSource:

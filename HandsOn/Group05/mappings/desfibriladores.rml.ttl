@@ -24,7 +24,15 @@
         rr:objectMap [
             rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/establecimiento_{codigo_dea}"
         ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate clpr:localizadoEn;
+        rr:objectMap [
+            rr:template "http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/{direccion_completa}"
+        ]
     ].
+
+
 
 <#EstablecimientoMapping>
     rml:logicalSource [
