@@ -17,6 +17,11 @@
             <img src="images\LANAME.png" width="500" height="auto">
         </header>
 
+        <header>
+            <h1>Diagrama del esquema y de la instancia</h1>
+            <img src="images\esquema.png" width="500" height="auto">
+            <img src="images\instancia.png" width="500" height="auto">
+        </header>
         <main>
             <h2>Licencias de los datos</h2>
             <p>Ambos datasets usados tienen la licencia Open Government Licence v.3.0, lo cual hace que no existan conflictos de licencia entre los dos datasets, por lo que la licencia potencial sería también Open Government Licence v.3.0</p>
@@ -32,78 +37,39 @@
                         <li><strong>propiedades</strong>: [ontologyName]#[propertyName]</li>
                         <li><strong>Individuos</strong>: [className]/[identifier]</li>
                     </ul>
-                <h2>Diagrama conceptual del esquema a seguir y la instancia</h2>
-                <img src="images\esquema.png"  width="500" height="auto">
-                <img src="images\instancia.png"  width="500" height="auto">
-                <h2>Visualización gráfica de los tipos de nombrado.</h2>
-                <img src="images\Captura de pantalla 20242211-11 151758.png"  width="500" height="auto">
+
                 <h4>Para de clase:</h4>
                 <ul>
-                    <li>http://londonschool.linkeddata.es/school/ontology#School</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Id</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Gender</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Name</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Type</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Address</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Status</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Phase</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#Town</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#x</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#y</li>
+                    <li>http://london.linkeddata.es/london/ontology#School</li>
+                    <li>http://london.linkeddata.es/london/ontology#Town</li>
+                    <li>http://london.linkeddata.es/london/ontology#House</li>
                 </ul>
-        
+                
                 <h4>Para propiedades:</h4>
                 <ul>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasSchoolId</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#type</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasName</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasType</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasGender</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasPhase</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasAddress</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#placedIn</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasStatus</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasX</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#hasY</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#datatype</li>
+                    <li>http://london.linkeddata.es/london/ontology#identifier</li>
+                    <li>http://london.linkeddata.es/london/ontology#gender</li>
+                    <li>http://london.linkeddata.es/london/ontology#schoolName</li>
+                    <li>http://london.linkeddata.es/london/ontology#type</li>
+                    <li>http://london.linkeddata.es/london/ontology#address</li>
+                    <li>http://london.linkeddata.es/london/ontology#status</li>
+                    <li>http://london.linkeddata.es/london/ontology#phase</li>
+                    <li>http://london.linkeddata.es/london/ontology#lat</li>
+                    <li>http://london.linkeddata.es/london/ontology#long</li>
+                    <li>http://london.linkeddata.es/london/ontology#dateRecorded</li>
+                    <li>http://london.linkeddata.es/london/ontology#averagePrice</li>
+                    <li>http://london.linkeddata.es/london/ontology#housesSold</li>
+                    <li>http://london.linkeddata.es/london/ontology#townName</li>
                 </ul>
-        
+
                 <h4>Para individuos:</h4>
                 <ul>
-                    <li>http://londonschool.linkeddata.es/school/resource/[nombre_clase]/[nombre_individuo]</li>
+                    <li>http://london.linkeddata.es/london/resource/[nombre_clase]/[nombre_individuo]</li>
                 </ul>
 
                 <p>Estrategia de nombrado de London School de manera visual</p>
-                <img src="images\Captura de pantalla 2024-11-10 143623.png" width="500" height="auto">
         
-                <h4>Para clases:</h4>
-                <ul>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#House</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#Id</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#Date</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#AveragePrice</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#HousesSold</li>
-                </ul>
         
-                <h4>Para propiedades:</h4>
-                <ul>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#hasHouseId</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#placedIn</li>
-                    <li>http://londonschool.linkeddata.es/school/ontology#type</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#dateRecorded</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#hasAveragePrice</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#sold</li>
-                    <li>http://londonhousing.linkeddata.es/house/ontology#datatype</li>
-
-                </ul>
-    
-                <h4>Para individuos:</h4>
-                <ul>
-                    <li>http://londonhousing.linkeddata.es/house/resource/[className]/[identifier]</li>
-                </ul>
-
-                <p>Estrategia de nombrado de London Housing de manera visual</p>
-                
                 <h3>Detalles de Columnas</h3>
                 <table>
                     <thead>

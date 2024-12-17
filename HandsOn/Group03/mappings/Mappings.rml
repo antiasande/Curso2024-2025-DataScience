@@ -1,114 +1,120 @@
-@prefix rr: <http://www.w3.org/ns/r2rml#>.
-@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
-@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
-@prefix vf: <http://londonschool.linkeddata.es/school/ontology#>.
-@prefix hv: <http://londonhousing.linkeddata.es/house/ontology#>.
-@base <http://example.com/ns#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ld: <http://london.linkeddata.es/london/resource#> .
 
-<#TriplesMap1> a rr:TriplesMap;
+#### Town TriplesMap
+
+<#TriplesMapTown> a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "all-schools-xy-2016-csv_updated.csv";
-    rml:referenceFormulation ql:CSV 
-  ];
+    rml:source "all-schools-xy-2016-csv_updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
   rr:subjectMap [
-    rr:template "http://londonschool.linkeddata.es/school/ontology/{Id}";
-    rr:class vf:School
-  ];
-
+    rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ;
+    rr:class ld:Town
+  ] ;
   rr:predicateObjectMap [
-    rr:predicate vf:hasSchoolID;
-    rr:objectMap [ rml:reference "Id"; rr:datatype xsd:string ]
-  ];
+    rr:predicate ld:townName ;
+    rr:objectMap [ rml:reference "Town" ; rr:datatype xsd:string ]
+  ] .
 
-  rr:predicateObjectMap [
-    rr:predicate vf:hasName;
-    rr:objectMap [ rml:reference "Name"; rr:datatype xsd:string ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vf:hasType;
-    rr:objectMap [ rml:reference "Type"; rr:datatype xsd:string ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vf:hasPhase;
-    rr:objectMap [ rml:reference "Phase"; rr:datatype xsd:string ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vf:hasAddress;
-    rr:objectMap [ rml:reference "Address"; rr:datatype xsd:string ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vf:hasStatus;
-    rr:objectMap [ rml:reference "Status"; rr:datatype xsd:string ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vf:hasGender;
-    rr:objectMap [ rml:reference "Gender"; rr:datatype xsd:string ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vf:placedIn;
-    rr:objectMap [ rml:reference "Town"; rr:datatype xsd:string ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate wgs84_pos:lat;
-    rr:objectMap [ rml:reference "x"; rr:datatype xsd:decimal ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate wgs84_pos:long;
-    rr:objectMap [ rml:reference "y"; rr:datatype xsd:decimal ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate vf:linkTowns;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap2>;
-      rr:joinCondition [
-        rr:child "Town";
-        rr:parent "Town"
-      ]
-    ]
-  ].
-
-<#TriplesMap2> a rr:TriplesMap;
+<#TriplesMapTown2> a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "housing_in_london_monthly_variables_updated.csv";
-    rml:referenceFormulation ql:CSV 
-  ];
+    rml:source "housing_in_london_monthly_variables_updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
   rr:subjectMap [
-    rr:template "http://londonhousing.linkeddata.es/house/ontology/{Id}";
-    rr:class hv:House
-  ];
+    rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ;
+    rr:class ld:Town
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:townName ;
+    rr:objectMap [ rml:reference "Town" ; rr:datatype xsd:string ]
+  ] .
 
-  rr:predicateObjectMap [
-    rr:predicate hv:hasHouseId;
-    rr:objectMap [ rml:reference "Id"; rr:datatype xsd:string ]
-  ];
+#### School TriplesMap
 
+<#TriplesMapSchool> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "all-schools-xy-2016-csv_updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://london.linkeddata.es/london/resource/school/{Id}" ;
+    rr:class ld:School
+  ] ;
   rr:predicateObjectMap [
-    rr:predicate hv:placedIn;
-    rr:objectMap [ rml:reference "Town"; rr:datatype xsd:string ]
-  ];
+    rr:predicate ld:identifier ;
+    rr:objectMap [ rml:reference "Id" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:schoolName ;
+    rr:objectMap [ rml:reference "Name" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:type ;
+    rr:objectMap [ rml:reference "Type" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:phase ;
+    rr:objectMap [ rml:reference "Phase" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:address ;
+    rr:objectMap [ rml:reference "Address" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:status ;
+    rr:objectMap [ rml:reference "Status" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:gender ;
+    rr:objectMap [ rml:reference "Gender" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:placedIn ;
+    rr:objectMap [ rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:lat ;
+    rr:objectMap [ rml:reference "x" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:long ;
+    rr:objectMap [ rml:reference "y" ; rr:datatype xsd:decimal ]
+  ] .
 
-  rr:predicateObjectMap [
-    rr:predicate hv:dateRecorded;
-    rr:objectMap [ rml:reference "Date"; rr:datatype xsd:dateTime ]
-  ];
+#### House TriplesMap
 
+<#TriplesMapHouse> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "housing_in_london_monthly_variables_updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://london.linkeddata.es/london/resource/house/{Id}" ;
+    rr:class ld:House
+  ] ;
   rr:predicateObjectMap [
-    rr:predicate hv:hasAveragePrice;
-    rr:objectMap [ rml:reference "AveragePrice"; rr:datatype xsd:integer ]
-  ];
-  
+    rr:predicate ld:identifier ;
+    rr:objectMap [ rml:reference "Id" ; rr:datatype xsd:string ]
+  ] ;
   rr:predicateObjectMap [
-    rr:predicate hv:sold;
-    rr:objectMap [ rml:reference "HousesSold"; rr:datatype xsd:integer ]
-  ].
+    rr:predicate ld:placedIn ;
+    rr:objectMap [ rr:template "http://london.linkeddata.es/london/resource/town/{Town}" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:dateRecorded ;
+    rr:objectMap [ rml:reference "Date" ; rr:datatype xsd:dateTime ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:averagePrice ;
+    rr:objectMap [ rml:reference "AveragePrice" ; rr:datatype xsd:integer ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ld:housesSold ;
+    rr:objectMap [ rml:reference "HousesSold" ; rr:datatype xsd:integer ]
+  ] .
