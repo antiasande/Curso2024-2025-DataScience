@@ -1,49 +1,57 @@
+@prefix : <http://accidentestrafico.org/traffic/> .
+@prefix ns: <http://accidentestrafico.org/traffic/ontology/TrafficOntology#> .
+@prefix ind: <http://accidentestrafico.org/traffic/resource/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+: a owl:Ontology ;
+    rdfs:label "Ontología de Accidentes de Tráfico"@es ;
+    dc:title "TrafficOntology"@en ;
+    dc:creator "Grupo 06";
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
 #################################################################
-#    Intancias
+#    Instancias
 #################################################################
 
 # Instancia de Accidente
-ind:Accidente2024S111201 a :Accidente ;
-    :NumeroExpediente "2024S111201" ;
-    :Fecha "2024-11-12"^^xsd:date ;
-    :Hora "15:00:00"^^xsd:time ;
-    :TipoAccidente "Colisión lateral" ;
-    :PruebaAlcohol "NO" ;
-    :PruebaDrogas "YES" ;
-    :OcurreEn ind:Direccion1 ;
-    :TieneEstadoMeteorologico ind:EstadoLluvia ;
-    :ParticipaPersona ind:Persona123 ;
-    :InvolucraVehiculo ind:Vehiculo123 .
+<http://accidentestrafico.org/traffic/resource/Accidente/Accidente2024S111201> a :Accidente ;
+    ns:numExpediente "2024S111201" ;
+    ns:fecha "2024-11-12"^^xsd:date ; 
+    ns:hora "15:00:00"^^xsd:time ;
+    ns:tipoAccidente "Colisión lateral" ;
+    ns:OcurreEn <http://accidentestrafico.org/traffic/resource/Direccion/Direccion1> ;
+    ns:TieneEstadoMeteorologico <http://accidentestrafico.org/traffic/resource/EstadoMeteorologico/EstadoMeteorologico_Lluvia> ;
+    ns:ParticipaPersona <http://accidentestrafico.org/traffic/resource/Persona/Persona123> ;
+    ns:InvolucraVehiculo <http://accidentestrafico.org/traffic/resource/Vehiculo/Vehiculo123> .
 
 # Instancia de Persona
-ind:Persona123 a :Persona ;
-    :RangoEdad "De 25 a 29 años" ;
-    :Sexo "Hombre" ;
-    :TipoDePersona "Conductor" ;
-    :PruebaAlcohol "NO" ;
-    :PruebaDrogas "YES" ;
-    :TieneLesividad ind:LesividadIngreso .
+<http://accidentestrafico.org/traffic/resource/Persona/Persona123> a :Persona ;
+    ns:rangoEdad "De 25 a 29 años" ;
+    ns:sexo "Hombre" ;
+    ns:tipoDePersona "Conductor" ;
+    ns:positivaAlcohol "NO" ;
+    ns:positivaDroga "YES" ;
+    ns:TieneLesividad <http://accidentestrafico.org/traffic/resource/Lesividad/Lesividad123> .
 
 # Instancia de Lesividad
-ind:LesividadIngreso a :Lesividad ;
-    :CodLesividad 2 .
+<http://accidentestrafico.org/traffic/resource/Lesividad/Lesividad123> a :Lesividad ;
+    ns:lesividad "Ingreso inferior o igual a 24 horas" ;
+    ns:codLesividad "2" .
 
 # Instancia de Dirección
-ind:Direccion1 a :Direccion ;
-    :Localizacion "CALL. TESORO / CALL. MINAS, 12" ;
-    :Distrito "CENTRO" ;
-    :TieneCoordenadas ind:CoordenadasDireccion1 .
-
-# Instancia de Coordenadas
-ind:CoordenadasDireccion1 a :Coordenadas ;
-    :Coordenadas 123456 ;
-    :CoordenadaY 654321 .
+<http://accidentestrafico.org/traffic/resource/Direccion/Direccion1> a :Direccion ;
+    ns:localizacion "CALL. TESORO / CALL. MINAS, 12" ;
+    ns:distrito "CENTRO (1)" ;
+    ns:coordenadas "(123456, 654321)" .
 
 # Instancia de Estado Meteorológico
-ind:EstadoLluvia a :EstadoMeteorologico ;
-    :Estado "Lluvia" .
+<http://accidentestrafico.org/traffic/resource/EstadoMeteorologico/EstadoMeteorologico_Lluvia> a :EstadoMeteorologico ;
+    ns:estadoMeteorologico "Lluvia" .
 
 # Instancia de Vehículo
-ind:Vehiculo123 a :Vehiculo ;
-    :TipoVehiculo "Coche" .
-
+<http://accidentestrafico.org/traffic/resource/Vehiculo/Vehiculo123> a :Vehiculo ;
+    ns:tipoVehiculo "Coche" .

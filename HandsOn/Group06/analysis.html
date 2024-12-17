@@ -127,7 +127,7 @@
         </p>
 
         <p>
-            <strong>Inconsistencias:</strong> Como inconsistencias notarias en algunas categorias hay ciertos valores del tipo Null, desconocido, no se sabe, etc. En cuenta a inconsistencias de tipo no se han encontrado ninguna y los datos parecen estar en el formato correcto a lo largo de los tres csv.
+            <strong>Inconsistencias:</strong> Como inconsistencias notorias en algunas categorias hay ciertos valores del tipo Null, desconocido, no se sabe, etc. En cuenta a inconsistencias de tipo, no se ha encontrado ninguna y los datos parecen estar en el formato correcto a lo largo de los tres csv.
         </p>
 
 
@@ -345,19 +345,19 @@
         </ul>
 
         <!-- Análisis de los resultados -->
-        <p> vamos a analizar cuales de los datos dados nos vas a servir para nuestra aplicación y veamos como varian según el año</p>
+        <p> vamos a analizar cuales de los datos dados nos vas a servir para nuestra aplicación y veamos como varían según el año</p>
         <p> Las columnas más relevantes son la localización y la hora del día a la que se produce el accidente, si queremos hacer una aplicación
-            que solo diga donde es más propenso que se produzca un accidente.
-            Ahora si queremos saber estadisticamente cual es la posibilidad de que tengamos un accidente teniendo en cuneta más detalles
+            que únicamente diga donde es más propenso que se produzca un accidente.
+            Ahora si queremos saber estadísticamente cuál es la posibilidad de que tengamos un accidente teniendo en cuenta más detalles
             como el auotmóvil, la edad y la columna que no indica si hemos consumido alcohol o drogas.
         </p>
 
-        <p> Según el año, observamos que el años en el que menos accidentes hubo fue en 2024, pero en todos lo años se observa que el vehículo qeu sufre más accidentes es el turismo.
-            Siendo el Puente de vallecas el lugar más inseguro. Además tambien vemos que las horas donde se producen más accidentes son durante las primeras horas de la tarde,
-            esto puede deberse porque es cuendo la gente sale de trabajar, y durante las úlyimas horas de la tarde.
+        <p> Según el año, observamos que en el que menos accidentes hubo fue el 2024, pero en todos se observa que el vehículo que sufre más accidentes es el turismo, 
+            siendo el Puente de Vallecas el lugar más inseguro. Además, cuando se producen más accidentes son durante las primeras horas de la tarde, que puede deberse 
+            a que es cuendo la gente sale de trabajar, y durante las últimas horas de la tarde.
         </p>
 
-        <p> Además en los tres años el tipo de accidentes que más se produce es la colisión fronto-lateral, seguido de el accidente por Alcance
+        <p> Además, en los tres años el tipo de accidente que más se produce es la colisión fronto-lateral, seguido de el accidente por alcance
             y la colisión lateral.
         </p>
 
@@ -373,8 +373,8 @@
         </p>
         <p>
             <strong>Licencia del Dataset</strong> La licencia del dataset escogido se explica en el siguiente enlace: https://datos.madrid.es/egob/catalogo/aviso-legal.
-            En el enlace se especifica que la licencia de los datos ess abierta para todo aquel que quiera hacer uso de ella, ya sea de manera comercial o no comercial.
-            La autorización implica la cesión gratuita y no exclusiva de los derechos de propiedad intelectual, autorizandose la reproducción, distribución, comunicación pública y transformación.
+            En el enlace se especifica que la licencia de los datos es abierta para todo aquel que quiera hacer uso de ella, ya sea de manera comercial o no comercial.
+            La autorización implica la cesión gratuita y no exclusiva de los derechos de propiedad intelectual, autorizándose la reproducción, distribución, comunicación pública y transformación.
         </p>
         <p>
             <strong>Licencia potencial para el dataset generado</strong> En nuestro caso creemos que la licencia adecuada es la CC BY-ND, ya que permite
@@ -385,6 +385,7 @@
     <!-- Estrategia de Nombres para Recursos -->
     <section>
         <h2>3. Estrategia de Nombres para Recursos</h2>
+        <p>La estrategia de nombrado de recursos que se seguirá en la ontología a crear será la siguiente:</p>
 
         <p>
             <strong>Dominio base de la URI:</strong> <code>http://accidentestrafico.org/</code>.
@@ -394,20 +395,28 @@
             <strong>Path de contexto:</strong> <code>traffic/</code>
         </p>
 
+        <p>Es importante diferenciar el modelo de la ontología con sus respectivas instancias. Para esto usaremos los siguientes nombrados para identificar, por una parte las clases y propiedades de la ontología, y por otro las instancias (datos o individuos).</p>
+
         <p>
             <strong>Definición de la ontología:</strong> <code>ontology/</code> se usará para definir las clases y propiedades de la ontología.
         </p>
-
-        <p><strong>Ejemplo de URI para una clase:</strong> <code>http://accidentestrafico.org/traffic/ontology/Accidente#</code></p>
-
-        <p><strong>Ejemplo de URI para una propiedad:</strong> <code>http://accidentestrafico.org/traffic/ontology/tipoAccidente#</code></p>
+        <p>
+            <strong>Patrón Clases:</strong> <code>http://accidentestrafico.org/traffic/ontology/nombreOntología#nombreClase</code>. Se reemplazará el nombreOntología y nombreClase por sus verdaderos valores.
+        </p>
+        <p>Ejemplo de URI para una clase:<code>http://accidentestrafico.org/traffic/ontology/TrafficOntology#Accidente</code></p>
+        <p>
+            <strong>Patrón Propiedades:</strong> <code>http://accidentestrafico.org/traffic/ontology/nombreOntología#nombrePropiedad</code>. Se reemplazará el nombreOntología y nombrePropiedad por sus verdaderos valores.
+        </p>        
+        <p>Ejemplo de URI para una propiedad:<code>http://accidentestrafico.org/traffic/ontology/TrafficOntology#tipoAccidente</code></p>
 
         <p>
             <strong>Path para datos o individuos:</strong> <code>resource/</code> (donde se almacenan los recursos individuales de cada accidente).
         </p>
-
         <p>
-            <strong>Ejemplo de URI para un accidente concreto:</strong>
+            <strong>Patrón Instancia:</strong> <code>http://accidentestrafico.org/traffic/resource/nombreClase/identificador</code>. Se reemplazará el nombreOntología e identificador por sus verdaderos valores.
+        </p>
+        <p>
+            Ejemplo de URI para un accidente concreto:
             <code>http://accidentestrafico.org/traffic/resource/Accidente/2023S040280</code>.
             Aquí, la última parte ( <code>2023S040280</code> ) es el identificador único del accidente.
         </p>
