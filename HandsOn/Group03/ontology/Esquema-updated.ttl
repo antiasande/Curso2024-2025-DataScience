@@ -19,7 +19,6 @@ ld:Town a owl:Class ;
 
 
 ld:School rdfs:subClassOf wgs84_pos:SpatialThing . 
-ld:House rdfs:subClassOf wgs84_pos:SpatialThing .
 
 
 # ObjectProperties

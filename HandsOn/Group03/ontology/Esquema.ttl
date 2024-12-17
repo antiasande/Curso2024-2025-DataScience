@@ -17,11 +17,6 @@ ld:School a owl:Class ;
 ld:Town a owl:Class ;
     rdfs:label "Town" .
 
-
-ld:School rdfs:subClassOf wgs84_pos:SpatialThing . 
-ld:House rdfs:subClassOf wgs84_pos:SpatialThing .
-
-
 # ObjectProperties
 
 ld:placedIn a owl:ObjectProperty ;
