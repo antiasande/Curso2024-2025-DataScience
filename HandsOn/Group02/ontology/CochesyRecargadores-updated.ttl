@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @base <http://www.owl-ontologies.com/ns#> .
 
 <http://www.owl-ontologies.com/ns#> rdf:type owl:Ontology ;
@@ -67,12 +68,12 @@
     rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
     rdfs:range xsd:integer .
 
-<http://www.owl-ontologies.com/ns#latitud> rdf:type owl:DatatypeProperty ;
+geo:lat rdf:type owl:DatatypeProperty ;
     rdfs:label "Latitud" ;
     rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
     rdfs:range xsd:decimal .
 
-<http://www.owl-ontologies.com/ns#longitud> rdf:type owl:DatatypeProperty ;
+geo:long rdf:type owl:DatatypeProperty ;
     rdfs:label "Longitud" ;
     rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
     rdfs:range xsd:decimal .
