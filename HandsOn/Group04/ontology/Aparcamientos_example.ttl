@@ -1,6 +1,6 @@
 @prefix : <http://www.domainkg.com/base#> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://www.domainkg.com/parking_ontology/concepts#> .
+@prefix ns: <http://www.domainkg.com/parking_ontology/resources#> .
 @prefix ins: <http://www.domainkg.com/parking_ontology/instances#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -18,17 +18,29 @@ ins:Barrio1 a ns:Barrio ;
     ns:tieneCodigo "02-03" ;
     rdfs:label "Recoletos" .
 
+ins:Via1 a ns:Via ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:tieneNombre "Calle de Goya" ;
+    rdfs:label "Calle de Goya" .
+
 ins:Direccion1 a ns:Direccion1 ;
     ns:estaEnDistrito ins:Distrito1 ;
     ns:estaEnBarrio ins:Barrio1 ;
-    ns:nombreVia "Calle de Goya" ;
+    ns:estaEnVia ins:Via1 ;
     ns:numeroVia "26" ;
     rdfs:label "Calle de Goya, 26" .
+
+ins:Via2 a ns:Via ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:tieneNombre "Calle de Serrano" ;
+    rdfs:label "Calle de Goya" .
 
 ins:Direccion2 a ns:Direccion1 ;
     ns:estaEnDistrito ins:Distrito1 ;
     ns:estaEnBarrio ins:Barrio1 ;
-    ns:nombreVia "Calle de Serrano" ;
+    ns:estaEnVia ins:Via2 ;
     ns:numeroVia "22" ;
     rdfs:label "Calle de Serrano, 22" .
 

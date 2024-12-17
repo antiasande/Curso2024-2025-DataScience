@@ -1,6 +1,6 @@
 @prefix : <http://www.domainkg.com/base#> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://www.domainkg.com/parking_ontology/concepts#> .
+@prefix ns: <http://www.domainkg.com/parking_ontology/resources#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -17,19 +17,22 @@ ns:Direccion a owl:Class ;
 ns:Distrito a owl:Class ;
     rdfs:label "Distrito" .
 
+ns:Via a owl:Class ;
+    rdfs:label "Vía" .
+
+ns:Aparcamiento a owl:Class ;
+    rdfs:label "Aparcamiento" .
+
+ns:AparcamientoPúblico a owl:Class ;
+    rdfs:label "Aparcamiento Público" ;
+    rdfs:subClassOf ns:Aparcamiento .
+
 ns:AparcamientoMR a owl:Class ;
     rdfs:label "Aparcamiento Movilidad Reducida" ;
     rdfs:subClassOf ns:Aparcamiento .
 
 ns:AparcamientoSER a owl:Class ;
     rdfs:label "Aparcamiento en Zona de Servicio de Estacionamiento Regulado" ;
-    rdfs:subClassOf ns:Aparcamiento .
-
-ns:Aparcamiento a owl:Class ;
-    rdfs:label "Aparcamiento" .
-
-ns:AparcamientoPúblicos a owl:Class ;
-    rdfs:label "Aparcamiento Público" ;
     rdfs:subClassOf ns:Aparcamiento .
 
 ns:esAccesible a owl:DatatypeProperty ;
@@ -40,18 +43,23 @@ ns:esAccesible a owl:DatatypeProperty ;
 ns:estaEnBarrio a owl:ObjectProperty ;
     rdfs:label "está en el barrio" ;
     rdfs:domain [a owl:Class;
-                 owl:unionOf (ns:Aparcamiento ns:Direccion)];
+                 owl:unionOf (ns:Aparcamiento ns:Direccion ns:Via)];
     rdfs:range ns:Barrio .
 
 ns:estaEnDireccion a owl:ObjectProperty ;
     rdfs:label "su dirección es" ;
-    rdfs:domain ns:Aparcamiento;
+    rdfs:domain ns:Aparcamiento ;
     rdfs:range ns:Direccion .
+
+ns:estaEnVia a owl:ObjectProperty ;
+    rdfs:label "está en la vía" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range ns:Via .
 
 ns:estaEnDistrito a owl:ObjectProperty ;
     rdfs:label "está en el distrito" ;
     rdfs:domain [a owl:Class;
-                 owl:unionOf (ns:Aparcamiento ns:Direccion ns:Barrio)];
+                 owl:unionOf (ns:Aparcamiento ns:Direccion ns:Barrio ns:Via)];
     rdfs:range ns:Distrito .
 
 ns:seAparcaEn a owl:DatatypeProperty ;
@@ -62,7 +70,7 @@ ns:seAparcaEn a owl:DatatypeProperty ;
 
 ns:tieneColor a owl:DatatypeProperty ;
     rdfs:label "tiene color" ;
-    rdfs:domain ns:aparcamientoSER ;
+    rdfs:domain ns:AparcamientoSER ;
     rdfs:range xsd:string .
 
 ns:tieneHorario a owl:DatatypeProperty ;
@@ -73,16 +81,12 @@ ns:tieneHorario a owl:DatatypeProperty ;
 ns:tieneNombre a owl:DatatypeProperty ;
     rdfs:label "tiene nombre" ;
     rdfs:domain [a owl:Class;
-                 owl:unionOf (ns:AparcamientoPúblico ns:Distrito ns:Barrio)];
+                 owl:unionOf (ns:AparcamientoPúblico ns:Distrito ns:Barrio ns:Via)];
     rdfs:range xsd:string .
 
 ns:tienePlazas a owl:DatatypeProperty ;
     rdfs:label "tiene plazas" ;
     rdfs:domain ns:Aparcamiento ;
-    rdfs:range xsd:string .
-
-ns:nombreVia a owl:DatatypeProperty ;
-    rdfs:domain ns:Direccion ;
     rdfs:range xsd:string .
 
 ns:numeroVia a owl:DatatypeProperty ;

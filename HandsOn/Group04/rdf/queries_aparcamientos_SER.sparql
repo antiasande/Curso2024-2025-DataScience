@@ -12,11 +12,11 @@ WHERE {
 }
 
 
-# Obtener las direcciones en el barrio Embajadores con su nombre y número de vía
-SELECT ?direccion ?nombreVia ?numeroVia
+# Obtener las direcciones en el barrio Embajadores con su Via y número de vía
+SELECT ?direccion ?Via ?numeroVia
 WHERE {
   ?direccion a ns:Direccion ;
-             ns:nombreVia ?nombreVia ;
+             ns:estaEnVia ?Via ;
              ns:numeroVia ?numeroVia ;
              ns:estaEnBarrio ?barrio .
   ?barrio ns:tieneNombre ?nombreBarrio .

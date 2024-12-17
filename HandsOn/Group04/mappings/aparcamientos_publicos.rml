@@ -10,7 +10,7 @@
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "http://www.domainkg.com/parking_ontology/instances#{DISTRITO}";
+    rr:template "http://www.domainkg.com/parking_ontology/instances#distrito_{DISTRITO}";
     rr:class ns:Distrito
   ];
   rr:predicateObjectMap [
@@ -34,7 +34,7 @@
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "http://www.domainkg.com/parking_ontology/instances#{BARRIO}";
+    rr:template "http://www.domainkg.com/parking_ontology/instances#barrio_{BARRIO}";
     rr:class ns:Barrio
   ];
   rr:predicateObjectMap [
@@ -54,7 +54,36 @@
   rr:predicateObjectMap [
     rr:predicate ns:estaEnDistrito;
     rr:objectMap [
-      rr:template "http://www.domainkg.com/parking_ontology/instances#{DISTRITO}"
+      rr:template "http://www.domainkg.com/parking_ontology/instances#distrito_{DISTRITO}"
+    ]
+  ].
+
+<#ViasMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv/202625-0-aparcamientos-publicos-updated.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.domainkg.com/parking_ontology/instances#via_{VIA}";
+    rr:class ns:Via
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:tieneNombre;
+    rr:objectMap [
+      rml:reference "VIA";
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:estaEnDistrito;
+    rr:objectMap [
+      rr:template "http://www.domainkg.com/parking_ontology/instances#distrito_{DISTRITO}"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:estaEnBarrio;
+    rr:objectMap [
+      rr:template "http://www.domainkg.com/parking_ontology/instances#barrio_{BARRIO}"
     ]
   ].
 
@@ -68,29 +97,28 @@
     rr:class ns:Direccion
   ];
   rr:predicateObjectMap [
-    rr:predicate ns:nombreVia;
-    rr:objectMap [
-      rml:reference "VIA";
-      rr:datatype xsd:string
-    ]
-  ];
-  rr:predicateObjectMap [
     rr:predicate ns:numeroVia;
     rr:objectMap [
       rml:reference "NUMERO";
       rr:datatype xsd:string
     ]
   ];
+    rr:predicateObjectMap [
+    rr:predicate ns:estaEnVia;
+    rr:objectMap [
+      rr:template "http://www.domainkg.com/parking_ontology/instances#via_{VIA}"
+    ]
+  ];
   rr:predicateObjectMap [
     rr:predicate ns:estaEnDistrito;
     rr:objectMap [
-      rr:template "http://www.domainkg.com/parking_ontology/instances#{DISTRITO}"
+      rr:template "http://www.domainkg.com/parking_ontology/instances#distrito_{DISTRITO}"
     ]
   ];
   rr:predicateObjectMap [
     rr:predicate ns:estaEnBarrio;
     rr:objectMap [
-      rr:template "http://www.domainkg.com/parking_ontology/instances#{BARRIO}"
+      rr:template "http://www.domainkg.com/parking_ontology/instances#barrio_{BARRIO}"
     ]
   ].
 
@@ -113,13 +141,13 @@
   rr:predicateObjectMap [
     rr:predicate ns:estaEnDistrito;
     rr:objectMap [
-      rr:template "http://www.domainkg.com/parking_ontology/instances#{DISTRITO}"
+      rr:template "http://www.domainkg.com/parking_ontology/instances#distrito_{DISTRITO}"
     ]
   ];
   rr:predicateObjectMap [
     rr:predicate ns:estaEnBarrio;
     rr:objectMap [
-      rr:template "http://www.domainkg.com/parking_ontology/instances#{BARRIO}"
+      rr:template "http://www.domainkg.com/parking_ontology/instances#barrio_{BARRIO}"
     ]
   ];
   rr:predicateObjectMap [

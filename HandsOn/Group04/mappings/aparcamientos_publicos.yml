@@ -9,39 +9,48 @@ mappings:
   DistritosMap:
     sources:
       - ["csv/202625-0-aparcamientos-publicos-updated.csv~csv"]
-    s: "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"
+    s: "http://www.domainkg.com/parking_ontology/instances#distrito_$(DISTRITO)"
     po:
-      - [ns:tieneNombre, $(DISTRITO)]
-      - [ns:tieneCodigo, $(COD-DISTRITO)]
+      - ["ns:tieneNombre", "$(DISTRITO)", "xsd:string"]
+      - ["ns:tieneCodigo", "$(COD-DISTRITO)", "xsd:string"]
 
   BarriosMap:
     sources:
       - ["csv/202625-0-aparcamientos-publicos-updated.csv~csv"]
-    s: "http://www.domainkg.com/parking_ontology/instances#$(BARRIO)"
+    s: "http://www.domainkg.com/parking_ontology/instances#barrio_$(BARRIO)"
     po:
-      - [ns:tieneNombre, $(BARRIO)]
-      - [ns:tieneCodigo, $(COD-BARRIO)]
-      - [ns:estaEnDistrito, "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"]
+      - ["ns:tieneNombre", "$(BARRIO)", "xsd:string"]
+      - ["ns:tieneCodigo", "$(COD-BARRIO)", "xsd:string"]
+      - ["ns:estaEnDistrito", "http://www.domainkg.com/parking_ontology/instances#distrito_$(DISTRITO)"]
+
+  ViasMap:
+    sources:
+      - ["csv/202625-0-aparcamientos-publicos-updated.csv~csv"]
+    s: "http://www.domainkg.com/parking_ontology/instances#via_$(VIA)"
+    po:
+      - ["ns:tieneNombre", "$(VIA)", "xsd:string"]
+      - ["ns:estaEnDistrito", "http://www.domainkg.com/parking_ontology/instances#distrito_$(DISTRITO)"]
+      - ["ns:estaEnBarrio", "http://www.domainkg.com/parking_ontology/instances#barrio_$(BARRIO)"]
 
   DireccionesMap:
     sources:
       - ["csv/202625-0-aparcamientos-publicos-updated.csv~csv"]
     s: "http://www.domainkg.com/parking_ontology/instances#direccion_$(ID)"
     po:
-      - [ns:nombreVia, $(VIA)]
-      - [ns:numeroVia, $(NUMERO)]
-      - [ns:estaEnDistrito, "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"]
-      - [ns:estaEnBarrio, "http://www.domainkg.com/parking_ontology/instances#$(BARRIO)"]
+      - ["ns:numeroVia", "$(NUMERO)", "xsd:string"]
+      - ["ns:estaEnVia", "http://www.domainkg.com/parking_ontology/instances#via_$(VIA)"]
+      - ["ns:estaEnDistrito", "http://www.domainkg.com/parking_ontology/instances#distrito_$(DISTRITO)"]
+      - ["ns:estaEnBarrio", "http://www.domainkg.com/parking_ontology/instances#barrio_$(BARRIO)"]
 
   AparcamientosMap:
     sources:
       - ["csv/202625-0-aparcamientos-publicos-updated.csv~csv"]
     s: "http://www.domainkg.com/parking_ontology/instances#$(ID)"
     po:
-      - [ns:tienePlazas, $(PLAZAS), xsd:integer]
-      - [ns:estaEnDistrito, "http://www.domainkg.com/parking_ontology/instances#$(DISTRITO)"]
-      - [ns:estaEnBarrio, "http://www.domainkg.com/parking_ontology/instances#$(BARRIO)"]
-      - [ns:estaEnDireccion, "http://www.domainkg.com/parking_ontology/instances#direccion_$(ID)"]
-      - [ns:tieneHorario, $(HORARIO)]
-      - [ns:tieneNombre, $(NOMBRE)]
-      - [ns:esAccesible, $(ACCESIBILIDAD), xsd:boolean]
+      - ["ns:tienePlazas", "$(PLAZAS)", "xsd:integer"]
+      - ["ns:estaEnDistrito", "http://www.domainkg.com/parking_ontology/instances#distrito_$(DISTRITO)"]
+      - ["ns:estaEnBarrio", "http://www.domainkg.com/parking_ontology/instances#barrio_$(BARRIO)"]
+      - ["ns:estaEnDireccion", "http://www.domainkg.com/parking_ontology/instances#direccion_$(ID)"]
+      - ["ns:tieneHorario", "$(HORARIO)", "xsd:string"]
+      - ["ns:tieneNombre", "$(NOMBRE)", "xsd:string"]
+      - ["ns:esAccesible", "$(ACCESIBILIDAD)", "xsd:boolean"]
