@@ -3,15 +3,16 @@ prefixes:
   ns: http://zonawifi.linkeddata.org/ontologia#
   ns2: http://instancias.org/
   xsd: http://www.w3.org/2001/XMLSchema#
+  owl: http://www.w3.org/2002/07/owl#
   
 mappings:
   zonasdewifi:
     sources:
-      - [216619-0-wifi-municipal-updated.csv~csv]
+            - [216619-0-wifi-municipal-with-links.csv~csv]
     s: ns2:EntidadWifi/$(EntidadWifi)
     po:
       - [a,ns:EntidadWifi ]
-      - [wifi:accesibilidad, $(ACCESIBILIDAD),xsd:string]
+      - [ns:accesibilidad, $(ACCESIBILIDAD),xsd:string]
       - [ns:equipamiento,$(EQUIPAMIENTO),xsd:string]
       - [ns:horario,$(HORARIO),xsd:string]
       - [ns:email,$(EMAIL),xsd:string] 
@@ -24,29 +25,28 @@ mappings:
       - [ns:longitud,$(LONGITUD),xsd:float]
       - [ns:tipoEntidadWifi,$(TipoEntidadWifi),xsd:string]
       - [ns:llegarConTransporte, ns2:TRANSPORTE_1/$(TRANSPORTE_1)$(Linea_1)~iri]
-      - [ns:llegarConTransporte, ns2:TRASNPORTE_2/$(TRANSPORTE_2)$(Linea_2)~iri]
+      - [ns:llegarConTransporte, ns2:TRANSPORTE_2/$(TRANSPORTE_2)$(Linea_2)~iri]
       - [ns:estarEnVia, ns2:VIA/$(VIA)$(NUM)~iri]
 
   Transporte1_:
         sources:
-              - [216619-0-wifi-municipal-updated.csv~csv]
+            - [216619-0-wifi-municipal-with-links.csv~csv]
         s: ns2:TRANSPORTE_1/$(TRANSPORTE_1)$(Linea_1)
         po:
               - [ns:linea, $(Linea_1), xsd:string]
               - [a, ns:Transporte]
-              - [ns:compania,$(TRANSPORTE_1), xsd:string]
-
+              - [ns:compania,$(TRANSPORTE_1),xsd:string]
   Transporte_2:
         sources:
-              - [216619-0-wifi-municipal-updated.csv~csv]
-        s: ns2:TRASNPORTE_2/$(TRANSPORTE_2)$(Linea_2)
+            - [216619-0-wifi-municipal-with-links.csv~csv]
+        s: ns2:TRANSPORTE_2/$(TRANSPORTE_2)$(Linea_2)
         po:
               - [ns:linea, $(Linea_2), xsd:string]
-              - [a, ns:Transporte~iri]
-              - [ns:compania,$(TRANSPORTE_2), xsd:string]
+              - [a, ns:Transporte]
+              - [ns:compania, $(TRANSPORTE_2),xsd:string]
   Via:
         sources: 
-              - [216619-0-wifi-municipal-updated.csv~csv]
+            - [216619-0-wifi-municipal-with-links.csv~csv]
         s: ns2:VIA/$(VIA)$(NUM)
         po:
               - [a, ns:Via]
@@ -54,32 +54,39 @@ mappings:
               - [ns:tipoNum, $(TIPO-NUM), xsd:string]
               - [ns:codigoPostal, $(CODIGO-POSTAL), xsd:string]
               - [ns:estarEnBarrio, ns2:BARRIO/$(BARRIO)~iri]
+              - [owl:sameAs, $(same_as_wikidata_via)~iri]
+
   Barrio:
         sources:
-              - [216619-0-wifi-municipal-updated.csv~csv]
+            - [216619-0-wifi-municipal-with-links.csv~csv]
         s: ns2:BARRIO/$(BARRIO)
         po:
               - [a, ns:Barrio]
               - [ns:codigoBarrio, $(COD-BARRIO), xsd:string]
               - [ns:estarEnDistrito, ns2:DISTRITO/$(DISTRITO)~iri]
+              - [owl:sameAs, $(same_as_wikidata_barrio)~iri]
   Distrito:
       sources:
-            - [216619-0-wifi-municipal-updated.csv~csv]
+            - [216619-0-wifi-municipal-with-links.csv~csv]
       s: ns2:DISTRITO/$(DISTRITO)
       po:
             - [a, ns:Distrito]
             - [ns:codigoDistrito, $(COD-DISTRITO), xsd:string]
-            - [ns:estarEnCiudad,ns2:CIUDAD/$(CIUDAD)~iri]
+            - [ns:estarEnCiudad,  ns2:CIUDAD/$(CIUDAD)~iri]
+            - [owl:sameAs, $(same_as_wikidata_distrito)~iri]
   Ciudad:
       sources:
-            - [216619-0-wifi-municipal-updated.csv~csv]
+            - [216619-0-wifi-municipal-with-links.csv~csv]
       s: ns2:CIUDAD/$(CIUDAD)
       po:
             - [a, ns:Ciudad]
-            - [ns:estarEnProvincia, ns2:PROVINCIA/$(PROVINCIA)~iri]            
+            - [ns:estarEnProvincia, ns2:PROVINCIA/$(PROVINCIA))~iri]
+            - [owl:sameAs, $(same_as_wikidata_ciudad)~iri ]            
   Provincia:
       sources:
-            - [216619-0-wifi-municipal-updated.csv~csv]
+            - [216619-0-wifi-municipal-with-links.csv~csv]
       s: ns2:PROVINCIA/$(PROVINCIA)
       po:
             - [a, ns:Provincia]
+            - [owl:sameAs, $(same_as_wikidata_provincia)~iri ]
+

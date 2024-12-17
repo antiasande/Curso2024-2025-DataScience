@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix map: <http://mapping.example.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix base: <http://zonawifi.linkeddata.org/ontologia#> .
@@ -13,25 +14,25 @@
 map:map_Barrio_000 rml:logicalSource map:source_004 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Barrio" ;
-	rr:predicateObjectMap map:pom_027, map:pom_028, map:pom_029 ;
+	rr:predicateObjectMap map:pom_028, map:pom_029, map:pom_030, map:pom_031 ;
 	rr:subjectMap map:s_004 .
 
 map:map_Ciudad_000 rml:logicalSource map:source_006 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Ciudad" ;
-	rr:predicateObjectMap map:pom_033, map:pom_034 ;
+	rr:predicateObjectMap map:pom_036, map:pom_037, map:pom_038 ;
 	rr:subjectMap map:s_006 .
 
 map:map_Distrito_000 rml:logicalSource map:source_005 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Distrito" ;
-	rr:predicateObjectMap map:pom_030, map:pom_031, map:pom_032 ;
+	rr:predicateObjectMap map:pom_032, map:pom_033, map:pom_034, map:pom_035 ;
 	rr:subjectMap map:s_005 .
 
 map:map_Provincia_000 rml:logicalSource map:source_007 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Provincia" ;
-	rr:predicateObjectMap map:pom_035 ;
+	rr:predicateObjectMap map:pom_039, map:pom_040 ;
 	rr:subjectMap map:s_007 .
 
 map:map_Transporte1__000 rml:logicalSource map:source_001 ;
@@ -49,7 +50,7 @@ map:map_Transporte_2_000 rml:logicalSource map:source_002 ;
 map:map_Via_000 rml:logicalSource map:source_003 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Via" ;
-	rr:predicateObjectMap map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026 ;
+	rr:predicateObjectMap map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026, map:pom_027 ;
 	rr:subjectMap map:s_003 .
 
 map:map_zonasdewifi_000 rml:logicalSource map:source_000 ;
@@ -127,7 +128,7 @@ map:om_013 rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:om_014 rdf:type rr:ObjectMap ;
-	rr:template "http://instancias.org/TRASNPORTE_2/{TRANSPORTE_2}{Linea_2}" ;
+	rr:template "http://instancias.org/TRANSPORTE_2/{TRANSPORTE_2}{Linea_2}" ;
 	rr:termType rr:IRI .
 
 map:om_015 rdf:type rr:ObjectMap ;
@@ -185,49 +186,69 @@ map:om_026 rdf:type rr:ObjectMap ;
 	rr:template "http://instancias.org/BARRIO/{BARRIO}" ;
 	rr:termType rr:IRI .
 
-map:om_027 rdf:type rr:ObjectMap ;
+map:om_027 rml:reference "same_as_wikidata_via" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_028 rdf:type rr:ObjectMap ;
 	rr:constant ns:Barrio ;
 	rr:termType rr:IRI .
 
-map:om_028 rml:reference "COD-BARRIO" ;
+map:om_029 rml:reference "COD-BARRIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_029 rdf:type rr:ObjectMap ;
+map:om_030 rdf:type rr:ObjectMap ;
 	rr:template "http://instancias.org/DISTRITO/{DISTRITO}" ;
 	rr:termType rr:IRI .
 
-map:om_030 rdf:type rr:ObjectMap ;
+map:om_031 rml:reference "same_as_wikidata_barrio" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_032 rdf:type rr:ObjectMap ;
 	rr:constant ns:Distrito ;
 	rr:termType rr:IRI .
 
-map:om_031 rml:reference "COD-DISTRITO" ;
+map:om_033 rml:reference "COD-DISTRITO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_032 rdf:type rr:ObjectMap ;
+map:om_034 rdf:type rr:ObjectMap ;
 	rr:template "http://instancias.org/CIUDAD/{CIUDAD}" ;
 	rr:termType rr:IRI .
 
-map:om_033 rdf:type rr:ObjectMap ;
+map:om_035 rml:reference "same_as_wikidata_distrito" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_036 rdf:type rr:ObjectMap ;
 	rr:constant ns:Ciudad ;
 	rr:termType rr:IRI .
 
-map:om_034 rdf:type rr:ObjectMap ;
-	rr:template "http://instancias.org/PROVINCIA/{PROVINCIA}" ;
+map:om_037 rdf:type rr:ObjectMap ;
+	rr:template "http://instancias.org/PROVINCIA/{PROVINCIA})" ;
 	rr:termType rr:IRI .
 
-map:om_035 rdf:type rr:ObjectMap ;
+map:om_038 rml:reference "same_as_wikidata_ciudad" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_039 rdf:type rr:ObjectMap ;
 	rr:constant ns:Provincia ;
+	rr:termType rr:IRI .
+
+map:om_040 rml:reference "same_as_wikidata_provincia" ;
+	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant <wifi:accesibilidad> .
+	rr:constant ns:accesibilidad .
 
 map:pm_002 rdf:type rr:PredicateMap ;
 	rr:constant ns:equipamiento .
@@ -305,31 +326,46 @@ map:pm_026 rdf:type rr:PredicateMap ;
 	rr:constant ns:estarEnBarrio .
 
 map:pm_027 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant owl:sameAs .
 
 map:pm_028 rdf:type rr:PredicateMap ;
-	rr:constant ns:codigoBarrio .
+	rr:constant rdf:type .
 
 map:pm_029 rdf:type rr:PredicateMap ;
-	rr:constant ns:estarEnDistrito .
+	rr:constant ns:codigoBarrio .
 
 map:pm_030 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant ns:estarEnDistrito .
 
 map:pm_031 rdf:type rr:PredicateMap ;
-	rr:constant ns:codigoDistrito .
+	rr:constant owl:sameAs .
 
 map:pm_032 rdf:type rr:PredicateMap ;
-	rr:constant ns:estarEnCiudad .
+	rr:constant rdf:type .
 
 map:pm_033 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant ns:codigoDistrito .
 
 map:pm_034 rdf:type rr:PredicateMap ;
-	rr:constant ns:estarEnProvincia .
+	rr:constant ns:estarEnCiudad .
 
 map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_036 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
+
+map:pm_037 rdf:type rr:PredicateMap ;
+	rr:constant ns:estarEnProvincia .
+
+map:pm_038 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_039 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_040 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
@@ -475,6 +511,26 @@ map:pom_035 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_035 ;
 	rr:predicateMap map:pm_035 .
 
+map:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_036 ;
+	rr:predicateMap map:pm_036 .
+
+map:pom_037 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_037 ;
+	rr:predicateMap map:pm_037 .
+
+map:pom_038 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_038 ;
+	rr:predicateMap map:pm_038 .
+
+map:pom_039 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_039 ;
+	rr:predicateMap map:pm_039 .
+
+map:pom_040 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_040 ;
+	rr:predicateMap map:pm_040 .
+
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_Barrio_000, map:map_Ciudad_000, map:map_Distrito_000, map:map_Provincia_000, map:map_Transporte1__000, map:map_Transporte_2_000, map:map_Via_000, map:map_zonasdewifi_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
@@ -485,7 +541,7 @@ map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "http://instancias.org/TRANSPORTE_1/{TRANSPORTE_1}{Linea_1}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
-	rr:template "http://instancias.org/TRASNPORTE_2/{TRANSPORTE_2}{Linea_2}" .
+	rr:template "http://instancias.org/TRANSPORTE_2/{TRANSPORTE_2}{Linea_2}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
 	rr:template "http://instancias.org/VIA/{VIA}{NUM}" .
@@ -503,34 +559,34 @@ map:s_007 rdf:type rr:SubjectMap ;
 	rr:template "http://instancias.org/PROVINCIA/{PROVINCIA}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_005 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_006 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_007 rml:referenceFormulation ql:CSV ;
-	rml:source "216619-0-wifi-municipal-updated.csv" ;
+	rml:source "216619-0-wifi-municipal-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 

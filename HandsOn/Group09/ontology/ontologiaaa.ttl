@@ -1,11 +1,10 @@
-@prefix base: <http://namespace.com#> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://zonawifi.linkeddata.org#> .
+@prefix ns: <http://zonawifi.linkeddata.org/ontologia#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-base: a owl:Ontology ;
+ns: a owl:Ontology ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 ns:accesiblidad a owl:DatatypeProperty ;
@@ -28,13 +27,30 @@ ns:codigoPostal a owl:DatatypeProperty ;
     rdfs:domain ns:Via ;
     rdfs:range xsd:string .
 
+ns:compania a owl:DatatypeProperty ;
+    rdfs:label "compania" ;
+    rdfs:domain ns:Transporte ;
+    rdfs:range xsd:string .
+
+ns:coordenadaX a owl:DatatypeProperty ;
+    rdfs:label "coordenada x" ;
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:float .
+
+ns:coordenadaY a owl:DatatypeProperty ;
+    rdfs:label "coordenada y" ;
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:float .
+
 ns:email a owl:DatatypeProperty ;
     rdfs:label "email" ;
-    rdfs:domain ns:EntidadWifi .
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:string .
 
 ns:equipamiento a owl:DatatypeProperty ;
     rdfs:label "equipamiento" ;
-    rdfs:domain ns:EntidadWifi .
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:string .
 
 ns:estarEnBarrio a owl:ObjectProperty ;
     rdfs:label "estar en barrio" ;
@@ -63,7 +79,13 @@ ns:estarEnVia a owl:ObjectProperty ;
 
 ns:horario a owl:DatatypeProperty ;
     rdfs:label "horario" ;
-    rdfs:domain ns:EntidadWifi .
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:string .
+
+ns:latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud" ;
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:float .
 
 ns:linea a owl:DatatypeProperty ;
     rdfs:label "linea" ;
@@ -75,45 +97,30 @@ ns:llegarConTransporte a owl:ObjectProperty ;
     rdfs:domain ns:EntidadWifi ;
     rdfs:range ns:Transporte .
 
+ns:longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud" ;
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:float .
+
+ns:nombreEntidad a owl:DatatypeProperty ;
+    rdfs:label "nombre entidad" ;
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:string .
+
 ns:numero a owl:DatatypeProperty ;
     rdfs:label "numero" ;
     rdfs:domain ns:Via ;
     rdfs:range xsd:integer .
 
-ns:serDeTipo a owl:ObjectProperty ;
-    rdfs:label "ser de tipo" ;
+ns:telefono a owl:DatatypeProperty ;
+    rdfs:label "telefono" ;
     rdfs:domain ns:EntidadWifi ;
-    rdfs:range ns:TipoEntidadWifi .
+    rdfs:range xsd:string .
 
-ns:tenerCoordenadaX a owl:ObjectProperty ;
-    rdfs:label "tener coordenada x" ;
+ns:tipoEntidadWifi a owl:DatatypeProperty ;
+    rdfs:label "tipo entidad wifi" ;
     rdfs:domain ns:EntidadWifi ;
-    rdfs:range ns:CoordenadaX .
-
-ns:tenerCoordenadaY a owl:ObjectProperty ;
-    rdfs:label "tener coordenada y" ;
-    rdfs:domain ns:EntidadWifi ;
-    rdfs:range ns:CoordenadaY .
-
-ns:tenerLatitud a owl:ObjectProperty ;
-    rdfs:label "tener latitud" ;
-    rdfs:domain ns:EntidadWifi ;
-    rdfs:range ns:Latitud .
-
-ns:tenerLongitud a owl:ObjectProperty ;
-    rdfs:label "tener longitud" ;
-    rdfs:domain ns:EntidadWifi ;
-    rdfs:range ns:Longitud .
-
-ns:tenerNombre a owl:ObjectProperty ;
-    rdfs:label "tener nombre" ;
-    rdfs:domain ns:EntidadWifi ;
-    rdfs:range ns:NombreEntidad .
-
-ns:tenerTelefono a owl:ObjectProperty ;
-    rdfs:label "tener telefono" ;
-    rdfs:domain ns:EntidadWifi ;
-    rdfs:range ns:Telefono .
+    rdfs:range xsd:string .
 
 ns:tipoNum a owl:DatatypeProperty ;
     rdfs:label "tipo num" ;
@@ -122,43 +129,23 @@ ns:tipoNum a owl:DatatypeProperty ;
 
 ns:urlDeContenido a owl:DatatypeProperty ;
     rdfs:label "url de contenido" ;
-    rdfs:domain ns:EntidadWifi .
-
-ns:CoordenadaX a owl:Class ;
-    rdfs:label "Coordenada X" .
-
-ns:CoordenadaY a owl:Class ;
-    rdfs:label "Coordenada Y" .
-
-ns:Latitud a owl:Class ;
-    rdfs:label "Latitud" .
-
-ns:Longitud a owl:Class ;
-    rdfs:label "Longitud" .
-
-ns:NombreEntidad a owl:Class ;
-    rdfs:label "Nombre Entidad" .
+    rdfs:domain ns:EntidadWifi ;
+    rdfs:range xsd:string .
 
 ns:Provincia a owl:Class ;
     rdfs:label "Provincia" .
 
-ns:Telefono a owl:Class ;
-    rdfs:label "Telefono" .
-
-ns:TipoEntidadWifi a owl:Class ;
-    rdfs:label "Tipo Entidad Wifi" .
-
 ns:Ciudad a owl:Class ;
     rdfs:label "Ciudad" .
-
-ns:Transporte a owl:Class ;
-    rdfs:label "Transporte" .
 
 ns:Barrio a owl:Class ;
     rdfs:label "Barrio" .
 
 ns:Distrito a owl:Class ;
     rdfs:label "Distrito" .
+
+ns:Transporte a owl:Class ;
+    rdfs:label "Transporte" .
 
 ns:Via a owl:Class ;
     rdfs:label "Via" .
