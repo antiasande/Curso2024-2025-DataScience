@@ -1,6 +1,6 @@
 @prefix : <http://dominiowebsemantica.com/> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ont: <http://www.dominiowebsemant.com/ontologia/ont#> .
+@prefix ont: <http://www.dominiowebsemant.com/ontology/ont#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -114,8 +114,8 @@ ont:sexo a owl:DatatypeProperty ;
     rdfs:label "sexo" ;
     rdfs:domain ont:Persona .
 
-ont:tieneDistrito a owl:ObjectProperty ;
-    rdfs:label "tiene distrito" ;
+ont:tieneInfoDistrito a owl:ObjectProperty ;
+    rdfs:label "tiene infoDistrito" ;
     rdfs:domain ont:Ubicación ;
     rdfs:range ont:InfoDistrito .
 

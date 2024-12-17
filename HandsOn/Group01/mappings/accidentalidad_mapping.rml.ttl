@@ -40,7 +40,16 @@
     rr:predicateObjectMap [
         rr:predicate ont:positivaDroga ;
         rr:objectMap [ rml:reference "positivaDroga" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:personaImplicada ;
+        rr:objectMap [ rr:template "http://dominiowebsemantica.com/resource/Persona/{ID}" ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:accUbicadoEn ;
+        rr:objectMap [ rr:template "http://dominiowebsemantica.com/resource/Ubicacion/{localizacion}-{coordenadaX}-{coordenadaY}" ]
     ] .
+    
 
 
 
@@ -85,7 +94,7 @@
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://dominiowebsemantica.com/resource/Ubicacion/{ID}";
+        rr:template "http://dominiowebsemantica.com/resource/Ubicacion/{localizacion}-{coordenadaX}-{coordenadaY}";
         rr:class ont:Ubicacion
     ];
     rr:predicateObjectMap [
@@ -103,6 +112,10 @@
     rr:predicateObjectMap [
         rr:predicate geo:long ;
         rr:objectMap [ rml:reference "coordenadaX" ; rr:datatype <http://www.w3.org/2001/XMLSchema#decimal> ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:tieneInfoDistrito ;
+        rr:objectMap [ rr:template "http://dominiowebsemantica.com/resource/InfoDistrito/{localizacion}-{coordenadaX}-{coordenadaY}" ]
     ] .
 
 
@@ -113,9 +126,10 @@
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://dominiowebsemantica.com/resource/Accidente/{ID}";
+        rr:template "http://dominiowebsemantica.com/resource/InfoDistrito/{localizacion}-{coordenadaX}-{coordenadaY}";
         rr:class ont:InfoDistrito
     ];
+    
     rr:predicateObjectMap [
         rr:predicate ont:codDistrito ;
         rr:objectMap [ rml:reference "codDistrito" ; rr:datatype <http://www.w3.org/2001/XMLSchema#integer> ]

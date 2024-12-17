@@ -1,0 +1,571 @@
+@prefix ns1: <http://dominiowebsemantica.com/ontology/ont#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 1" ;
+    ns1:coordenadaX -3.670048 ;
+    ns1:coordenadaY 40.397352 ;
+    ns1:pk "10+300" ;
+    ns1:sentido "Calzada exterior" ;
+    ns1:ubicacion "TÚNEL BAIPÁS, SENTIDO NORTE A PTE. DE VENTAS (MÉNDEZ ÁLVARO-AVDA. DEL METITARRÁNEO)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo multicarril" ;
+    ns1:coordenadaX -3.73089695 ;
+    ns1:coordenadaY 40.47279048 ;
+    ns1:pk "27+300" ;
+    ns1:ubicacion "M-30  SENTIDO CTRA DEL PARDO (AVDA. DE LA ILUSTRACIÓN - CTRA. DEL PARDO) P.K. 27,300" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> a ns1:InfoCarretera ;
+    ns1:carretera "Calle Sinesio Delgado" ;
+    ns1:carril "Radar de tramo" ;
+    ns1:coordenadaX -3.728241 ;
+    ns1:coordenadaY 40.460303 ;
+    ns1:sentido "Ciudad Universitaria" ;
+    ns1:ubicacion "Sinesio Delgado, Sentido Ciudad Universitaria, Farolas 144 -188" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.73482875 ;
+    ns1:coordenadaY 40.42763957 ;
+    ns1:pk "19+900" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "M-30  MARQUÉS DE MONISTROL, SENTIDO PTE. DE LOS FRANCESES (PTE. DEL REY - PTE. FRANCESES) P.K. 19,800" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.66006141 ;
+    ns1:coordenadaY 40.42618971 ;
+    ns1:pk "6+700" ;
+    ns1:sentido "Tronco calzada interior" ;
+    ns1:ubicacion "M-30, PTE. DE VENTAS. SENTIDO SUR A O´DONNELL P.K. 6,700" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> a ns1:InfoCarretera ;
+    ns1:carretera "Calle Sinesio Delgado" ;
+    ns1:carril "Radar de tramo" ;
+    ns1:coordenadaX -3.712743 ;
+    ns1:coordenadaY 40.469208 ;
+    ns1:sentido "Av Betanzos" ;
+    ns1:ubicacion "Sinesio Delgado, Sentido Av Betanzos, Farola 152- 143" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.703274 ;
+    ns1:coordenadaY 40.394924 ;
+    ns1:pk "14+200" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "TÚNEL BYPASS, SENTIDO A-3 A PTE. FRANCESES, (GTA. LEGAZPI - Pº STA. Mª DE LA CABEZA)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 1" ;
+    ns1:coordenadaX -3.721414 ;
+    ns1:coordenadaY 40.40939 ;
+    ns1:pk "17+170" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "TÚNEL M-30, SENTIDO NUDO SUR - PTE. DE LOS FRANCESES, (PASADA SALIDA VIRGEN DEL PUERTO)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> a ns1:InfoCarretera ;
+    ns1:carretera "Calle Sinesio Delgado" ;
+    ns1:carril "Radar de tramo" ;
+    ns1:coordenadaX -3.712743 ;
+    ns1:coordenadaY 40.469208 ;
+    ns1:sentido "Av Betanzos" ;
+    ns1:ubicacion "Sinesio Delgado, Sentido Av Betanzos, Farola 187-143" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/26158a03-5544-4a84-b7e5-627946114044> a ns1:InfoCarretera ;
+    ns1:carretera "A5" ;
+    ns1:carril "Fijo carril 4" ;
+    ns1:coordenadaX -3.73102 ;
+    ns1:coordenadaY 40.413797 ;
+    ns1:pk "4+150" ;
+    ns1:sentido "Entrada de Madrid" ;
+    ns1:ubicacion "TÚNEL AVDA. DE PORTUGAL, SENTIDO M-30" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.65929627 ;
+    ns1:coordenadaY 40.41664449 ;
+    ns1:pk "7+800" ;
+    ns1:sentido "Tronco calzada exterior" ;
+    ns1:ubicacion "M-30, ENLACE O´DONNELL SENTIDO NORTE A PTE. DE VENTAS PK 7,800" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/36342261-0e86-417a-87f9-5a987ba80273> a ns1:InfoCarretera ;
+    ns1:carretera "A5" ;
+    ns1:carril "Salida, radar de tramo" ;
+    ns1:coordenadaX -3.76358611606955 ;
+    ns1:coordenadaY 40.4001241953525 ;
+    ns1:pk "P.K  4+000 ----- P.K. 5+750" ;
+    ns1:sentido "Salida" ;
+    ns1:ubicacion "A-5 PK 5+750, SENTIDO SALIDA" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> a ns1:InfoCarretera ;
+    ns1:carretera "Calle Sinesio Delgado" ;
+    ns1:carril "Radar de tramo" ;
+    ns1:coordenadaX -3.714454 ;
+    ns1:coordenadaY 40.467149 ;
+    ns1:sentido "Av Betanzos" ;
+    ns1:ubicacion "Sinesio Delgado, Sentido Av Betanzos, Farola 187-152" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> a ns1:InfoCarretera ;
+    ns1:carretera "Calle Sinesio Delgado" ;
+    ns1:carril "Radar de tramo" ;
+    ns1:coordenadaX -3.728241 ;
+    ns1:coordenadaY 40.460303 ;
+    ns1:sentido "Ciudad Universitaria" ;
+    ns1:ubicacion "Sinesio Delgado, Sentido Ciudad Universitaria, Farolas 152 - 188" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.69499826 ;
+    ns1:coordenadaY 40.38678654 ;
+    ns1:pk "13+250" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "ENTRADA TÚNEL M-30, DESDE NUDO SUR HACIA PTE. DE LOS FRANCESES" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo multicarril" ;
+    ns1:coordenadaX -3.722988 ;
+    ns1:coordenadaY 40.403114 ;
+    ns1:pk "16+530" ;
+    ns1:sentido "Calzada exterior" ;
+    ns1:ubicacion "TÚNEL M-30, SENTIDO PTE. DE LOS FRANCESES - A3 (PTE. SAN ISIDRO - GTA. MARQUÉS DE VADILLO)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.709684 ;
+    ns1:coordenadaY 40.397139 ;
+    ns1:pk "15+010" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "TÚNEL BYPASS, SENTIDO A3 A PTE. DE LOS FRANCESES, (Pº STA. Mª DE LA CABEZA - GTA. PIRÁMIDES)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> a ns1:InfoCarretera ;
+    ns1:carretera "A5" ;
+    ns1:carril "Fijo carril 1" ;
+    ns1:coordenadaX -3.731092 ;
+    ns1:coordenadaY 40.41389 ;
+    ns1:pk "4+150" ;
+    ns1:sentido "Entrada de Madrid" ;
+    ns1:ubicacion "TÚNEL AVDA. DE PORTUGAL, SENTIDO M-30" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 1" ;
+    ns1:coordenadaX -3.708108 ;
+    ns1:coordenadaY 40.39657 ;
+    ns1:pk "14+740" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "TÚNEL BYPASS, SENTIDO A3 A PTE. DE LOS FRANCESES, (ENLACE Pº STA. Mª DE LA CABEZA)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 2" ;
+    ns1:coordenadaX -3.73482875 ;
+    ns1:coordenadaY 40.42763957 ;
+    ns1:pk "19+900" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "M-30  MARQUÉS DE MONISTROL, SENTIDO PTE. DE LOS FRANCESES (PTE. DEL REY - PTE. FRANCESES) P.K. 19,800" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 4" ;
+    ns1:coordenadaX -3.727724 ;
+    ns1:coordenadaY 40.422839 ;
+    ns1:pk "19+060" ;
+    ns1:sentido "Calzada exterior" ;
+    ns1:ubicacion "ENTRADA TÚNEL EN MARQUÉS DE MONISTROL, P.K. 19,060" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 2" ;
+    ns1:coordenadaX -3.65926082 ;
+    ns1:coordenadaY 40.41663568 ;
+    ns1:pk "7+800" ;
+    ns1:sentido "Tronco calzada exterior" ;
+    ns1:ubicacion "M-30, ENLACE O´DONNELL SENTIDO NORTE A PTE. DE VENTAS PK 7,800" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> a ns1:InfoCarretera ;
+    ns1:carretera "Calle Sinesio Delgado" ;
+    ns1:carril "Radar de tramo" ;
+    ns1:coordenadaX -3.714454 ;
+    ns1:coordenadaY 40.467149 ;
+    ns1:sentido "Ciudad Universitaria" ;
+    ns1:ubicacion "Sinesio Delgado, Sentido Ciudad Universitaria, Farolas 144 -152" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> a ns1:InfoCarretera ;
+    ns1:carretera "PASEO DE LA CASTELLANA" ;
+    ns1:carril "Todos" ;
+    ns1:coordenadaX -3.68542793 ;
+    ns1:coordenadaY 40.48048344 ;
+    ns1:pk "300" ;
+    ns1:sentido "Salida" ;
+    ns1:ubicacion "PASEO DE LA CASTELLANA Nº 300, SALIDA" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 1" ;
+    ns1:coordenadaX -3.66014384 ;
+    ns1:coordenadaY 40.42618023 ;
+    ns1:pk "6+700" ;
+    ns1:sentido "Tronco calzada interior" ;
+    ns1:ubicacion "M-30, PTE. DE VENTAS. SENTIDO SUR A O´DONNELL P.K. 6,700" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 1" ;
+    ns1:coordenadaX -3.727663 ;
+    ns1:coordenadaY 40.422937 ;
+    ns1:pk "19+060" ;
+    ns1:sentido "Calzada exterior" ;
+    ns1:ubicacion "ENTRADA TÚNEL EN MARQUÉS DE MONISTROL, P.K. 19,060" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/a69555de-ab6b-4294-a168-253d34d75000> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.669973 ;
+    ns1:coordenadaY 40.397323 ;
+    ns1:pk "10+300" ;
+    ns1:sentido "Calzada exterior" ;
+    ns1:ubicacion "TÚNEL BAIPÁS, SENTIDO NORTE A PTE. DE VENTAS (MÉNDEZ ÁLVARO-AVDA. DEL METITARRÁNEO)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 1" ;
+    ns1:coordenadaX -3.699691 ;
+    ns1:coordenadaY 40.39118 ;
+    ns1:pk "13+860" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "TÚNEL M-30, SENTIDO NUDO SUR - PTE. DE LOS FRANCESES, (GTA. LEGAZPI - Pº STA. Mª DE LA CABEZA)" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Todos" ;
+    ns1:coordenadaX -3.74530618 ;
+    ns1:coordenadaY 40.4743471 ;
+    ns1:pk "25+700" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "M-30 SENTIDO AVDA. DE LA ILUSTRACIÓN (CTRA. DEL PARDO - AVDA. DE LA ILUSTRACIÓN) P.K. 25,700" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 5" ;
+    ns1:coordenadaX -3.67429089 ;
+    ns1:coordenadaY 40.47934175 ;
+    ns1:pk "0+500" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "M-30, ENTRADA DE LA A-1, SENTIDO PUENTE DE VENTAS P.K. 0,500" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> a ns1:InfoCarretera ;
+    ns1:carretera "A5" ;
+    ns1:carril "Fijo carril 3" ;
+    ns1:coordenadaX -3.74545156 ;
+    ns1:coordenadaY 40.40744539 ;
+    ns1:pk "4" ;
+    ns1:sentido "Salida" ;
+    ns1:ubicacion "A-5 PK 4,000, SALIDA" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> a ns1:InfoCarretera ;
+    ns1:carretera "M-30" ;
+    ns1:carril "Fijo carril 4" ;
+    ns1:coordenadaX -3.67433808 ;
+    ns1:coordenadaY 40.47934148 ;
+    ns1:pk "0+500" ;
+    ns1:sentido "Calzada interior" ;
+    ns1:ubicacion "M-30, ENTRADA DE LA A-1, SENTIDO PUENTE DE VENTAS P.K. 0,500" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> a ns1:InfoCarretera ;
+    ns1:carretera "PASEO DE SANTA MARIA DE LA CABEZA" ;
+    ns1:carril "Todos" ;
+    ns1:coordenadaX -3.71017703 ;
+    ns1:coordenadaY 40.39052318 ;
+    ns1:pk "115" ;
+    ns1:sentido "Entrada" ;
+    ns1:ubicacion "PASEO DE STA. Mª DE LA CABEZA Nº 115, ENTRADA" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> a ns1:InfoCarretera ;
+    ns1:carretera "AVENIDA DE CÓRDOBA" ;
+    ns1:carril "Salida, radar de tramo" ;
+    ns1:coordenadaX -3.696519 ;
+    ns1:coordenadaY 40.37859 ;
+    ns1:pk """Inicio: GLORIETA DE CÁDIZ\r\r\r
+Fin: AVENIDA DE CÓRDOBA CON CALLE DOCTOR TOLOSA LATOUR""" ;
+    ns1:sentido "Salida" ;
+    ns1:ubicacion "AVENIDA DE CÓRDOBA CON CALLE DOCTOR TOLOSA LATOUR, SENTIDO GLORIETA DE MÁLAGA" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> a ns1:InfoCarretera ;
+    ns1:carretera "A5" ;
+    ns1:carril "Entrada, radar de tramo" ;
+    ns1:coordenadaX -3.74574755307117 ;
+    ns1:coordenadaY 40.4072412609861 ;
+    ns1:pk "P.K. 5+750 ----- P.K  4+000" ;
+    ns1:sentido "Entrada" ;
+    ns1:ubicacion "A-5 PK 4+000, SENTIDO ENTRADA" .
+
+<http://dominiowebsemantica.com/resource/InfoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> a ns1:InfoCarretera ;
+    ns1:carretera "PASO INFERIOR (Túnel)" ;
+    ns1:carril "Todos" ;
+    ns1:coordenadaX -3.66880283 ;
+    ns1:coordenadaY 40.45892328 ;
+    ns1:ubicacion "PASO INFERIOR COSTA RICA, SENTIDO PRÍNCIPE DE VERGARA" .
+
+<http://dominiowebsemantica.com/resource/Radar/05a7dba0-a8be-4c65-a531-60d4cb465050> a ns1:Radar ;
+    ns1:numRadar 8 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/05a7dba0-a8be-4c65-a531-60d4cb465050> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> a ns1:Radar ;
+    ns1:numRadar 26 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/07ef9ca8-e997-4338-afa1-a8ed9cea4dd5> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/0b12e38b-6789-48c8-9214-ea07b0a2568f> a ns1:Radar ;
+    ns1:numRadar 33 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/0b12e38b-6789-48c8-9214-ea07b0a2568f> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/1530f4a9-9598-454c-b71f-a05e6755e03c> a ns1:Radar ;
+    ns1:numRadar 23 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/1530f4a9-9598-454c-b71f-a05e6755e03c> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/198699f7-04eb-42a7-b77f-aeaea486261b> a ns1:Radar ;
+    ns1:numRadar 5 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/198699f7-04eb-42a7-b77f-aeaea486261b> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> a ns1:Radar ;
+    ns1:numRadar 35 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/1ad00474-c55f-4eb6-8ab2-2313ef4b3df9> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/1bfdf048-3aa2-4eac-beaf-33a11e93908a> a ns1:Radar ;
+    ns1:numRadar 12 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/1bfdf048-3aa2-4eac-beaf-33a11e93908a> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/1cac50a7-3593-466b-88ab-bdffe2eba924> a ns1:Radar ;
+    ns1:numRadar 17 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/1cac50a7-3593-466b-88ab-bdffe2eba924> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/1de5779a-c170-47bb-9d12-d14ad3e93864> a ns1:Radar ;
+    ns1:numRadar 36 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/1de5779a-c170-47bb-9d12-d14ad3e93864> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/26158a03-5544-4a84-b7e5-627946114044> a ns1:Radar ;
+    ns1:numRadar 19 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/26158a03-5544-4a84-b7e5-627946114044> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/34adc3cc-09bf-4e01-a188-ec9230f6da68> a ns1:Radar ;
+    ns1:numRadar 7 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/34adc3cc-09bf-4e01-a188-ec9230f6da68> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/36342261-0e86-417a-87f9-5a987ba80273> a ns1:Radar ;
+    ns1:numRadar 29 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/36342261-0e86-417a-87f9-5a987ba80273> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/3c8e0680-76d0-4a40-be24-89d90fb627aa> a ns1:Radar ;
+    ns1:numRadar 34 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/3c8e0680-76d0-4a40-be24-89d90fb627aa> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> a ns1:Radar ;
+    ns1:numRadar 32 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/4e008874-f8eb-4af0-b8f8-80ced3d23bc5> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> a ns1:Radar ;
+    ns1:numRadar 10 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/516b7c7c-13d5-4ff5-981f-465f21ee4a5a> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/58042c68-20bc-4317-b83b-fd50df131eba> a ns1:Radar ;
+    ns1:numRadar 16 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/58042c68-20bc-4317-b83b-fd50df131eba> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/6e099e0a-62a4-4133-992c-9b706ffb0c5e> a ns1:Radar ;
+    ns1:numRadar 15 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/6e099e0a-62a4-4133-992c-9b706ffb0c5e> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/77d1df58-8601-49ec-935c-c5c4b73e5afa> a ns1:Radar ;
+    ns1:numRadar 18 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/77d1df58-8601-49ec-935c-c5c4b73e5afa> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/987a72ff-f30c-4951-995f-70a3e31397a3> a ns1:Radar ;
+    ns1:numRadar 14 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/987a72ff-f30c-4951-995f-70a3e31397a3> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/99cf9946-36de-429f-adac-c04e08e9a7ca> a ns1:Radar ;
+    ns1:numRadar 24 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/99cf9946-36de-429f-adac-c04e08e9a7ca> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> a ns1:Radar ;
+    ns1:numRadar 22 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/9ac9a2b6-8f17-4a2b-bdf3-5f0acac99d48> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/9cff7b18-141f-4e13-a7a5-50e1f3693826> a ns1:Radar ;
+    ns1:numRadar 6 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/9cff7b18-141f-4e13-a7a5-50e1f3693826> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/9e11ca65-4159-49ce-91a0-54d2a695f90c> a ns1:Radar ;
+    ns1:numRadar 31 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/9e11ca65-4159-49ce-91a0-54d2a695f90c> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> a ns1:Radar ;
+    ns1:numRadar 27 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/9f0dcb7a-5345-4ec2-99e2-537655bf8a9e> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/a499522b-cadf-453d-ba6f-e04e61944086> a ns1:Radar ;
+    ns1:numRadar 4 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/a499522b-cadf-453d-ba6f-e04e61944086> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> a ns1:Radar ;
+    ns1:numRadar 21 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/a5ffa8ea-4511-4e98-8fb6-7f41f58ab6e1> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/a69555de-ab6b-4294-a168-253d34d75000> a ns1:Radar ;
+    ns1:numRadar 9 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/a69555de-ab6b-4294-a168-253d34d75000> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> a ns1:Radar ;
+    ns1:numRadar 11 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/a7b3ff13-7791-4fe9-bf5e-006e17bd7f28> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/a8f3462d-9354-4049-8280-067b079d67ca> a ns1:Radar ;
+    ns1:numRadar 25 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/a8f3462d-9354-4049-8280-067b079d67ca> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/ab496ab3-29db-4718-bbb3-c399158e8190> a ns1:Radar ;
+    ns1:numRadar 2 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/ab496ab3-29db-4718-bbb3-c399158e8190> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> a ns1:Radar ;
+    ns1:numRadar 20 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/ab77236a-e8bf-4dfa-819b-a3987dfc9ec3> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/b2bee941-2a0b-4140-bddb-ad1143daa179> a ns1:Radar ;
+    ns1:numRadar 1 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/b2bee941-2a0b-4140-bddb-ad1143daa179> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 90 .
+
+<http://dominiowebsemantica.com/resource/Radar/b6489c75-3671-4a2d-9d7d-455673656715> a ns1:Radar ;
+    ns1:numRadar 13 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/b6489c75-3671-4a2d-9d7d-455673656715> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/bd862d6d-06ba-4f7f-99bf-90855ff81b55> a ns1:Radar ;
+    ns1:numRadar 28 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/bd862d6d-06ba-4f7f-99bf-90855ff81b55> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 50 .
+
+<http://dominiowebsemantica.com/resource/Radar/e73d2142-b471-41b8-9bcc-c55fb12f7672> a ns1:Radar ;
+    ns1:numRadar 30 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/e73d2142-b471-41b8-9bcc-c55fb12f7672> ;
+    ns1:responsable "DGGVC" ;
+    ns1:tipo "Radar de tramo" ;
+    ns1:velocidadLimite 70 .
+
+<http://dominiowebsemantica.com/resource/Radar/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> a ns1:Radar ;
+    ns1:numRadar 3 ;
+    ns1:radarUbicadoEn <http://dominiowebsemantica.com/resource/infoCarretera/f5fed44b-fe13-41d8-9f3e-66fe26aceef2> ;
+    ns1:responsable "DGP" ;
+    ns1:tipo "Fijo" ;
+    ns1:velocidadLimite 50 .
+

@@ -79,18 +79,16 @@
 
     <section>
         <h2>Estrategia de Nombres de Recursos Definida</h2>
-        <p>La estrategia de nombres de recursos asegura claridad y consistencia para una gestión eficiente:</p>
-        
-        <p>http://dominiowebsemantica.com/ontology/Accidente{ID}</p>
-        <p>http://dominiowebsemantica.com/ontology/Radar/{ID}</p>
-        <p>http://dominiowebsemantica.com/ontology/ubicadoEn/Chamartin</p>
-
-
-
+        <p>La estrategia de nombres de recursos y ontologías asegura claridad y consistencia para una gestión eficiente:</p>
+        <h3>Formato:</h3>
         <ul>
-            <li><strong>Base:</strong> <span class="ttl">http://dominiowebsemantica.com/base#</span></li>
-            <li><strong>Accidentes:</strong> <span class="ttl">{base}Accidente/{ID}</span></li>
-            <li><strong>Radares:</strong> <span class="ttl">{base}Radar/{ID}</span></li>
+            <li><strong>Ontología: </strong> <span class="ttl">http://dominiowebsemantica.com/ontology/ont#{NOMBRE_ONTOLOGÍA}</span></li>
+            <li><strong>Recursos: </strong> <span class="ttl">http://dominiowebsemantica.com/resource/{NOMBRE_RECURSO}/{IDENTIFICADOR}</span></li>
+        </ul>
+        <h3>Ejemplo:</h3>
+        <ul>
+            <li><strong>Ontología: </strong> <span class="ttl">http://dominiowebsemantica.com/ontology/ont#numero</span></li>
+            <li><strong>Recursos: </strong> <span class="ttl">http://dominiowebsemantica.com/resource/Accidente/a284061d-e078-480d-86d5-3aef47b0dd36</span></li>
         </ul>
     </section>
     <section>

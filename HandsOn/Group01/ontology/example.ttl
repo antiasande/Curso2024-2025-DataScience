@@ -1,43 +1,34 @@
 @prefix base: <http://dominiowebsemantica.com/> .
-@prefix ont: <http://dominiowebsemantica.com/ontologia/ont#> .
+@prefix ont: <http://www.dominiowebsemantica.com/ontologia/ont#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ont:Accidente_2024S000123 a ont:Accidente ;
     ont:numExpediente "2024S000123" ;
-    ont:Fecha "05-07-2024"^^xsd:date ;
-    ont:Hora "17:45:00"^^xsd:time ;
+    ont:fecha_hora "2024-07-05T17:45:00"^^xsd:dateTime ;
     ont:tipoAccidente "Colisión múltiple" ;
     ont:estadoMeteorologico "Despejado" ;
     ont:tipoVehiculo "Turismo" ;
-    ont:ubicadoEn ont:Ubicacion_001 ;
-    ont:personaImplicada ont:Persona_001 ;
-    ont:implicaConsumoDe ont:Sustancia_001 .
+    ont:positivaAlcohol "False" ;
+    ont:positivaDroga "NULL" ;
+    ont:accUbicadoEn ont:Ubicacion_001 ;
+    ont:personaImplicada ont:Persona_001 .
 
 ont:Persona_001 a ont:Persona ;
     ont:tipoPersona "Conductor" ;
-    ont:rangoEdad "De 30 a 34 años" ;
+    ont:edad_min 30 ;
+    ont:edad_max 34 ;
     ont:sexo "Hombre" ;
-    ont:tipoLesion ont:Lesion_001 .
-
-ont:Lesion_001 a ont:Lesion ;
-    ont:codigoLesividad 14 ;
+    ont:cod_lesividad 14 ;
     ont:lesividad "Sin asistencia sanitaria" .
 
-ont:Ubicacion_001 a ont:Ubicacion ;
+ont:Ubicacion_001 a ont:Ubicación ;
     ont:localizacion "AUTOV. M-30, 14XL24" ;
-    ont:numero "14XL24";
-    ont:tieneDistrito ont:infoDistrito_12 .
-    ont:tieneCoordenadas ont:Coordenadas_001;
-
-ont:Coordenadas_001 a ont:Coordenadas ;
+    ont:numero "14XL24" ;
     ont:coordenadaX "440425" ;
-    ont:coordenadaY "4471576" .
+    ont:coordenadaY "4471576" ;
+    ont:tieneInfoDistrito ont:InfoDistrito_12 .
 
-ont:Sustancia_001 a ont:Sustancia ;
-    ont:positivaAlcohol "N" ;
-    ont:positivaDroga "NULL";
-
-ont:infoDistrito_12 a ont:infoDistrito ;
+ont:InfoDistrito_12 a ont:InfoDistrito ;
     ont:codDistrito 12 ;
     ont:distrito "USERA" .
 
@@ -46,29 +37,13 @@ ont:Radar_M30_12 a ont:Radar ;
     ont:tipo "Radar de tramo" ;
     ont:velocidadLimite 50 ;
     ont:responsable "DGP" ;
-    ont:ubicadoEn ont:Localizacion_Radar_001 .
-
-ont:Localizacion_Radar_001 a ont:Localizacion ;
-    ont:ubicacion "AVENIDA DE CÓRDOBA CON CALLE DOCTOR TOLOSA LATOUR, SENTIDO GLORIETA DE MÁLAGA" ;
-    ont:implica ont:InfoCarretera_001.
+    ont:radarUbicadoEn ont:InfoCarretera_001 .
 
 ont:InfoCarretera_001 a ont:InfoCarretera ;
     ont:carretera "AVENIDA DE CÓRDOBA" ;
     ont:pk "300" ;
     ont:sentido "Salida" ;
-    ont:carril "Salida, radar de tramo" .
-    ont:tiene ont:inicioTramo001
-
-
-ont:Coordenadas_002 a ont:inicioTramo ;
-    ont:coordenadaX -3699380 ;
-    ont:coordenadaY 40387572 .
-    
-ont:Coordenadas_002 a ont:CoordenadaWGS84 ;
-    ont:coordenadaX 44087300 ;
-    ont:coordenadaY 447002529 .
-
-ont:Coordenadas_002 a ont:CoordenadasLongLat ;
-    ont:coordenadaX -3696519 ;
-    ont:coordenadaY 40378590 .
-
+    ont:carril "Salida, radar de tramo" ;
+    ont:ubicacion "NULL" ;
+    ont:coordenadaX "-3.68542793" ;
+    ont:coordenadaY "40.48048344" .

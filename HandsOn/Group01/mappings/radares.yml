@@ -1,32 +1,34 @@
 prefixes:
-  rr: <http://www.w3.org/ns/r2rml#>
-  ex: <http://example.com/ns#>
-  rml: <http://semweb.mmlab.be/ns/rml#>
-  geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-  ql: <http://semweb.mmlab.be/ns/ql#>
-  ont: <http://dominiowebsemantica.com/ontology/ont#>
-  resAcc: <http://dominiowebsemantica.com/resource/Accidente/>
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+  ont: http://dominiowebsemantica.com/ontology/ont#
+  res: http://dominiowebsemantica.com/resource/
 
 mappings:
   RadaresMapping:
     sources:
-      - ["csv/RADARES-FIJOS-vDTT-updated.csv~csv"]
-    s: "resRas:$(ID)"
+      - type: csv
+        name: HandsOn/Group01/csv/RADARES-FIJOS-vDTT-updated.csv
+    s: http://dominiowebsemantica.com/resource/Radar/{ID}
     po:
-      - [ ex:id, $(ID) ]
-      - [ ex:numRadar, $(numRadar) ]
-      - [ ex:ubicacion, $(ubicacion) ]
-      - [ ex:carretera, $(carretera) ]
-      - [ ex:ubicacionCarretera, $(ubicacionCarretera) ]
-      - [ ex:pk, $(pk) ]
-      - [ ex:sentido, $(sentido) ]
-      - [ ex:tipo, $(tipo) ]
-      - [ ex:carril, $(carril) ]
-      - [ ex:longitudInicioTramo, $(Longitud inicio tramo) ]
-      - [ ex:latitudInicioTramo, $(Latitud inicio tramo) ]
-      - [ ex:xWGS84, $(X (WGS84)) ]
-      - [ ex:yWGS84, $(Y (WGS84)) ]
-      - [ geo:lat, $(Latitud), xsd:decimal ]
-      - [ geo:long, $(Longitud), xsd:decimal ]
-      - [ ex:velocidadLimite, $(velocidadLimite), xsd:integer ]
-      - [ ex:responsable, $(responsable) ]
+      - [ont:numRadar, $(numRadar), xsd:integer]
+      - [ont:tipo, $(tipo), xsd:string]
+      - [ont:velocidadLimite, $(velocidadLimite), xsd:integer]
+      - [ont:responsable, $(responsable), xsd:string]
+      - [ont:radarUbicadoEn, http://dominiowebsemantica.com/resource/infoCarretera/{ID}, xsd:anyURI]
+
+  InfoCarreteraMapping:
+    sources:
+      - type: csv
+        name: HandsOn/Group01/csv/RADARES-FIJOS-vDTT-updated.csv
+    s: http://dominiowebsemantica.com/resource/InfoCarretera/{ID}
+    po:
+      - [ont:ubicacion, $(ubicacion), xsd:string]
+      - [ont:carretera, $(carretera), xsd:string]
+      - [ont:pk, $(pk), xsd:string]
+      - [ont:sentido, $(sentido), xsd:string]
+      - [ont:carril, $(carril), xsd:string]
+      - [ont:coordenadaY, $(Latitud), xsd:integer]
+      - [ont:coordenadaX, $(Longitud), xsd:integer]
