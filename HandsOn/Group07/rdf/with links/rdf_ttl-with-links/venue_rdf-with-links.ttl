@@ -1,0 +1,437 @@
+@prefix ns1: <http://turismo.mad.es/cultural/ontology/ont1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://turismo.mad.es/cultural/resource/Venue/centro-deportivo-municipal-daoiz-y-velarde-madrid> a ns1:Venue ;
+    ns1:hasAccessibility "1" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4425354472575> ;
+    ns1:hasDescription "El Área de Cultura, Turismo y Deporte del Ayuntamiento de Madrid ha habilitado un nuevo espacio escénico en el Centro Cultural Daoíz y Velarde, ubicado en el distrito de Retiro, que amplia la descentralización de la cultura de la capital. Para ello, ha realizado una rehabilitación integral del antiguo cuartel de artillería de Daoíz y Velarde, construido a finales del siglo XIX, que ha buscado el equilibrio entre la arquitectura original y las funciones actuales. El Ayuntamiento de Madrid y el Teatro Real han firmado un acuerdo que permite poner en marcha un nuevo proyecto que nace con el objetivo de convertirse en un espacio cultural y artístico de referencia para niños y jóvenes en la ciudad, en el que ofrecer un acercamiento y aprendizaje en el ámbito de las artes escénicas, incluyendo ópera, danza, teatro de texto, títeres, cuentos musicales, talleres y otras actividades para toda la familia. El edificio, de 7.700 m2 distribuidos en cuatro plantas, cuenta con un gran espacio para actos culturales y exposiciones, una Sala Principal con un amplio escenario y capacidad para 330 butacas, una Sala Polivalente (con 72 butacas en graderío retráctil y espacio escénico versátil), salas de ensayos, talleres y otras dependencias auxiliares. Con la puesta en marcha de este nuevo centro municipal, el Área de Cultura, Turismo y Deporte refuerza su compromiso con el tejido cultural madrileño, incrementa la oferta cultural en los distritos e incorpora un séptimo espacio escénico en su red teatral. El Real Teatro de Retiro es el proyecto artístico del Teatro Real dedicado al público infantil, juvenil y familiar. Su programación incluye espectáculos de ópera, teatro, títeres y danza para niños y jóvenes así como conciertos, cine, cuentos musicales y talleres dirigidos a grandes y pequeños. Los espectáculos se programan también para colegios con funciones escolares en horario de mañana. El espacio acoge los proyectos educativos y sociales LÓVA (La Ópera, un Vehículo de Aprendizaje) y AMI (Agrupación Musical Inclusiva). El Real Teatro de Retiro surge de la colaboración entre el Teatro Real y el Ayuntamiento de Madrid, promoviendo el acceso a la cultura y grandes experiencias para vivir en familia." ;
+    ns1:hasEquipment "Accesibilidad: 6 asientos para personas con movilidad reducida.   Canales de venta: Online, taquillas y telefónica.  Aforo: Sala Principal 330 butacas, Sala Pacífico 120 butacas." ;
+    ns1:hasId 11990372 ;
+    ns1:hasName "centro-deportivo-municipal-daoiz-y-velarde-madrid" ;
+    ns1:hasNearbyTransport "Renfe Cercanías: Atocha" ;
+    ns1:hasOpeningHours "Horarios de atención y taquilla:   De miércoles a sábado, de 10 a 14 y de 16 a 19:30 horas. Domingos sin función, de 10 a 14 horas. Domingos con función, de 10 a 14 horas, y si la función es de tarde, desde dos horas antes de la función hasta el inicio de ésta. Festivos con función, dos horas antes de la función y hasta el inicio de ésta. Festivos sin función: cerrado." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 810583274 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f38753c30397810VgnVCM1000001d4a900aRCRD"^^xsd:anyURI ;
+    owl:sameAs <https://wikidata.org/entity/Q6081742> .
+
+<http://turismo.mad.es/cultural/resource/Venue/circo-price> a ns1:Venue ;
+    ns1:hasAccessibility "1" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4407224473051> ;
+    ns1:hasDescription "Toma su nombre del que existió, durante casi un siglo, en el Paseo de Recoletos. A comienzos del 2000, el Ayuntamiento recuperó el antiguo edificio industrial de una fábrica, de estilo neomudéjar, para ubicar el nuevo Teatro Circo Price que desde 2007 ofrece una variada programación de circo, música y teatro." ;
+    ns1:hasEquipment "Espacios:   Sala principal Pista circular y escenario Sala Parish 2 salas de exposiciones (sala Malabar y sala Trapecio 1 Sala de ensayos  12 Camerinos   Aparcamiento propio y vigilado, entrada por la calle Juan Sebastián Elcano, 25, de uso exclusivo para los espectadores y con horario limitado sujeto al espectáculo." ;
+    ns1:hasId 184955 ;
+    ns1:hasName "circo-price" ;
+    ns1:hasNearbyTransport "Metro: Embajadores (línea 3) , Lavapiés (línea 3), Estación del Arte (Atocha) (línea 1)  Bus: 27, 34, 36, 41, 119, C03, C2, C1  Renfe: Embajadores (C5)" ;
+    ns1:hasOpeningHours "Taquilla   De martes a viernes de 17:30 a 20:30 horas. Los fines de semana la taquilla abre dos horas antes del inicio de la sesión (consultar matinalees)" ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 913184700 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=432257258ae5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
+    owl:sameAs <https://wikidata.org/entity/Q5121553> .
+
+<http://turismo.mad.es/cultural/resource/Venue/fernan-gomez-centro-cultural-de-la-villa> a ns1:Venue ;
+    ns1:hasAccessibility "1,6" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4414724475155> ;
+    ns1:hasEmail "info.tfg@teatrofernangomez.es" ;
+    ns1:hasEquipment "Sala Guirau (aforo 689 personas).  Sala Jardiel Poncela (aforo desde 95 hasta 175 personas, depende de la disposición de la obra que represente).   Sala de exposiciones (2000 m2)  Sala III   Sala Polivalente." ;
+    ns1:hasId 1915 ;
+    ns1:hasName "fernan-gomez-centro-cultural-de-la-villa" ;
+    ns1:hasNearbyTransport "Metro: Colón (línea 4), Serrano (línea 4)  Bus: 14, 150, 27, 45, 5, 21, 37, C03, 53  Bicimad: Estación 93 (calle Goya, 1) / Estación 10 (calle Marqués de la Ensenada, 16)  Renfe: Recoletos  Aparcamiento: Colón (2), Plaza de Colón" ;
+    ns1:hasOpeningHours "Consultar en la página del teatro." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 914362540 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
+    owl:sameAs <https://wikidata.org/entity/Q56426930> .
+
+<http://turismo.mad.es/cultural/resource/Venue/nave-10-matadero-creacion-dramatica-contemporanea> a ns1:Venue ;
+    ns1:hasAccessibility "1,6" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4408284471551> ;
+    ns1:hasDescription "Situado dentro del recinto de Matadero Madrid, Nave 10 Matadero es un centro público de producción y difusión de artes escénicas dedicado a la creación dramática contemporánea con una programación estable y accesible para el público. Este nuevo espacio teatral, dependiente del Área de Cultura, Turismo y Deporte del Ayuntamiento de Madrid, tiene como principal objetivo el fomento de las nuevas dramaturgias y direcciones de escena, generando un lugar de encuentro, pensamiento y diálogo para el desarrollo de ideas, prácticas y creaciones artísticas entre autores y directores emergentes y profesionales consagrados.  Para concentrar, potenciar y visibilizar el talento de los creadores de Madrid y otros lugares, Nave 10 Matadero se apoya en tres pilares fundamentales: autoría contemporánea en castellano, nueva dirección de escena y formación e innovación en artes escénicas. El proyecto, que desarrolla su actividad en las salas Max Aub, Hormigón y Madera de Nave 10 Matadero, quiere prestar especial atención al entorno y al barrio en el que se ubica con un programa de mediación abierto a sus vecinos.  Nave 10 Matadero es un teatro para el espectador del siglo XXI." ;
+    ns1:hasId 12394118 ;
+    ns1:hasName "nave-10-matadero-creacion-dramatica-contemporanea" ;
+    ns1:hasNearbyTransport "Metro: Legazpi (líneas 3 y 6)      Renfe: Embajadores (línea C5)" ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 0 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=835295423e700910VgnVCM2000001f4a900aRCRD"^^xsd:anyURI .
+
+<http://turismo.mad.es/cultural/resource/Venue/naves-del-espanol-matadero> a ns1:Venue ;
+    ns1:hasAccessibility "1,6" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4408284471551> ;
+    ns1:hasDescription "Las salas de este espacio     Sala Fernando Arrabal (Nave 11)  Inaugurada en el año 2007, la Sala Fernando Arrabal &amp;ndash; Nave 11 es la mayor de las tres naves. Se trata de una sala polivalente donde se puede diseñar todo tipo de distribución de gradas y escenarios.   Sala Max Aub (Nave 10)   Inaugurada en 2010, la Sala Max Aub &amp;ndash; Nave 10 es de menores dimensiones que la 11, pero de mismas características: sala polivalente donde se puede diseñar todo tipo de distribución de gradas y escenarios.  Café Naves Matadero (Nave 12)   Espacio donde se encuentra el bar cafetería que da servicio a todo el complejo Matadero. Tiene, además, un escenario movible con gradas con posibilidad de cambio de distribución. En él se hacen espectáculos de café-teatro, conciertos de pequeño formato, presentaciones, etc.   Sala Hormigón (Nave 10)   Situada a un lado de la Sala Max Aub, se utiliza principalmente como sala de ensayos, pero a veces se hacen ruedas de prensa o se habilitan como salas de exhibición de pequeño formato (teatro familiar).   Sala Madera (Nave 10)   Situada a un lado de la Sala Max Aub, se utiliza principalmente como sala de ensayos, pero a veces se hacen ruedas de prensa o se habilitan como salas de exhibición de pequeño formato (teatro familiar).La venta de entradas online continúa activa en la web Teatro Español. Entradas en taquillas y Venta de entradas" ;
+    ns1:hasId 6963121 ;
+    ns1:hasName "naves-del-espanol-matadero" ;
+    ns1:hasNearbyTransport "Metro: Legazpi (líneas 3 y 6)      Renfe: Embajadores (línea C5)" ;
+    ns1:hasOpeningHours "Horario de taquilla (situada frente a Cantina de Cineteca) en acceso Plaza de Legazpi: de martes a domingo, de 16:30 a 20:30 horas o hasta inicio de actividad. Lunes cerrado." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 913184528 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4582ee06ea5ee310VgnVCM2000000c205a0aRCRD"^^xsd:anyURI .
+
+<http://turismo.mad.es/cultural/resource/Venue/teatro-auditorio-casa-de-campo> a ns1:Venue ;
+    ns1:hasAccessibility "1" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4371214473927> ;
+    ns1:hasDescription "Tiene una excelente calidad acústica y visual y es perfecto para la celebración de conciertos, funciones teatrales, seminarios, convenciones y espectáculos. Dispone de un escenario semicircular, cafetería y amplias zonas de acceso." ;
+    ns1:hasId 7572916 ;
+    ns1:hasName "teatro-auditorio-casa-de-campo" ;
+    ns1:hasNearbyTransport "Metro: Lago (Línea 10), Puerta del Ángel (Línea 6)  Bus: 31, 33, 36, 39, 65" ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 915787758 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c9d5dce7e6a17410VgnVCM2000000c205a0aRCRD"^^xsd:anyURI .
+
+<http://turismo.mad.es/cultural/resource/Venue/teatro-de-titeres-buen-retiro> a ns1:Venue ;
+    ns1:hasAccessibility "1" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4417484474466> ;
+    ns1:hasDescription "Dentro del parque de El Retiro, muy cerca de la entrada desde la plaza de la Independencia, donde se encuentra la Puerta de Alcalá, está el Teatro de Títeres, toda una institución para el público infantil madrileño.  Este teatro permanente ofrece representaciones, normalmente, los sábados y domingos en diferentes horarios según la climatología de cada época del año y está dedicado el mundo del títere y la marioneta." ;
+    ns1:hasId 4077 ;
+    ns1:hasName "teatro-de-titeres-buen-retiro" ;
+    ns1:hasNearbyTransport "Metro: Retiro (línea 2).  Bus: 1, 2, 9, 15, 19, 20, 51, 52, 74, 146, 28." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 0 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=784d8c7c0f91f010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI .
+
+<http://turismo.mad.es/cultural/resource/Venue/teatro-espanol> a ns1:Venue ;
+    ns1:hasAccessibility "1,6" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4405974474036> ;
+    ns1:hasDescription "La historia del Teatro Español de Madrid comienza el 21 de septiembre de 1583,  momento en el que tiene lugar su primera representación, y continúa hasta el día de hoy, convirtiéndose así en el teatro más antiguo del mundo en cuanto a representación continuada se refiere. Acercarse al Teatro Español en la actualidad es entrar en un edificio único en cuanto a su historia, vida, anécdotas y actualidad. Entre sus espacios destacamos: La Sala Principal con 735 localidades de perfecta visibilidad, dispuestas en tres pisos con una prodigiosa acústica. En sus tablas vieron por primera vez la luz las obras de Cervantes, Lope de Vega, Tirso de Molina, Calderón, Duque de Rivas, Zorrilla, Pérez Galdós, Unamuno, Valle-Inclán, Benavente, los Machado, García Lorca, Mihura o Buero Vallejo, entre otros. La Sala Margarita Xirgu, situada en el antiguo Café del Príncipe, se convirtió en 2006 en sala de teatro de unas 110 localidades, que varían según la disposición de las gradas, pudiendo adoptar distintas configuraciones: una, dos, tres o incluso a cuatro bandas. Otros espacios con encanto del Teatro son: El Salón de Té, el Salón Tirso de Molina, el Parnasillo y el espacio Andrea D&amp;acute;Odorico.Entradas en taquilla y en la página web. Sistema de sobretitulado para personas con discapacidad auditiva. Sistema de audiodescripción para personas con discapacidad visual." ;
+    ns1:hasEquipment "La Sala Principal cuenta con 735 localidades, dispuestas en tres pisos con una prodigiosa acústica. En sus tablas vieron por primera vez la luz las obras de Lope de Vega, Tirso de Molina, Calderón, Duque de Rivas, Zorrilla, Pérez Galdós, Unamuno, Valle-Inclán, Benavente, los Machado, García Lorca, Mihura o Buero Vallejo, entre otros. La Sala Margarita Xirgu, situada en el antiguo Café del Príncipe, se convirtió en 2006 en sala de teatro de unas 110 localidades, que varían según la disposición de las gradas, pudiendo adoptar distintas configuraciones: una, dos, tres o incluso a cuatro bandas. El espacio Andrea D&amp;acute;Odorico, situado encima de la sala Margarita Xirgu, es una sala con infinidad de usos desde ruedas de prensa, charlas, encuentros a exposiciones.   El Salón de Té, donde existe un &amp;ldquo;reloj-ascensor&amp;rdquo; de principios de siglo y es utilizado para realizar actos institucionales. En otro tiempo fue el verdadero ambigú del Teatro Español. Es una sala del siglo XIX, obra de Juan de Villanueva.  El Parnasillo, un lugar especialmente recordado porque en él los dramaturgos se reunían con la compañía para hacer la primera lectura de la obra. En 1929 se decoró con una valiosa colección de retratos de artistas y literatos, única en su género, realizada por el pintor José Sánchez Pescador. El Salón Tirso de Molina, que en su origen fue el saloncito privado donde los primeros actores y actrices recibían a sus allegados,  es un espacio de gran belleza por su carácter neoclásico, obra de Juan de Villanueva. Está situado en la segunda planta del Teatro Español y todos sus balcones miran a la Plaza Santa Ana." ;
+    ns1:hasId 2190 ;
+    ns1:hasName "teatro-espanol" ;
+    ns1:hasNearbyTransport "Metro: Sevilla (línea 2), Sol (líneas 1, 2, 3)  Bus: 002, 6, 26, 32, M1, M3  Renfe: Sol (líneas C3 y C4)" ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 913601484 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6d3ce3914381c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
+    owl:sameAs <https://wikidata.org/entity/Q3891573> .
+
+<http://turismo.mad.es/cultural/resource/Venue/teatro-monumental> a ns1:Venue ;
+    ns1:hasAccessibility "3" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4406804473775> ;
+    ns1:hasEmail "infopublico.orquestaycoro@rtve.es" ;
+    ns1:hasId 10242463 ;
+    ns1:hasName "teatro-monumental" ;
+    ns1:hasNearbyTransport "Metro: Antón Martín (línea 1)." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 914291281 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=40388b6bab5b9510VgnVCM1000001d4a900aRCRD"^^xsd:anyURI ;
+    owl:sameAs <https://wikidata.org/entity/Q3516764> .
+
+<http://turismo.mad.es/cultural/resource/Venue/teatro-municipal-de-vallecas> a ns1:Venue ;
+    ns1:hasAccessibility "1" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4471224469857> ;
+    ns1:hasDescription "Para la construcción del teatro se ha remodelado el antiguo salón de actos de la Biblioteca Gerardo Diego. Cuenta con cien butacas y se especializa en la programación de teatro y de cine. Alberga la escuela de teatro de Vallecas. Dentro de su programación, se ha previsto que se celebren tres representaciones teatrales y una proyección cinematográfica al mes, en sábado, completando así la oferta los centros culturales del distrito, cuyas actividades se convocan los viernes." ;
+    ns1:hasEquipment "El aforo es de 94 butacas más 2 de movilidad reducida. 3 aulas para clases." ;
+    ns1:hasId 10890410 ;
+    ns1:hasName "teatro-municipal-de-vallecas" ;
+    ns1:hasNearbyTransport "Metro: Villa de Vallecas (línea 1)" ;
+    ns1:hasOpeningHours "Para atención presencial, pedir cita en el teléfono de contacto.  Horario habitual: lunes a viernes, 17 a 21 horas. Sábados, de 10 a 14 horas." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 657181582 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2193cb665c6e8610VgnVCM1000001d4a900aRCRD"^^xsd:anyURI .
+
+<http://turismo.mad.es/cultural/resource/Venue/teatro-quique-san-francisco> a ns1:Venue ;
+    ns1:hasAccessibility "1" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4397414476139> ;
+    ns1:hasDescription "La sala del Teatro Quique San Francisco ofrece una variada programación teatral dirigida tanto para adultos como para niños. En la temporada estival, algunas de las representaciones tienen lugar al aire libre." ;
+    ns1:hasEmail "taquilla@teatroquiquesanfrancisco.es" ;
+    ns1:hasEquipment "Aforo: 191 butacas" ;
+    ns1:hasId 87056 ;
+    ns1:hasName "teatro-quique-san-francisco" ;
+    ns1:hasNearbyTransport "Metro: Quevedo (línea 2)" ;
+    ns1:hasOpeningHours "Horario según funciones." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 913485124 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=346c8c7c0f91f010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI .
+
+<http://turismo.mad.es/cultural/resource/Venue/teatros-del-canal> a ns1:Venue ;
+    ns1:hasAccessibility "1,6" ;
+    ns1:hasAddress <http://turismo.mad.es/cultural/resource/Address/4402034476672> ;
+    ns1:hasDescription "Descripción monumental: Arquitecto Juan Navarro Baldeweg. Inaugurado oficialmente el 20 de febrero de 2009." ;
+    ns1:hasEmail "espectaculos@uteteatrosdelcanal.com" ;
+    ns1:hasEquipment "Servicios de accesibilidad a la comunicación: subtitulado adaptado, audiodescripción, bucle magnético individual, sonido en sala con auriculares (Más información y próximas funciones en www.teatroaccesible.com)." ;
+    ns1:hasId 5000655 ;
+    ns1:hasName "teatros-del-canal" ;
+    ns1:hasNearbyTransport "Metro: Canal (líneas 2 y 7) y Ríos Rosas (línea 1)" ;
+    ns1:hasOpeningHours "Taquillas:  El horario de apertura es de de 14.30 a 21 horas, todos los días. Los meses de julio y agosto la taquilla permanecerá cerrada los sábados y domingos y los días  24 y 25 de enero y 1 y 2 de enero." ;
+    ns1:hasOrganismType "/contenido/entidadesYorganismos/Teatros"^^xsd:anyURI ;
+    ns1:hasPhoneNumber 913089999 ;
+    ns1:hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f63986ba58bc110VgnVCM1000000b205a0aRCRD"^^xsd:anyURI .
+
+<http://turismo.mad.es/cultural/resource/Address/4371214473927> a ns1:Address ;
+    ns1:hasCoordX 437121 ;
+    ns1:hasCoordY 4473927 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/moncloa-aravaca> ;
+    ns1:hasLatitude 40.41359 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.741116 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/casa-de-campo> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28011 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/principal> ;
+    ns1:hasStreetNumber 9 .
+
+<http://turismo.mad.es/cultural/resource/Address/4397414476139> a ns1:Address ;
+    ns1:hasCoordX 439741 ;
+    ns1:hasCoordY 4476139 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/chamberi> ;
+    ns1:hasLatitude 40.43371 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.710446 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/arapiles> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28015 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/galileo> ;
+    ns1:hasStreetNumber 39 .
+
+<http://turismo.mad.es/cultural/resource/Address/4402034476672> a ns1:Address ;
+    ns1:hasCoordX 440203 ;
+    ns1:hasCoordY 4476672 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/chamberi> ;
+    ns1:hasLatitude 40.43854 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.705057 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/arapiles> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28003 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/cea-bermudez> ;
+    ns1:hasStreetNumber 1 .
+
+<http://turismo.mad.es/cultural/resource/Address/4405974474036> a ns1:Address ;
+    ns1:hasCoordX 440597 ;
+    ns1:hasCoordY 4474036 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/centro> ;
+    ns1:hasLatitude 40.41482 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.700164 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/cortes> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28012 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/principe> ;
+    ns1:hasStreetNumber 25 .
+
+<http://turismo.mad.es/cultural/resource/Address/4406804473775> a ns1:Address ;
+    ns1:hasCoordX 440680 ;
+    ns1:hasCoordY 4473775 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/centro> ;
+    ns1:hasLatitude 40.41248 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.699161 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/cortes> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28012 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/atocha> ;
+    ns1:hasStreetNumber 65 .
+
+<http://turismo.mad.es/cultural/resource/Address/4407224473051> a ns1:Address ;
+    ns1:hasCoordX 440722 ;
+    ns1:hasCoordY 4473051 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/arganzuela> ;
+    ns1:hasLatitude 40.40596 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.698589 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/palos-de-la-frontera> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28012 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/atocha> ;
+    ns1:hasStreetNumber 35 .
+
+<http://turismo.mad.es/cultural/resource/Address/4414724475155> a ns1:Address ;
+    ns1:hasCoordX 441472 ;
+    ns1:hasCoordY 4475155 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/salamanca> ;
+    ns1:hasLatitude 40.42497 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.689948 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/recoletos> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28001 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/colon> ;
+    ns1:hasStreetNumber 4 .
+
+<http://turismo.mad.es/cultural/resource/Address/4417484474466> a ns1:Address ;
+    ns1:hasCoordX 441748 ;
+    ns1:hasCoordY 4474466 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/retiro> ;
+    ns1:hasLatitude 40.41878 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.686651 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/jeronimos> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasOrientation "Parque de El Retiro. Entrada por Puerta de la Independencia" ;
+    ns1:hasPostalCode 28009 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/mexico> ;
+    ns1:hasStreetNumber 4 .
+
+<http://turismo.mad.es/cultural/resource/Address/4425354472575> a ns1:Address ;
+    ns1:hasCoordX 442535 ;
+    ns1:hasCoordY 4472575 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/retiro> ;
+    ns1:hasLatitude 0.00000000000000404018 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.677187 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/pacifico> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28007 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/daoiz-y-velarde> ;
+    ns1:hasStreetNumber 4 .
+
+<http://turismo.mad.es/cultural/resource/Address/4471224469857> a ns1:Address ;
+    ns1:hasCoordX 447122 ;
+    ns1:hasCoordY 4469857 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/villa-de-vallecas> ;
+    ns1:hasLatitude 40.37762 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.622909 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/casco-historico-de-vallecas> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28031 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/paso-de-villamanrique> ;
+    ns1:hasStreetNumber 3 .
+
+<http://turismo.mad.es/cultural/resource/District/moncloa-aravaca> a ns1:District ;
+    ns1:hasDistrictCode 9 ;
+    ns1:hasDistrictName "moncloa-aravaca" ;
+    owl:sameAs <https://wikidata.org/entity/Q2017682> .
+
+<http://turismo.mad.es/cultural/resource/District/salamanca> a ns1:District ;
+    ns1:hasDistrictCode 4 ;
+    ns1:hasDistrictName "salamanca" ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521> .
+
+<http://turismo.mad.es/cultural/resource/District/villa-de-vallecas> a ns1:District ;
+    ns1:hasDistrictCode 18 ;
+    ns1:hasDistrictName "villa-de-vallecas" ;
+    owl:sameAs <https://wikidata.org/entity/Q1947988> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/casa-de-campo> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 1 ;
+    ns1:hasNeighborhoodName "casa-de-campo" ;
+    owl:sameAs <https://wikidata.org/entity/Q16302441> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/casco-historico-de-vallecas> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 1 ;
+    ns1:hasNeighborhoodName "casco-historico-de-vallecas" ;
+    owl:sameAs <https://wikidata.org/entity/Q16544370> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/jeronimos> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 0 ;
+    ns1:hasNeighborhoodName "jeronimos" ;
+    owl:sameAs <https://wikidata.org/entity/Q10306766> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/la-chopera> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 3 ;
+    ns1:hasNeighborhoodName "la-chopera" ;
+    owl:sameAs <https://wikidata.org/entity/Q3773750> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/pacifico> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 1 ;
+    ns1:hasNeighborhoodName "pacifico" ;
+    owl:sameAs <https://wikidata.org/entity/Q3773753> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/palos-de-la-frontera> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 6 ;
+    ns1:hasNeighborhoodName "palos-de-la-frontera" ;
+    owl:sameAs <https://wikidata.org/entity/Q521009> .
+
+<http://turismo.mad.es/cultural/resource/Street/cea-bermudez> a ns1:Street ;
+    ns1:hasStreetName "cea-bermudez" ;
+    ns1:hasStreetType "CALLE" .
+
+<http://turismo.mad.es/cultural/resource/Street/chopera> a ns1:Street ;
+    ns1:hasStreetName "chopera" ;
+    ns1:hasStreetType "PASEO" .
+
+<http://turismo.mad.es/cultural/resource/Street/colon> a ns1:Street ;
+    ns1:hasStreetName "colon" ;
+    ns1:hasStreetType "PLAZA" .
+
+<http://turismo.mad.es/cultural/resource/Street/daoiz-y-velarde> a ns1:Street ;
+    ns1:hasStreetName "daoiz-y-velarde" ;
+    ns1:hasStreetType "PLAZA" .
+
+<http://turismo.mad.es/cultural/resource/Street/galileo> a ns1:Street ;
+    ns1:hasStreetName "galileo" ;
+    ns1:hasStreetType "CALLE" .
+
+<http://turismo.mad.es/cultural/resource/Street/mexico> a ns1:Street ;
+    ns1:hasStreetName "mexico" ;
+    ns1:hasStreetType "AVENIDA" .
+
+<http://turismo.mad.es/cultural/resource/Street/paso-de-villamanrique> a ns1:Street ;
+    ns1:hasStreetName "paso-de-villamanrique" ;
+    ns1:hasStreetType "CALLE" .
+
+<http://turismo.mad.es/cultural/resource/Street/principal> a ns1:Street ;
+    ns1:hasStreetName "principal" ;
+    ns1:hasStreetType "AVENIDA" .
+
+<http://turismo.mad.es/cultural/resource/Street/principe> a ns1:Street ;
+    ns1:hasStreetName "principe" ;
+    ns1:hasStreetType "CALLE" .
+
+<http://turismo.mad.es/cultural/resource/Address/4408284471551> a ns1:Address ;
+    ns1:hasCoordX 440828 ;
+    ns1:hasCoordY 4471551 ;
+    ns1:hasDistrict <http://turismo.mad.es/cultural/resource/District/arganzuela> ;
+    ns1:hasLatitude 40.39245 ;
+    ns1:hasLocality "MADRID" ;
+    ns1:hasLongitude -3.697206 ;
+    ns1:hasNeighborhood <http://turismo.mad.es/cultural/resource/Neighborhood/la-chopera>,
+        <http://turismo.mad.es/cultural/resource/Neighborhood/recoletos> ;
+    ns1:hasNumberType "V" ;
+    ns1:hasPostalCode 28045 ;
+    ns1:hasProvince "MADRID" ;
+    ns1:hasStreet <http://turismo.mad.es/cultural/resource/Street/chopera> ;
+    ns1:hasStreetNumber 14 .
+
+<http://turismo.mad.es/cultural/resource/District/arganzuela> a ns1:District ;
+    ns1:hasDistrictCode 2 ;
+    ns1:hasDistrictName "arganzuela" ;
+    owl:sameAs <https://wikidata.org/entity/Q2000929> .
+
+<http://turismo.mad.es/cultural/resource/District/centro> a ns1:District ;
+    ns1:hasDistrictCode 1 ;
+    ns1:hasDistrictName "centro" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376> .
+
+<http://turismo.mad.es/cultural/resource/District/chamberi> a ns1:District ;
+    ns1:hasDistrictCode 7 ;
+    ns1:hasDistrictName "chamberi" ;
+    owl:sameAs <https://wikidata.org/entity/Q1763370> .
+
+<http://turismo.mad.es/cultural/resource/District/retiro> a ns1:District ;
+    ns1:hasDistrictCode 0,
+        3 ;
+    ns1:hasDistrictName "retiro" ;
+    owl:sameAs <https://wikidata.org/entity/Q2002296> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/arapiles> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 2 ;
+    ns1:hasNeighborhoodName "arapiles" ;
+    owl:sameAs <https://wikidata.org/entity/Q10856744> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/cortes> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 3 ;
+    ns1:hasNeighborhoodName "cortes" ;
+    owl:sameAs <https://wikidata.org/entity/Q2535637> .
+
+<http://turismo.mad.es/cultural/resource/Neighborhood/recoletos> a ns1:Neighborhood ;
+    ns1:hasNeighborhoodCode 1,
+        3 ;
+    ns1:hasNeighborhoodName "recoletos" ;
+    owl:sameAs <https://wikidata.org/entity/Q3773750>,
+        <https://wikidata.org/entity/Q3814551> .
+
+<http://turismo.mad.es/cultural/resource/Street/atocha> a ns1:Street ;
+    ns1:hasStreetName "atocha" ;
+    ns1:hasStreetType "CALLE",
+        "RONDA" .
+

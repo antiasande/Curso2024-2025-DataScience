@@ -1,0 +1,48 @@
+@prefix : <http://websemantica/base#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <https://www.dominiowebsemant.com/ontology/CercaniasMalaga#> .
+@prefix ind: <https://www.dominiowebsemant.com/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+: a owl:Ontology .
+
+ind:EstacionAlora a ns:Estación ;
+    ns:nombreEstacion "Estación Central" ;
+    ns:latitud "36.7181"^^xsd:decimal ;
+    ns:longitud "-4.4214"^^xsd:decimal ;
+    ns:codigoEstacion "54405" ;
+    ns:tieneNucleo ind:NucleoMalaga ;
+    ns:tieneTramo ind:Tramo1 ;
+    ns:localizadoEn ind:DireccionAlora ;
+    rdfs:label "Estación Central" .
+
+ind:NucleoMalaga a ns:NucleoCercanias ;
+    ns:nombreNucleo "Málaga" ;
+    rdfs:label "Nucleo Centro Málaga" .
+
+ind:Tramo1 a ns:Tramo ;
+    ns:intervalo "6:30-7:00" ;
+    ns:viajerosSubidos "100"^^xsd:integer ;
+    ns:viajerosBajados "50"^^xsd:integer ;
+    rdfs:label "tramo cualquiera" .
+
+ind:DireccionAlora a ns:Direccion ; 
+    ns:nombreDireccion "CALLE ESTACION FERROCARRIL" ;
+    ns:tieneCodigoPostal ind:CodigoAlora ;
+    rdfs:label "direccion" .
+
+ind:Malaga a ns:Provincia ;
+    ns:nombreProvincia "Malaga" ;
+    ns:tienePoblacion ind:Alora
+    rdfs:label "Malaga" .
+
+ind:Alora a ns:Poblacion ;
+    ns:nombrePoblacion "ALORA" ;
+    ns:tieneDireccion ind:DireccionAlora ;
+    rdfs:label "pablacion1" .
+
+ind:CodigoAlora a ns:CodigoPostal ;
+    ns:numCodigoPostal "29510" ;
+    rdfs:label "codigo 1" .

@@ -1,0 +1,256 @@
+@prefix : <http://www.knowledgegraphs/ontology/> .
+@prefix clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties/> .
+@prefix is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://www.knowledgegraphs/ontology/> .
+
+: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+clpr:albergadoEn a owl:ObjectProperty ;
+    rdfs:domain clpr:Desfibrilador ;
+    rdfs:range clpr:Establecimiento ;
+    rdfs:label "albergado en" .
+
+clpr:localizadoEn a owl:ObjectProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (clpr:CentrodeSalud clpr:Desfibrilador)
+    ] ;
+    rdfs:range clpr:Direccion ;
+    rdfs:label "localizado en" .
+
+clpr:especializadoEn a owl:ObjectProperty ;
+    rdfs:domain clpr:CentrodeSalud ;
+    rdfs:range clpr:Especialidad ;
+    rdfs:label "especializado en" .
+
+clpr:perteneceA a owl:ObjectProperty ;
+    rdfs:domain clpr:Direccion ;
+    rdfs:range clpr:Municipio ;
+    rdfs:label "pertenece a" .
+
+clpr:tipoDireccion a owl:DatatypeProperty ;
+    rdfs:domain clpr:Direccion ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo direccion" .
+
+clpr:nombreDireccion a owl:DatatypeProperty ;
+    rdfs:domain clpr:Direccion ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre direccion" .
+
+clpr:numeroDireccion a owl:DatatypeProperty ;
+    rdfs:domain clpr:Direccion ;
+    rdfs:range xsd:integer ;
+    rdfs:label "numero direccion" .
+
+clpr:codigoPostal a owl:DatatypeProperty ;
+    rdfs:domain clpr:Direccion ;
+    rdfs:range xsd:integer ;
+    rdfs:label "codigo postal" .
+
+clpr:coordenadaX a owl:DatatypeProperty ;
+    rdfs:domain clpr:Direccion ;
+    rdfs:range xsd:float ;
+    rdfs:label "coordenada x" .
+
+clpr:coordenadaY a owl:DatatypeProperty ;
+    rdfs:domain clpr:Direccion ;
+    rdfs:range xsd:float ;
+    rdfs:label "coordenada y" .
+
+clpr:tipoEstablecimiento a owl:DatatypeProperty ;
+    rdfs:domain clpr:Establecimiento ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo establecimiento" .
+
+clpr:tipoTitularidad a owl:DatatypeProperty ;
+    rdfs:domain clpr:Establecimiento ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo titularidad" .
+
+clpr:idCentro a owl:DatatypeProperty ;
+    rdfs:domain clpr:CentrodeSalud ;
+    rdfs:range xsd:string ;
+    rdfs:label "id centro" .
+
+clpr:tipoCentro a owl:DatatypeProperty ;
+    rdfs:domain clpr:CentrodeSalud ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo centro" .
+
+clpr:idDesfibrilador a owl:DatatypeProperty ;
+    rdfs:domain clpr:Desfibrilador ;
+    rdfs:range xsd:string ;
+    rdfs:label "id desfibrilador" .
+
+clpr:CentrodeSalud a owl:Class ;
+    rdfs:label "Centro de Salud" .
+
+clpr:Especialidad a owl:Class ;
+    rdfs:label "Especialidad" .
+
+clpr:Alergologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Alergología" .
+
+clpr:Cardiologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Cardiología" .
+
+clpr:CirugiaMayorAmbulatoria a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Cirugía mayor ambulatoria" .
+
+clpr:CirugiaMenorAmbulatoria a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Cirugía menor ambulatoria" .
+
+clpr:Dermatologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Dermatología" .
+
+clpr:Endocrinologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Endocrinología" .
+
+clpr:Enfermeria a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Enfermería" .
+
+clpr:Farmacia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Farmacia" .
+
+clpr:Fisioterapia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Fisioterapia" .
+
+clpr:MedicinaGeneral a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Medicina general/de familia" .
+
+clpr:Neumologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Neumología" .
+
+clpr:Neurologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Neurología" .
+
+clpr:NutricionYDietetica a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Nutrición y Dietética" .
+
+clpr:Oncologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Oncología" .
+
+clpr:Otorrinolaringologia a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Otorrinolaringología" .
+
+clpr:Pediatria a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Pediatría" .
+
+clpr:PsicologiaClinica a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Psicología clínica" .
+
+clpr:Psiquiatria a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Psiquiatría" .
+
+clpr:Rehabilitacion a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Rehabilitación" .
+
+clpr:Urgencias a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Urgencias" .
+
+clpr:Vacunacion a owl:Class ;
+    rdfs:subClassOf clpr:Especialidad ;
+    rdfs:label "Vacunación" .
+
+clpr:Municipio a owl:Class ;
+    rdfs:label "Municipio" .
+
+clpr:Direccion a owl:Class ;
+    rdfs:label "Dirección" .
+
+clpr:Establecimiento a owl:Class ;
+    rdfs:label "Establecimiento" .
+
+clpr:Desfibrilador a owl:Class ;
+    rdfs:label "Desfibrilador" .
+
+### Instancias de las subclases de Especialidad
+
+is:alergologia a clpr:Alergologia ;
+    rdfs:label "Alergología" .
+
+is:cardiologia a clpr:Cardiologia ;
+    rdfs:label "Cardiología" .
+
+is:cirugiamayorambulatoria a clpr:CirugiaMayorAmbulatoria ;
+    rdfs:label "Cirugía mayor ambulatoria" .
+
+is:cirugiamenorambulatoria a clpr:CirugiaMenorAmbulatoria ;
+    rdfs:label "Cirugía menor ambulatoria" .
+
+is:dermatologia a clpr:Dermatologia ;
+    rdfs:label "Dermatología" .
+
+is:endocrinologia a clpr:Endocrinologia ;
+    rdfs:label "Endocrinología" .
+
+is:enfermeria a clpr:Enfermeria ;
+    rdfs:label "Enfermería" .
+
+is:farmacia a clpr:Farmacia ;
+    rdfs:label "Farmacia" .
+
+is:fisioterapia a clpr:Fisioterapia ;
+    rdfs:label "Fisioterapia" .
+
+is:medicinageneral a clpr:MedicinaGeneral ;
+    rdfs:label "Medicina general/de familia" .
+
+is:neumologia a clpr:Neumologia ;
+    rdfs:label "Neumología" .
+
+is:neurologia a clpr:Neurologia ;
+    rdfs:label "Neurología" .
+
+is:nutricionydietetica a clpr:NutricionYDietetica ;
+    rdfs:label "Nutrición y Dietética" .
+
+is:oncologia a clpr:Oncologia ;
+    rdfs:label "Oncología" .
+
+is:otorrinolaringologia a clpr:Otorrinolaringologia ;
+    rdfs:label "Otorrinolaringología" .
+
+is:pediatria a clpr:Pediatria ;
+    rdfs:label "Pediatría" .
+
+is:psicologiaclinica a clpr:PsicologiaClinica ;
+    rdfs:label "Psicología clínica" .
+
+is:psiquiatria a clpr:Psiquiatria ;
+    rdfs:label "Psiquiatría" .
+
+is:rehabilitacion a clpr:Rehabilitacion ;
+    rdfs:label "Rehabilitación" .
+
+is:urgencias a clpr:Urgencias ;
+    rdfs:label "Urgencias" .
+
+is:vacunacion a clpr:Vacunacion ;
+    rdfs:label "Vacunación" .

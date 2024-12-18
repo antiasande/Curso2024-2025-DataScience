@@ -1,0 +1,491 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "URN",
+    "description": "Remove column URN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TOWN",
+    "description": "Remove column TOWN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "POSTCODE",
+    "description": "Remove column POSTCODE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EASTING",
+    "description": "Remove column EASTING"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NORTHING",
+    "description": "Remove column NORTHING"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "WARD_NAME",
+    "description": "Remove column WARD_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LSOA_NAME",
+    "description": "Remove column LSOA_NAME"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LA_NAME",
+    "newColumnName": "Town",
+    "description": "Rename column LA_NAME to Town"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "WEBLINK",
+    "description": "Remove column WEBLINK"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "AGE",
+    "description": "Remove column AGE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "map_icon",
+    "description": "Remove column map_icon"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NEW_URN",
+    "description": "Remove column NEW_URN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "OLD_URN",
+    "description": "Remove column OLD_URN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "map_icon_l",
+    "description": "Remove column map_icon_l"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Primary",
+    "description": "Remove column Primary"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SCHOOL_NAM",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SCHOOL_NAM using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SCHOOL_NAM",
+    "newColumnName": "Name",
+    "description": "Rename column SCHOOL_NAM to Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TYPE",
+    "newColumnName": "Type",
+    "description": "Rename column TYPE to Type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PHASE",
+    "newColumnName": "Phase",
+    "description": "Rename column PHASE to Phase"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ADDRESS",
+    "newColumnName": "Address",
+    "description": "Rename column ADDRESS to Address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "STATUS",
+    "newColumnName": "Status",
+    "description": "Rename column STATUS to Status"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "GENDER",
+    "newColumnName": "Gender",
+    "description": "Rename column GENDER to Gender"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column x using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column y using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OBJECTID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBJECTID using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Type",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Type using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Address",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Address using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Status",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Status using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Gender",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Gender using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Town",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Town using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "string",
+          "column": "Name",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false,
+          "caseSensitive": false
+        }
+      ]
+    },
+    "description": "Reorder rows"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Name",
+    "description": "Blank down cells in column Name"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Name",
+    "description": "Blank down cells in column Name"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Name",
+          "expression": "isBlank(value)",
+          "columnName": "Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OBJECTID",
+    "expression": "grel:\"school_london_\" + cells[\"Name\"].value.replace(\" \", \"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBJECTID using expression grel:\"school_london_\" + cells[\"Name\"].value.replace(\" \", \"_\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "OBJECTID",
+    "newColumnName": "Id",
+    "description": "Rename column OBJECTID to Id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Type",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Type using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Phase",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Phase using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Address",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Address using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Status",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Status using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Gender",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Gender using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Town",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Town using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "x",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column x using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "y",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column y using expression value.trim()"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "string",
+          "column": "Id",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false,
+          "caseSensitive": false
+        }
+      ]
+    },
+    "description": "Reorder rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Id",
+    "description": "Remove column Id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Town",
+          "expression": "value",
+          "columnName": "Town",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "City Of London",
+                "l": "City Of London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Address",
+    "expression": "grel:cells[\"Name\"].value.replace(/\\s+/, \"\") + cells[\"Address\"].value.replace(/\\s+/, \"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "Id",
+    "columnInsertIndex": 4,
+    "description": "Create column Id at index 4 based on column Address using expression grel:cells[\"Name\"].value.replace(/\\s+/, \"\") + cells[\"Address\"].value.replace(/\\s+/, \"\")"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Id",
+    "index": 0,
+    "description": "Move column Id to position 0"
+  }
+]

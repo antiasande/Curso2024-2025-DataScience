@@ -1,0 +1,37 @@
+  SELECT ?station ?wikidataStation ?code ?name ?latitude ?longitude
+  WHERE {
+    ?station a ns:Estación ;
+             ns:codigoEstacion ?code ;
+             ns:nombreEstacion ?name ;
+             geo:lat ?latitude ;
+             owl:sameAs ?wikidataStation;
+             geo:long ?longitude .
+  }
+
+
+  SELECT ?nucleo ?nucleoName ?station ?wikidataStation
+  WHERE {
+    ?nucleo a ns:NucleoCercanias ;
+            ns:nombreNucleo ?nucleoName .
+            
+    ?station ns:tieneNucleo ?nucleo ;
+             owl:sameAs ?wikidataStation.
+  }
+
+  SELECT ?station ?stationName ?address ?addressName ?wikidataStation
+  WHERE {
+    ?station a ns:Estación ;
+             ns:nombreEstacion ?stationName ;
+             ns:localizadoEn ?address ;
+             owl:sameAs ?wikidataStation .
+    ?address ns:nombreDireccion ?addressName .
+  }
+
+  SELECT ?provincia ?poblacion ?wikidataProvincia ?wikidataPoblacion
+  WHERE {
+    ?provincia a ns:Provincia ;
+        owl:sameAs ?wikidataProvincia.
+    ?poblacion a ns:Poblacion ;
+        owl:sameAs ?wikidataPoblacion.
+    ?provincia ns:tienePoblacion ?poblacion .
+  }

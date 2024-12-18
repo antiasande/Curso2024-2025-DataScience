@@ -1,0 +1,66 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX rr: <http://www.w3.org/ns/r2rml#>.
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>.
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#>.
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>.
+PREFIX ns: <http://accidentestrafico.org/traffic/ontology/TrafficOntology#>.
+PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+PREFIX : <http://accidentestrafico.org/traffic/resource/>.
+
+
+# Obtener la ubicación de cada accidente con coordenadas
+SELECT ?accidente ?coordenadas
+WHERE {
+  ?accidente ns:OcurreEn ?direccion .
+  ?direccion ns:coordenadas ?coordenadas .
+}
+
+# Filtrar accidentes donde el estado meteorológico sea "Despejado"
+SELECT ?accidente ?fecha
+WHERE {
+  ?accidente ns:TieneEstadoMeteorológico <http://accidentestrafico.org/traffic/resource/Despejado> ;
+             ns:fecha ?fecha .
+}
+
+#Mostrar todas las localizaciones
+SELECT ?accidente ?localizacion
+WHERE {
+  ?accidente ns:OcurreEn ?localizacion .
+}
+
+
+# Contar el número total de accidentes
+SELECT DISTINCT ?accidente
+WHERE {
+  ?accidente a ns:Accidente .
+}
+
+#Accidentes con Bicicletas implicadas
+SELECT (COUNT(DISTINCT ?accidente) AS ?totalAccidentesBicicleta)
+WHERE {
+  ?accidente ns:InvolucraVehiculo <http://accidentestrafico.org/traffic/resource/Vehiculo/Bicicleta> .
+}
+
+
+# Listar los accidentes donde hubo prueba positiva de alcohol
+SELECT ?accidente ?fecha
+WHERE {
+  ?accidente ns:ParticipaPersona ?persona ;
+             ns:fecha ?fecha .
+  ?persona ns:positivaAlcohol "YES" .
+}
+
+# Obtener accidentes y su distrito con el enlace a Wikidata
+SELECT ?accidente ?direccion ?distrito ?distrito_Wikidata
+WHERE {
+  ?accidente ns:OcurreEn ?direccion .
+  ?direccion ns:distrito ?distrito .
+  ?direccion ns:distrito_Wikidata ?distrito_Wikidata .
+  
+  # Filtrar las direcciones que están relacionadas con Wikidata
+  FILTER(STRSTARTS(STR(?distrito_Wikidata), "https://wikidata.org/entity/Q"))
+  
+  # Relacionar la dirección con el identificador de Wikidata
+  ?direccion owl:sameAs ?wikidataEntity .
+  ?wikidataEntity rdf:subject ?distrito_Wikidata .
+}

@@ -1,0 +1,1022 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "PK",
+    "description": "Remove column PK"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION-ENTIDAD",
+    "description": "Remove column DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CONTENT-URL",
+    "description": "Remove column CONTENT-URL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO-NUM",
+    "description": "Remove column TIPO-NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Remove column PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Remove column PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Remove column ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Remove column ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LOCALIDAD",
+    "description": "Remove column LOCALIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PROVINCIA",
+    "description": "Remove column PROVINCIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-X",
+    "description": "Remove column COORDENADA-X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-Y",
+    "description": "Remove column COORDENADA-Y"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LATITUD",
+    "description": "Remove column LATITUD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LONGITUD",
+    "description": "Remove column LONGITUD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TELEFONO",
+    "description": "Remove column TELEFONO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FAX",
+    "description": "Remove column FAX"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EMAIL",
+    "description": "Remove column EMAIL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO",
+    "description": "Remove column TIPO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EQUIPAMIENTO",
+    "description": "Remove column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CLASE-VIAL",
+    "expression": "join ([cells['CLASE-VIAL'].value,cells['NOMBRE-VIA'].value],' ')",
+    "onError": "keep-original",
+    "newColumnName": "CALLE",
+    "columnInsertIndex": 7,
+    "description": "Create column CALLE at index 7 based on column CLASE-VIAL using expression join ([cells['CLASE-VIAL'].value,cells['NOMBRE-VIA'].value],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "NOMBRE",
+      "HORARIO",
+      "TRANSPORTE",
+      "DESCRIPCION",
+      "ACCESIBILIDAD",
+      "CALLE",
+      "NUM",
+      "CODIGO-POSTAL",
+      "BARRIO",
+      "COD-BARRIO",
+      "DISTRITO",
+      "COD-DISTRITO"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE",
+    "expression": "join ([cells['CALLE'].value,cells['NUM'].value],', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CALLE using expression join ([cells['CALLE'].value,cells['NUM'].value],', ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NUM",
+    "description": "Remove column NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGO-POSTAL",
+    "description": "Remove column CODIGO-POSTAL"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "expression": "grel:value.replace(/\\(.*?\\)/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION using expression grel:value.replace(/\\(.*?\\)/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "expression": "grel:value.replace(/\\d+ para residentes/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION using expression grel:value.replace(/\\d+ para residentes/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "expression": "grel:value.replace(/Código[^\\d]*\\d+/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION using expression grel:value.replace(/Código[^\\d]*\\d+/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "expression": "grel:value.replace(/\\s{2}([A-Z])| (\\bAbierto\\b)/, \"|||$1$2\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION using expression grel:value.replace(/\\s{2}([A-Z])| (\\bAbierto\\b)/, \"|||$1$2\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "|||",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column DESCRIPCION by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION 9",
+    "description": "Remove column DESCRIPCION 9"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION 8",
+    "description": "Remove column DESCRIPCION 8"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION 7",
+    "description": "Remove column DESCRIPCION 7"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION 6",
+    "description": "Remove column DESCRIPCION 6"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 5",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Abierto 24 horas ",
+          "Abierto 24 horas",
+          "Abierto 24 horas     "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas"
+      },
+      {
+        "from": [
+          "Admite Tarjeta BonoRed ",
+          "Admite Tarjeta BonoRed  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "Titularidad: Ayuntamiento de Madrid",
+          "Titularidad : Ayuntamiento de Madrid "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 5"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 5",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gestión: Empresa Municipal de Transportes  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 5"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Abierto 24 horas Admite Tarjeta BonoRed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas"
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Titularidad : Ayuntamiento de Madrid ",
+          "Titularidad: Ayuntamiento de Madrid"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "Abierto 24 horas ",
+          "Abierto 24 horas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas "
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Titularidad: Ayuntamiento de Madrid",
+          "Titularidad : Ayuntamiento de Madrid  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "Información sobre accesibilidad: ",
+          "Información sobre accesibilidad:"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "Abierto 24 horas",
+          "Abierto 24 horas "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas"
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Abierto 24 horas Admite Tarjeta BonoRed",
+          "Abierto 24 horas Admite Tarjeta BonoRed ",
+          "Abierto: 24 horas Admite Tarjeta BonoRed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas"
+      },
+      {
+        "from": [
+          "Abierto 24 horas",
+          "Abierto 24 horas  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas"
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Información sobre accesibilidad: ",
+          "Información sobre accesibilidad:",
+          "Informacion sobre accesibilidad:"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Abierto 24 horas Admite la Tarjeta Bono Red"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas"
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Abierto 24 horas Admite Tarjeta BonoRed Este PAR está adherido a la zona de APR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abierto 24 horas"
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Plazas motos: 16.",
+          "Plazas motos: 2 ",
+          "Plazas motos: 6.",
+          "Plazas motos: 7."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Informacion sobre accesibilidad:   1 escalera adaptada No tiene ascensor de salida a calle 1 aseo accesible Plazas para minusválidos residentes: 17",
+          "Información sobre accesibilidad:  1 escalera adaptada No dispone de ascensor 1 aseo accesible Plaza para minusválidos residentes: 5  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tiene escaleras adaptadas Ascensor de salida a la calle Avenida de América, 9 Tiene aseos accesibles Plazas para minusválidos  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Titularidad : Ayuntamiento de Madrid"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en  1&amp;ordf;  planta Plaza para minusválidos residentes: 7 ",
+          "No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en 1&amp;ordf; planta Plaza para minusválidos residentes: 6 ",
+          "No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en 2&amp;ordf;  planta Plaza para minusválidos residentes: 16 ",
+          "No tiene escaleras adaptadas 1 ascensor en la salida a la Calle Verdaguer y garcía 1 aseo accesible en la planta -1 Plaza para minusválidos residentes: 4  ",
+          "No tiene escaleras adaptadas 1 ascensor en la salida a la plaza del Marqués de Salamanca 1 aseo accesible en 2&amp;ordf;  planta Plaza para minusválidos residentes: 14 ",
+          "No tiene escaleras adaptadas 1 ascensor en la salida al Paseo de Recoletos 1 aseo accesible Plaza para minusválidos residentes: 10 ",
+          "No tiene escaleras adaptadas Ascensor de salida a la calle Pérez de Victoria 2 aseos accesibles",
+          "No tiene escaleras adaptadas Ascensor de salida a la plaza de Felipe II Aseo accesible",
+          "No tiene escaleras adaptadas No disponde ascensor No disponde de aseos accesible Plazas para minusválidos residentes: 5  ",
+          "No tiene escaleras adptadas Ascensor de salida a la calle Hernai, 68 1 aseo accesible en 1&amp;ordf; planta Plazas para minusválidos residentes. 3  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "No tiene escalera adaptada 1 ascensor con salida a la calle Fuencarral, 117 1 aseo accesible en la 1&amp;ordf; planta Plazas para minusválidos residentes: 7 ",
+          "No tiene escalera adaptada Tiene ascensor de salida a Avenida de Portugal, s/n 1 aseo accesible"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Titularidad:",
+          "Titularidad: Subdirección General de Patrimonio - Comunidad de Madrid"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Disponde de escaleras adaptadas 1 ascensor en la salida a la Plaza de Olavide 1 aseo accesible en la 1&amp;ordf;  planta Plaza para minusválidos residentes: 8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Si tiene escaleras adaptadas 1 ascensor 3 aseos accesibles : 8 Plaza para minusválidos residentes: 16"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "No tiene escaleras adaptadas 1 ascensor con salida a la Plaza de Vazquez de Mella 1 aseo accesible Plaza para minusválidos residentes: 7  ",
+          "No tiene escaleras adaptadas Ascensor con salida a la calle Jacinto benavente, s/n 1 aseo accesible Plaza para minusválidos residentes: 16",
+          "No tiene escaleras adaptadas No disponde de ascensor 1 aseo accesible Plaza para minusválidos residentes: 13 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "Plazas para minusválidos residentes: 20 ",
+          "Plazas para minusválidos residentes: 3  ",
+          "Plazas para minusválidos residentes:23 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Teléfonos: Servicio de información de la Comunidad de Madrid:                    012                    91 580 42 60  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Teléfono: 91 556 62 26"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gestión: Empresa Municipal de Transportes  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gálibo: 1'85 m"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 4",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ayuntamiento de Madrid "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 4"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 1",
+    "expression": "grel:value.replace(/\\d+[\\s\\d]*(Residenciales|residentes)/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION 1 using expression grel:value.replace(/\\d+[\\s\\d]*(Residenciales|residentes)/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 1",
+    "expression": "grel:value.replace(/para motocicletas: \\d+( para bicicletas: \\d+)?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION 1 using expression grel:value.replace(/para motocicletas: \\d+( para bicicletas: \\d+)?/, \"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Información sobre accesibilidad:"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION 1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 2",
+    "expression": "join ([coalesce(cells['DESCRIPCION 2'].value,''),coalesce(cells['DESCRIPCION 3'].value,''),coalesce(cells['DESCRIPCION 4'].value,''),coalesce(cells['DESCRIPCION 5'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION 2 using expression join ([coalesce(cells['DESCRIPCION 2'].value,''),coalesce(cells['DESCRIPCION 3'].value,''),coalesce(cells['DESCRIPCION 4'].value,''),coalesce(cells['DESCRIPCION 5'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "NOMBRE",
+      "HORARIO",
+      "TRANSPORTE",
+      "DESCRIPCION 1",
+      "DESCRIPCION 2",
+      "ACCESIBILIDAD",
+      "CALLE",
+      "BARRIO",
+      "COD-BARRIO",
+      "DISTRITO",
+      "COD-DISTRITO"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "join ([coalesce(cells['HORARIO'].value,''),coalesce(cells['DESCRIPCION 2'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column HORARIO using expression join ([coalesce(cells['HORARIO'].value,''),coalesce(cells['DESCRIPCION 2'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "NOMBRE",
+      "HORARIO",
+      "TRANSPORTE",
+      "DESCRIPCION 1",
+      "ACCESIBILIDAD",
+      "CALLE",
+      "BARRIO",
+      "COD-BARRIO",
+      "DISTRITO",
+      "COD-DISTRITO"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION 1",
+    "expression": "grel:value.replace(/[^\\d]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPCION 1 using expression grel:value.replace(/[^\\d]/, \"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPCION 1",
+    "newColumnName": "PLAZAS",
+    "description": "Rename column DESCRIPCION 1 to PLAZAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TRANSPORTE",
+    "description": "Remove column TRANSPORTE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-BARRIO",
+    "expression": "grel:if(length(value) == 1, \"0\" + value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-BARRIO using expression grel:if(length(value) == 1, \"0\" + value, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-DISTRITO",
+    "expression": "grel:if(length(value) == 1, \"0\" + value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-DISTRITO using expression grel:if(length(value) == 1, \"0\" + value, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-BARRIO",
+    "expression": "grel:row.cells[\"COD-DISTRITO\"].value + \"-\" + value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-BARRIO using expression grel:row.cells[\"COD-DISTRITO\"].value + \"-\" + value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ACCESIBILIDAD",
+    "expression": "grel:value == \"1\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ACCESIBILIDAD using expression grel:value == \"1\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE",
+    "expression": "grel:\"A-\" + (row.index + 1)",
+    "onError": "set-to-blank",
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "description": "Create column ID at index 1 based on column NOMBRE using expression grel:\"A-\" + (row.index + 1)"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "ID",
+    "index": 0,
+    "description": "Move column ID to position 0"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ", ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column CALLE by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CALLE 2",
+    "newColumnName": "NUMERO",
+    "description": "Rename column CALLE 2 to NUMERO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CALLE 1",
+    "newColumnName": "VIA",
+    "description": "Rename column CALLE 1 to VIA"
+  }
+]

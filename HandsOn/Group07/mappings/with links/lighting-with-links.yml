@@ -1,0 +1,68 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  tm-ont: http://turismo.mad.es/cultural/ontology/ont1#
+  tm: http://turismo.mad.es/cultural/resource/
+  tm-lig: http://turismo.mad.es/cultural/resource/Lighting/ 
+  tm-dis: http://turismo.mad.es/cultural/resource/District/
+  tm-nei: http://turismo.mad.es/cultural/resource/Neighborhood/
+  tm-str: http://turismo.mad.es/cultural/resource/Street/ 
+
+ 
+mappings:
+  lighting:
+    sources:
+      - ['lighting_data-with-links.csv~csv']
+    s: tm-lig:$(ID)
+    po:
+      - [a, tm-ont:Lighting]
+      - [tm-ont:hasMotive,$(MOTIVO),xsd:string]
+      - [tm-ont:hasElementId,$(idelem),xsd:integer]
+      - [tm-ont:hasComment,$(COMENTARIO),xsd:string]
+      - [tm-ont:isNew,$(NOVEDAD),xsd:string]
+      - [tm-ont:hasType,$(TIPO),xsd:string]
+      - [tm-ont:hasLength,$(LONGITUD),xsd:integer]
+      - [tm-ont:hasNumberOfElements,$(N_ELEMENTOS),xsd:integer]
+      - [tm-ont:hasDesigner,$(DISEÑO),xsd:string]
+      - [tm-ont:hasPromoter,$(PROMOTOR),xsd:string]
+      - [tm-ont:hasText,$(TEXTO),xsd:string]
+      - [tm-ont:hasStreet, tm-str:$(POSICION)~iri]
+      - [tm-ont:hasNeighborhood, tm-nei:$(BARRIO)~iri]
+      - [tm-ont:hasDistrict, tm-dis:$(DISTRITOS)~iri]
+
+  street:
+    sources:
+      - ['lighting_data-with-links.csv~csv']
+    s: tm-str:$(POSICION)
+    po:
+      - [a, tm-ont:Street]
+      - [tm-ont:hasStreetName,$(POSICION),xsd:string]  
+
+
+  neighborhood:
+    sources:
+      - ['lighting_data-with-links.csv~csv']
+    s: tm-nei:$(BARRIO)
+    po:
+      - [a, tm-ont:Neighborhood]
+      - [tm-ont:hasNeighborhoodName,$(BARRIO),xsd:string]
+      - [owl:sameAs, $(BARRIO_RECON)~iri]
+       
+
+
+  district:
+    sources:
+      - ['lighting_data-with-links.csv~csv']
+    s: tm-dis:$(DISTRITOS)
+    po:
+      - [a, tm-ont:District]
+      - [tm-ont:hasDistrictName,$(DISTRITOS),xsd:string]
+      - [owl:sameAs, $(DISTRITOS_RECON)~iri] 

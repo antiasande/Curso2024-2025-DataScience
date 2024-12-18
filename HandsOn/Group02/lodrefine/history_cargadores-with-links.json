@@ -1,0 +1,2667 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "grel:value.replace(/\\s*\\(.*?\\)\\s*/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression grel:value.replace(/\\s*\\(.*?\\)\\s*/, \" \")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "UBICACIÓN",
+    "expression": "grel:value + \", Madrid\"",
+    "onError": "set-to-blank",
+    "newColumnName": "DIRECCIÓN COMPLETA",
+    "columnInsertIndex": 6,
+    "description": "Create column DIRECCIÓN COMPLETA at index 6 based on column UBICACIÓN using expression grel:value + \", Madrid\""
+  },
+  {
+    "op": "core/column-addition-by-fetching-urls",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DIRECCIÓN COMPLETA",
+    "urlExpression": "grel:'https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + escape(value, \"url\")",
+    "onError": "set-to-blank",
+    "newColumnName": "json",
+    "columnInsertIndex": 7,
+    "delay": 1500,
+    "cacheResponses": true,
+    "httpHeadersJson": [
+      {
+        "name": "authorization",
+        "value": ""
+      },
+      {
+        "name": "if-modified-since",
+        "value": ""
+      },
+      {
+        "name": "accept-language",
+        "value": ""
+      },
+      {
+        "name": "accept-encoding",
+        "value": ""
+      },
+      {
+        "name": "user-agent",
+        "value": "OpenRefine 3.8.4 [TRUNK]"
+      },
+      {
+        "name": "accept",
+        "value": "*/*"
+      },
+      {
+        "name": "accept-charset",
+        "value": ""
+      }
+    ],
+    "description": "Create column json at index 7 by fetching URLs based on column DIRECCIÓN COMPLETA using expression grel:'https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + escape(value, \"url\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "json",
+    "expression": "grel:value.parseJson()[0].lon",
+    "onError": "set-to-blank",
+    "newColumnName": "LONGITUD",
+    "columnInsertIndex": 8,
+    "description": "Create column LONGITUD at index 8 based on column json using expression grel:value.parseJson()[0].lon"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "json",
+    "expression": "grel:value.parseJson()[0].lat",
+    "onError": "set-to-blank",
+    "newColumnName": "LATITUD",
+    "columnInsertIndex": 8,
+    "description": "Create column LATITUD at index 8 based on column json using expression grel:value.parseJson()[0].lat"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "json",
+    "description": "Remove column json"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESTADO",
+    "description": "Remove column ESTADO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID_Punto",
+    "description": "Remove column ID_Punto"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DIS",
+    "description": "Remove column COD_DIS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_BAR",
+    "description": "Remove column COD_BAR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HORARIO",
+    "description": "Remove column HORARIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_EDICION",
+    "description": "Remove column FECHA_EDICION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_ALTA",
+    "description": "Remove column FECHA_ALTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_APERTURA",
+    "description": "Remove column FECHA_APERTURA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_FECHA_APERTURA",
+    "description": "Remove column INFO_FECHA_APERTURA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_ADICIONAL",
+    "description": "Remove column INFO_ADICIONAL"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "grel:toString(forEach(value.find(/\\d+\\s*kW|\\d+\\s*KW/).join(\",\").replace(\" kW\",\"\").replace(\"kW\",\"\").replace(\"KW\",\"\").replace(\" KW\",\"\").split(\",\"), v, v.toNumber()).sort().reverse()[0]) + \" kW\"",
+    "onError": "set-to-blank",
+    "newColumnName": "POTENCIA_MAX",
+    "columnInsertIndex": 10,
+    "description": "Create column POTENCIA_MAX at index 10 based on column CARACTERÍSTICAS_EQUIPO using expression grel:toString(forEach(value.find(/\\d+\\s*kW|\\d+\\s*KW/).join(\",\").replace(\" kW\",\"\").replace(\"kW\",\"\").replace(\"KW\",\"\").replace(\" KW\",\"\").split(\",\"), v, v.toNumber()).sort().reverse()[0]) + \" kW\""
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA_MAX",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50.0 kW"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "50 kW"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA_MAX"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UBICACIÓN",
+    "description": "Remove column UBICACIÓN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DIRECCIÓN COMPLETA",
+    "description": "Remove column DIRECCIÓN COMPLETA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EMPLAZAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Estación de Servicio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Estación de servicio"
+      }
+    ],
+    "description": "Mass edit cells in column EMPLAZAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamartín"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamartin"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamberí"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamberi"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral - El Pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciudad Lineal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CiudadLineal"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa - Aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puente de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PuenteDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Blas - Canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanBlas-Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral-El Pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-ElPardo"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tetuán"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tetuan"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vicálvaro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vicalvaro"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villa de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VillaDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Águilas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aguilas"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Argüelles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arguelles"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Casco Histórico de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CascoHistoricoDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciudad Universitaria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CiudadUniversitaria"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuatro Caminos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CuatroCaminos"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuatro Vientos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CuatroVientos"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "El Goloso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElGoloso"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "El Plantío"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElPlantío"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "El Viso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElViso"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ensanche de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EnsancheDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hispanoamérica"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hispanoamerica"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jerónimos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jeronimos"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moscardó"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moscardo"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nueva España"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NuevaEspana"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Palomeras Sureste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PalomerasSureste"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Palos de Moguer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PalosDeMoguer"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Peñagrande"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Penagrande"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pinar del Rey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PinarDelRey"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Cristóbal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanCristobal"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Diego"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanDiego"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Juan Bautista"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanJuanBautista"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Pascual"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanPascual"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villaverde Alto, Casco Histórico de Villaverde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VillaverdeAlto"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GESTIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Convenio Cesión"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Convenio cesión"
+      }
+    ],
+    "description": "Mass edit cells in column GESTIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "La Paz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LaPaz"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ElPlantío"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElPlantio"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EMPLAZAMIENTO",
+    "description": "Remove column EMPLAZAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC (CIRCUTOR)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC / CEPSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC/ GALP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ENDESA X SERVICIOS S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ENDESA"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DRIVE THE CITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DRIVETHECITY"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CC LA VAGUADA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CCLAVAGUADA"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRITO to type Q3032114"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "Fuencarral-ElPardo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q656196",
+      "name": "Fuencarral-El Pardo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuencarral-El Pardo (Q656196) for cells containing \"Fuencarral-ElPardo\" in column DISTRITO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "PuenteDeVallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2003054",
+      "name": "Puente de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puente de Vallecas (Q2003054) for cells containing \"PuenteDeVallecas\" in column DISTRITO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "VillaDeVallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1947988",
+      "name": "Villa de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villa de Vallecas (Q1947988) for cells containing \"VillaDeVallecas\" in column DISTRITO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "SanBlas-Canillejas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2001937",
+      "name": "San Blas-Canillejas",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 76
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Blas-Canillejas (Q2001937) for cells containing \"SanBlas-Canillejas\" in column DISTRITO"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO to type Q10267336"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PalosDeMoguer",
+    "judgment": "matched",
+    "match": {
+      "id": "Q521009",
+      "name": "Palos de la Frontera",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 57
+    },
+    "shareNewTopics": false,
+    "description": "Match item Palos de la Frontera (Q521009) for cells containing \"PalosDeMoguer\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ElViso",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4778",
+      "name": "El Viso",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Viso (Q4778) for cells containing \"ElViso\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "NuevaEspana",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10338128",
+      "name": "Nueva España",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 52
+    },
+    "shareNewTopics": false,
+    "description": "Match item Nueva España (Q10338128) for cells containing \"NuevaEspana\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SanJuanBautista",
+    "judgment": "matched",
+    "match": {
+      "id": "Q165609",
+      "name": "San Juan Bautista",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 51
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Juan Bautista (Q165609) for cells containing \"SanJuanBautista\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ElPlantio",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773742",
+      "name": "El Plantío",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 95
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Plantío (Q3773742) for cells containing \"ElPlantio\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "EnsancheDeVallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3847485",
+      "name": "Ensanche de Vallecas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ensanche de Vallecas (Q3847485) for cells containing \"EnsancheDeVallecas\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ElGoloso",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10271137",
+      "name": "El Goloso",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Goloso (Q10271137) for cells containing \"ElGoloso\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CascoHistoricoDeVallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vallecas (Q16544370) for cells containing \"CascoHistoricoDeVallecas\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PinarDelRey",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10349788",
+      "name": "Pinar del Rey",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Pinar del Rey (Q10349788) for cells containing \"PinarDelRey\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VillaverdeAlto",
+    "judgment": "matched",
+    "match": {
+      "id": "Q390435",
+      "name": "Villaverde Alto, Casco Histórico de Villaverde",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villaverde Alto, Casco Histórico de Villaverde (Q390435) for cells containing \"VillaverdeAlto\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CuatroCaminos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5824684",
+      "name": "Cuatro Caminos",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 59
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cuatro Caminos (Q5824684) for cells containing \"CuatroCaminos\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SanPascual",
+    "judgment": "matched",
+    "match": {
+      "id": "Q165612",
+      "name": "San Pascual",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Pascual (Q165612) for cells containing \"SanPascual\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SanCristobal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q390457",
+      "name": "San Cristóbal",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 72
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Cristóbal (Q390457) for cells containing \"SanCristobal\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "Pilar",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773964",
+      "name": "El Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pilar (Q3773964) for cells containing \"Pilar\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LaPaz",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5869740",
+      "name": "La Paz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Paz (Q5869740) for cells containing \"LaPaz\" in column BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DISTRITO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SanDiego",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11946851",
+      "name": "San Diego",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Diego (Q11946851) for cells containing \"SanDiego\" in column BARRIO"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q4830453",
+        "name": "business"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column OPERADOR to type Q4830453"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "GIC",
+    "description": "Clear recon data for cells containing \"GIC\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "ENDESA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1275336",
+      "name": "Endesa",
+      "types": [
+        "Q6881511",
+        "Q891723",
+        "Q1326624"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Endesa (Q1275336) for cells containing \"ENDESA\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "EMT",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1094755",
+      "name": "Empresa Municipal de Transportes de Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Empresa Municipal de Transportes de Madrid (Q1094755) for cells containing \"EMT\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "Sudel",
+    "description": "Clear recon data for cells containing \"Sudel\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "Cerdeira",
+    "description": "Clear recon data for cells containing \"Cerdeira\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "CCLAVAGUADA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6465598",
+      "name": "La Vaguada",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Vaguada (Q6465598) for cells containing \"CCLAVAGUADA\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "DRIVETHECITY",
+    "description": "Clear recon data for cells containing \"DRIVETHECITY\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "UAM",
+    "judgment": "matched",
+    "match": {
+      "id": "Q788091",
+      "name": "Autonomous University of Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Autonomous University of Madrid (Q788091) for cells containing \"UAM\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "ECOLINERAS",
+    "description": "Clear recon data for cells containing \"ECOLINERAS\" in column OPERADOR"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OPERADOR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "OPERADOR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "similarValue": "BLAUDRIVE",
+    "description": "Clear recon data for cells containing \"BLAUDRIVE\" in column OPERADOR"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRITO",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_distrito",
+    "columnInsertIndex": 2,
+    "description": "Create column same_as_wikidata_distrito at index 2 based on column DISTRITO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_barrio",
+    "columnInsertIndex": 4,
+    "description": "Create column same_as_wikidata_barrio at index 4 based on column BARRIO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "OPERADOR",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_operador",
+    "columnInsertIndex": 11,
+    "description": "Create column same_as_wikidata_operador at index 11 based on column OPERADOR using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon-discard-judgments",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "clearData": true,
+    "description": "Discard recon judgments and clear recon data for cells in column DISTRITO"
+  },
+  {
+    "op": "core/recon-discard-judgments",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "clearData": true,
+    "description": "Discard recon judgments and clear recon data for cells in column BARRIO"
+  },
+  {
+    "op": "core/recon-discard-judgments",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "clearData": true,
+    "description": "Discard recon judgments and clear recon data for cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Apostol Santiago"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ApostolSantiago"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Los Rosales"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LosRosales"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  }
+]

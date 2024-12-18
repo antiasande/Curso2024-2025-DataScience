@@ -1,0 +1,257 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q34442",
+        "name": "road"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column carretera to type Q34442"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera",
+    "similarValue": "PASEO DE SANTA MARIA DE LA CABEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6065630",
+      "name": "Paseo de Santa María de la Cabeza",
+      "types": [
+        "Q79007",
+        "Q787113"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de Santa María de la Cabeza (Q6065630) for cells containing \"PASEO DE SANTA MARIA DE LA CABEZA\" in column carretera"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera",
+    "similarValue": "PASO INFERIOR (Túnel)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q44377",
+      "name": "tunnel",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item tunnel (Q44377) for cells containing \"PASO INFERIOR (Túnel)\" in column carretera"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera",
+    "similarValue": "PASEO DE LA CASTELLANA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1473674",
+      "name": "Paseo de la Castellana",
+      "types": [
+        "Q83620",
+        "Q79007",
+        "Q787113"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de la Castellana (Q1473674) for cells containing \"PASEO DE LA CASTELLANA\" in column carretera"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera",
+    "similarValue": "Calle Sinesio Delgado",
+    "judgment": "matched",
+    "match": {
+      "id": "Q52245452",
+      "name": "Sinesio Delgado Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sinesio Delgado Street (Q52245452) for cells containing \"Calle Sinesio Delgado\" in column carretera"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera",
+    "similarValue": "M-30",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2606591",
+      "name": "Madrid Ring Road",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid Ring Road (Q2606591) for cells containing \"M-30\" in column carretera"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera",
+    "similarValue": "A5",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2744396",
+      "name": "Southwestern Motorway (Spain)",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Southwestern Motorway (Spain) (Q2744396) for cells containing \"A5\" in column carretera"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "carretera",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_carretera",
+    "columnInsertIndex": 4,
+    "description": "Create column wikidata_carretera at index 4 based on column carretera using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "responsable",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q644371",
+        "name": "international airport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column responsable to type Q644371"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "responsable",
+    "similarValue": "DGP\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11917322",
+      "name": "Direcció General de la Policia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Direcció General de la Policia (Q11917322) for cells containing \"DGP\r\" in column responsable"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "responsable",
+    "similarValue": "DGP\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q38227904",
+      "name": "Directorate-General of the Police",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Directorate-General of the Police (Q38227904) for cells containing \"DGP\r\" in column responsable"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "responsable",
+    "similarValue": "DGP\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q38227904",
+      "name": "Directorate-General of the Police",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Directorate-General of the Police (Q38227904) for cells containing \"DGP\r\" in column responsable"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "responsable",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_responsable",
+    "columnInsertIndex": 18,
+    "description": "Create column wikidata_responsable at index 18 based on column responsable using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

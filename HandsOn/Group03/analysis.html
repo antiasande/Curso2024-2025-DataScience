@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Análisis de sobre los datos</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Análisis y nombrado de datos</h1>
+            <h2>Análisis de los datos</h2>
+            <p>En ambos data sets hemos tomado cada columna como un tipo de clase. Estas clases se definen con propiedades y deben tener un tipo en específico. Hay una columna en el data set de london housing llamada "area" y otra columna en el data set de london schooling llamada "LA_NAME". Estas columnas tienen un uso muy importante, ya que son las que usaremos para relacionar el precio de la vivienda en londres con la cantidad de colegios que rodeen a la vivienda.</p>
+            <p>Hemos hecho un análisis de en ambos data sets de cuantas casas y colegios hay en cada zona. Luego relacionaremos ambos data sets a través de las propiedades de las clases. Es importante recalcar que cada colegio puede estar relacionado con múltiples casas y viceversa.</p>
+            <p>Veamos gráficamente la cantidad de casas-colegios por zona. Esto servirá para entender y analizar mejor ambos datasets. Para visualizar mejor, hemos quitado el valor "England", ya que por razones obvias desbalanceaba mucho la gráfica. Veamoslas a continuación:</p>
+            <h2>Visualización gráfica de los tipos de nombrado.</h2>
+            <img src="images\Figure_1.png" width="500" height="auto">
+            <img src="images\LANAME.png" width="500" height="auto">
+        </header>
+
+        <header>
+            <h1>Diagrama del esquema y de la instancia</h1>
+            <img src="images\esquema.png" width="500" height="auto">
+            <img src="images\instancia.png" width="500" height="auto">
+        </header>
+        <main>
+            <h2>Licencias de los datos</h2>
+            <p>Ambos datasets usados tienen la licencia Open Government Licence v.3.0, lo cual hace que no existan conflictos de licencia entre los dos datasets, por lo que la licencia potencial sería también Open Government Licence v.3.0</p>
+
+
+            <h2>Estrategias de nombrado</h2>
+                <h3>Nombrado de ambos data sets</h3>
+                <p>El nombrado se ha hecho por clases, propiedades e individuos. Ambos data sets siguen el mismo esquema de nombrado. Tenemos los siguientes nombrados:</p>
+
+                <h4>EStrategias de nombrado para cada tipo de elemento:</h4>
+                    <ul>
+                        <li><strong>Clases</strong>: [ontologyName]#[className]</li>
+                        <li><strong>propiedades</strong>: [ontologyName]#[propertyName]</li>
+                        <li><strong>Individuos</strong>: [className]/[identifier]</li>
+                    </ul>
+
+                <h4>Para de clase:</h4>
+                <ul>
+                    <li>http://london.linkeddata.es/london/ontology#School</li>
+                    <li>http://london.linkeddata.es/london/ontology#Town</li>
+                    <li>http://london.linkeddata.es/london/ontology#House</li>
+                </ul>
+                
+                <h4>Para propiedades:</h4>
+                <ul>
+                    <li>http://london.linkeddata.es/london/ontology#identifier</li>
+                    <li>http://london.linkeddata.es/london/ontology#gender</li>
+                    <li>http://london.linkeddata.es/london/ontology#schoolName</li>
+                    <li>http://london.linkeddata.es/london/ontology#type</li>
+                    <li>http://london.linkeddata.es/london/ontology#address</li>
+                    <li>http://london.linkeddata.es/london/ontology#status</li>
+                    <li>http://london.linkeddata.es/london/ontology#phase</li>
+                    <li>http://london.linkeddata.es/london/ontology#lat</li>
+                    <li>http://london.linkeddata.es/london/ontology#long</li>
+                    <li>http://london.linkeddata.es/london/ontology#dateRecorded</li>
+                    <li>http://london.linkeddata.es/london/ontology#averagePrice</li>
+                    <li>http://london.linkeddata.es/london/ontology#housesSold</li>
+                    <li>http://london.linkeddata.es/london/ontology#townName</li>
+                </ul>
+
+                <h4>Para individuos:</h4>
+                <ul>
+                    <li>http://london.linkeddata.es/london/resource/[nombre_clase]/[nombre_individuo]</li>
+                </ul>
+
+                <p>Estrategia de nombrado de London School de manera visual</p>
+        
+        
+                <h3>Detalles de Columnas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Column</th>
+                            <th>Type</th>
+                            <th>Comments / Range (rounded)</th>
+                            <th>Problems</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Id</td>
+                            <td>Integer</td>
+                            <td>Not unique, not empty</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>String</td>
+                            <td>Not unique, not empty</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Type</td>
+                            <td>String</td>
+                            <td>unique</td>
+                            <td>21 types</td>
+                        </tr>
+                        <tr>
+                            <td>Phase</td>
+                            <td>String</td>
+                            <td>unique</td>
+                            <td>5 types</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>String</td>
+                            <td>Not empty</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Town</td>
+                            <td>String</td>
+                            <td>Not empty</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>String</td>
+                            <td>unique</td>
+                            <td>3 types</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>String</td>
+                            <td>unique</td>
+                            <td>3 types</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>decimal</td>
+                            <td>range between -0.57 to 0.37</td>
+                            <td>Negative Values</td>
+                        </tr>
+                        <tr>
+                            <td>y</td>
+                            <td>decimal</td>
+                            <td>range between 51.25 to 51.73</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Id (house)</td>
+                            <td>Integer</td>
+                            <td>Not unique, not empty</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td>String</td>
+                            <td>Not empty</td>
+                            <td>Type XXXX-XX-XX</td>
+                        </tr>
+                        <tr>
+                            <td>HouseSold</td>
+                            <td>Integer</td>
+                            <td>Not unique</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>AveragePrice</td>
+                            <td>Integer</td>
+                            <td>Not unique</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>   
+
+                <h3>Los tipos para Type</h3>
+                <ul>
+                    <li>Academy Alternative Provision Converter</li>
+                    <li>Academy Alternative Provision Sponsor Led</li>
+                    <li>Academy Converter</li>
+                    <li>Academy Special Converter</li>
+                    <li>Academy Special Sponsor Led</li>
+                    <li>Academy Sponsor Led</li>
+                    <li>City Technology College</li>
+                    <li>Community School</li>
+                    <li>Community Special School</li>
+                    <li>Foundation School</li>
+                    <li>Foundation Special School</li>
+                    <li>Free Schools</li>
+                    <li>Free Schools - Alternative Provision</li>
+                    <li>Free Schools Special</li>
+                    <li>Non-Maintained Special School</li>
+                    <li>Other Independent School</li>
+                    <li>Other Independent Special School</li>
+                    <li>Studio Schools</li>
+                    <li>University Technical College</li>
+                    <li>Voluntary Aided School</li>
+                    <li>Voluntary Controlled School</li>
+                </ul>
+                <h1>Los tipos para Phase</h1>
+                <ul>
+                    <li>All Through</li>
+                    <li>Middle Deemed Secondary</li>
+                    <li>Not applicable</li>
+                    <li>Primary</li>
+                    <li>Secondary</li>
+                </ul>
+                <h1>Los tipos para Status</h1>
+                <ul>
+                    <li>Closed</li>
+                    <li>Open</li>
+                    <li>Open, but proposed to close</li>
+                </ul>
+                <h1>Los tipos para Gender</h1>
+                <ul>
+                    <li>Boys</li>
+                    <li>Girls</li>
+                    <li>Mixed</li>
+                </ul>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,1028 @@
+<http://example.org/cargadores/3825> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3782> <http://owl-ontologies.com/ns#esDe> "350 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3829> <http://owl-ontologies.com/ns#longitud> "-3.6310810607169968"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3810> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3838> <http://owl-ontologies.com/ns#latitud> "40.4442757950714"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Buenavista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4281> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/operadores/GIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3782> <http://owl-ontologies.com/ns#latitud> "40.458417"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3843> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3759> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/4281> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/Rosas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Apostol%20Santiago> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Hortaleza> .
+<http://example.org/cargadores/3754> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3770> <http://owl-ontologies.com/ns#longitud> "-3.7035436244656923"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3771> <http://owl-ontologies.com/ns#gestionDe> "EMT" .
+<http://example.org/cargadores/3767> <http://owl-ontologies.com/ns#latitud> "40.44889261022727"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3812> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://owl-ontologies.com/ns#esDe> <http://www.w3.org/2000/01/rdf-schema#label> "Es de" .
+<http://example.org/cargadores/3761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3743> <http://owl-ontologies.com/ns#esDe> "150 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4275> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3747> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3750> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/barrios/ElPlantio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3743> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3752> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3778> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/3809> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3812> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/distritos/Vicalvaro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3733> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3758> <http://owl-ontologies.com/ns#longitud> "-3.7582946"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3765> <http://owl-ontologies.com/ns#latitud> "40.3398809"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3749> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/cargadores/6668> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Corralejos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Universidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3783> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3764> <http://owl-ontologies.com/ns#latitud> "40.497373499999995"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3735> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Castellana> .
+<http://example.org/cargadores/3798> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/PinarDelRey> .
+<http://example.org/cargadores/3772> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3754> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/cargadores/4281> <http://owl-ontologies.com/ns#latitud> "40.4321401"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#gestionDe> <http://www.w3.org/2000/01/rdf-schema#label> "Gestión de" .
+<http://example.org/cargadores/3771> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/EMT> .
+<http://example.org/cargadores/3798> <http://owl-ontologies.com/ns#latitud> "40.46949030227158"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3756> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3776> <http://owl-ontologies.com/ns#longitud> "-3.669372242441858"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3784> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3838> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4662> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/operadores/Cerdeira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3804> <http://owl-ontologies.com/ns#esDe> "100 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3748> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3823> <http://owl-ontologies.com/ns#longitud> "-3.6604424289116912"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/ElViso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3863> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3751> <http://owl-ontologies.com/ns#longitud> "-3.689709965103191"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3784> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/TOTALENERGIES> .
+<http://example.org/cargadores/3745> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/4267> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3772> <http://owl-ontologies.com/ns#gestionDe> "EMT" .
+<http://example.org/cargadores/3818> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3752> <http://owl-ontologies.com/ns#latitud> "40.464557363988376"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3746> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3777> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3834> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3742> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/4267> <http://owl-ontologies.com/ns#longitud> "-3.6949577655963672"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4267> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3808> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3818> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4662> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/barrios/PalosDeMoguer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3841> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3763> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3838> <http://owl-ontologies.com/ns#longitud> "-3.5793883223743195"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Adelfas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Retiro> .
+<http://example.org/barrios/CiudadUniversitaria> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Moncloa-Aravaca> .
+<http://example.org/cargadores/3822> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3793> <http://owl-ontologies.com/ns#gestionDe> "Concesión demanial" .
+<http://example.org/cargadores/3741> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3754> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3840> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/PalomerasSureste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4269> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4662> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/barrios/Marroquina> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Moratalaz> .
+<http://example.org/distritos/Moratalaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3732> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Jeronimos> .
+<http://example.org/cargadores/3778> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3819> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3766> <http://owl-ontologies.com/ns#latitud> "40.37957475"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Goya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3818> <http://owl-ontologies.com/ns#longitud> "-3.6977885493901366"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3793> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3746> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3736> <http://owl-ontologies.com/ns#latitud> "40.43409345"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3771> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3832> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3827> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3811> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Jeronimos> .
+<http://example.org/cargadores/4269> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/BLAUDRIVE> .
+<http://example.org/cargadores/3755> <http://owl-ontologies.com/ns#longitud> "-3.6887179999999997"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3781> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3819> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/PinarDelRey> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Hortaleza> .
+<http://example.org/cargadores/3836> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/NATURGY> .
+<http://example.org/cargadores/3734> <http://owl-ontologies.com/ns#longitud> "-3.6712666"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/ElPlantio> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Moncloa-Aravaca> .
+<http://example.org/cargadores/3777> <http://owl-ontologies.com/ns#longitud> "-3.6903692"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3771> <http://owl-ontologies.com/ns#latitud> "40.424634210825076"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3731> <http://owl-ontologies.com/ns#latitud> "40.40014545"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3740> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3739> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3730> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3820> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3832> <http://owl-ontologies.com/ns#longitud> "-3.610518957029991"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3780> <http://owl-ontologies.com/ns#latitud> "40.36572133138983"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3734> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3735> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4664> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3838> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/3738> <http://owl-ontologies.com/ns#gestionDe> "Concesión demanial" .
+<http://example.org/cargadores/3737> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3816> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/Jeronimos> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Retiro> .
+<http://example.org/cargadores/3759> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3814> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3774> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/3759> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/ElPlantio> .
+<http://example.org/cargadores/3732> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3750> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3784> <http://owl-ontologies.com/ns#latitud> "40.40023520601303"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3773> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3745> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/VillaverdeAlto> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Villaverde> .
+<http://example.org/cargadores/3763> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ECOLINERAS> .
+<http://example.org/cargadores/3820> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3832> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Arcos> .
+<http://example.org/cargadores/3818> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://owl-ontologies.com/ns#Operador> <http://www.w3.org/2000/01/rdf-schema#label> "Operador" .
+<http://example.org/cargadores/4265> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3811> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/distritos/Centro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3822> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Apostol%20Santiago> .
+<http://example.org/barrios/Recoletos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3737> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3816> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3764> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4663> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3772> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3736> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Aguilas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Latina> .
+<http://example.org/cargadores/3731> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3804> <http://owl-ontologies.com/ns#latitud> "40.395520719633595"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/CuatroCaminos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3742> <http://owl-ontologies.com/ns#latitud> "40.4454625"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3841> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/SanCristobal> .
+<http://example.org/cargadores/3762> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Colina> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/CiudadLineal> .
+<http://example.org/cargadores/3814> <http://owl-ontologies.com/ns#latitud> "40.4295828"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3859> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Prosperidad> .
+<http://example.org/cargadores/3858> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://owl-ontologies.com/ns#numeroDeEquipos> <http://www.w3.org/2000/01/rdf-schema#label> "Número de Equipos" .
+<http://example.org/barrios/Almenara> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Tetuan> .
+<http://example.org/barrios/Trafalgar> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamberi> .
+<http://owl-ontologies.com/ns#numeroDeEquipos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/cargadores/3810> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3757> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3818> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Orcasur> .
+<http://example.org/cargadores/3766> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3776> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Berruguete> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Tetuan> .
+<http://example.org/cargadores/3798> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/6668> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Penagrande> .
+<http://example.org/barrios/Moscardo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3767> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4663> <http://owl-ontologies.com/ns#longitud> "-3.6949577655963672"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4663> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4662> <http://owl-ontologies.com/ns#latitud> "40.35705474843336"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3804> <http://owl-ontologies.com/ns#gestionDe> "Concesión demanial" .
+<http://example.org/cargadores/3807> <http://owl-ontologies.com/ns#latitud> "40.360642850000005"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/operadores/DRIVETHECITY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/4280> <http://owl-ontologies.com/ns#longitud> "-3.652918299349679"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3858> <http://owl-ontologies.com/ns#latitud> "40.46762976449039"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3743> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3738> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/4281> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3774> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3752> <http://owl-ontologies.com/ns#longitud> "-3.7202385444409805"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4275> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3865> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Pilar> .
+<http://example.org/cargadores/3744> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3760> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3826> <http://owl-ontologies.com/ns#latitud> "40.43994674407317"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4663> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3759> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3814> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/cargadores/3825> <http://owl-ontologies.com/ns#longitud> "-3.666093810197397"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#dentroDe> <http://www.w3.org/2000/01/rdf-schema#label> "Dentro de" .
+<http://example.org/cargadores/3763> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3741> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3863> <http://owl-ontologies.com/ns#latitud> "40.35904900182343"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3746> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3783> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Ventas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/CiudadLineal> .
+<http://example.org/cargadores/3765> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3811> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Aguilas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Arcos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3746> <http://owl-ontologies.com/ns#longitud> "-3.7067573657677615"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Valdebernardo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3858> <http://owl-ontologies.com/ns#longitud> "-3.69074855660997"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3742> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3736> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Guindalera> .
+<http://example.org/cargadores/3810> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Ibiza> .
+<http://example.org/barrios/Valderrivas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3734> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Goya> .
+<http://example.org/cargadores/3777> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/ElGoloso> .
+<http://example.org/cargadores/3820> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Orcasur> .
+<http://example.org/cargadores/3734> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3781> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3816> <http://owl-ontologies.com/ns#longitud> "-3.702887907930223"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3811> <http://owl-ontologies.com/ns#latitud> "40.41694360741295"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3804> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/TOTALENERGIES> .
+<http://example.org/cargadores/3822> <http://owl-ontologies.com/ns#longitud> "-3.662773297838859"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4265> <http://owl-ontologies.com/ns#esDe> "150 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/operadores/BLAUDRIVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://owl-ontologies.com/ns#esDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/cargadores/3826> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3824> <http://owl-ontologies.com/ns#latitud> "40.426019499999995"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3859> <http://owl-ontologies.com/ns#longitud> "-3.6768927"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/CascoHistoricoDeVallecas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/VillaDeVallecas> .
+<http://example.org/cargadores/6668> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/operadores/ENDESA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3761> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3829> <http://owl-ontologies.com/ns#latitud> "40.36911725"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/CuatroVientos> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Latina> .
+<http://example.org/cargadores/3738> <http://owl-ontologies.com/ns#latitud> "40.39767155"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4664> <http://owl-ontologies.com/ns#latitud> "40.394076606216686"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6673> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Recoletos> .
+<http://example.org/cargadores/3750> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Trafalgar> .
+<http://example.org/cargadores/4270> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3843> <http://owl-ontologies.com/ns#longitud> "-3.6610926328467954"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3758> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Ibiza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Marroquina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3824> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Justicia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3834> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3808> <http://owl-ontologies.com/ns#latitud> "40.360642850000005"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4280> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4267> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3783> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Corralejos> .
+<http://owl-ontologies.com/ns#latitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/barrios/Arguelles> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Moncloa-Aravaca> .
+<http://example.org/cargadores/4275> <http://owl-ontologies.com/ns#latitud> "40.40242503181887"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3744> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3732> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3758> <http://owl-ontologies.com/ns#latitud> "40.4609678"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3763> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/6668> <http://owl-ontologies.com/ns#latitud> "40.47983213981173"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3784> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3749> <http://owl-ontologies.com/ns#latitud> "40.4590308"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3819> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3747> <http://owl-ontologies.com/ns#longitud> "-3.7024341"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Penagrande> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Fuencarral-ElPardo> .
+<http://example.org/cargadores/3763> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/PalomerasSureste> .
+<http://example.org/cargadores/3829> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4280> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3826> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/SanPascual> .
+<http://example.org/cargadores/3730> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3742> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/ElViso> .
+<http://example.org/cargadores/3743> <http://owl-ontologies.com/ns#latitud> "40.4574416"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4265> <http://owl-ontologies.com/ns#latitud> "40.35904900182343"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3818> <http://owl-ontologies.com/ns#latitud> "40.3657879177848"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Lista> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Salamanca> .
+<http://example.org/cargadores/3754> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3829> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3819> <http://owl-ontologies.com/ns#longitud> "-3.696925727677478"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Jeronimos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3766> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/EnsancheDeVallecas> .
+<http://example.org/cargadores/4281> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Castellana> .
+<http://example.org/cargadores/3771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Pilar> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Fuencarral-ElPardo> .
+<http://example.org/barrios/Orcasur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3834> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3777> <http://owl-ontologies.com/ns#latitud> "40.5105475"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3810> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/EnsancheDeVallecas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4267> <http://owl-ontologies.com/ns#latitud> "40.5453765"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3841> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Trafalgar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3838> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3833> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/Cerdeira> .
+<http://example.org/cargadores/3749> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3839> <http://owl-ontologies.com/ns#latitud> "40.36572133138983"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3812> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Buenavista> .
+<http://example.org/cargadores/3751> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3783> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/3736> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3783> <http://owl-ontologies.com/ns#longitud> "-3.619366805586629"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3826> <http://owl-ontologies.com/ns#longitud> "-3.656035472066064"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/cargadores/3823> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4275> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3831> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4270> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3811> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3816> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3737> <http://owl-ontologies.com/ns#longitud> "-3.7722504853189975"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3829> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3839> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/operadores/UAM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3838> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3807> <http://owl-ontologies.com/ns#gestionDe> "Acuerdo bilateral" .
+<http://example.org/cargadores/3781> <http://owl-ontologies.com/ns#latitud> "40.36945160115506"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/operadores/ECOLINERAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3781> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/3808> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3859> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Valdefuentes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3833> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3744> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3744> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3863> <http://owl-ontologies.com/ns#longitud> "-3.661473377030333"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3741> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Castellana> .
+<http://example.org/cargadores/4275> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Aluche> .
+<http://example.org/cargadores/4662> <http://owl-ontologies.com/ns#longitud> "-3.6604424289116912"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3738> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Valdebernardo> .
+<http://example.org/cargadores/3801> <http://owl-ontologies.com/ns#latitud> "40.34849730172464"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3822> <http://owl-ontologies.com/ns#latitud> "40.47225181765033"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3731> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3793> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Pavones> .
+<http://example.org/barrios/Pilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3751> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Almagro> .
+<http://example.org/cargadores/4280> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/SanJuanBautista> .
+<http://example.org/cargadores/3755> <http://owl-ontologies.com/ns#latitud> "40.46617765"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/5464> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3825> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3730> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3762> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Aguilas> .
+<http://example.org/barrios/Goya> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Salamanca> .
+<http://example.org/cargadores/3761> <http://owl-ontologies.com/ns#longitud> "-3.7658482"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6667> <http://owl-ontologies.com/ns#numeroEquipos> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/5464> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3770> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Sol> .
+<http://example.org/cargadores/3762> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3741> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3863> <http://owl-ontologies.com/ns#gestionDe> "Acuerdo bilateral" .
+<http://example.org/cargadores/3753> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/SanJuanBautista> .
+<http://example.org/barrios/NuevaEspana> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamartin> .
+<http://example.org/cargadores/3752> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3742> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3771> <http://owl-ontologies.com/ns#numeroEquipos> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3760> <http://owl-ontologies.com/ns#longitud> "-3.7438917516720798"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3830> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3762> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://owl-ontologies.com/ns#Gestor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/distritos/Retiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/barrios/PinarDelRey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Hispanoamerica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4663> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3839> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4664> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Almenara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Butarque> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Villaverde> .
+<http://example.org/cargadores/3753> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3731> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/barrios/Rejas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3839> <http://owl-ontologies.com/ns#longitud> "-3.652522724703893"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/VillaDeVallecas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3756> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Berruguete> .
+<http://example.org/cargadores/3829> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GALP> .
+<http://example.org/cargadores/3781> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4265> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3745> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/distritos/Barajas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/barrios/Recoletos> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Salamanca> .
+<http://example.org/cargadores/3808> <http://owl-ontologies.com/ns#longitud> "-3.6609847"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/operadores/IBERDROLA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3737> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/4280> <http://owl-ontologies.com/ns#latitud> "40.44958188490243"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3745> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Arapiles> .
+<http://example.org/cargadores/3774> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Palacio> .
+<http://example.org/barrios/LaPaz> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Fuencarral-ElPardo> .
+<http://example.org/cargadores/3843> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://owl-ontologies.com/ns#longitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/cargadores/3730> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3773> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3779> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3752> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/LaPaz> .
+<http://example.org/cargadores/3751> <http://owl-ontologies.com/ns#latitud> "40.432546849999994"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Latina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3735> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3814> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Arguelles> .
+<http://owl-ontologies.com/ns#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito" .
+<http://example.org/barrios/ElGoloso> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Fuencarral-ElPardo> .
+<http://example.org/cargadores/3808> <http://owl-ontologies.com/ns#gestionDe> "Acuerdo bilateral" .
+<http://example.org/cargadores/4663> <http://owl-ontologies.com/ns#latitud> "40.5453765"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3858> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3832> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GALP> .
+<http://example.org/cargadores/3836> <http://owl-ontologies.com/ns#latitud> "40.443436500000004"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3836> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Castellana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3734> <http://owl-ontologies.com/ns#latitud> "40.4246541"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#dentroDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/cargadores/3748> <http://owl-ontologies.com/ns#latitud> "40.430516"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3822> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3807> <http://owl-ontologies.com/ns#longitud> "-3.6609847"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3831> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Simancas> .
+<http://example.org/cargadores/3737> <http://owl-ontologies.com/ns#latitud> "40.37308233715542"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6668> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://owl-ontologies.com/ns#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio" .
+<http://example.org/cargadores/3865> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3815> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3793> <http://owl-ontologies.com/ns#longitud> "-3.634548272405329"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3820> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3807> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3775> <http://owl-ontologies.com/ns#latitud> "40.429402"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3750> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3775> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Universidad> .
+<http://example.org/cargadores/3753> <http://owl-ontologies.com/ns#latitud> "40.45580656678009"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3798> <http://owl-ontologies.com/ns#gestionDe> "Concesión demanial" .
+<http://example.org/cargadores/3815> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3865> <http://owl-ontologies.com/ns#latitud> "40.4795001"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6667> <http://owl-ontologies.com/ns#longitud> "-3.747178488756261"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4281> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3810> <http://owl-ontologies.com/ns#longitud> "-0.1216588"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3836> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Rejas> .
+<http://example.org/cargadores/3775> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/barrios/NuevaEspana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3822> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/NATURGY> .
+<http://example.org/cargadores/3832> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3743> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Hispanoamerica> .
+<http://example.org/cargadores/3754> <http://owl-ontologies.com/ns#latitud> "40.4112736"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6667> <http://owl-ontologies.com/ns#esDe> "400 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3759> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3782> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/4280> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/cargadores/3830> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Simancas> .
+<http://example.org/cargadores/3756> <http://owl-ontologies.com/ns#latitud> "40.462464837050426"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3744> <http://owl-ontologies.com/ns#latitud> "40.4667751"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3734> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3812> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3776> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4664> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/BLAUDRIVE> .
+<http://example.org/cargadores/3733> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3809> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3761> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3779> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3742> <http://owl-ontologies.com/ns#longitud> "-3.6907904"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3732> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4280> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://owl-ontologies.com/ns#Gestor> <http://www.w3.org/2000/01/rdf-schema#label> "Gestor" .
+<http://example.org/cargadores/3814> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/SanJuanBautista> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/CiudadLineal> .
+<http://example.org/cargadores/3801> <http://owl-ontologies.com/ns#esDe> "100 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4265> <http://owl-ontologies.com/ns#gestionDe> "Acuerdo bilateral" .
+<http://example.org/cargadores/3824> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3840> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/CascoHistoricoDeVallecas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3814> <http://owl-ontologies.com/ns#longitud> "-3.7190864"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3809> <http://owl-ontologies.com/ns#gestionDe> "Acuerdo bilateral" .
+<http://example.org/cargadores/6667> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/EMT> .
+<http://example.org/cargadores/3751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/5464> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/barrios/Valverde> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Fuencarral-ElPardo> .
+<http://example.org/barrios/Simancas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/6667> <http://owl-ontologies.com/ns#gestionDe> "EMT" .
+<http://example.org/cargadores/3824> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3774> <http://owl-ontologies.com/ns#longitud> "-3.7083569"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3858> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/3798> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3781> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3736> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/barrios/Lista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/SanJuanBautista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Arcos> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/SanBlas-Canillejas> .
+<http://example.org/cargadores/3771> <http://owl-ontologies.com/ns#longitud> "-3.6903767172415045"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3833> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3735> <http://owl-ontologies.com/ns#longitud> "-3.6807422"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3738> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3783> <http://owl-ontologies.com/ns#latitud> "40.46749475"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3820> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3741> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3824> <http://owl-ontologies.com/ns#longitud> "-3.6585365242627796"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Los%20Rosales> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Villaverde> .
+<http://example.org/barrios/SanCristobal> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Villaverde> .
+<http://example.org/barrios/Guindalera> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Salamanca> .
+<http://example.org/cargadores/3766> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/Pavones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3775> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/distritos/Carabanchel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/barrios/Justicia> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Centro> .
+<http://example.org/cargadores/3747> <http://owl-ontologies.com/ns#latitud> "40.4296447"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Chamartin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3748> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Trafalgar> .
+<http://example.org/barrios/SanPascual> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/CiudadLineal> .
+<http://example.org/barrios/Ibiza> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Retiro> .
+<http://example.org/barrios/SanPascual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3784> <http://owl-ontologies.com/ns#esDe> "100 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4269> <http://owl-ontologies.com/ns#longitud> "-3.612057772628916"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3777> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/3753> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/distritos/Salamanca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3824> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/Sudel> .
+<http://example.org/cargadores/3780> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://owl-ontologies.com/ns#Operador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/cargadores/3753> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3778> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3773> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/EMT> .
+<http://example.org/cargadores/3815> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/VillaverdeAlto> .
+<http://example.org/cargadores/5464> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3816> <http://owl-ontologies.com/ns#latitud> "40.449154449999995"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3843> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Guindalera> .
+<http://example.org/cargadores/3755> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3831> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3830> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GALP> .
+<http://example.org/cargadores/4270> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3819> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4267> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4281> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/cargadores/3765> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/barrios/Canillas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3831> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3840> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3823> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3830> <http://owl-ontologies.com/ns#longitud> "-3.626089"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3793> <http://owl-ontologies.com/ns#latitud> "40.400725550000004"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3834> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3762> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3815> <http://owl-ontologies.com/ns#latitud> "40.340804004142555"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3758> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CiudadUniversitaria> .
+<http://example.org/cargadores/3751> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3735> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3735> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3841> <http://owl-ontologies.com/ns#esDe> "100 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3765> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3827> <http://owl-ontologies.com/ns#latitud> "40.40796941629195"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3755> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3737> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3820> <http://owl-ontologies.com/ns#latitud> "40.36701283161155"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Ventas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3750> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3766> <http://owl-ontologies.com/ns#longitud> "-3.6196694000000003"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/operadores/GALP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3745> <http://owl-ontologies.com/ns#longitud> "-3.7095912141826974"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3733> <http://owl-ontologies.com/ns#latitud> "40.4249657"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3858> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Almenara> .
+<http://example.org/cargadores/3829> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3819> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CuatroCaminos> .
+<http://example.org/barrios/Orcasur> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Usera> .
+<http://example.org/cargadores/3804> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3767> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Rejas> .
+<http://example.org/cargadores/3733> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3830> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3762> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/cargadores/3752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Arapiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/Castilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3759> <http://owl-ontologies.com/ns#longitud> "-3.7103844"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/SanDiego> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3820> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3793> <http://owl-ontologies.com/ns#esDe> "100 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3731> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3823> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3778> <http://owl-ontologies.com/ns#longitud> "-3.6362258"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3780> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/NATURGY> .
+<http://example.org/cargadores/3774> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://owl-ontologies.com/ns#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/cargadores/3843> <http://owl-ontologies.com/ns#esDe> "150 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3778> <http://owl-ontologies.com/ns#latitud> "40.4648347"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3812> <http://owl-ontologies.com/ns#latitud> "40.37277833627155"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3830> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3734> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3747> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3777> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4270> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Moscardo> .
+<http://example.org/barrios/Valderrivas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Vicalvaro> .
+<http://example.org/cargadores/3762> <http://owl-ontologies.com/ns#latitud> "40.37785005"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Los%20Rosales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3859> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3816> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3834> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/barrios/SanCristobal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4664> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3804> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Valderrivas> .
+<http://example.org/cargadores/3823> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3809> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/Valdefuentes> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Hortaleza> .
+<http://example.org/cargadores/3751> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3732> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3841> <http://owl-ontologies.com/ns#latitud> "40.34100933888266"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3750> <http://owl-ontologies.com/ns#longitud> "-3.7002923"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6668> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4269> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3757> <http://owl-ontologies.com/ns#longitud> "-3.6633144895875667"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3825> <http://owl-ontologies.com/ns#latitud> "40.46713797079046"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3754> <http://owl-ontologies.com/ns#longitud> "-3.7083569"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3771> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Recoletos> .
+<http://example.org/barrios/EnsancheDeVallecas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/VillaDeVallecas> .
+<http://example.org/cargadores/3752> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/barrios/Valdebernardo> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Vicalvaro> .
+<http://example.org/cargadores/3825> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Colina> .
+<http://example.org/cargadores/3752> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3816> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CuatroCaminos> .
+<http://example.org/cargadores/4269> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3834> <http://owl-ontologies.com/ns#longitud> "-3.5958235007572568"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3865> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/CCLAVAGUADA> .
+<http://example.org/barrios/Arapiles> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamberi> .
+<http://example.org/cargadores/3826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3784> <http://owl-ontologies.com/ns#longitud> "-3.6910309587761834"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3763> <http://owl-ontologies.com/ns#longitud> "-3.6321218"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3770> <http://owl-ontologies.com/ns#latitud> "40.4144807"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#tieneOperador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/cargadores/3865> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3836> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3815> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4275> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4270> <http://owl-ontologies.com/ns#latitud> "40.3872262"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3832> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Guindalera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3761> <http://owl-ontologies.com/ns#latitud> "40.3683387"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#PotenciaDeEnchufe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/cargadores/3779> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/barrios/Valverde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4662> <http://owl-ontologies.com/ns#esDe> "180 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://owl-ontologies.com/ns#gestionDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/cargadores/3819> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/operadores/EMT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3836> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/barrios/Sol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3807> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/barrios/Palacio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3749> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/NuevaEspana> .
+<http://example.org/cargadores/4270> <http://owl-ontologies.com/ns#longitud> "-3.7065929"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3858> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/3815> <http://owl-ontologies.com/ns#longitud> "-3.7108612553710447"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3807> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3766> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3778> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Canillas> .
+<http://example.org/cargadores/3741> <http://owl-ontologies.com/ns#longitud> "-3.6882216"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3810> <http://owl-ontologies.com/ns#latitud> "38.5404"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3775> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/4662> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3754> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/5464> <http://owl-ontologies.com/ns#longitud> "-3.684589"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3840> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/Prosperidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3807> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3739> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3839> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/distritos/PuenteDeVallecas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3827> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3757> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3824> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3755> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/barrios/Hispanoamerica> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamartin> .
+<http://owl-ontologies.com/ns#estaEn> <http://www.w3.org/2000/01/rdf-schema#label> "Está en" .
+<http://example.org/cargadores/3819> <http://owl-ontologies.com/ns#latitud> "40.45241628338564"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Almagro> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamberi> .
+<http://example.org/cargadores/3827> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3859> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/3755> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/NuevaEspana> .
+<http://example.org/cargadores/3732> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Rejas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/SanBlas-Canillejas> .
+<http://example.org/cargadores/3825> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3739> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3765> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Butarque> .
+<http://example.org/cargadores/3838> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Rejas> .
+<http://example.org/cargadores/3831> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3775> <http://owl-ontologies.com/ns#longitud> "-3.7084165"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3801> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/barrios/Simancas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/SanBlas-Canillejas> .
+<http://example.org/cargadores/3749> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3858> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3757> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3826> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3820> <http://owl-ontologies.com/ns#longitud> "-3.6955669738642656"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3740> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3773> <http://owl-ontologies.com/ns#longitud> "-3.679376141640235"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3831> <http://owl-ontologies.com/ns#longitud> "-89.64337070995305"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3841> <http://owl-ontologies.com/ns#gestionDe> "Concesión demanial" .
+<http://example.org/cargadores/3730> <http://owl-ontologies.com/ns#latitud> "40.4057204"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3739> <http://owl-ontologies.com/ns#latitud> "40.4588374"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6673> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3780> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/6673> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/EMT> .
+<http://example.org/cargadores/3775> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/6673> <http://owl-ontologies.com/ns#gestionDe> "EMT" .
+<http://example.org/cargadores/3779> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/6673> <http://owl-ontologies.com/ns#longitud> "-3.6919389"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Palacio> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Centro> .
+<http://example.org/cargadores/3782> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/distritos/Tetuan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3840> <http://owl-ontologies.com/ns#longitud> "-3.6925629"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3793> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4280> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3798> <http://owl-ontologies.com/ns#longitud> "-3.642070521065105"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3748> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/operadores/TOTALENERGIES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3810> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3753> <http://owl-ontologies.com/ns#longitud> "-3.6513658591835845"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3764> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3745> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/4267> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/ElGoloso> .
+<http://owl-ontologies.com/ns#latitud> <http://www.w3.org/2000/01/rdf-schema#label> "Latitud" .
+<http://example.org/cargadores/5464> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/ElViso> .
+<http://example.org/barrios/Colina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3756> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3811> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3747> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Trafalgar> .
+<http://example.org/cargadores/3747> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3863> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3770> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3831> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3815> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/barrios/Arguelles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3808> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/cargadores/3798> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3764> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3773> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Castilla> .
+<http://example.org/cargadores/3740> <http://owl-ontologies.com/ns#latitud> "40.4292455"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6668> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3767> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3833> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Rosas> .
+<http://example.org/cargadores/3782> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3733> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Recoletos> .
+<http://example.org/cargadores/3755> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3739> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Hispanoamerica> .
+<http://example.org/cargadores/3762> <http://owl-ontologies.com/ns#longitud> "-3.76823157644204"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3808> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3767> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3812> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3741> <http://owl-ontologies.com/ns#latitud> "40.4356993"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3772> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/EMT> .
+<http://example.org/distritos/SanBlas-Canillejas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3841> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/TOTALENERGIES> .
+<http://example.org/cargadores/3738> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3749> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3832> <http://owl-ontologies.com/ns#latitud> "40.41568966513148"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Chamberi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3772> <http://owl-ontologies.com/ns#longitud> "-3.679972070404787"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3736> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/6667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3825> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3751> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3843> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/6673> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3763> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/barrios/Universidad> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Centro> .
+<http://example.org/barrios/Apostol%20Santiago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3760> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/barrios/Buenavista> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Carabanchel> .
+<http://example.org/cargadores/3780> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3753> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3812> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/cargadores/3809> <http://owl-ontologies.com/ns#latitud> "40.3603834"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3746> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Arapiles> .
+<http://example.org/cargadores/3801> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Los%20Rosales> .
+<http://example.org/cargadores/3812> <http://owl-ontologies.com/ns#longitud> "-3.728795634529903"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Hortaleza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3776> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Adelfas> .
+<http://example.org/cargadores/3782> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Corralejos> .
+<http://example.org/cargadores/3745> <http://owl-ontologies.com/ns#latitud> "40.43535625"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3760> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/Aluche> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Latina> .
+<http://example.org/cargadores/3777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3833> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3782> <http://owl-ontologies.com/ns#numeroEquipos> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3730> <http://owl-ontologies.com/ns#longitud> "-3.6995075"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Villaverde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4267> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/UAM> .
+<http://example.org/cargadores/3733> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3830> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3732> <http://owl-ontologies.com/ns#latitud> "40.4192082"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/6667> <http://owl-ontologies.com/ns#latitud> "40.28570185"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3793> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/3746> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/Moscardo> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Usera> .
+<http://example.org/cargadores/3823> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/cargadores/3840> <http://owl-ontologies.com/ns#latitud> "40.4259414"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/PalosDeMoguer> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Arganzuela> .
+<http://example.org/cargadores/3818> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3739> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3825> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4269> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3865> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3757> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/barrios/Adelfas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/5464> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://owl-ontologies.com/ns#IdPuntoDeRecarga> <http://www.w3.org/2000/01/rdf-schema#label> "Id Punto de Recarga" .
+<http://example.org/cargadores/3747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3823> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3760> <http://owl-ontologies.com/ns#latitud> "40.40811867007341"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3822> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3827> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3809> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/ElViso> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamartin> .
+<http://example.org/operadores/NATURGY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3767> <http://owl-ontologies.com/ns#longitud> "-3.569210905559255"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3865> <http://owl-ontologies.com/ns#longitud> "-3.7067216"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3731> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3804> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/Butarque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4265> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3778> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/operadores/REPSOL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/4662> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/3838> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Canillas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Hortaleza> .
+<http://example.org/cargadores/3740> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3801> <http://owl-ontologies.com/ns#longitud> "-3.690871377913514"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3758> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3859> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/4663> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/ElGoloso> .
+<http://example.org/cargadores/3776> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/cargadores/3761> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/barrios/CuatroVientos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3836> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3748> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3811> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://owl-ontologies.com/ns#PotenciaDeEnchufe> <http://www.w3.org/2000/01/rdf-schema#label> "Potencia del Enchufe" .
+<http://example.org/cargadores/3758> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3781> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3745> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4269> <http://owl-ontologies.com/ns#latitud> "40.467575977534175"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3760> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CuatroVientos> .
+<http://example.org/cargadores/3748> <http://owl-ontologies.com/ns#longitud> "-3.699163"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3757> <http://owl-ontologies.com/ns#latitud> "40.501784538856604"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3750> <http://owl-ontologies.com/ns#latitud> "40.4380525"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3809> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/distritos/Fuencarral-ElPardo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3731> <http://owl-ontologies.com/ns#longitud> "-3.6752149432657397"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3732> <http://owl-ontologies.com/ns#longitud> "-3.6888851"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4275> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/distritos/CiudadLineal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3743> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3814> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3827> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3818> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Almagro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/4269> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Corralejos> .
+<http://example.org/cargadores/3773> <http://owl-ontologies.com/ns#gestionDe> "EMT" .
+<http://example.org/cargadores/3863> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3773> <http://owl-ontologies.com/ns#latitud> "40.47180720543637"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Usera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/operadores/CCLAVAGUADA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3748> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/Corralejos> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Barajas> .
+<http://example.org/cargadores/4281> <http://owl-ontologies.com/ns#longitud> "-3.6870755"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3834> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/EnsancheDeVallecas> .
+<http://example.org/cargadores/3746> <http://owl-ontologies.com/ns#latitud> "40.431275799999995"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#IdPuntoDeRecarga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/cargadores/3740> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/6668> <http://owl-ontologies.com/ns#longitud> "-3.7233181545007885"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3739> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3859> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3764> <http://owl-ontologies.com/ns#longitud> "-3.6630605563706506"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3811> <http://owl-ontologies.com/ns#longitud> "-3.6932110991829568"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3770> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/EMT> .
+<http://example.org/barrios/Castilla> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamartin> .
+<http://example.org/cargadores/4664> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/SanDiego> .
+<http://example.org/cargadores/3822> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3827> <http://owl-ontologies.com/ns#longitud> "-3.6525121390545428"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3770> <http://owl-ontologies.com/ns#gestionDe> "EMT" .
+<http://example.org/cargadores/3757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/4275> <http://owl-ontologies.com/ns#longitud> "-3.7605311241676658"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Rosas> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/SanBlas-Canillejas> .
+<http://example.org/cargadores/3736> <http://owl-ontologies.com/ns#longitud> "-3.6706180484282145"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Arganzuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/4664> <http://owl-ontologies.com/ns#longitud> "-3.6662816826699736"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3767> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3808> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3777> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/3778> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3840> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Justicia> .
+<http://example.org/barrios/Castellana> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Salamanca> .
+<http://example.org/cargadores/3810> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3779> <http://owl-ontologies.com/ns#longitud> "-3.65870715"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3827> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Marroquina> .
+<http://example.org/cargadores/3824> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Ventas> .
+<http://example.org/cargadores/3737> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CuatroVientos> .
+<http://example.org/cargadores/3815> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/4663> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/UAM> .
+<http://example.org/cargadores/3757> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Valverde> .
+<http://example.org/cargadores/3784> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/PalosDeMoguer> .
+<http://example.org/cargadores/3809> <http://owl-ontologies.com/ns#longitud> "-3.662785350358371"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/LaPaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3823> <http://owl-ontologies.com/ns#latitud> "40.35705474843336"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3754> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Palacio> .
+<http://example.org/cargadores/3832> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3733> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3765> <http://owl-ontologies.com/ns#longitud> "-3.6685848"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://owl-ontologies.com/ns#tieneOperador> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene operador" .
+<http://example.org/barrios/Sol> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Centro> .
+<http://example.org/cargadores/3760> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/4270> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://owl-ontologies.com/ns#estaEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/cargadores/3730> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3829> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3730> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/PalosDeMoguer> .
+<http://example.org/cargadores/3836> <http://owl-ontologies.com/ns#longitud> "-3.5913736"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3756> <http://owl-ontologies.com/ns#longitud> "-3.708133373751736"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3826> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3744> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Castilla> .
+<http://example.org/cargadores/3841> <http://owl-ontologies.com/ns#longitud> "-3.6870498036603556"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3774> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3763> <http://owl-ontologies.com/ns#latitud> "40.3840328"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3782> <http://owl-ontologies.com/ns#longitud> "-3.616139"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3747> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3744> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3744> <http://owl-ontologies.com/ns#longitud> "-3.6706001"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3814> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3830> <http://owl-ontologies.com/ns#latitud> "40.426483"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3772> <http://owl-ontologies.com/ns#latitud> "40.4303981252484"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/barrios/PalomerasSureste> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/PuenteDeVallecas> .
+<http://example.org/cargadores/3749> <http://owl-ontologies.com/ns#longitud> "-3.6864296"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3807> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3743> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3756> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3770> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3865> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3761> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CuatroVientos> .
+<http://example.org/barrios/ElGoloso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/CuatroCaminos> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Tetuan> .
+<http://example.org/cargadores/3738> <http://owl-ontologies.com/ns#longitud> "-3.6207708500000013"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3776> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/barrios/Berruguete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3779> <http://owl-ontologies.com/ns#latitud> "40.5004577"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3773> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3843> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3743> <http://owl-ontologies.com/ns#longitud> "-3.688508"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3779> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/GIC> .
+<http://example.org/cargadores/3756> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3760> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3733> <http://owl-ontologies.com/ns#longitud> "-3.6810768"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3839> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3840> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/barrios/Prosperidad> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Chamartin> .
+<http://example.org/cargadores/3731> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Adelfas> .
+<http://example.org/cargadores/3780> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/CascoHistoricoDeVallecas> .
+<http://example.org/cargadores/3742> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3772> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Lista> .
+<http://example.org/cargadores/4270> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/BLAUDRIVE> .
+<http://example.org/cargadores/3839> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/4664> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3766> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3761> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3775> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/6673> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#IdPuntoDeRecarga> .
+<http://example.org/cargadores/3801> <http://owl-ontologies.com/ns#gestionDe> "Concesión demanial" .
+<http://example.org/cargadores/3758> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/REPSOL> .
+<http://example.org/cargadores/3804> <http://owl-ontologies.com/ns#longitud> "-3.6070539036291756"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3739> <http://owl-ontologies.com/ns#longitud> "-3.667204"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3834> <http://owl-ontologies.com/ns#latitud> "40.37067176003822"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/5464> <http://owl-ontologies.com/ns#latitud> "40.437927"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3831> <http://owl-ontologies.com/ns#latitud> "13.988601498154988"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3779> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Valdefuentes> .
+<http://example.org/cargadores/3749> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3740> <http://owl-ontologies.com/ns#longitud> "-3.683721"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/4265> <http://owl-ontologies.com/ns#longitud> "-3.661473377030333"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3736> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/barrios/Aluche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/barrios/SanDiego> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/PuenteDeVallecas> .
+<http://example.org/cargadores/3774> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/barrios/CiudadUniversitaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/operadores/Sudel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Operador> .
+<http://example.org/cargadores/3740> <http://owl-ontologies.com/ns#gestionDe> "Convenio vía pública" .
+<http://example.org/cargadores/3774> <http://owl-ontologies.com/ns#latitud> "40.4112736"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3839> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/NATURGY> .
+<http://example.org/cargadores/3755> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3740> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Castellana> .
+<http://example.org/cargadores/3783> <http://owl-ontologies.com/ns#gestionDe> "Iniciativa privada" .
+<http://example.org/cargadores/3826> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/ENDESA> .
+<http://example.org/cargadores/3843> <http://owl-ontologies.com/ns#latitud> "40.43501535054218"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3798> <http://owl-ontologies.com/ns#esDe> "100 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3764> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Valdefuentes> .
+<http://example.org/cargadores/3783> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3759> <http://owl-ontologies.com/ns#latitud> "40.4470752"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3780> <http://owl-ontologies.com/ns#longitud> "-3.652522724703893"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/distritos/Moncloa-Aravaca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Distrito> .
+<http://example.org/cargadores/3816> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/DRIVETHECITY> .
+<http://example.org/cargadores/3735> <http://owl-ontologies.com/ns#latitud> "40.4350772"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3863> <http://owl-ontologies.com/ns#numeroEquipos> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/3859> <http://owl-ontologies.com/ns#latitud> "40.4382236"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3833> <http://owl-ontologies.com/ns#gestionDe> "Convenio cesión" .
+<http://example.org/cargadores/3764> <http://owl-ontologies.com/ns#tieneOperador> <http://example.org/operadores/IBERDROLA> .
+<http://example.org/cargadores/3765> <http://owl-ontologies.com/ns#numeroEquipos> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/cargadores/6667> <http://owl-ontologies.com/ns#estaEn> <http://example.org/barrios/Sol> .
+<http://example.org/cargadores/3776> <http://owl-ontologies.com/ns#latitud> "40.4062862"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Penagrande> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/6673> <http://owl-ontologies.com/ns#latitud> "40.4205603"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3738> <http://owl-ontologies.com/ns#esDe> "100 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3776> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://owl-ontologies.com/ns#longitud> <http://www.w3.org/2000/01/rdf-schema#label> "Longitud" .
+<http://example.org/barrios/VillaverdeAlto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl-ontologies.com/ns#Barrio> .
+<http://example.org/cargadores/3833> <http://owl-ontologies.com/ns#latitud> "40.41568966513148"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3759> <http://owl-ontologies.com/ns#esDe> "50 kW"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://example.org/cargadores/3784> <http://owl-ontologies.com/ns#gestionDe> "Concesión demanial" .
+<http://example.org/cargadores/3781> <http://owl-ontologies.com/ns#longitud> "-3.648605869554578"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/cargadores/3833> <http://owl-ontologies.com/ns#longitud> "-3.610518957029991"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/barrios/Pavones> <http://owl-ontologies.com/ns#dentroDe> <http://example.org/distritos/Moratalaz> .
+<http://example.org/cargadores/3801> <http://owl-ontologies.com/ns#numeroEquipos> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .

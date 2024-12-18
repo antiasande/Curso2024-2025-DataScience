@@ -1,0 +1,48 @@
+# Las consultas SPARQL se encuentran en este orden
+# Todas las clases
+# Todos los distintivos ambientales
+# Vehículos con distintivo ECO
+# Vehículos eléctricos de rango extendido
+# Camiones
+# Turismos en el barrio de Almagro
+# Todos los operadores
+# Turismos PHEV en el distrito de Usera
+PREFIX ns: <http://owl-ontologies.com/ns#>
+PREFIX distintivos: <http://example.org/clasificacion_ambiental/>
+PREFIX tipocarburante: <http://example.org/tipocarburante/>
+PREFIX tipovehiculo: <http://example.org/tipovehiculo/>
+PREFIX distritos: <http://example.org/distritos/>
+PREFIX barrios: <http://example.org/barrios/>
+
+SELECT ?class WHERE {
+    ?class rdf:type owl:Class
+    }
+
+SELECT ?class WHERE {
+    ?class rdf:type ns:ClasificacionAmbiental
+    }
+
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:seClasificaComo distintivos:ECO
+    }
+
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:tipoDeCarburante tipocarburante:ELECTRICOS-RANGO-EXTENDIDO
+    }
+
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:esUn tipovehiculo:CAMION
+    }
+
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:esUn tipovehiculo:TURISMO .
+    ?vehiculo ns:estaEn barrios:ALMAGRO
+    }
+
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:esUn tipovehiculo:TURISMO .
+    ?vehiculo ns:estaEn ?barrio .
+    ?vehiculo ns:tipoDeCarburante tipocarburante:PHEV .
+    ?barrio ns:dentroDe distritos:Usera .
+    FILTER(?barrio != <http://example.org/barrios/-->)
+}

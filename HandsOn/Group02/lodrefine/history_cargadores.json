@@ -1,0 +1,1082 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "grel:value.replace(/\\s*\\(.*?\\)\\s*/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression grel:value.replace(/\\s*\\(.*?\\)\\s*/, \" \")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "UBICACIÓN",
+    "expression": "grel:value + \", Madrid\"",
+    "onError": "set-to-blank",
+    "newColumnName": "DIRECCIÓN COMPLETA",
+    "columnInsertIndex": 6,
+    "description": "Create column DIRECCIÓN COMPLETA at index 6 based on column UBICACIÓN using expression grel:value + \", Madrid\""
+  },
+  {
+    "op": "core/column-addition-by-fetching-urls",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DIRECCIÓN COMPLETA",
+    "urlExpression": "grel:'https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + escape(value, \"url\")",
+    "onError": "set-to-blank",
+    "newColumnName": "json",
+    "columnInsertIndex": 7,
+    "delay": 1500,
+    "cacheResponses": true,
+    "httpHeadersJson": [
+      {
+        "name": "authorization",
+        "value": ""
+      },
+      {
+        "name": "if-modified-since",
+        "value": ""
+      },
+      {
+        "name": "accept-language",
+        "value": ""
+      },
+      {
+        "name": "accept-encoding",
+        "value": ""
+      },
+      {
+        "name": "user-agent",
+        "value": "OpenRefine 3.8.4 [TRUNK]"
+      },
+      {
+        "name": "accept",
+        "value": "*/*"
+      },
+      {
+        "name": "accept-charset",
+        "value": ""
+      }
+    ],
+    "description": "Create column json at index 7 by fetching URLs based on column DIRECCIÓN COMPLETA using expression grel:'https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + escape(value, \"url\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "json",
+    "expression": "grel:value.parseJson()[0].lon",
+    "onError": "set-to-blank",
+    "newColumnName": "LONGITUD",
+    "columnInsertIndex": 8,
+    "description": "Create column LONGITUD at index 8 based on column json using expression grel:value.parseJson()[0].lon"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "json",
+    "expression": "grel:value.parseJson()[0].lat",
+    "onError": "set-to-blank",
+    "newColumnName": "LATITUD",
+    "columnInsertIndex": 8,
+    "description": "Create column LATITUD at index 8 based on column json using expression grel:value.parseJson()[0].lat"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "json",
+    "description": "Remove column json"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESTADO",
+    "description": "Remove column ESTADO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID_Punto",
+    "description": "Remove column ID_Punto"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DIS",
+    "description": "Remove column COD_DIS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_BAR",
+    "description": "Remove column COD_BAR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HORARIO",
+    "description": "Remove column HORARIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_EDICION",
+    "description": "Remove column FECHA_EDICION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_ALTA",
+    "description": "Remove column FECHA_ALTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_APERTURA",
+    "description": "Remove column FECHA_APERTURA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_FECHA_APERTURA",
+    "description": "Remove column INFO_FECHA_APERTURA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_ADICIONAL",
+    "description": "Remove column INFO_ADICIONAL"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "grel:toString(forEach(value.find(/\\d+\\s*kW|\\d+\\s*KW/).join(\",\").replace(\" kW\",\"\").replace(\"kW\",\"\").replace(\"KW\",\"\").replace(\" KW\",\"\").split(\",\"), v, v.toNumber()).sort().reverse()[0]) + \" kW\"",
+    "onError": "set-to-blank",
+    "newColumnName": "POTENCIA_MAX",
+    "columnInsertIndex": 10,
+    "description": "Create column POTENCIA_MAX at index 10 based on column CARACTERÍSTICAS_EQUIPO using expression grel:toString(forEach(value.find(/\\d+\\s*kW|\\d+\\s*KW/).join(\",\").replace(\" kW\",\"\").replace(\"kW\",\"\").replace(\"KW\",\"\").replace(\" KW\",\"\").split(\",\"), v, v.toNumber()).sort().reverse()[0]) + \" kW\""
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA_MAX",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50.0 kW"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "50 kW"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA_MAX"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UBICACIÓN",
+    "description": "Remove column UBICACIÓN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DIRECCIÓN COMPLETA",
+    "description": "Remove column DIRECCIÓN COMPLETA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EMPLAZAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Estación de Servicio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Estación de servicio"
+      }
+    ],
+    "description": "Mass edit cells in column EMPLAZAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamartín"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamartin"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamberí"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamberi"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral - El Pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciudad Lineal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CiudadLineal"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa - Aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puente de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PuenteDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Blas - Canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanBlas-Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral-El Pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-ElPardo"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tetuán"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tetuan"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vicálvaro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vicalvaro"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villa de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VillaDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Águilas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aguilas"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Argüelles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arguelles"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Casco Histórico de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CascoHistoricoDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciudad Universitaria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CiudadUniversitaria"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuatro Caminos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CuatroCaminos"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuatro Vientos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CuatroVientos"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "El Goloso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElGoloso"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "El Plantío"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElPlantío"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "El Viso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElViso"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ensanche de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EnsancheDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hispanoamérica"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hispanoamerica"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jerónimos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jeronimos"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moscardó"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moscardo"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nueva España"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NuevaEspana"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Palomeras Sureste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PalomerasSureste"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Palos de Moguer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PalosDeMoguer"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Peñagrande"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Penagrande"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pinar del Rey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PinarDelRey"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Cristóbal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanCristobal"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Diego"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanDiego"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Juan Bautista"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanJuanBautista"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Pascual"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SanPascual"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villaverde Alto, Casco Histórico de Villaverde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VillaverdeAlto"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GESTIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Convenio Cesión"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Convenio cesión"
+      }
+    ],
+    "description": "Mass edit cells in column GESTIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "La Paz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LaPaz"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ElPlantío"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ElPlantio"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EMPLAZAMIENTO",
+    "description": "Remove column EMPLAZAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC (CIRCUTOR)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC / CEPSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GIC/ GALP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIC"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ENDESA X SERVICIOS S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ENDESA"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DRIVE THE CITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DRIVETHECITY"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CC LA VAGUADA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CCLAVAGUADA"
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  }
+]

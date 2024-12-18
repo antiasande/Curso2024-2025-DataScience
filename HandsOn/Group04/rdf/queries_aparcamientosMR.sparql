@@ -1,0 +1,37 @@
+PREFIX ns: <http://www.domainkg.com/parking_ontology/resources#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+
+
+# Nombres de los distritos que tienen aparcamientos mov red
+SELECT DISTINCT ?distrito ?nombreDistrito
+    WHERE {
+        ?aparcamiento a ns:AparcamientoMR ;  
+                  ns:estaEnDistrito ?distrito .  
+        ?distrito ns:tieneNombre ?nombreDistrito .  
+    	}
+
+# Número de aparcamientos mov red en Moratalaz
+SELECT (COUNT(?aparcamiento) AS ?totalAparcamientos)
+  WHERE {
+    ?aparcamiento a ns:AparcamientoMR ;
+                  ns:estaEnDistrito ?distrito .
+    ?distrito ns:tieneNombre "MORATALAZ" .
+    }
+
+# Como se aparca en los aparcamientos mov red de Legazpi
+SELECT ?aparcamiento ?seAparcaEn
+WHERE {
+    ?aparcamiento ns:estaEnBarrio ?barrio ;
+                  ns:seAparcaEn ?seAparcaEn .
+    ?barrio ns:tieneNombre "LEGAZPI" .
+}
+
+# Numero de plazas de aparcamientos mov red en Legazpi
+SELECT (SUM(xsd:int(?plazas)) AS ?totalPlazasMR)
+WHERE {
+    ?aparcamiento ns:estaEnBarrio ?barrio ;
+                  ns:tienePlazas ?plazas ;
+                  a ns:AparcamientoMR .
+    ?barrio ns:tieneNombre "Legazpi" .
+    BIND(xsd:int(?plazas) AS ?plazasEnteras) .
+}

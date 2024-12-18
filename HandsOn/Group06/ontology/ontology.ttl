@@ -1,0 +1,150 @@
+@prefix : <http://accidentestrafico.org/traffic/> .
+@prefix ns: <http://accidentestrafico.org/traffic/ontology/TrafficOntology#> .
+@prefix ind: <http://accidentestrafico.org/traffic/resource/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+: a owl:Ontology ;
+    rdfs:label "Ontología de Accidentes de Tráfico"@es ;
+    dc:title "TrafficOntology"@en ;
+    dc:creator "Grupo 06";
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+
+#################################################################
+#    Data Properties
+#################################################################
+
+ns:codLesividad a owl:DatatypeProperty ;
+    rdfs:label "codigo lesividad" ;
+    rdfs:domain ns:Lesividad ;
+    rdfs:range xsd:string .
+
+ns:lesividad a owl:DatatypeProperty ;
+    rdfs:label "lesividad" ;
+    rdfs:domain ns:Lesividad ;
+    rdfs:range xsd:string .
+
+ns:localizacion a owl:DatatypeProperty ;
+    rdfs:label "localizacion" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range xsd:string .
+
+ns:distrito a owl:DatatypeProperty ;
+    rdfs:label "distrito" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range xsd:string .
+
+ns:estadoMeteorologico a owl:DatatypeProperty ;
+    rdfs:label "estado meteorologico" ;
+    rdfs:domain ns:EstadoMeteorológico ;
+    rdfs:range xsd:string .
+
+ns:fecha a owl:DatatypeProperty ;
+    rdfs:label "fecha" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:date .
+
+ns:hora a owl:DatatypeProperty ;
+    rdfs:label "hora" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:time .
+
+ns:numExpediente a owl:DatatypeProperty ;
+    rdfs:label "numero expediente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
+
+ns:tipoAccidente a owl:DatatypeProperty ;
+    rdfs:label "tipo de accidente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
+
+ns:positivaAlcohol a owl:DatatypeProperty ;
+    rdfs:label "positiva alcohol" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:positivaDroga a owl:DatatypeProperty ;
+    rdfs:label "positiva droga" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:rangoEdad a owl:DatatypeProperty ;
+    rdfs:label "rango de edad" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:sexo a owl:DatatypeProperty ;
+    rdfs:label "sexo" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:tipoPersona a owl:DatatypeProperty ;
+    rdfs:label "tipo persona" ;
+    rdfs:domain ns:Persona ;
+    rdfs:range xsd:string .
+
+ns:tipoVehiculo a owl:DatatypeProperty ;
+    rdfs:label "tipo de vehiculo" ;
+    rdfs:domain ns:Vehiculo ;
+    rdfs:range xsd:string .
+
+ns:coordenadas a owl:ObjectProperty ;
+    rdfs:label "coordenadas" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range ns:string .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+ns:InvolucraVehiculo a owl:ObjectProperty ;
+rdfs:label "involucra vehiculo" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:Vehiculo .
+
+ns:ParticipaPersona a owl:ObjectProperty ;
+rdfs:label "participa persona" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:Persona .
+
+ns:TieneEstadoMeteorológico a owl:ObjectProperty ;
+rdfs:label "tiene estado meteorológico" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:EstadoMeteorológico .
+
+ns:TieneLesividad a owl:ObjectProperty ;
+rdfs:label "tiene lesividad" ;
+rdfs:domain ns:Persona ;
+rdfs:range ns:Lesividad .
+
+ns:OcurreEn a owl:ObjectProperty ;
+rdfs:label "ocurre en" ;
+rdfs:domain ns:Accidente ;
+rdfs:range ns:Direccion .
+
+#################################################################
+#    Clases
+#################################################################
+
+ns:Direccion a owl:Class ;
+rdfs:label "Direccion" .
+
+ns:EstadoMeteorológico a owl:Class ;
+rdfs:label "Estado Meteorologico" .
+
+ns:Lesividad a owl:Class ;
+rdfs:label "Lesividad" .
+
+ns:Persona a owl:Class ;
+rdfs:label "Persona" .
+
+ns:Vehiculo a owl:Class ;
+rdfs:label "Vehiculo" .
+
+ns:Accidente a owl:Class ;
+rdfs:label "Accidente" .
