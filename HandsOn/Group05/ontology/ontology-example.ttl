@@ -1,0 +1,52 @@
+@prefix : <http://www.knowledgegraphs/ontology/> .
+@prefix clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties/> .
+@prefix is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://www.knowledgegraphs/ontology/> .
+
+: a owl:Ontology .
+is:Parla a clpr:Municipio ;
+    rdfs:label "Parla" .
+
+is:Calle_de_Juan_Bravo_39_28006_Madrid a clpr:Direccion ;
+    rdfs:label "Calle de Juan Bravo 39 28006 Madrid" ;
+    clpr:perteneceA is:Parla ;
+    clpr:tipoDireccion "Calle"^^xsd:string ;
+    clpr:nombreDireccion "de Juan Bravo"^^xsd:string ;
+    clpr:numeroDireccion 49 ;
+    clpr:codigoPostal 28006 ;
+    clpr:coordenadaX 442633.0 ;
+    clpr:coordenadaY 447600.0 .
+
+is:centro_CH0018 a clpr:CentrodeSalud ;
+    clpr:especializadoEn is:endocrinologia ;
+    clpr:localizadoEn is:Direccion1 ;
+    clpr:idCentro "CH0018"^^xsd:string ;
+    clpr:tipoCentro "Hospital general"^^xsd:string .
+
+is:establecimiento_2018_1577 a clpr:Establecimiento ;
+    rdfs:label "Establecimiento 2018-1577" ;
+    clpr:tipoEstablecimiento "Otros"^^xsd:string ;
+    clpr:tipoTitularidad "Privada"^^xsd:string .
+
+is:Madrid a clpr:Municipio ;
+    rdfs:label "Madrid" .
+
+is:Calle_de_Suero_de_Quiñones_34_28002_Madrid a clpr:Direccion ;
+    rdfs:label "Calle de Suero de Quiñones 34 28002 Madrid" ;
+    clpr:perteneceA is:Madrid ;
+    clpr:tipoDireccion "Calle"^^xsd:string ;
+    clpr:nombreDireccion "de Suero de Quiñones"^^xsd:string ;
+    clpr:numeroDireccion 34 ;
+    clpr:codigoPostal 28002 ;
+    clpr:coordenadaX 443575.0 ;
+    clpr:coordenadaY 4477573.0 .
+
+is:desfibrilador_2018_1577 a clpr:Desfibrilador ;
+    rdfs:label "Desfibrilador 1" ;
+    clpr:albergadoEn is:establecimiento_2018_1577 ;
+    clpr:localizadoEn is:Calle_de_Suero_de_Quiñones_34_28002_Madrid ;
+    clpr:idDesfibrilador "2018-1577"^^xsd:string .

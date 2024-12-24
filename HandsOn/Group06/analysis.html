@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Dataset y Estrategia de Datos Vinculados</title>
+</head>
+<body>
+    <h1>Análisis de Dataset y Estrategia de Datos Vinculados</h1>
+
+    <!-- Análisis del Conjunto de Datos -->
+    <section>
+        <h2>1. Análisis del Conjunto de Datos</h2>
+        <p>
+            <strong>Descripción:</strong> Nuestros datasets nos muestran los detalles sobre los accidente de tráfico en madrid según el año (2022-2024).
+            Nos aportan datos como la hora a la que se provocó, el lugar, el estado meteorológico y el tipo de vehículo entre otras cosas.
+        </p>
+
+        <!-- Análisis del Esquema-->
+        <p>
+            <strong>Análisis del Esquema:</strong>
+        </p>
+        <p>
+            Los tres csv están estructurados de la misma forma, es decir, la tabla de datos contiene las mismas columnas en el mismo orden.
+            Para el análisis del esquema se expondran las categorías de datos (es decir, las columnas), los tipos de datos, las relaciones entre columnas y finalmente si existen inconsistencias en los datos.
+        </p>
+        <p>
+            <strong>Columnas (datos proporcionados):</strong>
+        </p>
+        <ul>
+            <li><strong>Número de expediente:</strong> Se refiere al número que señala cada caso</li>
+            <li><strong>Fecha:</strong> Fecha a la que ocurrió el accidente en formato DD/MM/AA </li>
+            <li><strong>Hora:</strong> Hora del accidente en fromado HH:MM:SS</li>
+            <li><strong>Localización:</strong> Se indica el lugar donde ocurrió el accidente, especificando su número de calle, el distrito y el código del distrito en diferentes columnas.</li>
+            <li><strong>Tipo_Accidente:</strong> Cada accidente corresponde a un cierto tipo de una ennumeracion de valores, hay doce tipos de accidentes:
+                <ul>
+                    <li>Alcance</li>
+                    <li>Atropello animal</li>
+                    <li>Atropello a persona</li>
+                    <li>Caída</li>
+                    <li>Choque contra obstáculo fijo</li>
+                    <li>Colisión frontal</li>
+                    <li>Colisión fronto-lateral</li>
+                    <li>Colisión lateral</li>
+                    <li>Colisión múltiple</li>
+                    <li>Despeñamiento</li>
+                    <li>Otro</li>
+                    <li>Salida de la vía</li>
+                    <li>Vuelco</li>
+                </ul>
+            </li>
+            <li><strong>Estado_meteorológico:</strong> Tipo de clima que había cuando ocurrió el accidente
+                <ul>
+                    <li>Despejado</li>
+                    <li>Granizado</li>
+                    <li>Lluvia débil</li>
+                    <li>Lluvia intensa</li>
+                    <li>Nevado</li>
+                    <li>Nublado</li>
+                    <li>Null</li>
+                    <li>Se desconoce</li>
+                </ul>
+            </li>
+            <li><strong>Tipo_vehiculo:</strong> Vehículo que provocó el accidente, los valores de esta categoría son los nombres técnicos de los vehículos</li>
+            <li><strong>Tipo_persona:</strong>Persona que sufrió el accidente, habiendo como posibilidades conductor, pasajero y peatón</li>
+            <li><strong>Rango_edad:</strong>Rango de edad de la persona que provocó el accidente</li>
+            <li><strong>Sexo:</strong>Sexo de la persona pudiendo ser este hombre, mujer o desconocido</li>
+            <li><strong>Lesividad:</strong> Se refiere al tipo de asistencia sanitario que recibió la persona, también se incluye en otra columna el codigo de lesividad
+                <ul>
+                    <li>Asistencia sanitaria ambulatoria con posteridad</li>
+                    <li>Asistencia sanitaria ambulatoria inmediata</li>
+                    <li>Asistencia solo en el lugar del accidente</li>
+                    <li>Asintencia sin ingreso</li>
+                    <li>Fallecido 24 horas</li>
+                    <li>Ingreso </li>
+                    <li>Se desconoce</li>
+                    <li>Sin asistencia</li>
+                </ul>
+            </li>
+            <li><strong>Coordenadas_num:</strong> Lugar del accidente en coordenadas (las coordenadas x e y se dividen en dos columnas)</li>
+            <li><strong>Positiva_alcohol:</strong> Indica si la persona que provocó el accidente iba bajos los efectos del alcohol</li>
+            <li><strong>Positiva_droga:</strong> Indica si la persona que provocó el accidente iba bajos los efectos de las drogas</li>
+        </ul>
+
+        <p>
+            <strong>Tipos de datos:</strong>
+        </p>
+
+        <ul>
+            <li><strong>String:</strong> Datos de tipo string</li>
+                <ul>
+                    <li>Número de expediente</li>
+                    <li>Localización</li>
+                    <li>Distrito</li>
+                    <li>Tipo_Accidente</li>
+                    <li>Estado_meteorológico</li>
+                    <li>Tipo_vehiculo</li>
+                    <li>Tipo_persona</li>
+                    <li>Rango_edad</li>
+                    <li>Sexo</li>
+                    <li>Lesividad</li>
+                    <li>Positiva_alcohol</li>
+                    <li>Positiva_droga</li>
+                </ul>
+            <li><strong>Date:</strong>Datos de tipo date (DD/MM/YYYY)</li>
+                <ul>
+                    <li>Fecha</li>
+                </ul>
+            <li><strong>Time:</strong>Datos de tipo time</li>
+                <ul>
+                    <li>Hora</li>
+                </ul>
+            <li><strong>Integer:</strong>Datos de tipo integer</li>
+                <ul>
+                    <li>Numero</li>
+                    <li>Cod_distrito</li>
+                    <li>Cod_lesividad</li>
+                    <li>Coordenadas_x_utm</li>
+                    <li>Coordenadas_y_utm</li>
+                </ul>
+        </ul>
+
+        <p>
+            <strong>Relaciones entre columnas:</strong> Todos los datos de cada fila son propiedades del accidente al que se refiere la fila (los cuales estan ennumerados).
+            Como se ha explicado brevemente en el analisis de los datos proporcionados, hay ciertas columnas que se relacionan entre sí. Las columnas localización, número, código de distrito, distrito, coordenadas x y coordenadas y componen en su totalidad la dirección en al que se dió el accidente.
+            A mayores, las columnas tipo de persona, rango de edad, sexo y lesividad proporcionan información sobre la "víctima" del accidente en cuestión, a su vez la columna codigo de lesividad se relaciona con la de lesividad.
+        </p>
+
+        <p>
+            <strong>Inconsistencias:</strong> Como inconsistencias notorias en algunas categorias hay ciertos valores del tipo Null, desconocido, no se sabe, etc. En cuenta a inconsistencias de tipo, no se ha encontrado ninguna y los datos parecen estar en el formato correcto a lo largo de los tres csv.
+        </p>
+
+
+        <p>
+            <strong>Análisis de Datos:</strong>
+        </p>
+        <p>
+            <strong>Hemos elegido tres csv y cada uno nos aporta valores numéricos diferentes ya que son de diferentes años, pero contienen el mismo tipo de información</strong>
+        </p>
+
+        <p>
+            <strong>Análisis de rangos y valores (general):</strong>
+        </p>
+        <ul>
+            <li>Fecha:</li> Las fechas alcanzan desde el 1 de enero del año en cuestión hasta el 12 de diciembre, excepto en el caso de los datos del 2024 que solo llegan hasta el final de agosto.
+            <li>Hora:</li> Se incluyen las 24 horas del día, no obstante, a pesar de enseñar los segundos los valores solo llegan a precisar la hora y los minutos.
+            <li>Positiva alcohol y droga:</li> Su rango de valores incluye S (sí/ positivo), N (no/ negativo).
+            <li>Otros:</li> En aquellos datos cuyo valor es uno de una ennumeración de posibilidades ya se han especificado, otros son simplemente valores numericos o strings especificos como la localización y el número de expediente.
+        </ul>
+
+        <!-- Análisis del Conjunto de Datos 2022 -->
+        <p>
+            <strong>2022_Accidentalidad.csv:</strong>
+        </p>
+        <p>
+            Los datos recolectados sobre los accidentes de tráfico en 2022 son los siguientes:
+        </p>
+        <ul>
+            <li><strong>Total de accidentes registrados:</strong> 47053 </li>
+            <li><strong>Periodo de fechas:</strong>  la fecha con más accidentes fue el 08/02/2022 con un total de 254 accidentes.</li>
+            <li><strong>Periodo de horas:</strong> las horas donde se producen mayores accidentes son durante las primeras horas de la tarde y las últimas horas que es sobre las 18:00.</li>
+            <li><strong>Localización:</strong>Disponemos de 15146 localizaciones diferentes en los cuales se han producido acidentes de tráfico. Siendo el Puente de Vallecas el lugra donde más accidentes se produjeron.</li>
+            <li><strong>Tipos de accidentes:</strong>
+            <ul>
+                    <li>Alcance: 10735</li>
+                    <li>Atropello animal: 105</li>
+                    <li>Atropello a persona: 3198</li>
+                    <li>Caída: 2776</li>
+                    <li>Choque contra obstáculo fijo: 3658</li>
+                    <li>Colisión frontal: 1285</li>
+                    <li>Colisión fronto-lateral: 11988</li>
+                    <li>Colisión lateral: 6929</li>
+                    <li>Colisión múltiple: 3316</li>
+                    <li>Despeñamiento: 1</li>
+                    <li>Otro: 678</li>
+                    <li>Salida de la vía: 171</li>
+                    <li>Vuelco: 213</li>
+                </ul>
+            </li>
+            <li><strong>Condiciones meteorológicas:</strong>
+                <ul>
+                    <li>Despejado: 33997</li>
+                    <li>Granizado: 6</li>
+                    <li>Lluvia débil: 3193</li>
+                    <li>Lluvia intensa: 849</li>
+                    <li>Nevado: 6</li>
+                    <li>Nublado: 3370</li>
+                    <li>Null: 5290</li>
+                    <li>Se desconoce: 342</li>
+                </ul>
+            </li>
+            <li><strong>Vehículos involucrados:</strong>tenemos un total de 33 tipos de vehículos involucrados y el turismo es el vehiculo con más accidentes sumando un total de 32544, por otro lado los Vehículos con menos accidentes son los  semirremolques, autobús y camión de bomberos que solo han sido registrados un accidente de cada uno.</li>
+            <li><strong>Tipo de persona:</strong>
+                <ul>
+                    <li>conductor: 38105</li>
+                    <li>pasajero: 7304</li>
+                    <li>peatón: 1644</li>
+                </ul>
+            </li>
+            <li><strong>Rando de edad:</strong>Se reflejan todas las edades, siendo la mayoria de personas que sufrieron accidentes de edad desconocida.</li>
+            <li><strong>Sexo:</strong>se refleja que los hombres han sufrido un total de 28408 accidentes frente a 13600 accidentes que han sufrido las mujeres. El resto son de sexo desconocido.</li>
+            <li><strong>Lesividad:</strong>
+                <ul>
+                    <li>Asistencia sanitaria ambulatoria con posteridad: 547</li>
+                    <li>Asistencia sanitaria ambulatoria inmediata: 1057</li>
+                    <li>Asistencia solo en el lugar del accidente: 6095</li>
+                    <li>Asintencia sin ingreso: 1402</li>
+                    <li>Fallecido 24 horas: 22</li>
+                    <li>Ingreso: 2309 </li>
+                    <li>Se desconoce: 2</li>
+                    <li>Sin asistencia: 35619</li>
+                </ul>
+            </li>
+            <li><strong>Positivo en alcohol:</strong> Tenemos que 1473 personas a las cuales se le realizó la prueba de alcoholemia dieron positivo en alcohol.</li>
+            <li><strong>Positivo en droga:</strong> Tenemos que solo 140 personas dieron positivo en drogas.</li>
+        </ul>
+        <!-- Análisis del Conjunto de Datos 2023 -->
+        <p>
+            <strong>2023_Accidentalidad.csv:</strong>
+        </p>
+        <p>
+            Los datos recolectados sobre los accidentes de tráfico en 2023 son los siguientes:
+        </p>
+        <ul>
+            <li><strong>Total de accidentes registrados:</strong> 48830 </li>
+            <li><strong>Periodo de fechas:</strong> la fecha con más accidentes fue el 20/12/2023 con un total de 253 accidentes.</li>
+            <li><strong>Periodo de horas:</strong> las horas donde se producen mayores accidentes son durante las primeras horas de la tarde y las últimas horas que es sobre las 19:00.</li>
+            <li><strong>Localización:</strong>Disponemos de 15924 localizaciones diferentes en los cuales se han producido acidentes de tráfico, siendo el Puente de vallecas el lugar con más accidentes </li>
+            <li><strong>Tipos de accidentes:</strong>
+            <ul>
+                    <li>Alcance: 11829</li>
+                    <li>Atropello animal: 106</li>
+                    <li>Atropello a persona: 3290</li>
+                    <li>Caída: 2667</li>
+                    <li>Choque contra obstáculo fijo: 5495</li>
+                    <li>Colisión frontal: 1183</li>
+                    <li>Colisión fronto-lateral: 12330</li>
+                    <li>Colisión lateral: 7530</li>
+                    <li>Colisión múltiple: 3043</li>
+                    <li>Despeñamiento: 6</li>
+                    <li>Otro: 870</li>
+                    <li>Salida de la vía: 274</li>
+                    <li>Vuelco: 207</li>
+                </ul>
+            </li>
+            <li><strong>Condiciones meteorológicas:</strong>
+                <ul>
+                    <li>Despejado: 37009</li>
+                    <li>Granizado: 7</li>
+                    <li>Lluvia débil: 2009</li>
+                    <li>Lluvia intensa: 552</li>
+                    <li>Nublado: 3269</li>
+                    <li>Null: 5703</li>
+                    <li>Se desconoce: 281</li>
+                </ul>
+            </li>
+            <li><strong>Vehículos involucrados:</strong>tenemos un total de 35 tipos de vehículos involucrados y el turismo es el vehiculo con más accidentes sumando un total de 33641, por otro lado los Vehículos con menos accidentes son los camiones de bomberos, autobuses, microbuses y ciclomotores que solo han sido registrados un accidente de cada uno.</li>
+            <li><strong>Tipo de persona:</strong>
+                <ul>
+                    <li>conductor: 39151</li>
+                    <li>pasajero: 7893</li>
+                    <li>peatón: 1786</li>
+                </ul>
+            </li>
+            <li><strong>Rando de edad:</strong>Se reflejan todas las edades, siendo la mayoria de personas que sufrieron accidentes de edad desconocida.</li>
+            <li><strong>Sexo:</strong>se refleja que los hombres han sufrido un total de 29487 accidentes frente a 14136 accidentes que han sufrido las mujeres. El resto son de sexo desconocido.</li>
+            <li><strong>Lesividad:</strong>
+                <ul>
+                    <li>Asistencia sanitaria ambulatoria con posteridad: 565</li>
+                    <li>Asistencia sanitaria ambulatoria inmediata: 1092</li>
+                    <li>Asistencia solo en el lugar del accidente: 5898</li>
+                    <li>Asintencia sin ingreso: 1402</li>
+                    <li>Fallecido 24 horas: 26</li>
+                    <li>Ingreso: 2489 </li>
+                    <li>Se desconoce: 4</li>
+                    <li>Sin asistencia: 37354</li>
+                </ul>
+            </li>
+            <li><strong>Positivo en alcohol:</strong> Tenemos que 1424 personas a las cuales se le realizó la prueba de alcoholemia dieron positivo en alcohol.</li>
+            <li><strong>Positivo en droga:</strong> Tenemos que solo 215 personas dieron positivo en drogas.</li>
+        </ul>
+        <!-- Análisis del Conjunto de Datos 2024 -->
+        <p>
+            <strong>2024_Accidentalidad.csv:</strong>
+        </p>
+        <p>
+            Los datos recolectados sobre los accidentes de tráfico en 2024 son los siguientes:
+        </p>
+        <ul>
+            <li><strong>Total de accidentes registrados:</strong> 31359 </li>
+            <li><strong>Periodo de fechas:</strong> las fechas se comprenden en un rango entre  04/01/2024 - 31/08/2024, sienod la fecha con más accidentes el 08/03/2024 con un total de 254 accidentes.</li>
+            <li><strong>Periodo de horas:</strong> las horas donde se producen mayores accidentes son durante las primeras horas de la tarde y las últimas horas que es sobre las 19:00.</li>
+            <li><strong>Localización:</strong>Disponemos de 10456 localizaciones diferentes en los cuales se han producido acidentes de tráfico </li>
+            <li><strong>Tipos de accidentes:</strong>
+            <ul>
+                    <li>Alcance: 7516</li>
+                    <li>Atropello animal: 44</li>
+                    <li>Atropello a persona: 1872</li>
+                    <li>Caída: 1675</li>
+                    <li>Choque contra obstáculo fijo: 3455</li>
+                    <li>Colisión frontal: 745</li>
+                    <li>Colisión fronto-lateral: 8547</li>
+                    <li>Colisión lateral: 5132</li>
+                    <li>Colisión múltiple: 1542</li>
+                    <li>Otro: 528</li>
+                    <li>Salida de la vía: 156</li>
+                    <li>Vuelco: 147</li>
+                </ul>
+            </li>
+            <li><strong>Condiciones meteorológicas:</strong>
+                <ul>
+                    <li>Despejado: 23715</li>
+                    <li>Granizado: 8</li>
+                    <li>Lluvia débil: 1621</li>
+                    <li>Lluvia intensa: 280</li>
+                    <li>Nevado: 2</li>
+                    <li>Nublado: 1901</li>
+                    <li>Null: 3637</li>
+                    <li>Se desconoce: 195</li>
+                </ul>
+            </li>
+            <li><strong>Vehículos involucrados:</strong>tenemos un total de 32 vehículos involucrados y el turismo es el vehiculo con más accidentes sumando un total de 21509, por otro lado los Vehículos con menos accidentes son los remolques, semirremolques y ciclomotores que solo han sido registrados un accidente de cada uno.</li>
+            <li><strong>Tipo de persona:</strong>
+                <ul>
+                    <li>conductor: 25208</li>
+                    <li>pasajero: 5147</li>
+                    <li>peatón: 1004</li>
+                </ul>
+            </li>
+            <li><strong>Rando de edad:</strong>Se reflejan todas las edades, siendo la mayoria de personas que sufrieron accidentes de edad desconocida.</li>
+            <li><strong>Sexo:</strong>se refleja que los hombres han sufrido un total de 18937 accidentes frente a 9053 accidentes que han sufrido las mujeres. El resto son de sexo desconocido.</li>
+            <li><strong>Lesividad:</strong>
+                <ul>
+                    <li>Asistencia sanitaria ambulatoria con posteridad: 346</li>
+                    <li>Asistencia sanitaria ambulatoria inmediata: 731</li>
+                    <li>Asistencia solo en el lugar del accidente: 3685</li>
+                    <li>Asintencia sin ingreso: 869</li>
+                    <li>Fallecido 24 horas: 19</li>
+                    <li>Ingreso: 1474</li>
+                    <li>Sin asistencia: 24235</li>
+                </ul>
+            </li>
+            <li><strong>Positivo en alcohol:</strong> Tenemos que 948 personas a las cuales se le realizó la prueba de alcoholemia dieron positivo en alcohol.</li>
+            <li><strong>Positivo en droga:</strong> Tenemos que solo 139 personas dieron positivo en drogas.</li>
+        </ul>
+
+        <!-- Análisis de los resultados -->
+        <p> vamos a analizar cuales de los datos dados nos vas a servir para nuestra aplicación y veamos como varían según el año</p>
+        <p> Las columnas más relevantes son la localización y la hora del día a la que se produce el accidente, si queremos hacer una aplicación
+            que únicamente diga donde es más propenso que se produzca un accidente.
+            Ahora si queremos saber estadísticamente cuál es la posibilidad de que tengamos un accidente teniendo en cuenta más detalles
+            como el auotmóvil, la edad y la columna que no indica si hemos consumido alcohol o drogas.
+        </p>
+
+        <p> Según el año, observamos que en el que menos accidentes hubo fue el 2024, pero en todos se observa que el vehículo que sufre más accidentes es el turismo, 
+            siendo el Puente de Vallecas el lugar más inseguro. Además, cuando se producen más accidentes son durante las primeras horas de la tarde, que puede deberse 
+            a que es cuendo la gente sale de trabajar, y durante las últimas horas de la tarde.
+        </p>
+
+        <p> Además, en los tres años el tipo de accidente que más se produce es la colisión fronto-lateral, seguido de el accidente por alcance
+            y la colisión lateral.
+        </p>
+
+
+    <!-- Análisis de la licencia -->
+    <section>
+        <h2>2. Análisis de Licenciamiento del Conjunto de Datos</h2>
+        <p>
+            <strong>Editor</strong> El Editor es el ayuntamiento de Madrid.
+        </p>
+        <p>
+            <strong>Responsable del conjunto de datos</strong> Dirección General de la Policía Municipal.
+        </p>
+        <p>
+            <strong>Licencia del Dataset</strong> La licencia del dataset escogido se explica en el siguiente enlace: https://datos.madrid.es/egob/catalogo/aviso-legal.
+            En el enlace se especifica que la licencia de los datos es abierta para todo aquel que quiera hacer uso de ella, ya sea de manera comercial o no comercial.
+            La autorización implica la cesión gratuita y no exclusiva de los derechos de propiedad intelectual, autorizándose la reproducción, distribución, comunicación pública y transformación.
+        </p>
+        <p>
+            <strong>Licencia potencial para el dataset generado</strong> En nuestro caso creemos que la licencia adecuada es la CC BY-ND, ya que permite
+            el uso, distribución y acceso libre a los datos, pero sin permitir que estos sean alterados.
+        </p>
+    </section>
+
+    <!-- Estrategia de Nombres para Recursos -->
+    <section>
+        <h2>3. Estrategia de Nombres para Recursos</h2>
+        <p>La estrategia de nombrado de recursos que se seguirá en la ontología a crear será la siguiente:</p>
+
+        <p>
+            <strong>Dominio base de la URI:</strong> <code>http://accidentestrafico.org/</code>.
+        </p>
+
+        <p>
+            <strong>Path de contexto:</strong> <code>traffic/</code>
+        </p>
+
+        <p>Es importante diferenciar el modelo de la ontología con sus respectivas instancias. Para esto usaremos los siguientes nombrados para identificar, por una parte las clases y propiedades de la ontología, y por otro las instancias (datos o individuos).</p>
+
+        <p>
+            <strong>Definición de la ontología:</strong> <code>ontology/</code> se usará para definir las clases y propiedades de la ontología.
+        </p>
+        <p>
+            <strong>Patrón Clases:</strong> <code>http://accidentestrafico.org/traffic/ontology/nombreOntología#nombreClase</code>. Se reemplazará el nombreOntología y nombreClase por sus verdaderos valores.
+        </p>
+        <p>Ejemplo de URI para una clase:<code>http://accidentestrafico.org/traffic/ontology/TrafficOntology#Accidente</code></p>
+        <p>
+            <strong>Patrón Propiedades:</strong> <code>http://accidentestrafico.org/traffic/ontology/nombreOntología#nombrePropiedad</code>. Se reemplazará el nombreOntología y nombrePropiedad por sus verdaderos valores.
+        </p>        
+        <p>Ejemplo de URI para una propiedad:<code>http://accidentestrafico.org/traffic/ontology/TrafficOntology#tipoAccidente</code></p>
+
+        <p>
+            <strong>Path para datos o individuos:</strong> <code>resource/</code> (donde se almacenan los recursos individuales de cada accidente).
+        </p>
+        <p>
+            <strong>Patrón Instancia:</strong> <code>http://accidentestrafico.org/traffic/resource/nombreClase/identificador</code>. Se reemplazará el nombreOntología e identificador por sus verdaderos valores.
+        </p>
+        <p>
+            Ejemplo de URI para un accidente concreto:
+            <code>http://accidentestrafico.org/traffic/resource/Accidente/2023S040280</code>.
+            Aquí, la última parte ( <code>2023S040280</code> ) es el identificador único del accidente.
+        </p>
+    </section>
+</body>
+</html>

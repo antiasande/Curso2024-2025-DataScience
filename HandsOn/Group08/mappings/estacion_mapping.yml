@@ -1,0 +1,73 @@
+prefixes:
+  base: "https://www.dominiowebsemant.com/"
+  ns: "https://www.dominiowebsemant.com/ontology/CercaniasMalaga#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  geo: "http://www.w3.org/2003/01/geo/wgs84_pos#"
+
+mappings:
+  estacion_mapping:
+    sources:
+      - [estaciones_updated.csv~csv]
+    s: "https://www.dominiowebsemant.com/resource/Estacion/$(CÓDIGO)"
+    po:
+      - [a, ns:Estación]
+      - [ns:codigoEstacion, $(CÓDIGO)]
+      - [geo:lat, $(LATITUD), xsd:decimal]
+      - [geo:long, $(LONGITUD), xsd:decimal]
+      - [ns:nombreEstacion, $(DESCRIPCION)]
+      - [ns:localizadoEn, "https://www.dominiowebsemant.com/resource/Direccion/$(CÓDIGO)~iri"]
+      - p: ns:tieneNucleo
+        o: 
+          - mapping: nucleo_mapping
+            condition:
+              function: equal
+              parameters: 
+                 - [str1, $(CÓDIGO)]
+                 - [str2, $(CODIGO_ESTACION)]
+      
+  nucleo_mapping:
+    sources:
+      - [malaga-viajeros-por-franja-csv.-updated.csv~csv]
+    s: "https://www.dominiowebsemant.com/resource/Nucleo/$(NUCLEO_CERCANIAS)"
+    po:
+      - [a, ns:NucleoCercanias]
+      - [ns:nombreNucleo, $(NUCLEO_CERCANIAS)]
+
+  direccion_mapping:
+    sources:
+      - [estaciones_updated.csv~csv]
+    s: "https://www.dominiowebsemant.com/resource/Direccion/$(CÓDIGO)"
+    po:
+      - [a, ns:Direccion]
+      - [ns:nombreDireccion, $(DIRECCIÓN 1)]
+      - [ns:tieneCodigoPostal, "https://www.dominiowebsemant.com/resource/CodigoPostal/$(C.P.)~iri"]
+
+  poblacion_mapping:
+    sources:
+      - [estaciones_updated.csv~csv]
+    s: "https://www.dominiowebsemant.com/resource/Poblacion/$(POBLACION)"
+    po:
+      - [a, ns:Poblacion]
+      - [ns:nombrePoblacion, $(POBLACION)]
+      - [ns:tieneDireccion, "https://www.dominiowebsemant.com/resource/Direccion/$(CÓDIGO)~iri"]
+
+  tramo_mapping:
+    sources:
+      - [malaga-viajeros-por-franja-csv.-updated.csv~csv]
+    s: "https://www.dominiowebsemant.com/resource/Tramo/$(TRAMO_ID)"
+    po:
+      - [a, ns:Tramo]
+      - [ns:intervalo, $(TRAMO_HORARIO)]
+      - [ns:viajerosSubidos, $(VIAJEROS_SUBIDOS), xsd:integer]
+      - [ns:viajerosBajados, $(VIAJEROS_BAJADOS), xsd:integer]
+      - [ns:tieneEstacion, "https://www.dominiowebsemant.com/resource/Estacion/$(CODIGO_ESTACION)~iri"]
+      
+  provincia_mapping:
+    sources:
+      - [estaciones_updated.csv~csv]
+    s: "https://www.dominiowebsemant.com/resource/Provincia/$(POBLACION)"
+    po:
+      - [a, ns:Provincia]
+      - [ns:nombreProvincia, $(PROVINCIA)]
+      - [ns:tienePoblacion, "https://www.dominiowebsemant.com/resource/Poblacion/$(POBLACION)~iri"]
+

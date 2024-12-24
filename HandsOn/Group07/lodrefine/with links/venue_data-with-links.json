@@ -1,0 +1,145 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q41253",
+        "name": "movie theater"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE to type Q41253"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Fernán Gómez Centro Cultural de la Villa",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56426930",
+      "name": "Fernán Gómez Centro Cultural de la Villa",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fernán Gómez Centro Cultural de la Villa (Q56426930) for cells containing \"Fernán Gómez Centro Cultural de la Villa\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "nave-10-matadero-creacion-dramatica-contemporanea",
+    "description": "Clear recon data for cells containing \"nave-10-matadero-creacion-dramatica-contemporanea\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "naves-del-espanol-matadero",
+    "description": "Clear recon data for cells containing \"naves-del-espanol-matadero\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Daoíz y Velarde, Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6081742",
+      "name": "Centro Deportivo Municipal Daoíz y Velarde, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Centro Deportivo Municipal Daoíz y Velarde, Madrid (Q6081742) for cells containing \"Centro Deportivo Municipal Daoíz y Velarde, Madrid\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Circo Price",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5121553",
+      "name": "Circo Price",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Circo Price (Q5121553) for cells containing \"Circo Price\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Teatro Español",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3891573",
+      "name": "Teatro Español",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Teatro Español (Q3891573) for cells containing \"Teatro Español\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "teatro-municipal-de-titeres-parque-de-el-retiro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q109185167",
+      "name": "Teatro de títeres, Buen Retiro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Teatro de títeres, Buen Retiro (Q109185167) for cells containing \"teatro-municipal-de-titeres-parque-de-el-retiro\" in column NOMBRE"
+  }
+]

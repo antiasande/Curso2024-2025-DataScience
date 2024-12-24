@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Analysis - Hands On Assignment</title>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+
+		<style>
+			h2 {
+				padding-top: 5vh;
+			}
+
+			h3 {
+				padding-top: 3vh;
+			}
+
+			h4 {
+				padding-top: 2vh;
+			}
+
+			img {
+				max-width: 90%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body class="container p-5">
+		<h1>Análisis</h1>
+		<span>Este documento definirá el dataset (tanto la fuente como el esquema), las licencias y la estrategia de nombrado de recursos</span>
+
+		<h2>Dataset</h2>
+		<span>
+			El dataset está compuesto de dos archivos CSV,
+			<a href="./csv/listado-estaciones-cercanias-malaga-v4.csv">listado-estaciones-cercanias-malaga-v4</a>
+			y <a href="./csv/malaga_viajeros_por_franja_csv.csv">malaga_viajeros_por_franja_csv</a>
+		</span>
+
+		<h3>Fuentes</h3>
+		<h4>Estaciones de cercanías Málaga</h4>
+		<span>
+			Este archivo contiene información sobre las estaciones de cercanías de Málaga. El archivo tiene las siguientes columnas:
+			<ul>
+				<li>Codigo: Identificador de la estación</li>
+				<li>Descripcion: Nombre de la estación</li>
+				<li>Latitud: Latitud de la estación</li>
+				<li>Longitud: Longitud de la estación</li>
+				<li>Dirección: La dirección de la estación</li>
+				<li>C.P.: El código postal</li>
+				<li>Población: La población en la que se encuentra la estación</li>
+				<li>Provincia: La provincia en la que se encuentra la estación</li>
+				<li>Fichas: URL a la página web de Cercanías de la ficha de la estación</li>
+			</ul>
+
+			Existen 23 estaciones en total.
+		</span>
+		<h4>Viajeros por franja horaria</h4>
+		<span>
+			Este archivo contiene información sobre el número de viajeros en las estaciones de cercanías de Málaga por franja horaria. El archivo tiene las siguientes
+			columnas:
+			<ul>
+				<li>Codigo: Identificador de la estación</li>
+				<li>Nombre: Nombre de la estación</li>
+				<li>Nucleo: El Cercanías, en este caso todos son Málaga</li>
+				<li>Tramo horario: Franja horaria de la medición</li>
+				<li>Viajeros subidos: Número de entradas en la estación</li>
+				<li>Viajeros bajados: Número de salidas en la estación</li>
+			</ul>
+
+			Se puede ver que ALORA es una estación bastante equilibrada, donde el número de viajeros subidos y bajados es similar (aunque en distintos horarios). Por
+			otro lado, en ALJAIMA casi no se suben ni bajan viajeros, siendo una estación poco utilizada.
+		</span>
+
+		<h3>Esquema</h3>
+		<span>
+			El esquema de los archivos está descrito en el siguiente diagrama:
+			<div class="d-flex justify-content-center mt-5">
+				<img src="./esquema.png" alt="Esquema de Draw.io" class="mx-auto" />
+			</div>
+		</span>
+
+		<h2>Licencias</h2>
+		<span>
+			Debido a que las fuentes vienen de la <a href="https://datos.gob.es/">página web del gobierno de España</a>, los datos son públicos. En la
+			<a href="https://datos.gob.es/es/aviso-legal">sección de aviso legal</a> de la página se puede ver que los datos pueden ser usados para fines comerciales
+			y no comerciales, siempre y cuando, como dice en la página:
+			<blockquote>
+				<ol>
+					<li>Está prohibido desnaturalizar el sentido de la información.</li>
+					<li>
+						Debe citarse la fuente de los documentos objeto de la reutilización. Esta cita podrá realizarse de la siguiente manera: “Origen de los datos:
+						Secretaría de Estado de Digitalización e Inteligencia Artificial del Ministerio para la Transformación Digital y de la Función Pública”.
+					</li>
+					<li>
+						Debe mencionarse la fecha de la última actualización de los documentos objeto de la reutilización, siempre cuando estuviera incluida en el documento
+						original.
+					</li>
+					<li>
+						No se podrá indicar, insinuar o sugerir que la Secretaría de Estado de Digitalización e Inteligencia Artificial del Ministerio para la
+						Transformación Digital y de la Función Pública titular de la información reutilizada participa, patrocina o apoya la reutilización que se lleve a
+						cabo con ella.
+					</li>
+					<li>
+						Deben conservarse, no alterarse ni suprimirse los metadatos sobre la fecha de actualización y las condiciones de reutilización aplicables incluidos,
+						en su caso, en el documento puesto a disposición para su reutilización.
+					</li>
+				</ol>
+			</blockquote>
+		</span>
+		</span>
+		<h3>Licencia específica</h3>
+		<span>
+			Además, este trabajo está protegido por la licencia 
+			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.
+			Esto significa que:
+			<ul>
+				<li>Se permite copiar, distribuir y adaptar el material, pero no para fines comerciales.</li>
+				<li>Debe darse crédito apropiado y compartir las adaptaciones bajo la misma licencia.</li>
+				<li>Puede consultar los términos completos en la página oficial de <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons</a>.</li>
+			</ul>
+		</span>
+		<h2>Estrategia de nombrado de recursos</h2>
+		<span>
+			Para los recursos se seguirá la siguiente estrategia de nombrado:
+			<ul>
+				<li>Se crea un prefijo ns con la URI &lt;https://www.dominiowebsemant.com/ontology/CercaniasMalaga#&gt; para hacer referencia a los recursos</li>
+				<li>
+					Se crea un prefijo ind con la URI &lt;https://www.dominiowebsemant.com/resource/&gt; para hacer referencia a las instancias (individuos) de los
+					recursos
+				</li>
+				<li>Los recursos e instancias se nombrarán en español</li>
+				<li>Se crean clases para cada columna del <a href="./csv/listado-estaciones-cercanias-malaga-v4.csv">listado de estaciones</a> con mayúscula</li>
+				<li>Las propiedades se nombrarán en minúsculas y con cammel case</li>
+			</ul>
+		</span>
+	</body>
+</html>

@@ -1,0 +1,1344 @@
+@prefix ns1: <http://owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/cargadores/3730> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/PalosDeMoguer> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4057204"^^xsd:float ;
+    ns1:longitud "-3.6995075"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3731> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Adelfas> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.40014545"^^xsd:float ;
+    ns1:longitud "-3.6752149432657397"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3732> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Jeronimos> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4192082"^^xsd:float ;
+    ns1:longitud "-3.6888851"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3733> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Recoletos> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4249657"^^xsd:float ;
+    ns1:longitud "-3.6810768"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3734> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Goya> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4246541"^^xsd:float ;
+    ns1:longitud "-3.6712666"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3735> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Castellana> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4350772"^^xsd:float ;
+    ns1:longitud "-3.6807422"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3736> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Guindalera> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.43409345"^^xsd:float ;
+    ns1:longitud "-3.6706180484282145"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3737> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CuatroVientos> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.37308233715542"^^xsd:float ;
+    ns1:longitud "-3.7722504853189975"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3738> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "100 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Valdebernardo> ;
+    ns1:gestionDe "Concesión demanial" ;
+    ns1:latitud "40.39767155"^^xsd:float ;
+    ns1:longitud "-3.6207708500000013"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3739> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Hispanoamerica> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4588374"^^xsd:float ;
+    ns1:longitud "-3.667204"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3740> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Castellana> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4292455"^^xsd:float ;
+    ns1:longitud "-3.683721"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3741> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Castellana> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4356993"^^xsd:float ;
+    ns1:longitud "-3.6882216"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3742> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/ElViso> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4454625"^^xsd:float ;
+    ns1:longitud "-3.6907904"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3743> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "150 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Hispanoamerica> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4574416"^^xsd:float ;
+    ns1:longitud "-3.688508"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3744> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Castilla> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4667751"^^xsd:float ;
+    ns1:longitud "-3.6706001"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3745> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Arapiles> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.43535625"^^xsd:float ;
+    ns1:longitud "-3.7095912141826974"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3746> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Arapiles> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.431275799999995"^^xsd:float ;
+    ns1:longitud "-3.7067573657677615"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3747> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Trafalgar> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4296447"^^xsd:float ;
+    ns1:longitud "-3.7024341"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3748> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Trafalgar> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.430516"^^xsd:float ;
+    ns1:longitud "-3.699163"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3749> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/NuevaEspana> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4590308"^^xsd:float ;
+    ns1:longitud "-3.6864296"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3750> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Trafalgar> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4380525"^^xsd:float ;
+    ns1:longitud "-3.7002923"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3751> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Almagro> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.432546849999994"^^xsd:float ;
+    ns1:longitud "-3.689709965103191"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3752> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/LaPaz> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.464557363988376"^^xsd:float ;
+    ns1:longitud "-3.7202385444409805"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3753> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/SanJuanBautista> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.45580656678009"^^xsd:float ;
+    ns1:longitud "-3.6513658591835845"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3754> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Palacio> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4112736"^^xsd:float ;
+    ns1:longitud "-3.7083569"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3755> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/NuevaEspana> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.46617765"^^xsd:float ;
+    ns1:longitud "-3.6887179999999997"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3756> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Berruguete> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.462464837050426"^^xsd:float ;
+    ns1:longitud "-3.708133373751736"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3757> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Valverde> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.501784538856604"^^xsd:float ;
+    ns1:longitud "-3.6633144895875667"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3758> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CiudadUniversitaria> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4609678"^^xsd:float ;
+    ns1:longitud "-3.7582946"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3759> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/ElPlantio> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4470752"^^xsd:float ;
+    ns1:longitud "-3.7103844"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3760> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CuatroVientos> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.40811867007341"^^xsd:float ;
+    ns1:longitud "-3.7438917516720798"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3761> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CuatroVientos> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.3683387"^^xsd:float ;
+    ns1:longitud "-3.7658482"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3762> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Aguilas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.37785005"^^xsd:float ;
+    ns1:longitud "-3.76823157644204"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3763> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/PalomerasSureste> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.3840328"^^xsd:float ;
+    ns1:longitud "-3.6321218"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/ECOLINERAS> .
+
+<http://example.org/cargadores/3764> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Valdefuentes> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.497373499999995"^^xsd:float ;
+    ns1:longitud "-3.6630605563706506"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3765> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Butarque> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.3398809"^^xsd:float ;
+    ns1:longitud "-3.6685848"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3766> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/EnsancheDeVallecas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.37957475"^^xsd:float ;
+    ns1:longitud "-3.6196694000000003"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3767> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Rejas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.44889261022727"^^xsd:float ;
+    ns1:longitud "-3.569210905559255"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3770> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Sol> ;
+    ns1:gestionDe "EMT" ;
+    ns1:latitud "40.4144807"^^xsd:float ;
+    ns1:longitud "-3.7035436244656923"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/EMT> .
+
+<http://example.org/cargadores/3771> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Recoletos> ;
+    ns1:gestionDe "EMT" ;
+    ns1:latitud "40.424634210825076"^^xsd:float ;
+    ns1:longitud "-3.6903767172415045"^^xsd:float ;
+    ns1:numeroEquipos 4 ;
+    ns1:tieneOperador <http://example.org/operadores/EMT> .
+
+<http://example.org/cargadores/3772> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Lista> ;
+    ns1:gestionDe "EMT" ;
+    ns1:latitud "40.4303981252484"^^xsd:float ;
+    ns1:longitud "-3.679972070404787"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/EMT> .
+
+<http://example.org/cargadores/3773> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Castilla> ;
+    ns1:gestionDe "EMT" ;
+    ns1:latitud "40.47180720543637"^^xsd:float ;
+    ns1:longitud "-3.679376141640235"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/EMT> .
+
+<http://example.org/cargadores/3774> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Palacio> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.4112736"^^xsd:float ;
+    ns1:longitud "-3.7083569"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3775> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Universidad> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.429402"^^xsd:float ;
+    ns1:longitud "-3.7084165"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3776> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Adelfas> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.4062862"^^xsd:float ;
+    ns1:longitud "-3.669372242441858"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3777> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/ElGoloso> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.5105475"^^xsd:float ;
+    ns1:longitud "-3.6903692"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3778> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Canillas> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.4648347"^^xsd:float ;
+    ns1:longitud "-3.6362258"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3779> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Valdefuentes> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.5004577"^^xsd:float ;
+    ns1:longitud "-3.65870715"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3780> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.36572133138983"^^xsd:float ;
+    ns1:longitud "-3.652522724703893"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/NATURGY> .
+
+<http://example.org/cargadores/3781> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.36945160115506"^^xsd:float ;
+    ns1:longitud "-3.648605869554578"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3782> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "350 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Corralejos> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.458417"^^xsd:float ;
+    ns1:longitud "-3.616139"^^xsd:float ;
+    ns1:numeroEquipos 4 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3783> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Corralejos> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.46749475"^^xsd:float ;
+    ns1:longitud "-3.619366805586629"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3784> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "100 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/PalosDeMoguer> ;
+    ns1:gestionDe "Concesión demanial" ;
+    ns1:latitud "40.40023520601303"^^xsd:float ;
+    ns1:longitud "-3.6910309587761834"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/TOTALENERGIES> .
+
+<http://example.org/cargadores/3793> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "100 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Pavones> ;
+    ns1:gestionDe "Concesión demanial" ;
+    ns1:latitud "40.400725550000004"^^xsd:float ;
+    ns1:longitud "-3.634548272405329"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3798> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "100 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/PinarDelRey> ;
+    ns1:gestionDe "Concesión demanial" ;
+    ns1:latitud "40.46949030227158"^^xsd:float ;
+    ns1:longitud "-3.642070521065105"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3801> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "100 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/LosRosales> ;
+    ns1:gestionDe "Concesión demanial" ;
+    ns1:latitud "40.34849730172464"^^xsd:float ;
+    ns1:longitud "-3.690871377913514"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3804> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "100 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Valderrivas> ;
+    ns1:gestionDe "Concesión demanial" ;
+    ns1:latitud "40.395520719633595"^^xsd:float ;
+    ns1:longitud "-3.6070539036291756"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/TOTALENERGIES> .
+
+<http://example.org/cargadores/3807> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Acuerdo bilateral" ;
+    ns1:latitud "40.360642850000005"^^xsd:float ;
+    ns1:longitud "-3.6609847"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3808> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Acuerdo bilateral" ;
+    ns1:latitud "40.360642850000005"^^xsd:float ;
+    ns1:longitud "-3.6609847"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3809> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Acuerdo bilateral" ;
+    ns1:latitud "40.3603834"^^xsd:float ;
+    ns1:longitud "-3.662785350358371"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3810> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Ibiza> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "38.5404"^^xsd:float ;
+    ns1:longitud "-0.1216588"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3811> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Jeronimos> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.41694360741295"^^xsd:float ;
+    ns1:longitud "-3.6932110991829568"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3812> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Buenavista> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.37277833627155"^^xsd:float ;
+    ns1:longitud "-3.728795634529903"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3814> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Arguelles> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4295828"^^xsd:float ;
+    ns1:longitud "-3.7190864"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3815> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/VillaverdeAlto> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.340804004142555"^^xsd:float ;
+    ns1:longitud "-3.7108612553710447"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3816> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CuatroCaminos> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.449154449999995"^^xsd:float ;
+    ns1:longitud "-3.702887907930223"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3818> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Orcasur> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.3657879177848"^^xsd:float ;
+    ns1:longitud "-3.6977885493901366"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3819> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CuatroCaminos> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.45241628338564"^^xsd:float ;
+    ns1:longitud "-3.696925727677478"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3820> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Orcasur> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.36701283161155"^^xsd:float ;
+    ns1:longitud "-3.6955669738642656"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3822> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/ApostolSantiago> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.47225181765033"^^xsd:float ;
+    ns1:longitud "-3.662773297838859"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/NATURGY> .
+
+<http://example.org/cargadores/3823> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.35705474843336"^^xsd:float ;
+    ns1:longitud "-3.6604424289116912"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/3824> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Ventas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.426019499999995"^^xsd:float ;
+    ns1:longitud "-3.6585365242627796"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/Sudel> .
+
+<http://example.org/cargadores/3825> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Colina> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.46713797079046"^^xsd:float ;
+    ns1:longitud "-3.666093810197397"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3826> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/SanPascual> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.43994674407317"^^xsd:float ;
+    ns1:longitud "-3.656035472066064"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3827> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Marroquina> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.40796941629195"^^xsd:float ;
+    ns1:longitud "-3.6525121390545428"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3829> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.36911725"^^xsd:float ;
+    ns1:longitud "-3.6310810607169968"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GALP> .
+
+<http://example.org/cargadores/3830> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Simancas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.426483"^^xsd:float ;
+    ns1:longitud "-3.626089"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GALP> .
+
+<http://example.org/cargadores/3831> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Simancas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "13.988601498154988"^^xsd:float ;
+    ns1:longitud "-89.64337070995305"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3832> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Arcos> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.41568966513148"^^xsd:float ;
+    ns1:longitud "-3.610518957029991"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GALP> .
+
+<http://example.org/cargadores/3833> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Rosas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.41568966513148"^^xsd:float ;
+    ns1:longitud "-3.610518957029991"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/Cerdeira> .
+
+<http://example.org/cargadores/3834> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/EnsancheDeVallecas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.37067176003822"^^xsd:float ;
+    ns1:longitud "-3.5958235007572568"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/3836> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Rejas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.443436500000004"^^xsd:float ;
+    ns1:longitud "-3.5913736"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/NATURGY> .
+
+<http://example.org/cargadores/3838> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Rejas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4442757950714"^^xsd:float ;
+    ns1:longitud "-3.5793883223743195"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3839> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.36572133138983"^^xsd:float ;
+    ns1:longitud "-3.652522724703893"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/NATURGY> .
+
+<http://example.org/cargadores/3840> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Justicia> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.4259414"^^xsd:float ;
+    ns1:longitud "-3.6925629"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/GIC> .
+
+<http://example.org/cargadores/3841> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "100 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/SanCristobal> ;
+    ns1:gestionDe "Concesión demanial" ;
+    ns1:latitud "40.34100933888266"^^xsd:float ;
+    ns1:longitud "-3.6870498036603556"^^xsd:float ;
+    ns1:numeroEquipos 3 ;
+    ns1:tieneOperador <http://example.org/operadores/TOTALENERGIES> .
+
+<http://example.org/cargadores/3843> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "150 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Guindalera> ;
+    ns1:gestionDe "Convenio vía pública" ;
+    ns1:latitud "40.43501535054218"^^xsd:float ;
+    ns1:longitud "-3.6610926328467954"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/3858> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Almenara> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.46762976449039"^^xsd:float ;
+    ns1:longitud "-3.69074855660997"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3859> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Prosperidad> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.4382236"^^xsd:float ;
+    ns1:longitud "-3.6768927"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/IBERDROLA> .
+
+<http://example.org/cargadores/3863> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Acuerdo bilateral" ;
+    ns1:latitud "40.35904900182343"^^xsd:float ;
+    ns1:longitud "-3.661473377030333"^^xsd:float ;
+    ns1:numeroEquipos 2 .
+
+<http://example.org/cargadores/3865> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Pilar> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4795001"^^xsd:float ;
+    ns1:longitud "-3.7067216"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/CCLAVAGUADA> .
+
+<http://example.org/cargadores/4265> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "150 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Acuerdo bilateral" ;
+    ns1:latitud "40.35904900182343"^^xsd:float ;
+    ns1:longitud "-3.661473377030333"^^xsd:float ;
+    ns1:numeroEquipos 1 .
+
+<http://example.org/cargadores/4267> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/ElGoloso> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.5453765"^^xsd:float ;
+    ns1:longitud "-3.6949577655963672"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/UAM> .
+
+<http://example.org/cargadores/4269> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Corralejos> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.467575977534175"^^xsd:float ;
+    ns1:longitud "-3.612057772628916"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/BLAUDRIVE> .
+
+<http://example.org/cargadores/4270> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Moscardo> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.3872262"^^xsd:float ;
+    ns1:longitud "-3.7065929"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/BLAUDRIVE> .
+
+<http://example.org/cargadores/4275> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Aluche> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.40242503181887"^^xsd:float ;
+    ns1:longitud "-3.7605311241676658"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/4280> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/SanJuanBautista> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.44958188490243"^^xsd:float ;
+    ns1:longitud "-3.652918299349679"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/4281> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Castellana> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.4321401"^^xsd:float ;
+    ns1:longitud "-3.6870755"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/ENDESA> .
+
+<http://example.org/cargadores/4662> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "180 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/CascoHistoricoDeVallecas> ;
+    ns1:gestionDe "Iniciativa privada" ;
+    ns1:latitud "40.35705474843336"^^xsd:float ;
+    ns1:longitud "-3.6604424289116912"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/DRIVETHECITY> .
+
+<http://example.org/cargadores/4663> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/ElGoloso> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.5453765"^^xsd:float ;
+    ns1:longitud "-3.6949577655963672"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/UAM> .
+
+<http://example.org/cargadores/4664> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/SanDiego> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.394076606216686"^^xsd:float ;
+    ns1:longitud "-3.6662816826699736"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/BLAUDRIVE> .
+
+<http://example.org/cargadores/5464> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/ElViso> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.437927"^^xsd:float ;
+    ns1:longitud "-3.684589"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/6667> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "400 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Sol> ;
+    ns1:gestionDe "EMT" ;
+    ns1:latitud "40.28570185"^^xsd:float ;
+    ns1:longitud "-3.747178488756261"^^xsd:float ;
+    ns1:numeroEquipos 12 ;
+    ns1:tieneOperador <http://example.org/operadores/EMT> .
+
+<http://example.org/cargadores/6668> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Penagrande> ;
+    ns1:gestionDe "Convenio cesión" ;
+    ns1:latitud "40.47983213981173"^^xsd:float ;
+    ns1:longitud "-3.7233181545007885"^^xsd:float ;
+    ns1:numeroEquipos 1 ;
+    ns1:tieneOperador <http://example.org/operadores/REPSOL> .
+
+<http://example.org/cargadores/6673> a ns1:IdPuntoDeRecarga ;
+    ns1:esDe "50 kW"^^rdfs:Literal ;
+    ns1:estaEn <http://example.org/barrios/Recoletos> ;
+    ns1:gestionDe "EMT" ;
+    ns1:latitud "40.4205603"^^xsd:float ;
+    ns1:longitud "-3.6919389"^^xsd:float ;
+    ns1:numeroEquipos 2 ;
+    ns1:tieneOperador <http://example.org/operadores/EMT> .
+
+ns1:Gestor a owl:Class ;
+    rdfs:label "Gestor" .
+
+ns1:PotenciaDeEnchufe a owl:Class ;
+    rdfs:label "Potencia del Enchufe" .
+
+ns1:dentroDe a owl:ObjectProperty ;
+    rdfs:label "Dentro de" .
+
+ns1:esDe a owl:ObjectProperty ;
+    rdfs:label "Es de" .
+
+ns1:estaEn a owl:ObjectProperty ;
+    rdfs:label "Está en" .
+
+ns1:gestionDe a owl:ObjectProperty ;
+    rdfs:label "Gestión de" .
+
+ns1:latitud a owl:DatatypeProperty ;
+    rdfs:label "Latitud" .
+
+ns1:longitud a owl:DatatypeProperty ;
+    rdfs:label "Longitud" .
+
+ns1:numeroDeEquipos a owl:DatatypeProperty ;
+    rdfs:label "Número de Equipos" .
+
+ns1:tieneOperador a owl:ObjectProperty ;
+    rdfs:label "Tiene operador" .
+
+<http://example.org/barrios/Aguilas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Latina> ;
+    owl:sameAs <https://wikidata.org/entity/Q5971372> .
+
+<http://example.org/barrios/Almagro> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamberi> ;
+    owl:sameAs <https://wikidata.org/entity/Q10954432> .
+
+<http://example.org/barrios/Almenara> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Tetuan> ;
+    owl:sameAs <https://wikidata.org/entity/Q2265427> .
+
+<http://example.org/barrios/Aluche> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Latina> ;
+    owl:sameAs <https://wikidata.org/entity/Q31140> .
+
+<http://example.org/barrios/ApostolSantiago> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Hortaleza> ;
+    owl:sameAs <https://wikidata.org/entity/Q11906303> .
+
+<http://example.org/barrios/Arcos> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/SanBlas-Canillejas> ;
+    owl:sameAs <https://wikidata.org/entity/Q9627876> .
+
+<http://example.org/barrios/Arguelles> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Moncloa-Aravaca> ;
+    owl:sameAs <https://wikidata.org/entity/Q64874> .
+
+<http://example.org/barrios/Berruguete> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Tetuan> ;
+    owl:sameAs <https://wikidata.org/entity/Q11909208> .
+
+<http://example.org/barrios/Buenavista> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Carabanchel> ;
+    owl:sameAs <https://wikidata.org/entity/Q953929> .
+
+<http://example.org/barrios/Butarque> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Villaverde> ;
+    owl:sameAs <https://wikidata.org/entity/Q390453> .
+
+<http://example.org/barrios/Canillas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Hortaleza> ;
+    owl:sameAs <https://wikidata.org/entity/Q9694341> .
+
+<http://example.org/barrios/CiudadUniversitaria> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Moncloa-Aravaca> ;
+    owl:sameAs <https://wikidata.org/entity/Q3319235> .
+
+<http://example.org/barrios/Colina> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/CiudadLineal> ;
+    owl:sameAs <https://wikidata.org/entity/Q18475981> .
+
+<http://example.org/barrios/ElPlantio> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Moncloa-Aravaca> ;
+    owl:sameAs <https://wikidata.org/entity/Q3773742> .
+
+<http://example.org/barrios/Goya> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Salamanca> ;
+    owl:sameAs <https://wikidata.org/entity/Q3814578> .
+
+<http://example.org/barrios/Ibiza> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Retiro> ;
+    owl:sameAs <https://wikidata.org/entity/Q15249910> .
+
+<http://example.org/barrios/Justicia> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Centro> ;
+    owl:sameAs <https://wikidata.org/entity/Q1992319> .
+
+<http://example.org/barrios/LaPaz> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Fuencarral-ElPardo> ;
+    owl:sameAs <https://wikidata.org/entity/Q5869740> .
+
+<http://example.org/barrios/Lista> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Salamanca> ;
+    owl:sameAs <https://wikidata.org/entity/Q4779> .
+
+<http://example.org/barrios/LosRosales> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Villaverde> ;
+    owl:sameAs <https://wikidata.org/entity/Q10319807> .
+
+<http://example.org/barrios/Marroquina> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Moratalaz> ;
+    owl:sameAs <https://wikidata.org/entity/Q11935636> .
+
+<http://example.org/barrios/Moscardo> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Usera> ;
+    owl:sameAs <https://wikidata.org/entity/Q11937679> .
+
+<http://example.org/barrios/PalomerasSureste> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/PuenteDeVallecas> ;
+    owl:sameAs <https://wikidata.org/entity/Q10343901> .
+
+<http://example.org/barrios/Pavones> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Moratalaz> ;
+    owl:sameAs <https://wikidata.org/entity/Q71760> .
+
+<http://example.org/barrios/Penagrande> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Fuencarral-ElPardo> ;
+    owl:sameAs <https://wikidata.org/entity/Q3319582> .
+
+<http://example.org/barrios/Pilar> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Fuencarral-ElPardo> ;
+    owl:sameAs <https://wikidata.org/entity/Q3773964> .
+
+<http://example.org/barrios/PinarDelRey> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Hortaleza> ;
+    owl:sameAs <https://wikidata.org/entity/Q10349788> .
+
+<http://example.org/barrios/Prosperidad> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamartin> ;
+    owl:sameAs <https://wikidata.org/entity/Q4776> .
+
+<http://example.org/barrios/Rosas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/SanBlas-Canillejas> ;
+    owl:sameAs <https://wikidata.org/entity/Q18880469> .
+
+<http://example.org/barrios/SanCristobal> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Villaverde> ;
+    owl:sameAs <https://wikidata.org/entity/Q390457> .
+
+<http://example.org/barrios/SanDiego> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/PuenteDeVallecas> ;
+    owl:sameAs <https://wikidata.org/entity/Q11946851> .
+
+<http://example.org/barrios/SanPascual> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/CiudadLineal> ;
+    owl:sameAs <https://wikidata.org/entity/Q165612> .
+
+<http://example.org/barrios/Universidad> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Centro> ;
+    owl:sameAs <https://wikidata.org/entity/Q10387767> .
+
+<http://example.org/barrios/Valdebernardo> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Vicalvaro> ;
+    owl:sameAs <https://wikidata.org/entity/Q43025212> .
+
+<http://example.org/barrios/Valderrivas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Vicalvaro> ;
+    owl:sameAs <https://wikidata.org/entity/Q43025770> .
+
+<http://example.org/barrios/Valverde> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Fuencarral-ElPardo> ;
+    owl:sameAs <https://wikidata.org/entity/Q31132> .
+
+<http://example.org/barrios/Ventas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/CiudadLineal> ;
+    owl:sameAs <https://wikidata.org/entity/Q71762> .
+
+<http://example.org/barrios/VillaverdeAlto> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Villaverde> ;
+    owl:sameAs <https://wikidata.org/entity/Q390435> .
+
+<http://example.org/distritos/Arganzuela> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q2000929> .
+
+<http://example.org/distritos/Barajas> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q807230> .
+
+<http://example.org/distritos/Carabanchel> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1001991> .
+
+<http://example.org/operadores/CCLAVAGUADA> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q6465598> .
+
+<http://example.org/operadores/Cerdeira> a ns1:Operador .
+
+<http://example.org/operadores/ECOLINERAS> a ns1:Operador .
+
+<http://example.org/operadores/Sudel> a ns1:Operador .
+
+<http://example.org/barrios/Adelfas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Retiro> ;
+    owl:sameAs <https://wikidata.org/entity/Q3774001> .
+
+<http://example.org/barrios/Arapiles> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamberi> ;
+    owl:sameAs <https://wikidata.org/entity/Q10856744> .
+
+<http://example.org/barrios/Castilla> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamartin> ;
+    owl:sameAs <https://wikidata.org/entity/Q3813735> .
+
+<http://example.org/barrios/CuatroCaminos> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Tetuan> ;
+    owl:sameAs <https://wikidata.org/entity/Q5824684> .
+
+<http://example.org/barrios/ElViso> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamartin> ;
+    owl:sameAs <https://wikidata.org/entity/Q4778> .
+
+<http://example.org/barrios/EnsancheDeVallecas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/VillaDeVallecas> ;
+    owl:sameAs <https://wikidata.org/entity/Q3847485> .
+
+<http://example.org/barrios/Guindalera> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Salamanca> ;
+    owl:sameAs <https://wikidata.org/entity/Q3814559> .
+
+<http://example.org/barrios/Hispanoamerica> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamartin> ;
+    owl:sameAs <https://wikidata.org/entity/Q3814573> .
+
+<http://example.org/barrios/Jeronimos> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Retiro> ;
+    owl:sameAs <https://wikidata.org/entity/Q10306766> .
+
+<http://example.org/barrios/NuevaEspana> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamartin> ;
+    owl:sameAs <https://wikidata.org/entity/Q10338128> .
+
+<http://example.org/barrios/Orcasur> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Usera> ;
+    owl:sameAs <https://wikidata.org/entity/Q10341270> .
+
+<http://example.org/barrios/Palacio> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Centro> ;
+    owl:sameAs <https://wikidata.org/entity/Q2136510> .
+
+<http://example.org/barrios/PalosDeMoguer> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Arganzuela> ;
+    owl:sameAs <https://wikidata.org/entity/Q521009> .
+
+<http://example.org/barrios/SanJuanBautista> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/CiudadLineal> ;
+    owl:sameAs <https://wikidata.org/entity/Q165609> .
+
+<http://example.org/barrios/Simancas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/SanBlas-Canillejas> ;
+    owl:sameAs <https://wikidata.org/entity/Q10371626> .
+
+<http://example.org/barrios/Sol> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Centro> ;
+    owl:sameAs <https://wikidata.org/entity/Q2465181> .
+
+<http://example.org/barrios/Valdefuentes> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Hortaleza> ;
+    owl:sameAs <https://wikidata.org/entity/Q10388714> .
+
+<http://example.org/distritos/Moratalaz> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q2076109> .
+
+<http://example.org/distritos/PuenteDeVallecas> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q2003054> .
+
+<http://example.org/distritos/Usera> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q953368> .
+
+<http://example.org/distritos/Vicalvaro> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q589403> .
+
+<http://example.org/distritos/VillaDeVallecas> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1947988> .
+
+<http://example.org/operadores/UAM> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q788091> .
+
+<http://example.org/barrios/Corralejos> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Barajas> ;
+    owl:sameAs <https://wikidata.org/entity/Q10260772> .
+
+<http://example.org/barrios/CuatroVientos> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Latina> ;
+    owl:sameAs <https://wikidata.org/entity/Q5191881> .
+
+<http://example.org/barrios/ElGoloso> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Fuencarral-ElPardo> ;
+    owl:sameAs <https://wikidata.org/entity/Q10271137> .
+
+<http://example.org/barrios/Recoletos> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Salamanca> ;
+    owl:sameAs <https://wikidata.org/entity/Q3814551> .
+
+<http://example.org/barrios/Rejas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/SanBlas-Canillejas> ;
+    owl:sameAs <https://wikidata.org/entity/Q10359029> .
+
+<http://example.org/barrios/Trafalgar> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Chamberi> ;
+    owl:sameAs <https://wikidata.org/entity/Q10384027> .
+
+<http://example.org/distritos/Chamberi> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1763370> .
+
+<http://example.org/distritos/Latina> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q794954> .
+
+<http://example.org/distritos/Moncloa-Aravaca> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q2017682> .
+
+<http://example.org/distritos/Retiro> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q2002296> .
+
+<http://example.org/distritos/Tetuan> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1773540> .
+
+<http://example.org/operadores/BLAUDRIVE> a ns1:Operador .
+
+<http://example.org/operadores/GALP> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q1492739> .
+
+<http://example.org/operadores/TOTALENERGIES> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q154037> .
+
+<http://example.org/barrios/Castellana> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/Salamanca> ;
+    owl:sameAs <https://wikidata.org/entity/Q4781> .
+
+<http://example.org/distritos/Centro> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1763376> .
+
+<http://example.org/distritos/CiudadLineal> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1763694> .
+
+<http://example.org/distritos/Hortaleza> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1928529> .
+
+<http://example.org/distritos/SanBlas-Canillejas> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q2001937> .
+
+<http://example.org/distritos/Villaverde> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q919536> .
+
+<http://example.org/operadores/NATURGY> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q474690> .
+
+<http://example.org/distritos/Chamartin> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1766348> .
+
+<http://example.org/distritos/Fuencarral-ElPardo> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q656196> .
+
+<http://example.org/distritos/Salamanca> a ns1:Distrito ;
+    owl:sameAs <https://wikidata.org/entity/Q1773521> .
+
+<http://example.org/operadores/EMT> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q1094755> .
+
+<http://example.org/operadores/DRIVETHECITY> a ns1:Operador .
+
+<http://example.org/operadores/ENDESA> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q1275336> .
+
+<http://example.org/barrios/CascoHistoricoDeVallecas> a ns1:Barrio ;
+    ns1:dentroDe <http://example.org/distritos/VillaDeVallecas> ;
+    owl:sameAs <https://wikidata.org/entity/Q16544370> .
+
+<http://example.org/operadores/IBERDROLA> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q1437502> .
+
+ns1:Operador a owl:Class ;
+    rdfs:label "Operador" .
+
+<http://example.org/operadores/GIC> a ns1:Operador .
+
+ns1:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
+
+<http://example.org/operadores/REPSOL> a ns1:Operador ;
+    owl:sameAs <https://wikidata.org/entity/Q174747> .
+
+ns1:Barrio a owl:Class ;
+    rdfs:label "Barrio" .
+
+ns1:IdPuntoDeRecarga a owl:Class ;
+    rdfs:label "Id Punto de Recarga" .
+

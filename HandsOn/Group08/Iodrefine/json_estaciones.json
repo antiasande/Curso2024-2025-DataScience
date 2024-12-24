@@ -1,0 +1,56 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCIÓN",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column DIRECCIÓN by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCIÓN 2",
+    "newColumnName": "NUMERO",
+    "description": "Rename column DIRECCIÓN 2 to NUMERO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NUMERO",
+          "expression": "value",
+          "columnName": "NUMERO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": " S/N",
+                "l": " S/N"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NUMERO",
+    "expression": "grel:if(trim(value) == \"S/N\", 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUMERO using expression grel:if(trim(value) == \"S/N\", 0, value)"
+  }
+]

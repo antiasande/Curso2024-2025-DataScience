@@ -1,0 +1,49 @@
+@prefix base: <http://dominiowebsemantica.com/> .
+@prefix ont: <http://www.dominiowebsemantica.com/ontologia/ont#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Accidente_2024S000123 a ont:Accidente ;
+    ont:numExpediente "2024S000123" ;
+    ont:fecha_hora "2024-07-05T17:45:00"^^xsd:dateTime ;
+    ont:tipoAccidente "Colisión múltiple" ;
+    ont:estadoMeteorologico "Despejado" ;
+    ont:tipoVehiculo "Turismo" ;
+    ont:positivaAlcohol "False" ;
+    ont:positivaDroga "NULL" ;
+    ont:accUbicadoEn ont:Ubicacion_001 ;
+    ont:personaImplicada ont:Persona_001 .
+
+ont:Persona_001 a ont:Persona ;
+    ont:tipoPersona "Conductor" ;
+    ont:edad_min 30 ;
+    ont:edad_max 34 ;
+    ont:sexo "Hombre" ;
+    ont:cod_lesividad 14 ;
+    ont:lesividad "Sin asistencia sanitaria" .
+
+ont:Ubicacion_001 a ont:Ubicación ;
+    ont:localizacion "AUTOV. M-30, 14XL24" ;
+    ont:numero "14XL24" ;
+    ont:coordenadaX "440425" ;
+    ont:coordenadaY "4471576" ;
+    ont:tieneInfoDistrito ont:InfoDistrito_12 .
+
+ont:InfoDistrito_12 a ont:InfoDistrito ;
+    ont:codDistrito 12 ;
+    ont:distrito "USERA" .
+
+ont:Radar_M30_12 a ont:Radar ;
+    ont:numRadar "28" ;
+    ont:tipo "Radar de tramo" ;
+    ont:velocidadLimite 50 ;
+    ont:responsable "DGP" ;
+    ont:radarUbicadoEn ont:InfoCarretera_001 .
+
+ont:InfoCarretera_001 a ont:InfoCarretera ;
+    ont:carretera "AVENIDA DE CÓRDOBA" ;
+    ont:pk "300" ;
+    ont:sentido "Salida" ;
+    ont:carril "Salida, radar de tramo" ;
+    ont:ubicacion "NULL" ;
+    ont:coordenadaX "-3.68542793" ;
+    ont:coordenadaY "40.48048344" .

@@ -1,0 +1,65 @@
+ID,NOMBRE,HORARIO,PLAZAS,ACCESIBILIDAD,VIA,NUMERO,BARRIO,COD-BARRIO,DISTRITO,COD-DISTRITO
+A-1,Aparcamiento disuasorio Aviación Española,Abierto 24 horas,344,true,CALLE FUENTE DE LIMA,5,LAS AGUILAS,10-07,LATINA,10
+A-2,Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b,Horario de apertura de 6:00 h a 22:00 h los días laborables excepto los días de partido en el estadio Metropolitano,3011,false,AVENIDA ARCENTALES,37,ROSAS,20-05,SAN BLAS-CANILLEJAS,20
+A-3,Aparcamiento disuasorio Fuente de la Mora,Abierto 24 horas,368,true,AVENIDA MANOTERAS,1,VALDEFUENTES,16-06,HORTALEZA,16
+A-4,Aparcamiento disuasorio Islazul,,224,true,CALLE CALDERILLA,1,BUENAVISTA,11-06,CARABANCHEL,11
+A-5,Aparcamiento disuasorio Pitis,Abierto 24 horas,402,true,CALLE GLORIA FUERTES,,FUENTELARREINA,08-02,FUENCARRAL-EL PARDO,08
+A-6,Aparcamiento mixto. Alcántara,Abierto 24 horas,121,false,CALLE ALCANTARA,26,GOYA,04-02,SALAMANCA,04
+A-7,Aparcamiento mixto. Arquitecto Ribera,Abierto 24 horas,318,false,CALLE BARCELO,2,JUSTICIA,01-04,CENTRO,01
+A-8,Aparcamiento mixto. Avenida de América (intercambiador),Plazas: 261 públicas y Abierto 24 horas,,false,AVENIDA AMERICA,9,PROSPERIDAD,05-02,CHAMARTIN,05
+A-9,Aparcamiento mixto. Avenida de Portugal,Horario de apertura de 6:00 h a 22:00 h los días laborables.Abierto 24 horas,428,false,AVENIDA PORTUGAL,155,PUERTA DEL ANGEL,10-02,LATINA,10
+A-10,Aparcamiento mixto. Brasil,Abierto 24 horas,226,false,CALLE SAN GERMAN,7,CUATRO CAMINOS,06-02,TETUAN,06
+A-11,Aparcamiento mixto. Casino de la Reina,Abierto 24 horas,135,false,CALLE CASINO,3,EMBAJADORES,01-02,CENTRO,01
+A-12,Aparcamiento mixto. Condesa de Gavia,El horario de apertura para la parte del aparcamiento rotacional es de lunes a viernes de 9:00h a 20:40h. Sábados de 9:00 a 14:30h.,146,false,PLAZA CONDESA DE GAVIA,2,CUATRO CAMINOS,06-02,TETUAN,06
+A-13,Aparcamiento mixto. Corona Boreal,Abierto 24 horas,125,true,CALLE PEREZ DE VICTORIA,2,ARAVACA,09-07,MONCLOA-ARAVACA,09
+A-14,Aparcamiento mixto. Daoíz y Velarde,Abierto 24 horas,235,false,AVENIDA CIUDAD DE BARCELONA,156,PACIFICO,03-01,RETIRO,03
+A-15,Aparcamiento mixto. Díaz Porlier,Abierto 24 horas,203,false,CALLE DIEGO DE LEON,64,LISTA,04-05,SALAMANCA,04
+A-16,Aparcamiento mixto. Encuentro,Abierto 24 horas,104,false,PLAZA ENCUENTRO,5,MEDIA LEGUA,14-04,MORATALAZ,14
+A-17,Aparcamiento mixto. Felipe II,Abierto 24 horas,1175,false,CALLE GOYA,88,RECOLETOS,04-01,SALAMANCA,04
+A-18,Aparcamiento mixto. Fernández Shaw,Abierto 24 horas,245,false,CALLE CARLOS Y GUILLERMO FERNANDEZ SHAW,1,ADELFAS,03-02,RETIRO,03
+A-19,Aparcamiento mixto. Fuencarral,Abierto 24 horas,410,false,CALLE FUENCARRAL,121,TRAFALGAR,07-03,CHAMBERI,07
+A-20,Aparcamiento mixto. Hernani,Abierto 24 horas,115,false,CALLE HERNANI,79,CUATRO CAMINOS,06-02,TETUAN,06
+A-21,Aparcamiento mixto. Jacinto Benavente,Abierto 24 horas,285,false,PLAZA JACINTO BENAVENTE,6,CORTES,01-03,CENTRO,01
+A-22,Aparcamiento mixto. José Castán Tobeñas,Abierto 24 horas,226,false,CALLE POETA JOAN MARAGALL,57,CASTILLEJOS,06-03,TETUAN,06
+A-23,Aparcamiento mixto. Marqués de Salamanca,Abierto 24 horas,356,false,PLAZA MARQUES DE SALAMANCA,,CASTELLANA,04-06,SALAMANCA,04
+A-24,Aparcamiento mixto. Miguel Yuste,Abierto 24 horas,168,false,CALLE MIGUEL YUSTE,64,SIMANCAS,20-01,SAN BLAS-CANILLEJAS,20
+A-25,Aparcamiento mixto. Montalbán,Abierto 24 horas,130,true,CALLE MONTALBAN,4,LOS JERONIMOS,03-05,RETIRO,03
+A-26,Aparcamiento mixto. Orense,Abierto 24 horas,129,false,AVENIDA BRASIL,2,CUATRO CAMINOS,06-02,TETUAN,06
+A-27,Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella',Abierto 24 horas,107,false,PLAZA PEDRO ZEROLO,1,JUSTICIA,13-04,CENTRO,13
+A-28,Aparcamiento mixto. Plaza de Oriente,Abierto 24 horas,242,false,PLAZA ORIENTE,9,PALACIO,01-01,CENTRO,01
+A-29,Aparcamiento mixto. Plaza de Santo Domingo,,320,true,PLAZA SANTO DOMINGO,,PALACIO,01-01,CENTRO,01
+A-30,Aparcamiento mixto. Plaza Mayor,Abierto 24 horas,415,false,PLAZA MAYOR,1,SOL,01-06,CENTRO,01
+A-31,Aparcamiento mixto. Presidente Carmona,De lunes a domingo servicio ininterrumpidoAbierto 24 horas,127,false,AVENIDA GENERAL PERON,21,CUATRO CAMINOS,06-02,TETUAN,06
+A-32,Aparcamiento mixto. Recoletos,Abierto 24 horas,102,false,PASEO RECOLETOS,4,RECOLETOS,04-01,SALAMANCA,04
+A-33,Aparcamiento mixto. República Dominicana,Abierto 24 horas,209,false,PLAZA REPUBLICA DOMINICANA,6,NUEVA ESPAÑA,05-05,CHAMARTIN,05
+A-34,Aparcamiento mixto. Reyes Magos,Abierto 24 horas,356,false,PLAZA REYES MAGOS,,NIÑO JESUS,03-06,RETIRO,03
+A-35,Aparcamiento mixto. San Cayetano,Abierto 24 horas,222,false,PLAZA SAN CAYETANO,1,GUINDALERA,04-04,SALAMANCA,04
+A-36,Aparcamiento mixto. San Germán II (antes General Yagüe),Abierto 24 horas,419,false,CALLE ORENSE,48,CASTILLEJOS,06-03,TETUAN,06
+A-37,Aparcamiento mixto. Sánchez Bustillo,Abierto 24 horas,131,false,CALLE SANCHEZ BUSTILLO,,EMBAJADORES,01-02,CENTRO,01
+A-38,Aparcamiento mixto. Serrano I,Abierto 24 horas,307,false,CALLE SERRANO,84,CASTELLANA,04-06,SALAMANCA,04
+A-39,Aparcamiento mixto. Serrano II,Abierto 24 horas,379,false,CALLE SERRANO,44,RECOLETOS,04-01,SALAMANCA,04
+A-40,Aparcamiento mixto. Serrano III,Abierto 24 horas,261,false,CALLE SERRANO,2,RECOLETOS,04-01,SALAMANCA,04
+A-41,Aparcamiento mixto. Sevilla,Abierto 24 horas,649,false,CALLE ALCALA,15,SOL,01-06,CENTRO,01
+A-42,Aparcamiento mixto. Velázquez - Ayala,Abierto 24 horas,443,false,CALLE VELAZQUEZ,47,RECOLETOS,04-01,SALAMANCA,04
+A-43,Aparcamiento mixto. Velázquez - Jorge Juan,Abierto 24 horas,548,true,CALLE VELAZQUEZ,1,RECOLETOS,04-01,SALAMANCA,04
+A-44,Aparcamiento mixto. Verdaguer y García,Abierto 24 horas,83,false,CALLE VERDAGUER Y GARCIA,2,SAN PASCUAL,15-05,CIUDAD LINEAL,15
+A-45,Aparcamiento público. Almagro,Abierto 24 horas,463,false,CALLE ALMAGRO,24,ALMAGRO,07-04,CHAMBERI,07
+A-46,Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara),Abierto 24 horas,376,true,CALLE CARTAGENA,178,CIUDAD JARDIN,05-03,CHAMARTIN,05
+A-47,Aparcamiento público. Descalzas,Abierto 24 horas,400,true,PLAZA DESCALZAS,3,SOL,01-06,CENTRO,01
+A-48,Aparcamiento público. Glorieta Puerta de Toledo,Abierto 24 horas,240,true,GLORIETA PUERTA DE TOLEDO,,EMBAJADORES,01-02,CENTRO,01
+A-49,Aparcamiento público. Las Cortes,Abierto 24 horas,480,true,PLAZA CORTES,13,CORTES,01-03,CENTRO,01
+A-50,Aparcamiento público. Luna - Tudescos (cerrado),Abierto 24 horas,481,true,PLAZA SANTA MARIA SOLEDAD TORRES ACOSTA,2,UNIVERSIDAD,01-05,CENTRO,01
+A-51,Aparcamiento público. Marqués de Urquijo,Abierto 24 horas,482,false,CALLE MARQUES DE URQUIJO,,ARGUELLES,09-02,MONCLOA-ARAVACA,09
+A-52,Aparcamiento público. Mostenses,Abierto 24 horas,361,true,CALLE GARCIA MOLINAS,4,UNIVERSIDAD,01-05,CENTRO,01
+A-53,Aparcamiento público. Museo de la Ciudad,Abierto 24 horas,147,false,CALLE PRINCIPE DE VERGARA,134,CIUDAD JARDIN,05-03,CHAMARTIN,05
+A-54,Aparcamiento público. Olavide,Abierto 24 horas,397,false,PLAZA OLAVIDE,17,TRAFALGAR,07-03,CHAMBERI,07
+A-55,Aparcamiento público. Plaza de Colón,Abierto 24 horas,611,true,CALLE GOYA,2,RECOLETOS,04-01,SALAMANCA,04
+A-56,Aparcamiento público. Plaza de España,Abierto 24 horas,800,false,PLAZA ESPAÑA,1,PALACIO,01-01,CENTRO,01
+A-57,Aparcamiento público. Plaza del Carmen (cerrado),Abierto 24 horas,450,false,PLAZA CARMEN,10,SOL,01-06,CENTRO,01
+A-58,Aparcamiento público. Plaza del Rey,Abierto 24 horas,170,false,PLAZA REY,1,JUSTICIA,01-04,CENTRO,01
+A-59,Aparcamiento público. San Epifanio,Actualmente Cerrado,501,true,CALLE SAN EPIFANIO,9,IMPERIAL,02-01,ARGANZUELA,02
+A-60,Aparcamiento público. Santa Ana (cerrado),Abierto 24 horas,325,true,PLAZA SANTA ANA,,CORTES,01-03,CENTRO,01
+A-61,Aparcamiento público. Usera,,36,false,CALLE AMPARO USERA,46,MOSCARDO,12-05,USERA,12
+A-62,Aparcamiento público. Velázquez - Juan Bravo,Abierto 24 horas,371,true,CALLE VELAZQUEZ,88,CASTELLANA,04-06,SALAMANCA,04
+A-63,Aparcamiento público. Villa de París,Abierto 24 horas,169,true,PLAZA VILLA DE PARIS,1,JUSTICIA,01-04,CENTRO,01
+A-64,,,,false,,,,,,

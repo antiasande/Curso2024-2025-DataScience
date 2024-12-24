@@ -1,0 +1,97 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  tm-ont: http://turismo.mad.es/cultural/ontology/ont1#
+  tm: http://turismo.mad.es/cultural/resource/ 
+  tm-ven: http://turismo.mad.es/cultural/resource/Venue/ 
+  tm-add: http://turismo.mad.es/cultural/resource/Address/ 
+  tm-dis: http://turismo.mad.es/cultural/resource/District/
+  tm-nei: http://turismo.mad.es/cultural/resource/Neighborhood/
+  tm-str: http://turismo.mad.es/cultural/resource/Street/ 
+
+ 
+mappings:
+  venue:
+    sources:
+      - ['venue_data.csv~csv']
+    s: tm-ven:$(NOMBRE)
+    po:
+      - [a, tm-ont:Venue]
+      - [tm-ont:hasId,$(PK),xsd:integer]
+      - [tm-ont:hasName,$(NOMBRE),xsd:string]
+      - [tm-ont:hasDescription,$(DESCRIPCION-ENTIDAD),xsd:string]
+      - [tm-ont:hasOpeningHours,$(HORARIO),xsd:string]
+      - [tm-ont:hasNearbyTransport,$(TRANSPORTE),xsd:string]
+      - [tm-ont:hasAccessibility,$(ACCESIBILIDAD),xsd:string]
+      - [tm-ont:hasEquipment,$(EQUIPAMIENTO),xsd:string]
+      - [tm-ont:hasUrl,$(CONTENT-URL),xsd:anyURI]
+      - [tm-ont:hasPhoneNumber,$(TELEFONO_1),xsd:integer]
+      - [tm-ont:hasEmail,$(EMAIL),xsd:string]
+      - [tm-ont:hasOrganismType,$(TIPO),xsd:anyURI]
+      - [tm-ont:hasAddress, tm-add:$(ID)~iri]
+      
+
+
+  address:
+    sources:
+      - ['venue_data.csv~csv']
+    s: tm-add:$(ID)
+    po:
+      - [a, tm-ont:Address]
+      - [tm-ont:hasNumberType,$(TIPO-NUM),xsd:string]
+      - [tm-ont:hasStreetNumber,$(NUM),xsd:integer]
+      - [tm-ont:hasFloorNumber,$(PLANTA),xsd:string]
+      - [tm-ont:hasDoor,$(PUERTA),xsd:string]
+      - [tm-ont:hasStairs,$(ESCALERAS),xsd:string]
+      - [tm-ont:hasOrientation,$(ORIENTACION),xsd:string]
+      - [tm-ont:hasLocality,$(LOCALIDAD),xsd:string]
+      - [tm-ont:hasProvince,$(PROVINCIA),xsd:string]
+      - [tm-ont:hasPostalCode,$(CODIGO-POSTAL),xsd:integer]
+      - [tm-ont:hasCoordX,$(COORDENADA-X),xsd:integer]
+      - [tm-ont:hasCoordY,$(COORDENADA-Y),xsd:integer]
+      - [tm-ont:hasLongitude,$(LONGITUD),xsd:decimal]
+      - [tm-ont:hasLatitude,$(LATITUD),xsd:decimal]
+      - [tm-ont:hasStreet, tm-str:$(NOMBRE-VIA)~iri]
+      - [tm-ont:hasNeighborhood, tm-nei:$(BARRIO)~iri]
+      - [tm-ont:hasDistrict, tm-dis:$(DISTRITO)~iri]
+
+
+  street:
+    sources:
+      - ['venue_data.csv~csv']
+    s: tm-str:$(NOMBRE-VIA)
+    po:
+      - [a, tm-ont:Street]
+      - [tm-ont:hasStreetName,$(NOMBRE-VIA),xsd:string]
+      - [tm-ont:hasStreetType,$(CLASE-VIAL),xsd:string]
+
+
+  neighborhood:
+    sources:
+      - ['venue_data.csv~csv']
+    s: tm-nei:$(BARRIO)
+    po:
+      - [a, tm-ont:Neighborhood]
+      - [tm-ont:hasNeighborhoodCode,$(COD-BARRIO),xsd:integer]
+      - [tm-ont:hasNeighborhoodName,$(BARRIO),xsd:string]
+        
+
+
+  district:
+    sources:
+      - ['venue_data.csv~csv']
+    s: tm-dis:$(DISTRITO)
+    po:
+      - [a, tm-ont:District]
+      - [tm-ont:hasDistrictCode,$(COD-DISTRITO),xsd:integer]
+      - [tm-ont:hasDistrictName,$(DISTRITO),xsd:string]
+
+       

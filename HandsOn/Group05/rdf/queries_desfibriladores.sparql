@@ -1,0 +1,34 @@
+# Prefijos utilizados en las consultas
+PREFIX clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties#>
+PREFIX is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Consulta 1: Obtener el número total de desfibriladores
+SELECT (COUNT(?desfibrilador) AS ?numDesfibriladores)
+WHERE {
+  ?desfibrilador a clpr:Desfibrilador . 
+}
+
+# Consulta 2: Obtener el nombre de todos los municipios
+SELECT DISTINCT ?municipioNombre
+WHERE {
+  ?municipio a clpr:Municipio ;
+             rdfs:label ?municipioNombre .
+}
+
+# Consulta 3: Obtener el número total de direcciones
+SELECT (COUNT(?direccion) AS ?numDirecciones)
+WHERE {
+  ?direccion a clpr:Direccion .
+}
+
+# Consulta 4: Obtener el número de desfibriladores por municipio
+SELECT ?municipioNombre (COUNT(?desfibrilador) AS ?numDesfibriladores)
+WHERE {
+  ?desfibrilador a clpr:Desfibrilador ;
+                 clpr:albergadoEn ?establecimiento .
+  ?establecimiento clpr:perteneceA ?municipio .
+  ?municipio rdfs:label ?municipioNombre .
+}
+GROUP BY ?municipioNombre

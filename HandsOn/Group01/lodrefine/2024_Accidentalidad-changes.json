@@ -1,0 +1,433 @@
+[
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "cod_lesividad",
+      "expression": "value.replace(\"NULL\",\"0\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column cod_lesividad using expression value.replace(\"NULL\",\"0\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "numero",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column numero using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "range",
+            "name": "numero",
+            "expression": "value",
+            "columnName": "numero",
+            "from": 0,
+            "to": 1600,
+            "selectNumeric": false,
+            "selectNonNumeric": true,
+            "selectBlank": true,
+            "selectError": true
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "numero",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column numero using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "cod_distrito",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column cod_distrito using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "cod_lesividad",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column cod_lesividad using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "positiva_alcohol",
+      "expression": "value.replace(\"N\",\"False\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column positiva_alcohol using expression value.replace(\"N\",\"False\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "positiva_alcohol",
+      "expression": "value.replace(\"S\",\"True\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column positiva_alcohol using expression value.replace(\"S\",\"True\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "coordenada_x_utm",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column coordenada_x_utm using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "coordenada_y_utm",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column coordenada_y_utm using expression value.toNumber()"
+    },
+    {
+      "op": "core/column-split",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "rango_edad",
+      "guessCellType": true,
+      "removeOriginalColumn": true,
+      "mode": "separator",
+      "separator": " a ",
+      "regex": false,
+      "maxColumns": 2,
+      "description": "Split column rango_edad by separator"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "rango_edad 1",
+      "newColumnName": "edad_min",
+      "description": "Rename column rango_edad 1 to edad_min"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "rango_edad 2",
+      "newColumnName": "edad_max",
+      "description": "Rename column rango_edad 2 to edad_max"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_min",
+      "expression": "value.replace(\"De \",\"\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_min using expression value.replace(\"De \",\"\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_max",
+      "expression": "value.replace(\" años\",\"\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_max using expression value.replace(\" años\",\"\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_max",
+      "expression": "value.replace(/^$/,\"Desconocido\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_max using expression value.replace(/^$/,\"Desconocido\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_max",
+      "expression": "value.replace(/^$/,\"Desconocido\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_max using expression value.replace(/^$/,\"Desconocido\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_max",
+      "expression": "value.replace(/^\\s*$/,\"Desconocido\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_max using expression value.replace(/^\\s*$/,\"Desconocido\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_max",
+      "expression": "grel:if(isBlank(value), \"Desconocido\", value)",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_max using expression grel:if(isBlank(value), \"Desconocido\", value)"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "fecha",
+      "expression": "join ([coalesce(cells['fecha'].value,''),coalesce(cells['hora'].value,'')],' ')",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column fecha using expression join ([coalesce(cells['fecha'].value,''),coalesce(cells['hora'].value,'')],' ')"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "fecha",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column fecha using expression value.toDate()"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "hora",
+      "description": "Remove column hora"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "fecha",
+      "newColumnName": "fecha_hora",
+      "description": "Rename column fecha to fecha_hora"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_min",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_min using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "edad_max",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column edad_max using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "estado_meteorológico",
+      "expression": "value.replace(\"NULL\",\"Desconocido\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column estado_meteorológico using expression value.replace(\"NULL\",\"Desconocido\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "estado_meteorológico",
+      "expression": "value.replace(\"Se desconoce\",\"Desconocido\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column estado_meteorológico using expression value.replace(\"Se desconoce\",\"Desconocido\")"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "num_expediente",
+      "newColumnName": "numExpediente",
+      "description": "Rename column num_expediente to numExpediente"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "tipo_accidente",
+      "newColumnName": "tipoAccidente",
+      "description": "Rename column tipo_accidente to tipoAccidente"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "estado_meteorológico",
+      "newColumnName": "estadoMeteorologico",
+      "description": "Rename column estado_meteorológico to estadoMeteorologico"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "tipo_vehiculo",
+      "newColumnName": "tipoVehiculo",
+      "description": "Rename column tipo_vehiculo to tipoVehiculo"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "tipo_persona",
+      "newColumnName": "tipoPersona",
+      "description": "Rename column tipo_persona to tipoPersona"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "coordenada_x_utm",
+      "newColumnName": "coordenadaX",
+      "description": "Rename column coordenada_x_utm to coordenadaX"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "coordenada_y_utm",
+      "newColumnName": "coordenadaY",
+      "description": "Rename column coordenada_y_utm to coordenadaY"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "cod_distrito",
+      "newColumnName": "codDistrito",
+      "description": "Rename column cod_distrito to codDistrito"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "positiva_alcohol",
+      "newColumnName": "positivaAlcohol",
+      "description": "Rename column positiva_alcohol to positivaAlcohol"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "positiva_droga",
+      "newColumnName": "positivaDroga",
+      "description": "Rename column positiva_droga to positivaDroga"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "numExpediente",
+      "expression": "jython:import uuid;\nreturn str(uuid.uuid4())",
+      "onError": "set-to-blank",
+      "newColumnName": "ID",
+      "columnInsertIndex": 1,
+      "description": "Create column ID at index 1 based on column numExpediente using expression jython:import uuid;\nreturn str(uuid.uuid4())"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "ID",
+      "index": 0,
+      "description": "Move column ID to position 0"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ID",
+      "expression": "value.toString()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ID using expression value.toString()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "positivaAlcohol",
+      "expression": "value.replace(\"FalseULL\",\"False\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column positivaAlcohol using expression value.replace(\"FalseULL\",\"False\")"
+    }
+]
+
+

@@ -1,0 +1,34 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+  ont: http://dominiowebsemantica.com/ontology/ont#
+  res: http://dominiowebsemantica.com/resource/
+
+mappings:
+  RadaresMapping:
+    sources:
+      - type: csv
+        name: HandsOn/Group01/csv/RADARES-FIJOS-vDTT-updated.csv
+    s: http://dominiowebsemantica.com/resource/Radar/{ID}
+    po:
+      - [ont:numRadar, $(numRadar), xsd:integer]
+      - [ont:tipo, $(tipo), xsd:string]
+      - [ont:velocidadLimite, $(velocidadLimite), xsd:integer]
+      - [ont:responsable, $(responsable), xsd:string]
+      - [ont:radarUbicadoEn, http://dominiowebsemantica.com/resource/infoCarretera/{ID}, xsd:anyURI]
+
+  InfoCarreteraMapping:
+    sources:
+      - type: csv
+        name: HandsOn/Group01/csv/RADARES-FIJOS-vDTT-updated.csv
+    s: http://dominiowebsemantica.com/resource/InfoCarretera/{ID}
+    po:
+      - [ont:ubicacion, $(ubicacion), xsd:string]
+      - [ont:carretera, $(carretera), xsd:string]
+      - [ont:pk, $(pk), xsd:string]
+      - [ont:sentido, $(sentido), xsd:string]
+      - [ont:carril, $(carril), xsd:string]
+      - [ont:coordenadaY, $(Latitud), xsd:integer]
+      - [ont:coordenadaX, $(Longitud), xsd:integer]

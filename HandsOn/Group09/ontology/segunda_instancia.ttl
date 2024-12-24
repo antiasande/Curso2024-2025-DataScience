@@ -1,0 +1,80 @@
+@prefix : <http://namespace.com#> .
+@prefix base: <http://zonawifi.linkeddata.org/ontologia#> .
+@prefix ns: <http://zonawifi.linkeddata.org/ontologia#> .
+@prefix ns2: <http://instancia.org/> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://namespace.com#> .
+
+<http://namespace.com#> rdf:type owl:Ontology ;
+			mod:createdWith <https://chowlk.linkeddata.es/> .
+
+
+
+## ns2:1940
+ns2:1940 rdf:type owl:NamedIndividual;
+		rdf:type ns:EntidadWifi .
+
+## ns2:Metro_de_Madrid_9
+ns2:Metro_de_Madrid_9 rdf:type owl:NamedIndividual;
+		rdf:type ns:Trasporte .
+
+## ns2:Avenida_de_Moratalaz
+ns2:"Avenida_de_Moratalaz" rdf:type owl:NamedIndividual;
+		rdf:type ns:Via .
+
+## ns2:Vinateros
+ns2:Vinateros rdf:type owl:NamedIndividual;
+		rdf:type ns:Barrio .
+
+## ns2:Moratalaz
+ns2:Moratalaz rdf:type owl:NamedIndividual;
+		rdf:type ns:Distrito .
+
+## ns2:Madrid
+ns2:Madrid rdf:type owl:NamedIndividual;
+		rdf:type ns:Ciudad .
+
+## ns2:Madrid
+ns2:Madrid rdf:type owl:NamedIndividual;
+		rdf:type ns:Provincia .
+
+## ns2:"https
+ns2:"https rdf:type owl:NamedIndividual;
+		rdf:type ns:URLDeContenido .
+
+ns2:1940 ns:estarEnVia ns:"Avenida_de_Moratalaz" .
+ns2:1940 ns:tenerURL ns:"https .
+ns2:1940 ns:llegarConTransporte ns:Metro_de_Madrid_9 .
+ns2:1940 ns:accesibilidad "1"^^xsd:integer .
+ns2:1940 ns:horario "De lunes a viernes de 9 a 13:30 y de 17 a 18:30 horas. Julio, de lunes a viernes de 9 a 13:30 horas.  Fuera de este horario el centro permanecerá abierto durante la celebración de las actividades que se programen."^^xsd:string .
+ns2:1940 ns:equipamiento "Sala de lectura y estudio Salón de actos / auditorio (Aforo: 200 personas) Salas de ensayo 9 Aulas Zona wifi"^^xsd:string .
+ns2:1940 ns:email "cceltorito@madrid.es"^^xsd:string .
+ns2:1940 ns:nombreEntidad "Centro_Cultural_el_Torito"^^xsd:string .
+ns2:1940 ns:longitud "-3.646521482592748"^^xsd:float .
+ns2:1940 ns:latitud "40.40610655994401"^^xsd:float .
+ns2:1940 ns:tipoEntidadWifi "CentrosCulturales"^^xsd:string .
+ns2:1940 ns:coordenadaX "4451441"^^xsd:float .
+ns2:1940 ns:coordenadaY "4473033"^^xsd:float .
+ns2:1940 ns:telefono "913 287 385"^^xsd:string .
+ns2:1940 ns:estarEnVia ns2:Avenida_de_Moratalaz .
+ns2:1940 ns:tenerURL "https://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f3073d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+ns2:Metro_de_Madrid_9 ns:linea "9"^^xsd:string .
+ns2:Metro_de_Madrid_9 ns:compania "Metro_de_Madrid"^^xsd:string .
+ns2:Avenida_de_Moratalaz ns:estarEnBarrio ns2:Vinateros .
+ns2:"Avenida_de_Moratalaz" ns:numero "130"^^xsd:integer .
+ns2:"Avenida_de_Moratalaz" ns:tipoNum "V"^^xsd:string .
+ns2:"Avenida_de_Moratalaz" ns:codigoPostal "28030"^^xsd:string .
+ns2:Vinateros ns:estarEnDistrito ns:Moratalaz .
+ns2:Vinateros ns:codigoDeBarrio "6"^^xsd:integer .
+ns2:Moratalaz ns:estarEnCiudad ns2:Madrid .
+ns2:Moratalaz ns:codigoDeDistrito "14"^^xsd:integer .
+ns2:Madrid ns:estarEnProvincia ns2:Madrid .
