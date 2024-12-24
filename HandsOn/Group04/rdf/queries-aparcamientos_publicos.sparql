@@ -1,0 +1,43 @@
+PREFIX ns: <http://www.domainkg.com/parking_ontology/resources#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Obtener todos los aparcamientos con su nombre y número de plazas
+SELECT ?aparcamiento ?nombre ?plazas
+WHERE {
+  ?aparcamiento a ns:AparcamientoPúblico ;
+                ns:tieneNombre ?nombre ;
+                ns:tienePlazas ?plazas .
+}
+
+# Obtener aparcamientos que están abiertos 24 horas
+SELECT ?aparcamiento ?nombre
+WHERE {
+  ?aparcamiento a ns:AparcamientoPúblico ;
+                ns:tieneNombre ?nombre ;
+                ns:tieneHorario ?horario . 
+  FILTER(CONTAINS(?horario), "Abierto 24 horas"))
+}
+
+# Obtener los barrios y su respectivo distrito
+SELECT ?barrio ?distrito
+WHERE {
+  ?barrio a ns:Barrio ;
+          ns:estaEnDistrito ?distrito .
+}
+
+# Obtener los aparcamientos accesibles
+SELECT ?aparcamiento ?nombre ?accesibilidad
+WHERE {
+  ?aparcamiento a ns:AparcamientoPúblico ;
+                ns:tieneNombre ?nombre ;
+                ns:esAccesible ?accesibilidad .
+}
+
+# Obtener los distritos y la cantidad de aparcamientos en cada uno
+SELECT ?distrito (COUNT(?aparcamiento) AS ?numAparcamientos)
+WHERE {
+  ?aparcamiento a ns:AparcamientoPúblico ;
+                ns:estaEnDistrito ?distrito .
+}
+GROUP BY ?distrito
+ORDER BY DESC(?numAparcamientos)

@@ -1,0 +1,122 @@
+@prefix : <http://www.websemantica.com/base#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <https://www.dominiowebsemant.com/ontology/CercaniasMalaga#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:codigoEstacion a owl:DatatypeProperty ;
+    rdfs:domain ns:Estación ;
+    rdfs:range xsd:string ;
+    rdfs:label "codigo estacion" .
+
+ns:intervalo a owl:DatatypeProperty ;
+    rdfs:domain ns:Tramo ;
+    rdfs:range xsd:string ;
+    rdfs:label "intervalo" .
+
+ns:latitud a owl:DatatypeProperty ;
+    rdfs:domain ns:Estación ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "latitud" .
+
+ns:localizadoEn a owl:ObjectProperty ;
+    rdfs:label "localizado en" ;
+    rdfs:domain ns:Estación ;
+    rdfs:range ns:Direccion .
+
+ns:longitud a owl:DatatypeProperty ;
+    rdfs:domain ns:Estación ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "longitud" .
+
+ns:nombreDireccion a owl:DatatypeProperty ;
+    rdfs:domain ns:Direccion;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre direccion" .
+
+ns:nombreEstacion a owl:DatatypeProperty ;
+    rdfs:domain ns:Estación ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre estacion" .
+
+ns:nombreNucleo a owl:DatatypeProperty ;
+    rdfs:domain ns:NucleoCercanias ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre nucleo" .
+
+ns:nombreProvincia a owl:DatatypeProperty ;
+    rdfs:domain ns:Provincia;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre provincia" .
+
+
+ns:nombrePoblacion a owl:DatatypeProperty ;
+    rdfs:domain ns:Poblacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre poblacion" .
+
+ns:numCodigoPostal a owl:DatatypeProperty ;
+    rdfs:domain ns:CodigoPostal ;
+    rdfs:range xsd:string ;
+    rdfs:label "num codigo postal" .
+
+ns:tieneCodigoPostal a owl:ObjectProperty ;
+    rdfs:label "tiene codigo postal" ;
+    rdfs:domain ns:Direccion ;
+    rdfs:range ns:CodigoPostal .
+
+ns:tieneDireccion a owl:ObjectProperty ;
+    rdfs:label "tiene direccion" ;
+    rdfs:domain ns:Poblacion ;
+    rdfs:range ns:Direccion .
+
+ns:tieneNucleo a owl:ObjectProperty ;
+    rdfs:label "tiene nucleo" ;
+    rdfs:domain ns:Estación ;
+    rdfs:range ns:NucleoCercanias .
+
+ns:tienePoblacion a owl:ObjectProperty ;
+    rdfs:label "tiene poblacion" ;
+    rdfs:domain ns:Provincia ;
+    rdfs:range ns:Poblacion .
+
+ns:tieneTramo a owl:ObjectProperty ;
+    rdfs:label "tiene tramo" ;
+    rdfs:domain ns:Estación ;
+    rdfs:range ns:Tramo .
+
+ns:viajerosBajados a owl:DatatypeProperty ;
+    rdfs:domain ns:Tramo;
+    rdfs:range xsd:integer ;
+    rdfs:label "viajeros bajados" .
+
+ns:viajerosSubidos a owl:DatatypeProperty ;
+    rdfs:domain ns:Tramo;
+    rdfs:range xsd:integer ;
+    rdfs:label "viajeros subidos" .
+
+ns:CodigoPostal a owl:Class ;
+    rdfs:label "Codigo Postal" .
+
+ns:NucleoCercanias a owl:Class ;
+    rdfs:label "Nucleo Cercanias" .
+
+ns:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
+
+ns:Tramo a owl:Class ;
+    rdfs:label "Tramo" .
+
+ns:Poblacion a owl:Class ;
+    rdfs:label "Poblacion" .
+
+ns:Direccion a owl:Class ;
+    rdfs:label "Direccion" .
+
+ns:Estación a owl:Class ;
+    rdfs:label "Estación" .
+

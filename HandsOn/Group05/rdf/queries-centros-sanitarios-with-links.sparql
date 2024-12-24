@@ -1,0 +1,61 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/rml#ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties/> .
+@prefix is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+# Total Centros de Salud"
+        SELECT (COUNT(?centro) AS ?totalCentros) 
+        WHERE {
+          ?centro a clpr:CentrodeSalud .
+        }
+
+# Centros especializados en rehabilitación
+SELECT (COUNT(?centro) AS ?totalCentros) 
+WHERE {
+    ?centro a clpr:CentrodeSalud ;
+        clpr:especializadoEn ?especialidad .
+FILTER(CONTAINS(STR(?especialidad), "rehabilitation"))
+}
+
+# Centros en código postal 28001
+SELECT (COUNT(?centro) AS ?totalCentros) 
+WHERE {
+  ?centro a clpr:CentrodeSalud ;
+          clpr:localizadoEn ?ubicacion .
+  FILTER(CONTAINS(STR(?ubicacion), "28001"))
+}
+
+# Centros en Ciempozuelos
+SELECT (COUNT(?centro) AS ?totalCentros) 
+WHERE {
+  ?centro a clpr:CentrodeSalud ;
+          clpr:localizadoEn ?ubicacion .
+  FILTER(CONTAINS(STR(?ubicacion), "Ciempozuelos"))
+}
+
+# Centros en Ciempozuelos
+SELECT (COUNT(?centro) AS ?totalCentros) 
+WHERE {
+  ?centro a clpr:CentrodeSalud ;
+          clpr:localizadoEn ?ubicacion .
+  FILTER(CONTAINS(STR(?ubicacion), "Ciempozuelos"))
+}
+
+# Listar todas las especialidades con sus equivalentes en wikidata
+SELECT DISTINCT ?especialidad ?equivalente
+WHERE {
+  ?centro clpr:especializadoEn ?especialidad .
+  ?especialidad owl:sameAs ?equivalente .
+}
+
+# Listar los municipios con su equivalente en wikidata
+SELECT DISTINCT ?municipio ?equivalente
+WHERE {
+  ?direccion clpr:perteneceA ?municipio .
+  ?municipio owl:sameAs ?equivalente        
+}

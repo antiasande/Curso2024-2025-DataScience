@@ -1,0 +1,96 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@base <http://www.owl-ontologies.com/ns#> .
+
+<http://www.owl-ontologies.com/ns#> rdf:type owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+<http://www.owl-ontologies.com/ns#Barrio> rdf:type owl:Class ;
+    rdfs:label "Barrio" .
+
+<http://www.owl-ontologies.com/ns#ClasificacionMedioambiental> rdf:type owl:Class ;
+    rdfs:label "Clasificación Medioambiental" .
+
+<http://www.owl-ontologies.com/ns#Distrito> rdf:type owl:Class ;
+    rdfs:label "Distrito" .
+
+<http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> rdf:type owl:Class ;
+    rdfs:label "Id Punto de Recarga" ;
+    rdfs:range xsd:integer .
+
+<http://www.owl-ontologies.com/ns#IdVehiculo> rdf:type owl:Class ;
+    rdfs:label "Id Vehículo" ;
+    rdfs:range xsd:integer .
+
+<http://www.owl-ontologies.com/ns#PotenciaDeEnchufe> rdf:type owl:Class ;
+    rdfs:label "Potencia del enchufe" .
+
+<http://www.owl-ontologies.com/ns#TipoDeCarburante> rdf:type owl:Class ;
+    rdfs:label "Tipo de Carburante" .
+
+<http://www.owl-ontologies.com/ns#esUn> rdf:type owl:ObjectProperty ;
+    rdfs:label "es un" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdVehiculo> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#TipoVehiculo> .
+
+<http://www.owl-ontologies.com/ns#esDe> rdf:type owl:ObjectProperty ;
+    rdfs:label "es de" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#PotenciaDeEnchufe> .
+
+<http://www.owl-ontologies.com/ns#estaEn> rdf:type owl:ObjectProperty ;
+    rdfs:label "está en" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdVehiculo> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#Barrio> .
+
+<http://www.owl-ontologies.com/ns#seClasificaComo> rdf:type owl:ObjectProperty ;
+    rdfs:label "se clasifica como" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdVehiculo> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#ClasificacionMedioambiental> .
+
+<http://www.owl-ontologies.com/ns#tipoDeCarburante> rdf:type owl:ObjectProperty ;
+    rdfs:label "tipo de carburante" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdVehiculo> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#TipoDeCarburante> .
+
+<http://www.owl-ontologies.com/ns#dentroDe> rdf:type owl:ObjectProperty ;
+    rdfs:label "dentro de" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#Barrio> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#Distrito> .
+
+<http://www.owl-ontologies.com/ns#numeroDeEquipos> rdf:type owl:DatatypeProperty ;
+    rdfs:label "número de equipos" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
+    rdfs:range xsd:integer .
+
+geo:lat rdf:type owl:DatatypeProperty ;
+    rdfs:label "Latitud" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
+    rdfs:range xsd:decimal .
+
+geo:long rdf:type owl:DatatypeProperty ;
+    rdfs:label "Longitud" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
+    rdfs:range xsd:decimal .
+
+<http://www.owl-ontologies.com/ns#gestionDe> rdf:type owl:ObjectProperty ;
+    rdfs:label "gestión de" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#Gestor> .
+
+<http://www.owl-ontologies.com/ns#tieneOperador> rdf:type owl:ObjectProperty ;
+    rdfs:label "tiene operador" ;
+    rdfs:domain <http://www.owl-ontologies.com/ns#IdPuntoDeRecarga> ;
+    rdfs:range <http://www.owl-ontologies.com/ns#Operador> .
+
+<http://www.owl-ontologies.com/ns#Gestor> rdf:type owl:Class ;
+    rdfs:label "Gestor" .
+
+<http://www.owl-ontologies.com/ns#Operador> rdf:type owl:Class ;
+    rdfs:label "Operador" .
+

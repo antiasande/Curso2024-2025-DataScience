@@ -1,0 +1,54 @@
+PREFIX ns: <http://owl-ontologies.com/ns#>
+PREFIX distintivos: <http://example.org/clasificacion_ambiental/>
+PREFIX tipocarburante: <http://example.org/tipocarburante/>
+PREFIX tipovehiculo: <http://example.org/tipovehiculo/>
+PREFIX distritos: <http://example.org/distritos/>
+PREFIX barrios: <http://example.org/barrios/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# Todas las clases
+SELECT ?class WHERE {
+    ?class rdf:type owl:Class
+    }
+
+# Todos los distintivos ambientales
+SELECT ?class WHERE {
+    ?class rdf:type ns:ClasificacionAmbiental
+    }
+
+# Vehículos con distintivo ECO en el barrio de Goya
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:seClasificaComo distintivos:ECO .
+    ?vehiculo ns:estaEn barrios:GOYA
+    }
+
+# Vehículos eléctricos de rango extendido
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:tipoDeCarburante tipocarburante:ELECTRICOS-RANGO-EXTENDIDO
+    }
+
+# Camiones con distintivo Cero Emisiones en el distrito de Moncloa-Aravaca
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:esUn tipovehiculo:CAMION .
+    ?barrio ns:dentroDe distritos:Moncloa-Aravaca .
+    ?vehiculo ns:estaEn ?barrio .
+    ?vehiculo ns:seClasificaComo distintivos:CeroEmisiones .
+    FILTER(?barrio != <http://example.org/barrios/-->) .
+    }
+
+# Turismos PHEV en el distrito de Usera
+SELECT ?vehiculo WHERE {
+    ?vehiculo ns:esUn tipovehiculo:TURISMO .
+    ?vehiculo ns:estaEn ?barrio .
+    ?vehiculo ns:tipoDeCarburante tipocarburante:PHEV .
+    ?barrio ns:dentroDe distritos:Usera .
+    FILTER(?barrio != <http://example.org/barrios/-->)
+}
+
+# Nombre y wikidata de los distritos donde hay vehículos eléctricos de rango extendido
+SELECT DISTINCT ?nombre ?wikidata WHERE {
+    ?vehiculo ns:tipoDeCarburante tipocarburante:ELECTRICOS-RANGO-EXTENDIDO .
+    ?vehiculo ns:estaEn ?barrio .
+    ?barrio ns:dentroDe ?nombre .
+    ?nombre owl:sameAs ?wikidata .
+}

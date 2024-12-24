@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisión de Datos - Turismo Cultural en Madrid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #336699;
+        }
+        .dataset-container {
+            border: 2px solid #336699;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #eaf3ff;
+        }
+        .dataset-title {
+            font-size: 1.5em;
+            color: #00509e;
+            margin-bottom: 10px;
+        }
+        .requirements {
+            margin: 10px 0;
+            list-style-type: none;
+            padding: 0;
+        }
+        .requirements li {
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .fulfilled {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #f7f9fc;
+        }
+        table, th, td {
+            border: 1px solid #00509e;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf3ff;
+            color: #336699;
+        }
+        .license-container {
+            border-top: 2px solid #336699;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+          /* Nuevo estilo  */
+        .nuevo-estilo {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00509e;
+            margin-top: 20px;
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #336699;
+        }
+        .nuevo-estilo h2 {
+            font-size: 1.4em !important;
+            color: #00509e;
+            margin-bottom: 10px;
+        }
+        .nuevo-estilo p {
+            font-size: 1em;
+            color: #333;
+        }
+        /* Nuevo estilo específico para el tamaño de los H2 en la sección 2 */
+        .dataset-container h2.dataset-title {
+            font-size: 1.4em;
+            color: #00509e;
+            margin-bottom: 10px;
+    }
+
+    </style>
+</head>
+<body>
+
+<h1>Revisión de Datos para Turismo Cultural en Madrid</h1>
+
+<!-- 1. Análisis de los ficheros de origen de los datos -->
+
+<div class="nuevo-estilo">
+    <h2>1. Análisis de los ficheros de origen de los datos</h2>
+</div>
+<!-- Dataset 1 -->
+<div class="dataset-container">
+    <h2 class="dataset-title">1. Actividades Culturales y de Ocio Municipal en los próximos 100 días</h2>
+    <p><strong>URL (CSV):</strong> <a href="https://datos.madrid.es/egob/catalogo/206974-0-agenda-eventos-culturales-100.csv" target="_blank">https://datos.madrid.es/egob/catalogo/206974-0-agenda-eventos-culturales-100.csv</a></p>
+    <h3>1.1 Análisis de Requerimientos</h3>
+    <ul class="requirements">
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R1:</strong> Ámbito cultural y turístico</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R2:</strong> Disponible en formato CSV</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R3:</strong> Licencia abierta</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R4:</strong> Vinculable a DBpedia y Wikidata</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R5:</strong> Documentación accesible</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R6:</strong> Integrable con datos de transporte</li>
+    </ul>
+    <h3>1.2 Análisis de los Datos</h3>
+    <table>
+        <tr>
+            <th>Campo</th>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Rango/Numero Problemas</th>
+            <th>Problemas</th>
+        </tr>
+        <tr><td>PRECIO</td><td>Precio del evento</td><td>String</td><td>1023</td><td>Campo vacio</td></tr>
+        <tr><td>DIAS-SEMANA</td><td>Dias a la semana que se celebra</td><td>String</td><td>867</td><td>Campo vacio</td></tr>
+        <tr><td>DIAS-EXCLUIDOS</td><td>Dias que no se celebra</td><td>String</td><td>1118</td><td>Campo vacio</td></tr>
+        <tr><td>HORA</td><td>Horario del evento</td><td>String</td><td>215</td><td>Campo vacio</td></tr>
+        <tr><td>DESCRIPCION</td><td>Descripcion del evento</td><td>String</td><td>447</td><td>Campo vacio</td></tr>
+        <tr><td>TITULO-ACTIVIDAD</td><td>Tipo de actividad</td><td>String</td><td>363</td><td>Campo vacio</td></tr>
+        <tr><td>URL-ACTIVIDAD</td><td>Url de la actividad</td><td>String</td><td>363</td><td>Campo vacio</td></tr>
+        <tr><td>URL-INSTALACION</td><td>Url de la instalacion</td><td>String</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>NOMBRE-INSTALACION</td><td>Nombre de la instalacion</td><td>String</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>ACCESIBILIDAD-INSTALACION</td><td>Accesibilidad de la instalacion</td><td>String</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>CLASE-VIAL-INSTALACION</td><td>Clase de via donde se encuentra la instalacion</td><td>String</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>NOMBRE-VIA-INSTALACION</td><td>Nombre de via donde se encuentra la instalacion</td><td>String</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>NUM-INSTALACION</td><td>Numero de la instalacion</td><td>Integer</td><td>104</td><td>Campo vacio</td></tr>
+        <tr><td>DISTRITO-INSTALACION</td><td>Distrito de la instalacion</td><td>String</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>BARRIO-INSTALACION</td><td>Barrio de la instalacion</td><td>String</td><td>89</td><td>Campo vacio</td></tr>
+        <tr><td>CODIGO-POSTAL-INSTALACION</td><td>Codigo postal de la instalacion</td><td>Integer</td><td>77</td><td>Campo vacio</td></tr>
+        <tr><td>COORDENADA-X</td><td>Coordenada x de la instalacion</td><td>Integer</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>COORDENADA-Y</td><td>Coordenada x de la instalacion</td><td>Integer</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>LATITUD</td><td>Geolocalizacion: Latitud de la instalacion</td><td>Integer</td><td>67</td><td>Campo vacio</td></tr>
+        <tr><td>LONGITUD</td><td>Geolocalizacion: Longitud de la instalacion</td><td>Integer</td><td>67</td><td>Campo vacio</td></tr>
+    </table>
+</div>
+
+<!-- Dataset 2 -->
+<div class="dataset-container">
+    <h2 class="dataset-title">2. Museos de la ciudad de Madrid</h2>
+    <p><strong>URL (CSV):</strong> <a href="https://datos.madrid.es/egob/catalogo/201132-0-museos.csv" target="_blank">https://datos.madrid.es/egob/catalogo/201132-0-museos.csv</a></p>
+    <h3>1.1 Análisis de Requerimientos</h3>
+    <ul class="requirements">
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R1:</strong> Ámbito cultural y turístico</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R2:</strong> Disponible en formato CSV</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R3:</strong> Licencia abierta</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R4:</strong> Vinculable a DBpedia y Wikidata</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R5:</strong> Documentación accesible</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R6:</strong> Integrable con datos de transporte</li>
+    </ul>
+    <h3>1.2 Análisis de los Datos</h3>
+    <table>
+        <tr>
+            <th>Campo</th>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Rango/Numero Problemas</th>
+            <th>Problemas</th>
+        </tr>
+        <tr><td>DESCRIPCION-ENTIDAD</td><td>Descripcion museo</td><td>Integer</td><td>21</td><td>Campos vacíos</td></tr>
+        <tr><td>HORARIO</td><td>Horario del museo</td><td>String</td><td>4</td><td>Campos vacíos</td></tr>
+        <tr><td>EQUIPAMIENTO</td><td>Equipamiento del museo</td><td>String</td><td>50</td><td>Campos vacíos</td></tr>
+        <tr><td>TRANSPORTE</td><td>Trasporte cercano al museo</td><td>String</td><td>2</td><td>Campos vacíos</td></tr>
+        <tr><td>DESCRIPCION</td><td>Descripcion del trasporte</td><td>String</td><td>54</td><td>Campos vacíos</td></tr>
+        <tr><td>PLANTA</td><td>Planta de la direccion del museo</td><td>Integer</td><td>69</td><td>Campos vacíos</td></tr>
+        <tr><td>PUERTA</td><td>Puerta de la direccion del museo</td><td>String</td><td>70</td><td>Campos vacíos</td></tr>
+        <tr><td>ESCALERAS</td><td>Escalera de la direccion del museo</td><td>String</td><td>70</td><td>Campos vacíos</td></tr>
+        <tr><td>ORIENTACION</td><td>Orientacion de la direccion del museo</td><td>String</td><td>69</td><td>Sin problemas</td></tr>
+        <tr><td>CODIGO-POSTAL</td><td>Codigo postal del museo</td><td>Integer</td><td>28001-28049</td><td>Sin problemas</td></tr>
+        <tr><td>CODIGO-BARRIO</td><td>Codigo del barrio de la direccion del museo</td><td>Integer</td><td>1-8</td><td>Sin problemas</td></tr>
+        <tr><td>BARRIO</td><td>Barrio de la direccion del museo</td><td>String</td><td>8 valores</td><td>Sin problemas</td></tr>
+        <tr><td>CODIGO-DISTRITO</td><td>Codigo del distrito de la direccion del museo</td><td>Integer</td><td>1-21</td><td>Sin problemas</td></tr>
+        <tr><td>DISTRITO</td><td>Distrito del adireccion del museo</td><td>String</td><td>21 valores</td><td>Sin problemas</td></tr>
+        <tr><td>LONGITUD</td><td>Longitud de la direccion del museo</td><td>Integer</td><td>1</td><td>Campos vacíos</td></tr>
+        <tr><td>TELEFONOS</td><td>Telefono del museo</td><td>Integer</td><td>11</td><td>Campos vacíos</td></tr>
+        <tr><td>FAX</td><td>Fax del museo</td><td>Integer</td><td>62</td><td>Campos vacíos</td></tr>
+        <tr><td>EMAIL</td><td>Email del mueso</td><td>String</td><td>11</td><td>Campos vacíos</td></tr>
+    </table>
+</div>
+
+<!-- Dataset 3 -->
+<div class="dataset-container">
+    <h2 class="dataset-title">3. Monumentos de la ciudad de Madrid</h2>
+    <p><strong>URL (CSV):</strong> <a href="https://datos.madrid.es/egob/catalogo/300356-0-monumentos-ciudad-madrid.csv" target="_blank">https://datos.madrid.es/egob/catalogo/300356-0-monumentos-ciudad-madrid.csv</a></p>
+    <h3>1.1 Análisis de Requerimientos</h3>
+    <ul class="requirements">
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R1:</strong> Ámbito cultural y turístico</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R2:</strong> Disponible en formato CSV</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R3:</strong> Licencia abierta</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R4:</strong> Vinculable a DBpedia y Wikidata</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R5:</strong> Documentación accesible</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R6:</strong> Integrable con datos de transporte</li>
+    </ul>
+    <h3>1.2 Análisis de los Datos</h3>
+    <table>
+        <tr>
+            <th>Campo</th>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Rango/Numero Problemas</th>
+            <th>Problemas</th>
+        </tr>
+         <tr><td>DESCRIPCION</td><td>Descripcion historica (contexto) del monumento</td><td>String</td><td>Sin rango</td><td>1 Campo vacio</td></tr>
+        <tr><td>FECHA</td><td>Fecha de ejecucion (terminado) del monumento</td><td>Integer</td><td>800 - 2100</td><td>20 Campos vacios</td></tr>
+        <tr><td>AUTORES</td><td>Autor del monumento</td><td>String</td><td>Sin rango</td><td>909 Campos vacios</td></tr>
+        <tr><td>NOMBRE-VIA</td><td>Nombre de la via segun el callejero oficial</td><td>String</td><td>Sin rango</td><td>248 Campos vacios</td></tr>
+        <tr><td>CLASE-VIAL</td><td>Tipo de via</td><td>String</td><td>Sin rango</td><td>252 Campos vacios</td></tr>
+        <tr><td>TIPO-NUM</td><td>Tipo de numeracion</td><td>String</td><td>Sin rango</td><td>3 Campos vacios</td></tr>
+        <tr><td>NUM</td><td>Numero de la via</td><td>Integer</td><td>0 - 560</td><td>955 Campos vacios</td></tr>
+        <tr><td>LOCALIDAD</td><td>Localidad</td><td>String</td><td>Sin rango</td><td>4 Campos vacios</td></tr>
+        <tr><td>PROVINCIA</td><td>Provincia</td><td>String</td><td>Sin rango</td><td>4 Campos vacios</td></tr>
+        <tr><td>CODIGO-POSTAL</td><td>Codigo postal del monumento</td><td>Integer</td><td>28001-28054</td><td>1491 Campos vacios</td></tr>
+        <tr><td>CODIGO-BARRIO</td><td>Codigo del barrio de la direccion del monumento</td><td>Integer</td><td>1 - 9,02</td><td>485 Campos vacios</td></tr>
+        <tr><td>BARRIO</td><td>Barrio de la direccion del monumento</td><td>String</td><td>Sin rango</td><td>137 Campos vacios</td></tr>
+        <tr><td>CODIGO-DISTRITO</td><td>Codigo del distrito de la direccion del monumento</td><td>Integer</td><td>1 - 22</td><td>485 Campos vacios</td></tr>
+        <tr><td>DISTRITO</td><td>Literal del distrito municipal (donde se encuentra el monumento)</td><td>String</td><td>Sin rango</td><td>4 Campos vacios</td></tr>
+        <tr><td>COORDENADA-X</td><td>Valor en el eje X de la posicion del monumento en un mapa</td><td>Integer</td><td>429.000 - 454.000</td><td>4 Campos vacios</td></tr>
+        <tr><td>COORDENADA-Y</td><td>Valor en el eje Y de la posicion del monumento en un mapa</td><td>Integer</td><td>4.465.000 - 4.490.000</td><td>4 Campos vacios</td></tr>
+        <tr><td>LATITUD</td><td>Latitud de la direccion del monumento</td><td>Integer</td><td>40,34 - 40,55</td><td>58 Campos vacios</td></tr>
+        <tr><td>LONGITUD</td><td>Longitud de la direccion del monumento</td><td>Integer</td><td>(-3,83) - (-3,55)</td><td>58 Campos vacios</td></tr>
+    </table>
+</div>
+
+<!-- Dataset 4 -->
+<div class="dataset-container">
+    <h2 class="dataset-title">4. Salas de espectáculos artísticos: teatros, cines, filmotecas, auditorios y salas de conciertos
+</h2>
+    <p><strong>URL (CSV):</strong> <a href="https://datos.madrid.es/egob/catalogo/208862-7650046-ocio_salas.csv
+" target="_blank">https://datos.madrid.es/egob/catalogo/208862-7650046-ocio_salas.csv
+</a></p>
+    <h3>1.1 Análisis de Requerimientos</h3>
+    <ul class="requirements">
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R1:</strong> Ámbito cultural y turístico</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R2:</strong> Disponible en formato CSV</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R3:</strong> Licencia abierta</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R4:</strong> Vinculable a DBpedia y Wikidata</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R5:</strong> Documentación accesible</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R6:</strong> Integrable con datos de transporte</li>
+    </ul>
+    <h3>1.2 Análisis de los Datos</h3>
+    <table>
+        <tr>
+            <th>Campo</th>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Rango/Numero Problemas</th>
+            <th>Problemas</th>
+        </tr>
+          <tr><td>DESCRIPCION-ENTIDAD</td><td>Descripcion de la sala</td><td>String</td><td>2</td><td>Campo vacio</td></tr>
+<tr><td>HORARIO</td><td>Horario de la sala</td><td>String</td><td>5</td><td>Campo vacio</td></tr>
+<tr><td>EQUIPAMIENTO</td><td>Equipamiento de la sala</td><td>String</td><td>5</td><td>Campo vacio</td></tr>
+<tr><td>DESCRIPCION</td><td>Descripcion de la sala</td><td>String</td><td>10</td><td>Campo vacio</td></tr>
+<tr><td>ACCESIBILIDAD</td><td>Accesibilidad accesibilidad de la sala</td><td>String</td><td>1-3</td><td>Sin Problema</td></tr>
+<tr><td>PLANTA</td><td>Planta de la sala</td><td>Integer</td><td>12</td><td>Campo vacio</td></tr>
+<tr><td>PUERTA</td><td>Puerta de la sala</td><td>String</td><td>12</td><td>Campo vacio</td></tr>
+<tr><td>ESCALERAS</td><td>Escaleras de la sala</td><td>String</td><td>12</td><td>Campo vacio</td></tr>
+<tr><td>ORIENTACION</td><td>Orientacion de la sala</td><td>String</td><td>11</td><td>Campo vacio</td></tr>
+<tr><td>CODIGO-POSTAL</td><td>Codigo postal de la direccion de la sala</td><td>Integer</td><td>28001-28045</td><td>Sin problema</td></tr>
+<tr><td>COD-BARRIO</td><td>Cod barrio de la direccion de la sala</td><td>Integer</td><td>1-6</td><td>Sin problema</td></tr>
+<tr><td>COD-DISTRITO</td><td>Cod distrito de la direccion de la sala</td><td>Integer</td><td>1-18</td><td>1 Campo vacio</td></tr>
+    </table>
+</div>
+
+<!-- Dataset 5-->
+<div class="dataset-container">
+    <h2 class="dataset-title">5. Alumbrado navideño </h2>
+    <p><strong>URL (CSV):</strong> <a href="https://datos.madrid.es/egob/catalogo/300602-1-alumbrado-navidad-luces.xlsx
+" target="_blank">https://datos.madrid.es/egob/catalogo/300602-1-alumbrado-navidad-luces.xlsx
+</a></p>
+    <h3>1.1 Análisis de Requerimientos</h3>
+    <ul class="requirements">
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R1:</strong> Ámbito cultural y turístico</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R2:</strong> Disponible en formato CSV</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R3:</strong> Licencia abierta</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R4:</strong> Vinculable a DBpedia y Wikidata</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R5:</strong> Documentación accesible</li>
+        <li class="fulfilled"><img class="icon" src="https://img.icons8.com/color/48/000000/ok--v1.png" alt="Tick"> <strong>R6:</strong> Integrable con datos de transporte</li>
+    </ul>
+    <h3>1.2 Análisis de los Datos</h3>
+    <table>
+        <tr>
+            <th>Campo</th>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Rango/Numero Problemas</th>
+            <th>Problemas</th>
+        </tr>
+
+
+    <tr>
+        <td>COMENTARIO</td>
+        <td>Descripcion del alumbrado</td>
+        <td>String</td>
+        <td>44</td>
+        <td>Campos vacios</td>
+    </tr>
+
+    <tr>
+        <td>DISEÑO</td>
+        <td>Nombre del diseñador</td>
+        <td>String</td>
+        <td>189</td>
+        <td>Campos vacios</td>
+    </tr>
+
+    <tr>
+        <td>DISTRITO</td>
+        <td>Distrito donde se encuentra el alumbrado</td>
+        <td>String</td>
+        <td>1</td>
+        <td>Campo vacio</td>
+    </tr>
+
+    <tr>
+        <td>BARRIO</td>
+        <td>Barrio donde se encuentra el alumbrado</td>
+        <td>String</td>
+        <td>1</td>
+        <td>Campo vacio</td>
+    </tr>
+
+    <tr>
+        <td>LONGITUD</td>
+        <td>La longitud que tiene cada alumbrado, en metros </td>
+        <td>Integer</td>
+        <td>75</td>
+        <td>Campos vacios</td>
+    </tr>
+
+    <tr>
+        <td>N_ELEMENTO</td>
+        <td>Numero de cada elemento, solo 5 lo incluyen</td>
+        <td>Integer</td>
+        <td>240</td>
+        <td>Campos vacios</td>
+    </tr>
+    </table>
+</div>
+
+<!-- 2. Análisis de las licencias de los datos -->
+<div class="license-container">
+    <h2 class="dataset-title">2. Análisis de las licencias de los datos</h2>
+    <h3 class="nuevo-estilo">2.1 Licencia sobre el origen de los datos</h3>
+         <p class="nuevo-estilo">>
+            Los datos utilizados proceden del portal de datos abiertos del Ayuntamiento de Madrid (datos.madrid.es) e incluyen los datasets de Actividades Culturales, Museos, Monumentos, Salas de Espectáculos y Alumbrado Navideño. El editor y titular de derechos es el propio Ayuntamiento de Madrid, que licencia los datos bajo la Licencia de Reutilización de la Información del Sector Público (RISP), permitiendo reutilización comercial y no comercial, siempre con atribución. Esta licencia prohíbe el uso engañoso y la modificación que desinforme.
+
+        </p>
+    <h3 class="nuevo-estilo">2.2 Licencia para el dataset creado</h3>
+        <p class="nuevo-estilo">>
+            La ontología desarrollada a partir de estos datos se compartirá bajo una licencia CC BY (Creative Commons Attribution). Esta licencia permite adaptaciones y redistribución con atribución, garantizando compatibilidad con los términos de uso originales del Ayuntamiento. La ontología podrá ser usada en ámbitos académicos y comerciales, siempre que se respete la atribución al Ayuntamiento de Madrid como fuente original de los datos.</p>
+        </p>
+</div>
+
+<!-- 3. Estrategia de nombrado -->
+<div class="nuevo-estilo">
+    <h2>3. Estrategia de nombrado</h2>
+</div>
+<p class="nuevo-estilo">La estrategia de nombrado para la ontología se describe mediante la siguiente tabla:</p>
+<table>
+    <tr><th>Domain</th><th>Path</th><th>Ontology</th><th>Class</th></tr>
+    <tr><td>http://turismo.mad.es/</td><td>cultural/</td><td>ontology</td><td>[ontologyName]#[className]</td></tr>
+    <tr><td></td><td></td><td>resource/</td><td>[className]/[identifier]</td></tr>
+</table>
+
+</body>
+</html>
+
+
+

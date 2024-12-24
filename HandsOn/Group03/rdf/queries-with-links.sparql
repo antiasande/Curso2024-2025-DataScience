@@ -1,0 +1,63 @@
+PREFIX rr: <http://www.w3.org/ns/r2rml#>.
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>.
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#>.
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>.
+PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>.
+PREFIX ld: <http://london.linkeddata.es/london/resource#> .
+PREFIX schema: <http://schema.org/> . 
+
+SELECT ?entity ?sameAsURI
+    WHERE {
+        ?entity owl:sameAs ?sameAsURI .
+    }
+
+SELECT (COUNT(?entity) AS ?entityCount)
+    WHERE {
+        ?entity owl:sameAs ?sameAsURI .
+    }
+
+SELECT (COUNT(DISTINCT ?house) AS ?houseCount) (COUNT(DISTINCT ?school) AS ?schoolCount)
+    WHERE {
+        ?town owl:sameAs <https://www.wikidata.org/wiki/Q205358> .
+        ?house ld:placedIn ?town .
+        ?house a ld:House .
+        ?school ld:placedIn ?town .
+        ?school a ld:School .
+    }
+
+SELECT (COUNT(?entity) AS ?entityCount)
+    WHERE {
+        ?entity a ?type .
+        FILTER NOT EXISTS { ?entity owl:sameAs ?sameAsURI }
+    } 
+
+SELECT DISTINCT ?townName ?school ?sameAsURI
+    WHERE {
+        ?school ld:placedIn ?town ;
+            owl:sameAs ?sameAsURI .
+        ?town ld:townName ?townName .
+    } 
+
+SELECT DISTINCT ?property
+    WHERE {
+        ?entity owl:sameAs ?sameAsURI ;
+            ?property ?value .
+    }
+
+SELECT ?sameAsURI ?town (COUNT(?town) AS ?townCount)
+    WHERE {
+        ?town a ld:Town .
+        ?town owl:sameAs ?sameAsURI .
+    }
+    GROUP BY ?sameAsURI
+    ORDER BY DESC(?townCount)
+
+SELECT ?school ?town ?schoolURI ?townURI
+    WHERE {
+        ?school a ld:School .
+        ?school ld:placedIn ?town .
+        ?school owl:sameAs ?schoolURI .
+        ?town owl:sameAs ?townURI . 
+        
+    }

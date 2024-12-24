@@ -1,0 +1,73 @@
+[
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "baseColumnName": "NOMBRE_ESTACION",
+      "expression": "grel:value + \"_\" + cells[\"TRAMO_HORARIO\"].value",
+      "onError": "set-to-blank",
+      "newColumnName": "ID",
+      "columnInsertIndex": 2,
+      "description": "Create column ID at index 2 based on column NOMBRE_ESTACION using expression grel:value + \"_\" + cells[\"TRAMO_HORARIO\"].value"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "ID",
+      "index": 0,
+      "description": "Move column ID to position 0"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "VIAJEROS_SUBIDOS",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column VIAJEROS_SUBIDOS using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "VIAJEROS_BAJADOS",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column VIAJEROS_BAJADOS using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ID",
+      "expression": "grel:value.replace(/_([0-9]{2}):([0-9]{2}) - ([0-9]{2}):([0-9]{2})/, \"_$1$2_$3$4\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ID using expression grel:value.replace(/_([0-9]{2}):([0-9]{2}) - ([0-9]{2}):([0-9]{2})/, \"_$1$2_$3$4\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ID",
+      "expression": "value.replace(\" \",\"_\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ID using expression value.replace(\" \",\"_\")"
+    }
+  ]

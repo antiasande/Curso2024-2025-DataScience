@@ -1,0 +1,38 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://www.owl-ontologies.com/ns#> .
+
+<http://www.owl-ontologies.com/ns#> rdf:type owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+<http://www.owl-ontologies.com/ns#Distrito1> rdf:type ns:Distrito ;
+    rdfs:label "Salamanca" .
+
+<http://www.owl-ontologies.com/ns#Barrio1> rdf:type ns:Barrio ;
+    rdfs:label "Recoletos" ;
+    ns:dentroDe <http://www.owl-ontologies.com/ns#Distrito1> .
+
+<http://www.owl-ontologies.com/ns#Vehiculo1> rdf:type ns:IdVehiculo ;
+    rdfs:label "1" ;
+    ns:seClasificaComo <http://www.owl-ontologies.com/ns#ClasificacionMedioambiental1> ;
+    ns:esUn <http://www.owl-ontologies.com/ns#TipoVehiculo1> ;
+    ns:estaEn <http://www.owl-ontologies.com/ns#Barrio1> .
+
+<http://www.owl-ontologies.com/ns#TipoVehiculo1> rdf:type ns:TipoVehiculo ;
+    rdfs:label "Coche eléctrico" .
+
+<http://www.owl-ontologies.com/ns#ClasificacionMedioambiental1> rdf:type ns:ClasificacionMedioambiental ;
+    rdfs:label "ECO" .
+
+<http://www.owl-ontologies.com/ns#PuntoRecarga1> rdf:type ns:IdPuntoDeRecarga ;
+    rdfs:label "3720" ;
+    ns:estaEn <http://www.owl-ontologies.com/ns#Barrio1> ;
+    ns:esDe <http://www.owl-ontologies.com/ns#TipoEnchufe1> ;
+    ns:numeroDeEquipos "3"^^xsd:integer .
+
+<http://www.owl-ontologies.com/ns#TipoEnchufe1> rdf:type ns:TipoDeEnchufe ;
+    rdfs:label "50kw" .

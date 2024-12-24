@@ -1,0 +1,41 @@
+PREFIX base: <http://zonawifi.linkeddata.org/ontologia#>
+PREFIX ns: <http://zonawifi.linkeddata.org/ontologia#>
+PREFIX ns2: <http://instancias.org/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+SELECT ?EntidadWifi ?NombreEntidad ?Latitud ?Longitud ?Barrio ?Distrito ?Ciudad
+WHERE {
+  ?EntidadWifi a ns:EntidadWifi ;
+               ns:tenerNombre ?NombreEntidad ;
+               ns:tenerLatitud ?Latitud ;
+               ns:tenerLongitud ?Longitud ;
+               ns:estarEnVia ?Via .
+
+  ?Via ns:estarEnBarrio ?Barrio .
+  ?Barrio ns:estarEnDistrito ?Distrito . 
+  ?Distrito ns:estarEnCiudad ?Ciudad.
+}
+
+SELECT  ?transporte ?wifi
+WHERE {
+  ?wifi a ns:EntidadWifi .
+  ?wifi ns:llegarConTransporte ?Transporte.
+  ?transporte ns:compania ?compania.
+  FILTER(?compania = "Metro_de_Madrid")
+}
+
+SELECT ?tipoNum 
+WHERE {
+  ?wifi a ns:EntidadWifi .
+  ?wifi ns:tipoNum ?tipoNum .
+}
+
+
+SELECT  ?transporte ?linea
+WHERE {
+  ?wifi a ns:EntidadWifi .
+  ?wifi ns:llegarConTransporte ?transporte.
+  ?transporte ns:linea ?linea.
+}
+

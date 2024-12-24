@@ -1,0 +1,113 @@
+PREFIX rr: <http://www.w3.org/ns/r2rml#>.
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>.
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#>.
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>.
+PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+PREFIX ld: <http://london.linkeddata.es/london/resource#> .
+
+SELECT ?school
+    WHERE {
+        ?id ld:schoolName ?school
+    }
+
+SELECT ?school ?gender
+    WHERE {
+        ?id ld:schoolName ?school .
+        ?id ld:gender ?gender .
+    }
+
+SELECT ?school ?status
+    WHERE {
+        ?id ld:schoolName ?school .
+        ?id ld:status ?status .
+    }
+
+SELECT ?school ?type
+    WHERE {
+        ?id ld:schoolName ?school .
+        ?id ld:type ?type .
+    }
+
+SELECT ?school ?phase
+    WHERE {
+        ?id ld:schoolName ?school .
+        ?id ld:phase ?phase .
+    }
+
+SELECT ?school ?town
+    WHERE {
+        ?id ld:schoolName ?school .
+        ?id ld:placedIn ?town .
+    }   
+
+SELECT ?school ?lat
+    WHERE {
+        ?id ld:schoolName ?school .
+        ?id wgs84_pos:lat ?lat .
+    }
+
+SELECT ?school ?long
+    WHERE {
+        ?id ld:schoolName ?school .
+        ?id wgs84_pos:long ?long .
+    }
+
+SELECT ?casas 
+    WHERE {
+        ?id ld:placedIn ?casas .
+    }
+
+SELECT ?casas 
+    WHERE {
+        ?id ld:identifier ?casas .
+    }
+
+SELECT ?casas 
+    WHERE {
+        ?id ld:dateRecorded ?casas .
+    }
+
+SELECT ?casas 
+    WHERE {
+        ?id ld:averagePrice ?casas .
+    }
+
+SELECT ?casas 
+    WHERE {
+        ?id ld:housesSold ?casas .
+    }
+
+SELECT ?id ?price
+    WHERE {
+        ?id ld:averagePrice ?price .
+        FILTER(?price >  500000)
+    }
+    ORDER BY DESC(?price)
+
+SELECT ?townName ?averagePrice (COUNT(?schools) AS ?schoolCount)
+    WHERE {
+        ?house a ld:House ;
+            ld:averagePrice ?averagePrice ;
+            ld:dateRecorded "2004-05-01T00:00:00+00:00"^^xsd:dateTime ;
+            ld:placedIn ?town .
+        ?town a ld:Town ;
+            ld:townName ?townName .
+        OPTIONAL {
+            ?schools a ld:School ;
+                    ld:placedIn ?town .
+        }
+    }
+    GROUP BY ?townName ?averagePrice
+    ORDER BY DESC(?averagePrice)
+    LIMIT 10
+
+
+SELECT ?type (GROUP_CONCAT(?name; SEPARATOR=", ") AS ?schoolname)
+    WHERE {
+        ?school a ld:School .
+        ?school ld:schoolName ?name .
+        ?school ld:type ?type .
+        ?school ld:gender ?gender .
+        FILTER(?gender = "Boys")
+    }
+    GROUP BY ?type

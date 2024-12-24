@@ -1,0 +1,1 @@
+Debido a que el archivo accidentalidad.nt ocupaba más de 100 Mb, limite de GitHub, lo hemos dividido en dos mitades.
