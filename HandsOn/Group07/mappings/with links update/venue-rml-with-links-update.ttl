@@ -1,0 +1,585 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix tm-ont: <http://turismo.mad.es/cultural/ontology/ont1#> .
+@prefix tm: <http://turismo.mad.es/cultural/resource/> .
+@prefix tm-ven: <http://turismo.mad.es/cultural/resource/Venue/> .
+@prefix tm-add: <http://turismo.mad.es/cultural/resource/Address/> .
+@prefix tm-dis: <http://turismo.mad.es/cultural/resource/District/> .
+@prefix tm-nei: <http://turismo.mad.es/cultural/resource/Neighborhood/> .
+@prefix tm-str: <http://turismo.mad.es/cultural/resource/Street/> .
+@prefix db: <http://dbpedia.org/resource/classes#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+
+map:map_address_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "address" ;
+	rr:predicateObjectMap map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018, map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026, map:pom_027, map:pom_028, map:pom_029, map:pom_030 ;
+	rr:subjectMap map:s_001 .
+
+map:map_district_000 rml:logicalSource map:source_004 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "district" ;
+	rr:predicateObjectMap map:pom_038, map:pom_039, map:pom_040, map:pom_041 ;
+	rr:subjectMap map:s_004 .
+
+map:map_neighborhood_000 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "neighborhood" ;
+	rr:predicateObjectMap map:pom_034, map:pom_035, map:pom_036, map:pom_037 ;
+	rr:subjectMap map:s_003 .
+
+map:map_street_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "street" ;
+	rr:predicateObjectMap map:pom_031, map:pom_032, map:pom_033 ;
+	rr:subjectMap map:s_002 .
+
+map:map_venue_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "venue" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013 ;
+	rr:subjectMap map:s_000 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant db:Venue ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "PK" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "NOMBRE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "DESCRIPCION-ENTIDAD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_004 rml:reference "HORARIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "TRANSPORTE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:reference "ACCESIBILIDAD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_007 rml:reference "EQUIPAMIENTO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_008 rml:reference "CONTENT-URL" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:anyURI ;
+	rr:termType rr:Literal .
+
+map:om_009 rml:reference "TELEFONO_1" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_010 rml:reference "EMAIL" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_011 rml:reference "TIPO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:anyURI ;
+	rr:termType rr:Literal .
+
+map:om_012 rdf:type rr:ObjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/Address/{ID}" ;
+	rr:termType rr:IRI .
+
+map:om_013 rml:reference "NOMBRE_RECON" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_014 rdf:type rr:ObjectMap ;
+	rr:constant tm-ont:Address ;
+	rr:termType rr:IRI .
+
+map:om_015 rml:reference "TIPO-NUM" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_016 rml:reference "NUM" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_017 rml:reference "PLANTA" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_018 rml:reference "PUERTA" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_019 rml:reference "ESCALERAS" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_020 rml:reference "ORIENTACION" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_021 rml:reference "LOCALIDAD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_022 rml:reference "PROVINCIA" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_023 rml:reference "CODIGO-POSTAL" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_024 rml:reference "COORDENADA-X" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_025 rml:reference "COORDENADA-Y" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_026 rml:reference "LONGITUD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:decimal ;
+	rr:termType rr:Literal .
+
+map:om_027 rml:reference "LATITUD" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:decimal ;
+	rr:termType rr:Literal .
+
+map:om_028 rdf:type rr:ObjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/Street/{NOMBRE-VIA}" ;
+	rr:termType rr:IRI .
+
+map:om_029 rdf:type rr:ObjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/Neighborhood/{BARRIO}" ;
+	rr:termType rr:IRI .
+
+map:om_030 rdf:type rr:ObjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/District/{DISTRITO}" ;
+	rr:termType rr:IRI .
+
+map:om_031 rdf:type rr:ObjectMap ;
+	rr:constant gn:Street ;
+	rr:termType rr:IRI .
+
+map:om_032 rml:reference "NOMBRE-VIA" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_033 rml:reference "CLASE-VIAL" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_034 rdf:type rr:ObjectMap ;
+	rr:constant gn:Neighborhood ;
+	rr:termType rr:IRI .
+
+map:om_035 rml:reference "COD-BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_036 rml:reference "BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_037 rml:reference "BARRIO_RECON" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_038 rdf:type rr:ObjectMap ;
+	rr:constant tm-ont:District ;
+	rr:termType rr:IRI .
+
+map:om_039 rml:reference "COD-DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:integer ;
+	rr:termType rr:Literal .
+
+map:om_040 rml:reference "DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_041 rml:reference "DISTRITO_RECON" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasId .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasName .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasDescription .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasOpeningHours .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasNearbyTransport .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasAccessibility .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasEquipment .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasUrl .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasPhoneNumber .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasEmail .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasOrganismType .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasAddress .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasNumberType .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasStreetNumber .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasFloorNumber .
+
+map:pm_018 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasDoor .
+
+map:pm_019 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasStairs .
+
+map:pm_020 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasOrientation .
+
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasLocality .
+
+map:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasProvince .
+
+map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasPostalCode .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasCoordX .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasCoordY .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasLongitude .
+
+map:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasLatitude .
+
+map:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasStreet .
+
+map:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasNeighborhood .
+
+map:pm_030 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasDistrict .
+
+map:pm_031 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_032 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasStreetName .
+
+map:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasStreetType .
+
+map:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasNeighborhoodCode .
+
+map:pm_036 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasNeighborhoodName .
+
+map:pm_037 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_038 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_039 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasDistrictCode .
+
+map:pm_040 rdf:type rr:PredicateMap ;
+	rr:constant tm-ont:hasDistrictName .
+
+map:pm_041 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_017 .
+
+map:pom_018 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_018 ;
+	rr:predicateMap map:pm_018 .
+
+map:pom_019 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_019 ;
+	rr:predicateMap map:pm_019 .
+
+map:pom_020 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_020 ;
+	rr:predicateMap map:pm_020 .
+
+map:pom_021 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_021 ;
+	rr:predicateMap map:pm_021 .
+
+map:pom_022 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_022 ;
+	rr:predicateMap map:pm_022 .
+
+map:pom_023 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_023 ;
+	rr:predicateMap map:pm_023 .
+
+map:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_024 ;
+	rr:predicateMap map:pm_024 .
+
+map:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_025 ;
+	rr:predicateMap map:pm_025 .
+
+map:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_026 ;
+	rr:predicateMap map:pm_026 .
+
+map:pom_027 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_027 ;
+	rr:predicateMap map:pm_027 .
+
+map:pom_028 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_028 ;
+	rr:predicateMap map:pm_028 .
+
+map:pom_029 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_029 ;
+	rr:predicateMap map:pm_029 .
+
+map:pom_030 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_030 ;
+	rr:predicateMap map:pm_030 .
+
+map:pom_031 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_031 ;
+	rr:predicateMap map:pm_031 .
+
+map:pom_032 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_032 ;
+	rr:predicateMap map:pm_032 .
+
+map:pom_033 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_033 ;
+	rr:predicateMap map:pm_033 .
+
+map:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_034 ;
+	rr:predicateMap map:pm_034 .
+
+map:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_035 ;
+	rr:predicateMap map:pm_035 .
+
+map:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_036 ;
+	rr:predicateMap map:pm_036 .
+
+map:pom_037 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_037 ;
+	rr:predicateMap map:pm_037 .
+
+map:pom_038 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_038 ;
+	rr:predicateMap map:pm_038 .
+
+map:pom_039 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_039 ;
+	rr:predicateMap map:pm_039 .
+
+map:pom_040 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_040 ;
+	rr:predicateMap map:pm_040 .
+
+map:pom_041 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_041 ;
+	rr:predicateMap map:pm_041 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_address_000, map:map_district_000, map:map_neighborhood_000, map:map_street_000, map:map_venue_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/Venue/{NOMBRE}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/Address/{ID}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/Street/{NOMBRE-VIA}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/Neighborhood/{BARRIO}" .
+
+map:s_004 rdf:type rr:SubjectMap ;
+	rr:template "http://turismo.mad.es/cultural/resource/District/{DISTRITO}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "venue_data-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "venue_data-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "venue_data-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "venue_data-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_004 rml:referenceFormulation ql:CSV ;
+	rml:source "venue_data-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+

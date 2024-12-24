@@ -1,0 +1,817 @@
+[
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "BIODIESEL",
+                "l": "BIODIESEL"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "BIOMETANO",
+                "l": "BIOMETANO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DIESEL",
+                "l": "DIESEL"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ETANOL",
+                "l": "ETANOL"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GAS LICUADO DE PETROLEO",
+                "l": "GAS LICUADO DE PETROLEO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GAS NATURAL COMPRIMIDO",
+                "l": "GAS NATURAL COMPRIMIDO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GAS NATURAL LICUADO",
+                "l": "GAS NATURAL LICUADO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GASOLINA",
+                "l": "GASOLINA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "HIBRIDO",
+                "l": "HIBRIDO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "HIDROGENO",
+                "l": "HIDROGENO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "OTROS",
+                "l": "OTROS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_CARBURANTE",
+          "expression": "value",
+          "columnName": "TIPO_CARBURANTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Tipo carburante desconocido",
+                "l": "Tipo carburante desconocido"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_VEHICULO",
+          "expression": "value",
+          "columnName": "TIPO_VEHICULO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "AUTOBUS",
+                "l": "AUTOBUS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_VEHICULO",
+          "expression": "value",
+          "columnName": "TIPO_VEHICULO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "REMOLQUE",
+                "l": "REMOLQUE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_VEHICULO",
+          "expression": "value",
+          "columnName": "TIPO_VEHICULO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "TRACTOR",
+                "l": "TRACTOR"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_VEHICULO",
+          "expression": "value",
+          "columnName": "TIPO_VEHICULO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CICLOMOTOR",
+                "l": "CICLOMOTOR"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO_VEHICULO",
+          "expression": "value",
+          "columnName": "TIPO_VEHICULO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "MOTOCICLETA",
+                "l": "MOTOCICLETA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EJERCICIO",
+    "description": "Remove column EJERCICIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_TIPO_PERSONA",
+    "description": "Remove column COD_TIPO_PERSONA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO_PERSONA",
+    "description": "Remove column TIPO_PERSONA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "COD_DISTRITO",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "COD_DISTRITO+BARRIO",
+    "columnInsertIndex": 1,
+    "description": "Create column COD_DISTRITO+BARRIO at index 1 based on column COD_DISTRITO using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD_DISTRITO+BARRIO",
+    "expression": "join ([coalesce(cells['COD_DISTRITO+BARRIO'].value,''),coalesce(cells['COD_BARRIO'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD_DISTRITO+BARRIO using expression join ([coalesce(cells['COD_DISTRITO+BARRIO'].value,''),coalesce(cells['COD_BARRIO'].value,'')],'')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "COD_DISTRITO+BARRIO",
+    "expression": "grel:value + (round(random() * (1000000 - 1)) + 1)",
+    "onError": "set-to-blank",
+    "newColumnName": "ID",
+    "columnInsertIndex": 2,
+    "description": "Create column ID at index 2 based on column COD_DISTRITO+BARRIO using expression grel:value + (round(random() * (1000000 - 1)) + 1)"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "ID",
+    "index": 0,
+    "description": "Move column ID to position 0"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DISTRITO",
+    "description": "Remove column COD_DISTRITO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DISTRITO+BARRIO",
+    "description": "Remove column COD_DISTRITO+BARRIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_BARRIO",
+    "description": "Remove column COD_BARRIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_TIPO_VEHICULO",
+    "description": "Remove column COD_TIPO_VEHICULO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ETIQUETA_MEDIOAMBIENTAL",
+    "description": "Remove column ETIQUETA_MEDIOAMBIENTAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CUOTA",
+    "description": "Remove column CUOTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CONTADOR",
+    "description": "Remove column CONTADOR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "AÑO_MATRICULACION",
+    "description": "Remove column AÑO_MATRICULACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral - El Pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa - Aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puente de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PuenteDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Blas - Canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Blas-Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villa de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VillaDeVallecas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "grel:value.replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column BARRIO using expression grel:value.replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "grel:value.replace(\"Ñ\", \"N\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column BARRIO using expression grel:value.replace(\"Ñ\", \"N\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VILLAVERDEALTO-CASCOHISTORICODEVILLAVERDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLAVERDEALTO"
+      }
+    ],
+    "description": "Mass edit cells in column BARRIO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASIFICACION_AMBIENTAL",
+    "expression": "grel:value.replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CLASIFICACION_AMBIENTAL using expression grel:value.replace(\" \",\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASIFICACION_AMBIENTAL",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SindistintivoAmbiental"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SinDistintivoAmbiental"
+      }
+    ],
+    "description": "Mass edit cells in column CLASIFICACION_AMBIENTAL"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASIFICACION_AMBIENTAL",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sinclasificacionambiental"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SinDistintivoAmbiental"
+      }
+    ],
+    "description": "Mass edit cells in column CLASIFICACION_AMBIENTAL"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO_CARBURANTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "HIBRIDO ENCHUFABLES PHEV"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PHEV"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO_CARBURANTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO_CARBURANTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ELECTRICOS RANGO EXTENDIDO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELECTRICOS-RANGO-EXTENDIDO"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO_CARBURANTE"
+  }
+]

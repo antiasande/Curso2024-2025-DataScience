@@ -1,0 +1,39 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/rml#ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix clpr: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/classesproperties/> .
+@prefix is: <http://www.knowledgegraphs.com/ontology/centrosydesfibriladores/instances/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+# Consulta 1: Número total de desfibriladores
+SELECT (COUNT(?desfibrilador) AS ?numDesfibriladores)
+WHERE {
+    ?desfibrilador a clpr:Desfibrilador .
+}
+
+# Consulta 2: Obtener desfibrilador y su código DEA
+SELECT ?desfibrilador ?codigoDea
+WHERE {
+    ?desfibrilador a clpr:Desfibrilador ;
+                  clpr:idDesfibrilador ?codigoDea .
+}
+LIMIT 10
+
+# Consulta 3: Establecimientos, su tipo y titularidad
+SELECT ?establecimiento ?tipoEstablecimiento ?tipoTitularidad
+WHERE {
+    ?establecimiento a clpr:Establecimiento ;
+                    clpr:tipoEstablecimiento ?tipoEstablecimiento ;
+                    clpr:tipoTitularidad ?tipoTitularidad .
+}
+LIMIT 10
+
+# Consulta 5: Obtener municipios y sus equivalentes
+SELECT ?municipio ?equivalente
+WHERE {
+    ?municipio a clpr:Municipio .
+    ?municipio owl:sameAs ?equivalente .
+}

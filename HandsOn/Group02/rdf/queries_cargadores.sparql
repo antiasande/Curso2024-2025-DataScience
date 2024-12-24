@@ -1,0 +1,49 @@
+# Las consultas SPARQL se encuentran en este orden
+# Todas las clases
+# Cargadores en el barrio de Hispanoamérica
+# Barrios dentro del distrito de Salamanca
+# Cargadores con un convenio vía pública
+# Cargadores operados por Repsol
+# Cargadores con una potencia máxima de 150 kW
+# Todos los operadores
+# Cargadores con 3 equipos
+PREFIX ns: <http://owl-ontologies.com/ns#>
+PREFIX distritos: <http://example.org/distritos/>
+PREFIX barrios: <http://example.org/barrios/>
+PREFIX operadores: <http://example.org/operadores/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?class WHERE {
+    ?class rdf:type owl:Class
+    }
+
+SELECT ?cargador WHERE {
+    ?cargador ns:estaEn barrios:Hispanoamerica
+    }
+
+SELECT ?barrio WHERE {
+    ?barrio ns:dentroDe distritos:Salamanca
+    }
+
+SELECT ?cargador WHERE {
+    ?cargador ns:gestionDe "Convenio vía pública"
+    }
+
+SELECT ?cargador WHERE {
+    ?cargador ns:tieneOperador operadores:REPSOL
+    }
+
+SELECT ?cargador WHERE {
+    ?cargador ns:esDe "150 kW"^^rdfs:Literal
+    }
+
+SELECT ?operador WHERE {
+    ?operador rdf:type ns:Operador
+    }
+
+SELECT ?cargador WHERE {
+    ?cargador ns:numeroEquipos "3"^^xsd:integer.
+    }

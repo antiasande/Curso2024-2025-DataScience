@@ -1,0 +1,64 @@
+@prefix : <http://www.domainkg.com/base#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.domainkg.com/parking_ontology/resources#> .
+@prefix ins: <http://www.domainkg.com/parking_ontology/instances#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+ins:Distrito1 a ns:Distrito ;
+    ns:tieneNombre "Salamanca" ;
+    ns:tieneCodigo "02" ;
+    rdfs:label "Distrito Salamanca" .
+
+ins:Barrio1 a ns:Barrio ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:tieneCodigo "02-03" ;
+    rdfs:label "Recoletos" .
+
+ins:Via1 a ns:Via ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:tieneNombre "Calle de Goya" ;
+    rdfs:label "Calle de Goya" .
+
+ins:Direccion1 a ns:Direccion1 ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:estaEnVia ins:Via1 ;
+    ns:numeroVia "26" ;
+    rdfs:label "Calle de Goya, 26" .
+
+ins:Via2 a ns:Via ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:tieneNombre "Calle de Serrano" ;
+    rdfs:label "Calle de Goya" .
+
+ins:Direccion2 a ns:Direccion1 ;
+    ns:estaEnDistrito ins:Distrito1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:estaEnVia ins:Via2 ;
+    ns:numeroVia "22" ;
+    rdfs:label "Calle de Serrano, 22" .
+
+ins:AparcamientoPublico1 a ns:AparcamientosPúblicos ;
+    ns:estaEnDireccion ins:Direccion1 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:estaEnDistrito ins:Distrito1;
+    ns:esAccesible true ;
+    ns:tieneHorario "Abierto 24 horas";
+    ns:tieneNombre "Aparcamiento Goya";
+    ns:tienePlazas "100";
+    rdfs:label "Aparcamiento Goya con 100 plazas" .
+
+ins:AparcamientoMR1 a ns:aparcamientoSER ;
+    ns:estaEnDireccion ins:Direccion2 ;
+    ns:estaEnBarrio ins:Barrio1 ;
+    ns:estaEnDistrito ins:Distrito1;
+    ns:tieneColor "Verde";
+    ns:seAparcaEn "Batería";
+    ns:tienePlazas "150";
+    rdfs:label "Zona de estacionamiento Regulado en Serrano" .

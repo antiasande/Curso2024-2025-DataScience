@@ -1,0 +1,375 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ns: <http://owl-ontologies.com/ns#> .
+@prefix vocab: <http://example.org#> .
+
+<#IdPuntoDeRecargaClass>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#IdPuntoDeRecarga>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:Class;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Id Punto de Recarga"@es;
+    ].
+
+<#PotenciaDeEnchufeClass>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#PotenciaDeEnchufe>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:Class;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Potencia del Enchufe"@es;
+    ].
+
+<#DistritoClass>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#Distrito>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:Class;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Distrito"@es;
+    ].
+
+<#GestorClass>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#Gestor>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:Class;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Gestor"@es;
+    ].
+
+<#OperadorClass>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#Operador>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:Class;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Operador"@es;
+    ].
+
+<#BarrioClass>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#Barrio>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:Class;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Barrio"@es;
+    ].
+
+<#estaEnProperty>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#estaEn>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:ObjectProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Está en"@es;
+    ].
+
+<#esDeProperty>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#esDe>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:ObjectProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Es de"@es;
+    ].
+
+<#dentroDeProperty>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#dentroDe>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:ObjectProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Dentro de"@es;
+    ].
+
+<#gestionDeProperty>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#gestionDe>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:ObjectProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Gestión de"@es;
+    ].
+
+<#tieneOperadorProperty>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#tieneOperador>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:ObjectProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Tiene operador"@es;
+    ].
+
+<#latitudDatatype>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#latitud>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:DatatypeProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Latitud"@es;
+    ].
+
+<#longitudDatatype>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#longitud>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:DatatypeProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Longitud"@es;
+    ].
+
+<#numeroEquiposDatatype>
+    rml:logicalSource [
+        rml:source [];
+    ];
+    rr:subjectMap [
+        rr:constant <http://owl-ontologies.com/ns#numeroDeEquipos>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object owl:DatatypeProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:object "Número de Equipos"@es;
+    ].
+
+
+<#CargadoresMapping>
+    rml:logicalSource [
+        rml:source "cargadores-with-links.csv";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:object ns:IdPuntoDeRecarga;
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/cargadores/{OID_}"
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:estaEn;
+        rr:objectMap [
+            rr:parentTriplesMap <#BarriosMapping>
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:gestionDe;
+        rr:objectMap [
+            rml:reference "GESTIÓN"
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:tieneOperador;
+        rr:objectMap [
+            rr:parentTriplesMap <#OperadoresMapping>
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:latitud;
+        rr:objectMap [
+            rml:reference "LATITUD";
+            rr:datatype xsd:float
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:longitud;
+        rr:objectMap [
+            rml:reference "LONGITUD";
+            rr:datatype xsd:float
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:numeroEquipos;
+        rr:objectMap [
+            rml:reference "Nº_EQUIPOS";
+            rr:datatype xsd:integer
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:esDe;
+        rr:objectMap [
+            rml:reference "POTENCIA_MAX";
+            rr:datatype rdfs:Literal
+        ]
+    ].
+
+<#BarriosMapping>
+    rml:logicalSource [
+        rml:source "cargadores-with-links.csv";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/barrios/{BARRIO}"
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap <#BarrioClass>
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+        rr:objectMap [
+            rr:column "same_as_wikidata_barrio";
+            rr:termType rr:IRI
+        ]
+    ].
+
+<#BarriosDeDistritosMapping>
+    rml:logicalSource [
+        rml:source "cargadores-with-links.csv";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/barrios/{BARRIO}"
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ns:dentroDe;
+        rr:objectMap [
+            rr:parentTriplesMap <#DistritosMapping>
+        ]
+    ].
+
+<#DistritosMapping>
+    rml:logicalSource [
+        rml:source "cargadores-with-links.csv";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/distritos/{DISTRITO}"
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap <#DistritoClass>
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+        rr:objectMap [
+            rr:column "same_as_wikidata_distrito";
+            rr:termType rr:IRI
+        ]
+    ].
+
+<#OperadoresMapping>
+    rml:logicalSource [
+        rml:source "cargadores-with-links.csv";
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://example.org/operadores/{OPERADOR}"
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:type;
+        rr:objectMap [
+            rr:parentTriplesMap <#OperadorClass>
+        ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+        rr:objectMap [
+            rr:column "same_as_wikidata_operador";
+            rr:termType rr:IRI
+        ]
+    ].

@@ -1,0 +1,456 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q33506",
+        "name": "museum"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE to type Q33506"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "castillo-de-la-alameda",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8342365",
+      "name": "castle of La Alameda",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item castle of La Alameda (Q8342365) for cells containing \"castillo-de-la-alameda\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "ermita-de-san-antonio-de-la-florida-(museo)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3109752",
+      "name": "Royal Chapel of St. Anthony of La Florida",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Royal Chapel of St. Anthony of La Florida (Q3109752) for cells containing \"ermita-de-san-antonio-de-la-florida-(museo)\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "fronton-beti-jai",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8962895",
+      "name": "Beti Jai fronton",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Beti Jai fronton (Q8962895) for cells containing \"fronton-beti-jai\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "galeria-de-la-colecciones-reales",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6033986",
+      "name": "Royal Collections Gallery",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Royal Collections Gallery (Q6033986) for cells containing \"galeria-de-la-colecciones-reales\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "espacio-fundacion-telefonica",
+    "judgment": "matched",
+    "match": {
+      "id": "Q91769127",
+      "name": "Fundación Telefónica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fundación Telefónica (Q91769127) for cells containing \"espacio-fundacion-telefonica\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "la-casa-encendida-de-la-fundacion-montemadrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5962732",
+      "name": "La Casa Encendida",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Casa Encendida (Q5962732) for cells containing \"la-casa-encendida-de-la-fundacion-montemadrid\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "museo-naval",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1815235",
+      "name": "Naval Museum of Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Naval Museum of Madrid (Q1815235) for cells containing \"museo-naval\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "museo-taurino-de-la-comunidad-de-madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27500479",
+      "name": "Museo Taurino de Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Museo Taurino de Madrid (Q27500479) for cells containing \"museo-taurino-de-la-comunidad-de-madrid\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "museo-de-astronomia-y-geodesia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26958712",
+      "name": "astronomical museum",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item astronomical museum (Q26958712) for cells containing \"museo-de-astronomia-y-geodesia\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "museo-de-calcografia-nacional",
+    "judgment": "matched",
+    "match": {
+      "id": "Q111818807",
+      "name": "Calcografía Nacional",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calcografía Nacional (Q111818807) for cells containing \"museo-de-calcografia-nacional\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "museo-de-mineralogia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q13532751",
+      "name": "Museo Geominero",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Museo Geominero (Q13532751) for cells containing \"museo-de-mineralogia\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "museo-del-traje.-centro-de-investigacion-del-patrimonio-etnologico-(cipe)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9047135",
+      "name": "Museo del Traje",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Museo del Traje (Q9047135) for cells containing \"museo-del-traje.-centro-de-investigacion-del-patrimonio-etnologico-(cipe)\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "parroquia-santa-cruz",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5912532",
+      "name": "Church of Santa Cruz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Church of Santa Cruz (Q5912532) for cells containing \"parroquia-santa-cruz\" in column NOMBRE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "real-basilica-san-francisco-el-grande",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2473884",
+      "name": "Royal Basilica of Saint Francis the Great",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Royal Basilica of Saint Francis the Great (Q2473884) for cells containing \"real-basilica-san-francisco-el-grande\" in column NOMBRE"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE_RECON",
+    "columnInsertIndex": 2,
+    "description": "Create column NOMBRE_RECON at index 2 based on column NOMBRE using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE-VIA to type Q79007"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE-VIA",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE-VIA-RECON",
+    "columnInsertIndex": 11,
+    "description": "Create column NOMBRE-VIA-RECON at index 11 based on column NOMBRE-VIA using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO to type Q10267336"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "BARRIo_RECON",
+    "columnInsertIndex": 24,
+    "description": "Create column BARRIo_RECON at index 24 based on column BARRIO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRITO to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRITO",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "DISTRITO-RECON",
+    "columnInsertIndex": 27,
+    "description": "Create column DISTRITO-RECON at index 27 based on column DISTRITO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIo_RECON",
+    "newColumnName": "BARRIO-RECON",
+    "description": "Rename column BARRIo_RECON to BARRIO-RECON"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO-RECON",
+    "newColumnName": "BARRIO-RE",
+    "description": "Rename column BARRIO-RECON to BARRIO-RE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO-RE",
+    "newColumnName": "BARRIO-RECON",
+    "description": "Rename column BARRIO-RE to BARRIO-RECON"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO-RECON",
+    "newColumnName": "BARRIO-RECO",
+    "description": "Rename column BARRIO-RECON to BARRIO-RECO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO-RECO",
+    "newColumnName": "BARRIO-RECON",
+    "description": "Rename column BARRIO-RECO to BARRIO-RECON"
+  }
+]

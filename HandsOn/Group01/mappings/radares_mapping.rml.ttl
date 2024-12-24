@@ -1,0 +1,76 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ont: <http://dominiowebsemantica.com/ontology/ont#> .
+
+<#RadaresMapping> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "HandsOn/Group01/csv/RADARES-FIJOS-vDTT-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://dominiowebsemantica.com/resource/Radar/{ID}" ;
+        rr:class ont:Radar
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:numRadar ;
+        rr:objectMap [ rml:reference "numRadar" ; rr:datatype <http://www.w3.org/2001/XMLSchema#integer> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:tipo ;
+        rr:objectMap [ rml:reference "tipo" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:velocidadLimite ;
+        rr:objectMap [ rml:reference "velocidadLimite" ; rr:datatype <http://www.w3.org/2001/XMLSchema#integer> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:responsable ;
+        rr:objectMap [ rml:reference "responsable" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ont:radarUbicadoEn ;
+        rr:objectMap [ rr:template "http://dominiowebsemantica.com/resource/infoCarretera/{ID}" ]
+    ] .
+
+
+
+
+<#InfoCarreteraMapping> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "HandsOn/Group01/csv/RADARES-FIJOS-vDTT-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ];
+    rr:subjectMap [
+        rr:template "http://dominiowebsemantica.com/resource/InfoCarretera/{ID}" ;
+        rr:class ont:InfoCarretera
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:ubicacion ;
+        rr:objectMap [ rml:reference "ubicacion" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:carretera ;
+        rr:objectMap [ rml:reference "carretera" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:pk ;
+        rr:objectMap [ rml:reference "pk" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:sentido ;
+        rr:objectMap [ rml:reference "sentido" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:carril ;
+        rr:objectMap [ rml:reference "carril" ; rr:datatype <http://www.w3.org/2001/XMLSchema#string> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:coordenadaY ;
+        rr:objectMap [ rml:reference "Latitud" ; rr:datatype <http://www.w3.org/2001/XMLSchema#decimal> ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ont:coordenadaX ;
+        rr:objectMap [ rml:reference "Longitud" ; rr:datatype <http://www.w3.org/2001/XMLSchema#decimal> ]
+    ].

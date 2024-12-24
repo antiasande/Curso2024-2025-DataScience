@@ -1,0 +1,47 @@
+[
+    {
+      "op": "core/recon",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "distrito(num)",
+      "config": {
+        "mode": "standard-service",
+        "service": "https://wikidata.reconci.link/en/api",
+        "identifierSpace": "http://www.wikidata.org/entity/",
+        "schemaSpace": "http://www.wikidata.org/prop/direct/",
+        "type": {
+          "id": "Q3032114",
+          "name": "district of Madrid"
+        },
+        "autoMatch": true,
+        "batchSize": 10,
+        "columnDetails": [],
+        "limit": 0
+      },
+      "description": "Reconcile cells in column distrito(num) to type Q3032114"
+    },
+    {
+      "op": "core/recon-match-best-candidates",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "distrito(num)",
+      "description": "Match each cell to its best recon candidate in column distrito(num)"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "distrito(num)",
+      "expression": "grel:\"https://wikidata.org/entity/\" + cell.recon.match.id",
+      "onError": "set-to-blank",
+      "newColumnName": "distrito_Wikidata",
+      "columnInsertIndex": 5,
+      "description": "Create column distrito_Wikidata at index 5 based on column distrito(num) using expression grel:\"https://wikidata.org/entity/\" + cell.recon.match.id"
+    }
+  ]

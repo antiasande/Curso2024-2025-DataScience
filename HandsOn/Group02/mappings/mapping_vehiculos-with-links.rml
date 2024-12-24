@@ -1,0 +1,263 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns: <http://owl-ontologies.com/ns#> .
+@prefix vocab: <http://example.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<#VehiculosMapping>
+  rml:logicalSource [
+    rml:source "vehiculos-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://example.org/vehiculos/{ID}" ;
+    rr:class ns:Vehiculo
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ns:estaEn ;
+    rr:objectMap [ rr:parentTriplesMap <#BarriosMapping> ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ns:esUn ;
+    rr:objectMap [ rr:parentTriplesMap <#TipoVehiculoMapping> ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ns:seClasificaComo ;
+    rr:objectMap [ rr:parentTriplesMap <#ClasificacionAmbientalMapping> ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ns:tipoDeCarburante ;
+    rr:objectMap [ rr:parentTriplesMap <#TipoCarburanteMapping> ]
+  ] .
+
+<#DistritosMapping>
+  rml:logicalSource [
+    rml:source "vehiculos-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://example.org/distritos/{DISTRITO}" ;
+    rr:class ns:Distrito
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs ; rr:termType rr:IRI ] ;
+    rr:objectMap [
+      rr:column "same_as_wikidata_distrito" ;
+      rr:termType rr:IRI
+    ]
+  ] .
+
+<#BarriosMapping>
+  rml:logicalSource [
+    rml:source "vehiculos-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://example.org/barrios/{BARRIO}" ;
+    rr:class ns:Barrio
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ns:dentroDe ;
+    rr:objectMap [ rr:parentTriplesMap <#DistritosMapping> ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs ; rr:termType rr:IRI ] ;
+    rr:objectMap [
+      rr:column "same_as_wikidata_barrio" ;
+      rr:termType rr:IRI
+    ]
+  ] .
+
+<#TipoVehiculoMapping>
+  rml:logicalSource [
+    rml:source "vehiculos-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://example.org/tipovehiculo/{TIPO_VEHICULO}" ;
+    rr:class ns:TipoVehiculo
+  ] .
+
+<#ClasificacionAmbientalMapping>
+  rml:logicalSource [
+    rml:source "vehiculos-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://example.org/clasificacion_ambiental/{CLASIFICACION_AMBIENTAL}" ;
+    rr:class ns:ClasificacionAmbiental
+  ] .
+
+<#TipoCarburanteMapping>
+  rml:logicalSource [
+    rml:source "vehiculos-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://example.org/tipocarburante/{TIPO_CARBURANTE}" ;
+    rr:class ns:TipoCarburante
+  ] .
+
+<#dentroDeProperty>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:dentroDe
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:ObjectProperty
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Dentro de"@es
+  ] .
+
+<#estaEnProperty>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:estaEn
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:ObjectProperty
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Está en"@es
+  ] .
+
+<#esUnProperty>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:esUn
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:ObjectProperty
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Es un"@es
+  ] .
+
+<#seClasificaComoProperty>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:seClasificaComo
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:ObjectProperty
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Se clasifica como"@es
+  ] .
+
+<#tipoDeCarburanteProperty>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:tipoDeCarburante
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:ObjectProperty
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Tipo de carburante"@es
+  ] .
+
+<#BarrioClass>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:Barrio
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:Class
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Barrio"@es
+  ] .
+
+<#DistritoClass>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:Distrito
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:Class
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Distrito"@es
+  ] .
+
+<#TipoCarburanteClass>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:TipoCarburante
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:Class
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Tipo carburante"@es
+  ] .
+
+<#ClasificacionAmbientalClass>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:ClasificacionAmbiental
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:Class
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Clasificación ambiental"@es
+  ] .
+
+<#TipoVehiculoClass>
+  rml:logicalSource [
+    rml:source []
+  ] ;
+  rr:subjectMap [
+    rr:constant ns:TipoVehiculo
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:object owl:Class
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:object "Tipo de vehículo"@es
+  ] .

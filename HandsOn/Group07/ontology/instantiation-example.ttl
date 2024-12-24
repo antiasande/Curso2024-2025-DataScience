@@ -1,0 +1,204 @@
+@prefix base: <http://turismo.mad.es/cultural/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tm: <http://turismo.mad.es/cultural/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+base: a owl:Ontology ;
+    dc:creator "Grupo07" ;
+    dc:title "Ontologia turismo Madrid" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+tm:6017808 a tm:Museum,
+        owl:NamedIndividual ;
+    tm:hasAccessibility "3"^^xsd:string ;
+    tm:hasAddress tm:4346634478596 ;
+    tm:hasDescription "Fundación AMYC (Arte Moderno y Contemporáneo).   Este museo, situado en Aravaca y conocido también como Casa - Museo Fuente del Rey. Fundación AMYC, ofrece al visitante una colección de más de 250 obras entre pinturas, dibujos y esculturas (198 pinturas, 37 esculturas y 27 dibujos) realizadas desde mediados del siglo XIX hasta principios del XXI. Se exponen piezas de grandes artistas modernistas e impresionistas como Sorolla, Mariano Fortuny, Nonell, Rusiñol, Ramón Casas, Mir, Rendir, Gargallo, Joseph Llimona, Joan Miró, Salvador Dalí, Tapies, Anglada Camarasa o Torres García, entre otros. La colección está formada por los fondos privados del coleccionista y mecenas Francisco Daurella y se muestra en lo que fue su casa. Los más de 3000 metros cuadrados del edificio así como su jardín, han sido rehabilitados para poder acoger las obras en el que es el primer museo de la capital dedicado en exclusiva al arte catalán."^^xsd:string ;
+    tm:hasEmail "info@fundacionamyc.org"^^xsd:string ;
+    tm:hasFacilities ""^^xsd:string ;
+    tm:hasFaxNumber ""^^xsd:string ;
+    tm:hasId 6017808 ;
+    tm:hasName "Casa Museo Fuente del Rey"^^xsd:string ;
+    tm:hasNearbyTransport "Bus: 161."^^xsd:string ;
+    tm:hasNearbyTransportDescription ""^^xsd:string ;
+    tm:hasOpeningHours "Martes a sábado, de 10 a 19 horas. Lunes, domingos y festivos cerrado. Visitas para grupos de hasta 25 personas dentro de los horarios de apertura. Pueden ser con guía propio o con guía de la Fundación, y la duración de la misma es de una hora, previa reserva telefónica o por email."^^xsd:string ;
+    tm:hasOrganismType "/contenido/entidadesYorganismos/FundacionesCulturales"^^xsd:anyURI ;
+    tm:hasPhoneNumber "913 579 116"^^xsd:integer ;
+    tm:hasUR "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c1260101310f210VgnVCM1000000b205a0aRCRD"^^xsd:anyURI .
+
+tm:hasAccessibility a owl:DatatypeProperty ;
+    rdfs:label "has accessibility" .
+
+tm:hasAddress a owl:ObjectProperty ;
+    rdfs:label "has address" .
+
+tm:hasAddressLocation a owl:ObjectProperty ;
+    rdfs:label "has address location" .
+
+tm:hasCoordX a owl:DatatypeProperty ;
+    rdfs:label "has coord x" .
+
+tm:hasCoordY a owl:DatatypeProperty ;
+    rdfs:label "has coord y" .
+
+tm:hasDescription a owl:DatatypeProperty ;
+    rdfs:label "has description" .
+
+tm:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" .
+
+tm:hasDistrictCode a owl:DatatypeProperty ;
+    rdfs:label "has district code" .
+
+tm:hasDistrictName a owl:DatatypeProperty ;
+    rdfs:label "has district name" .
+
+tm:hasDoor a owl:DatatypeProperty ;
+    rdfs:label "has door" .
+
+tm:hasEmail a owl:DatatypeProperty ;
+    rdfs:label "has email" .
+
+tm:hasFacilities a owl:DatatypeProperty ;
+    rdfs:label "has facilities" .
+
+tm:hasFaxNumber a owl:DatatypeProperty ;
+    rdfs:label "has fax number" .
+
+tm:hasFloorNumbe a owl:DatatypeProperty ;
+    rdfs:label "has floor numbe" .
+
+tm:hasId a owl:DatatypeProperty ;
+    rdfs:label "has id" .
+
+tm:hasLatitude a owl:DatatypeProperty ;
+    rdfs:label "has latitude" .
+
+tm:hasLocality a owl:DatatypeProperty ;
+    rdfs:label "has locality" .
+
+tm:hasLongitude a owl:DatatypeProperty ;
+    rdfs:label "has longitude" .
+
+tm:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" .
+
+tm:hasNearbyTransport a owl:DatatypeProperty ;
+    rdfs:label "has nearby transport" .
+
+tm:hasNearbyTransportDescription a owl:DatatypeProperty ;
+    rdfs:label "has nearby transport description" .
+
+tm:hasNeighborhood a owl:ObjectProperty ;
+    rdfs:label "has neighborhood" .
+
+tm:hasNeighborhoodCod a owl:DatatypeProperty ;
+    rdfs:label "has neighborhood cod" .
+
+tm:hasNeighborhoodName a owl:DatatypeProperty ;
+    rdfs:label "has neighborhood name" .
+
+tm:hasOpeningHours a owl:DatatypeProperty ;
+    rdfs:label "has opening hours" .
+
+tm:hasOrganismType a owl:DatatypeProperty ;
+    rdfs:label "has organism type" .
+
+tm:hasOrientation a owl:DatatypeProperty ;
+    rdfs:label "has orientation" .
+
+tm:hasPhoneNumber a owl:DatatypeProperty ;
+    rdfs:label "has phone number" .
+
+tm:hasPostalCode a owl:DatatypeProperty ;
+    rdfs:label "has postal code" .
+
+tm:hasProvince a owl:DatatypeProperty ;
+    rdfs:label "has province" .
+
+tm:hasStairs a owl:DatatypeProperty ;
+    rdfs:label "has stairs" .
+
+tm:hasStreet a owl:ObjectProperty ;
+    rdfs:label "has street" .
+
+tm:hasStreetName a owl:DatatypeProperty ;
+    rdfs:label "has street name" .
+
+tm:hasStreetNumber a owl:DatatypeProperty ;
+    rdfs:label "has street number" .
+
+tm:hasStreetNumberType a owl:DatatypeProperty ;
+    rdfs:label "has street number type" .
+
+tm:hasStreetType a owl:DatatypeProperty ;
+    rdfs:label "has street type" .
+
+tm:hasUR a owl:DatatypeProperty ;
+    rdfs:label "has u r" .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+tm:4346634478596 a tm:Address,
+        owl:NamedIndividual ;
+    tm:hasAddressLocation tm:Location_FUENTEDELREY_ARAVACA_MONCLOA-ARAVACA ;
+    tm:hasCoordX 434663 ;
+    tm:hasCoordY 4478596 ;
+    tm:hasDoor ""^^xsd:string ;
+    tm:hasFloorNumbe ""^^xsd:string ;
+    tm:hasLatitude -37705716814130900.0 ;
+    tm:hasLocality "MADRID"^^xsd:string ;
+    tm:hasLongitude 4045546866305680.0 ;
+    tm:hasOrientation ""^^xsd:string ;
+    tm:hasPostalCode 28023 ;
+    tm:hasProvince "MADRID"^^xsd:string ;
+    tm:hasStairs ""^^xsd:string .
+
+tm:ARAVACA a tm:Neighborhood,
+        owl:NamedIndividual ;
+    tm:hasNeighborhoodCod 11 ;
+    tm:hasNeighborhoodName "ARAVACA"^^xsd:string .
+
+tm:Address a owl:Class ;
+    rdfs:label "Address" .
+
+tm:Disitrict a owl:Class ;
+    rdfs:label "Disitrict" .
+
+tm:FUENTEDELREY a tm:Street,
+        owl:NamedIndividual ;
+    tm:hasStreetName "FUENTE DEL REY"^^xsd:string ;
+    tm:hasStreetNumber 11 ;
+    tm:hasStreetNumberType "V"^^xsd:string ;
+    tm:hasStreetType "CALLE"^^xsd:string .
+
+tm:Location a owl:Class ;
+    rdfs:label "Location" .
+
+tm:Location_FUENTEDELREY_ARAVACA_MONCLOA-ARAVACA a tm:Location,
+        owl:NamedIndividual ;
+    tm:hasDistrict tm:MONCLOA-ARAVACA ;
+    tm:hasNeighborhood tm:ARAVACA ;
+    tm:hasStreet tm:FUENTEDELREY .
+
+tm:MONCLOA-ARAVACA a tm:Disitrict,
+        owl:NamedIndividual ;
+    tm:hasDistrictCode 9 ;
+    tm:hasDistrictName "MONCLOA-ARAVACA"^^xsd:integer .
+
+tm:Museum a owl:Class ;
+    rdfs:label "Museum" .
+
+tm:Neighborhood a owl:Class ;
+    rdfs:label "Neighborhood" .
+
+tm:Street a owl:Class ;
+    rdfs:label "Street" .
+

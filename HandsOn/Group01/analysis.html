@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analysis.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            margin: 5px 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Análisis de Fuentes de Datos</h1>
+
+    <section>
+        <h2>Análisis Realizado sobre las Fuentes de Datos</h2>
+        <p>Se han llevado a cabo análisis detallados en dos conjuntos de datos clave para la seguridad vial y la gestión del tráfico en el contexto de ciudades inteligentes:</p>
+        <ul>
+            <li><strong>Accidentalidad (Madrid 2024):</strong> Este conjunto de datos detalla los incidentes de tráfico en Madrid, incluyendo atributos como la fecha, hora, localización georreferenciada, tipo de accidente, condiciones del tiempo, y factores que contribuyeron a los accidentes. El análisis se enfocó en identificar patrones temporales y espaciales para la planificación de medidas preventivas.</li>
+            <li><strong>Radares Fijos (Madrid):</strong> Este conjunto contiene la ubicación y características de los radares fijos de tráfico en Madrid, con información georreferenciada y datos sobre la velocidad máxima permitida. Se evaluó la distribución geográfica de estos dispositivos y su impacto potencial en la seguridad vial.</li>
+        </ul>
+        <p>El procesamiento de los datos implicó la limpieza y normalización, la validación de ubicaciones geográficas, y la preparación para análisis avanzados de seguridad y gestión del tráfico.</p>
+        
+    </section>
+
+    <section>
+        <h2>Licencia de las Fuentes de Datos y Licencia Potencial</h2>
+        <p>Ambos conjuntos de datos están licenciados bajo <a href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">condiciones que permiten su reutilización</a> tanto para propósitos comerciales como no comerciales, siempre que se respeten los siguientes términos:</p>
+        <ul>
+            <li>No desnaturalizar el sentido de la información.</li>
+            <li>Citar la fuente de los datos: "Origen de los datos: Comunidad de Madrid y Ayuntamiento de Madrid".</li>
+            <li>Mencionar la fecha de la última actualización si se proporciona.</li>
+            <li>No dar a entender que las autoridades apoyan o patrocinan la reutilización realizada.</li>
+            <li>Conservar los metadatos relacionados con la actualización y las condiciones de reutilización.</li>
+            <li>Está prohibido intentar re-identificar datos anonimizados.</li>
+        </ul>
+        <p>Una licencia potencial para la reutilización podría ser una licencia Creative Commons (CC BY 4.0) que permita la redistribución y modificación de los datos con atribución adecuada.</p>
+        
+    </section>
+
+    <section>
+        <h2>Estrategia de Nombres de Recursos Definida</h2>
+        <p>La estrategia de nombres de recursos y ontologías asegura claridad y consistencia para una gestión eficiente:</p>
+        <h3>Formato:</h3>
+        <ul>
+            <li><strong>Ontología: </strong> <span class="ttl">http://dominiowebsemantica.com/ontology/ont#{NOMBRE_ONTOLOGÍA}</span></li>
+            <li><strong>Recursos: </strong> <span class="ttl">http://dominiowebsemantica.com/resource/{NOMBRE_RECURSO}/{IDENTIFICADOR}</span></li>
+        </ul>
+        <h3>Ejemplo:</h3>
+        <ul>
+            <li><strong>Ontología: </strong> <span class="ttl">http://dominiowebsemantica.com/ontology/ont#numero</span></li>
+            <li><strong>Recursos: </strong> <span class="ttl">http://dominiowebsemantica.com/resource/Accidente/a284061d-e078-480d-86d5-3aef47b0dd36</span></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Accidentalidad</h2>
+        <p>Datos sobre accidentes de tráfico en Madrid. Estos datos incluyen información clave para identificar patrones y mejorar la seguridad vial.</p>
+        <h3>Descripción de Columnas de Accidentalidad</h3>
+        <table>
+            <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Rango de Valores</th>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>String</td>
+                <td>Valor único alfanumérico</td>
+            </tr>
+            <tr>
+                <td>Num. Expediente</td>
+                <td>String</td>
+                <td>Alfanumérico único del expediente</td>
+            </tr>
+            <tr>
+                <td>Fecha y Hora</td>
+                <td>Datetime</td>
+                <td>Formato ISO 8601: YYYY-MM-DDTHH:MM:SSZ</td>
+            </tr>
+            <tr>
+                <td>Localización</td>
+                <td>String</td>
+                <td>Descripción geográfica del lugar</td>
+            </tr>
+            <tr>
+                <td>Número</td>
+                <td>Integer</td>
+                <td>Valor numérico de identificación</td>
+            </tr>
+            <tr>
+                <td>Código Distrito</td>
+                <td>Integer</td>
+                <td>Código numérico del distrito</td>
+            </tr>
+            <tr>
+                <td>Distrito</td>
+                <td>String</td>
+                <td>Nombre del distrito</td>
+            </tr>
+            <tr>
+                <td>Tipo de Accidente</td>
+                <td>String</td>
+                <td>Tipo de accidente (Colisión, caída, etc.)</td>
+            </tr>
+            <tr>
+                <td>Estado Meteorológico</td>
+                <td>String</td>
+                <td>Estado del clima (Lluvia, niebla, etc.)</td>
+            </tr>
+            <tr>
+                <td>Tipo de Vehículo</td>
+                <td>String</td>
+                <td>Tipo de vehículo (Coche, motocicleta, etc.)</td>
+            </tr>
+            <tr>
+                <td>Tipo de Persona</td>
+                <td>String</td>
+                <td>conductor/peatón/pasajero.</td>
+            </tr>
+            <tr>
+                <td>Edad Mínima</td>
+                <td>String</td>
+                <td>Edad mínima de la persona involucrada, mínima recogida 6. Hay valores desconodidos.</td>
+            </tr>
+            <tr>
+                <td>Edad Máxima</td>
+                <td>String</td>
+                <td>Edad máxima de la persona involucrada, máxima recogida 74. Hay valores desconodidos</td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td>String</td>
+                <td>Sexo de la persona (Hombre, Mujer).</td>
+            </tr>
+            <tr>
+                <td>Código de Lesividad</td>
+                <td>Integer</td>
+                <td>0-14.</td>
+            </tr>
+            <tr>
+                <td>Lesividad</td>
+                <td>String</td>
+                <td>Descripción del tipo de lesividad.</td>
+            </tr>
+            <tr>
+                <td>Coordenada X</td>
+                <td>Float</td>
+                <td>Coordenada X en el sistema geográfico.</td>
+            </tr>
+            <tr>
+                <td>Coordenada Y</td>
+                <td>Float</td>
+                <td>Coordenada Y en el sistema geográfico.</td>
+            </tr>
+            <tr>
+                <td>Positiva Alcohol</td>
+                <td>Boolean</td>
+                <td>True/False.</td>
+            </tr>
+            <tr>
+                <td>Positiva Droga</td>
+                <td>String</td>
+                <td>1/NULL.</td>
+            </tr>
+        </table>
+        <h3>Ejemplo de fila de accidentalidad</h3>
+        <p>Ejemplo para visualizar cómo se muestran los datos en el csv, se muestra la primera fila del documento.</p>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Num. Expediente</th>
+                <th>Fecha y Hora</th>
+                <th>Localización</th>
+                <th>Número</th>
+                <th>Código Distrito</th>
+                <th>Distrito</th>
+                <th>Tipo de Accidente</th>
+                <th>Estado Meteorológico</th>
+                <th>Tipo de Vehículo</th>
+                <th>Tipo de Persona</th>
+                <th>Edad Mínima</th>
+                <th>Edad Máxima</th>
+                <th>Sexo</th>
+                <th>Código de Lesividad</th>
+                <th>Lesividad</th>
+                <th>Coordenada X</th>
+                <th>Coordenada Y</th>
+                <th>Positiva Alcohol</th>
+                <th>Positiva Droga</th>
+            </tr>
+            <tr>
+                <td>5e2c5f44-f47c-4305-80b9-27d08d8900ac</td>
+                <td>2023S040280</td>
+                <td>2024-04-01T14:09:00Z</td>
+                <td>AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11</td>
+                <td>3</td>
+                <td>16</td>
+                <td>HORTALEZA</td>
+                <td>Colisión fronto-lateral</td>
+                <td>Lluvia débil</td>
+                <td>Motocicleta &gt; 125cc</td>
+                <td>Conductor</td>
+                <td>55</td>
+                <td>59</td>
+                <td>Hombre</td>
+                <td>2</td>
+                <td>Ingreso inferior o igual a 24 horas</td>
+                <td>444913</td>
+                <td>4481427</td>
+                <td>False</td>
+                <td>NULL</td>
+            </tr>
+        </table>
+        <h3>Análisis sobre Accidentalidad</h3>
+        <p>A continuación se detalla el significado de cada columna en la tabla de accidentalidad:</p>
+        <ul>
+            <li><strong>ID:</strong> El ID es una combinación alfanumérica única que identifica cada incidente de accidentalidad. Este campo es esencial para distinguir cada evento.</li>
+            <li><strong>Num. Expediente:</strong> Este es el código único alfanumérico que corresponde al expediente del accidente. Cada expediente es un registro independiente asociado a un caso.</li>
+            <li><strong>Fecha y Hora:</strong> Esta columna indica la fecha y hora exacta en la que ocurrió el accidente, en formato ISO 8601 (YYYY-MM-DDTHH:MM:SSZ).</li>
+            <li><strong>Localización:</strong> Aquí se describe la localización geográfica del accidente. Esta información puede incluir calles, avenidas o intersecciones relevantes dentro de la ciudad.</li>
+            <li><strong>Número:</strong> Es un número de identificación dentro del expediente del accidente, que puede ser utilizado para la referencia del caso.</li>
+            <li><strong>Código Distrito:</strong> Este es un código numérico que representa el distrito administrativo donde ocurrió el accidente.</li>
+            <li><strong>Distrito:</strong> Nombre del distrito donde ocurrió el accidente. Se refiere a la zona administrativa que agrupa la ubicación del evento.</li>
+            <li><strong>Tipo de Accidente:</strong> Describe el tipo de accidente ocurrido, se recogen muchos datos diferentes.</li>
+            <li><strong>Estado Meteorológico:</strong> Indica las condiciones meteorológicas en el momento del accidente, se recogen seis tipos de condiciones distintas, además de Desconocido</li>
+            <li><strong>Tipo de Vehículo:</strong> Aquí se especifica el tipo de vehículo involucrado en el accidente, como automóvil, motocicleta, bicicleta, etc.</li>
+            <li><strong>Tipo de Persona:</strong> Este campo describe el tipo de persona involucrada en el accidente (conductor, peatón, pasajero).</li>
+            <li><strong>Edad Mínima:</strong> La edad mínima de las personas involucradas en el accidente. Se da como un valor numérico (se recogen datos a partir de 6 años pero hay filas clasificadas como Desconocido).</li>
+            <li><strong>Edad Máxima:</strong> La edad máxima de las personas involucradas en el accidente. Similar a la edad mínima, se presenta como un valor numérico (se recogen datos hasta 74 años pero hay filas clasificadas como Desconocido).</li>
+            <li><strong>Sexo:</strong> Aquí se indica el sexo de la persona involucrada en el accidente (Hombre, Mujer o Desconocido).</li>
+            <li><strong>Código de Lesividad:</strong> Es un código numérico que clasifica el tipo de lesiones sufridas en el accidente (toma valores entre 0-14).</li>
+            <li><strong>Lesividad:</strong> Descripción del nivel de lesividad o gravedad de las lesiones sufridas por la persona involucrada, que puede ser en función de la hospitalización, tipo de tratamiento requerido, etc.</li>
+            <li><strong>Coordenada X:</strong> Esta columna muestra la coordenada X geográfica de la ubicación del accidente, correspondiente a la latitud del mapa.</li>
+            <li><strong>Coordenada Y:</strong> Similar a la coordenada X, la coordenada Y determina la ubicación vertical del accidente en el sistema de coordenadas geográficas.</li>
+            <li><strong>Positiva Alcohol:</strong> Indica si el conductor dio positivo en alcohol. Este valor es un booleano (True/False).</li>
+            <li><strong>Positiva Droga:</strong> Similar a la columna anterior, indica si el conductor dio positivo en drogas, los positivos se recogen como 1 y si se desconoce es NULL.</li>
+        </ul>
+
+    </section>
+    
+    <section>
+        <h2>Radares</h2>
+        <p>Datos sobre los radares de tráfico en Madrid. Estos datos incluyen información sobre su posición, tipo y velocidad límite, entre otros. </p>
+        <h3>Descripción de Columnas de Radares</h3>
+        <table>
+            <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Rango de Valores</th>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>String</td>
+                <td>Valor único alfanumérico</td>
+            </tr>
+            <tr>
+                <td>Número de radar</td>
+                <td>Integer</td>
+                <td>1-36</td>
+            </tr>
+            <tr>
+                <td>Ubicación</td>
+                <td>String</td>
+                <td>Descripción de la localización geográfica</td>
+            </tr>
+            <tr>
+                <td>Carretera</td>
+                <td>String</td>
+                <td>Nombre de la carretera</td>
+            </tr>
+            <tr>
+                <td>Ubicación de la carretera</td>
+                <td>String</td>
+                <td>Identificador de la ubicación específica</td>
+            </tr>
+            <tr>
+                <td>Punto kilométrico</td>
+                <td>String</td>
+                <td>Posición en kilómetros, algunos valores pueden ser NULL</td>
+            </tr>
+            <tr>
+                <td>Sentido</td>
+                <td>String</td>
+                <td>Dirección de tráfico detectada</td>
+            </tr>
+            <tr>
+                <td>Tipo de radar</td>
+                <td>String</td>
+                <td>Fijo o Tramo</td>
+            </tr>
+            <tr>
+                <td>Carril</td>
+                <td>String</td>
+                <td>Indicaciones de carriles</td>
+            </tr>
+            <tr>
+                <td>Longitud del inicio del tramo</td>
+                <td>Float</td>
+                <td>Longitud en metros, algunos valores pueden ser NULL</td>
+            </tr>
+            <tr>
+                <td>Latitud del inicio del tramo</td>
+                <td>Float</td>
+                <td>Latitud en grados decimales</td>
+            </tr>
+            <tr>
+                <td>Coordenada X</td>
+                <td>Float</td>
+                <td>Coordenada X en coordenadas geográficas</td>
+            </tr>
+            <tr>
+                <td>Coordenada Y</td>
+                <td>Float</td>
+                <td>Coordenada Y en coordenadas geográficas</td>
+            </tr>
+            <tr>
+                <td>Longitud</td>
+                <td>Float</td>
+                <td>Longitud geográfica en grados decimales</td>
+            </tr>
+            <tr>
+                <td>Latitud</td>
+                <td>Float</td>
+                <td>Latitud geográfica en grados decimales</td>
+            </tr>
+            <tr>
+                <td>Velocidad límite</td>
+                <td>Integer</td>
+                <td>50, 70 o 90 km/h</td>
+            </tr>
+            <tr>
+                <td>Responsable</td>
+                <td>String</td>
+                <td>DGP o DGGVC</td>
+            </tr>
+        </table>
+        <h3>Ejemplo de fila de radares</h3>
+        <p>Ejemplo para visualizar cómo se muestran los datos en el csv, se muestra la primera fila del documento.</p>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Número de radar</th>
+                <th>Ubicación</th>
+                <th>Carretera</th>
+                <th>Ubicación de la carretera</th>
+                <th>Punto kilométrico</th>
+                <th>Sentido</th>
+                <th>Tipo de radar</th>
+                <th>Carril</th>
+                <th>Longitud del inicio del tramo</th>
+                <th>Latitud del inicio del tramo</th>
+                <th>Coordenada X</th>
+                <th>Coordenada Y</th>
+                <th>Longitud</th>
+                <th>Latitud</th>
+                <th>Velocidad límite</th>
+                <th>Responsable</th>
+            </tr>
+            <tr>
+                <td>b2bee941-2a0b-4140-bddb-ad1143daa179</td>
+                <td>1</td>
+                <td>M-30, ENTRADA DE LA A-1, SENTIDO PUENTE DE VENTAS P.K. 0,500</td>
+                <td>M-30</td>
+                <td>00NC50</td>
+                <td>0+500</td>
+                <td>Calzada interior</td>
+                <td>Fijo</td>
+                <td>Fijo carril 4</td>
+                <td>NULL</td>
+                <td>NULL</td>
+                <td>442843.0</td>
+                <td>4481180.0</td>
+                <td>-3.67433808</td>
+                <td>40.47934148</td>
+                <td>90</td>
+                <td>DGP</td>
+            </tr>
+        </table>
+        <h3>Análisis sobre Radares</h3>
+        <p>A continuación se detalla el significado de cada columna en la tabla de radares:</p>
+        <ul>
+            <li><strong>ID:</strong> El ID es una combinación alfanumérica única que identifica cada radar. Este campo es esencial para distinguir cada dispositivo.</li>
+            <li><strong>Número de radar:</strong> Este número varía entre 1 y 36, ya que existen un total de 36 radares en el conjunto de datos. Cada número corresponde a un radar específico.</li>
+            <li><strong>Ubicación:</strong> Esta columna indica la localización exacta de cada radar. Dado que Madrid cuenta con varias carreteras, algunos radares pueden compartir ubicación si están situados en puntos comunes, como en el cruce de varias vías.</li>
+            <li><strong>Carretera:</strong> Aquí se especifica la carretera en la que se encuentra el radar. Se pueden encontrar valores repetidos, como la M-30 y la A-5, ya que ambos tienen múltiples radares a lo largo de su recorrido.</li>
+            <li><strong>Ubicación de la carretera:</strong> Esta columna proporciona la posición exacta dentro de la carretera en que se encuentra el radar. En algunos casos, pueden aparecer valores "NULL" cuando no se tiene la información precisa.</li>
+            <li><strong>Punto kilométrico:</strong> Esta columna indica el punto exacto en la carretera donde se ubica el radar, medido en kilómetros. En algunos casos, el valor puede ser "NULL" debido a la falta de información. También pueden aparecer valores numéricos, o bien una suma que indique una posición más específica.</li>
+            <li><strong>Sentido:</strong> El sentido se refiere a la dirección en la que el radar está operando. Algunos valores incluyen "calzada interior", "calzada exterior", o "salida", lo que indica la dirección de los vehículos en los que se detecta el radar.</li>
+            <li><strong>Tipo de radar:</strong> Este campo indica si el radar es de tipo "fijo" o "de tramo". Los radares fijos son estáticos, mientras que los de tramo miden la velocidad media entre dos puntos.</li>
+            <li><strong>Carril:</strong> Este campo especifica el número de carril afectado por el radar. En algunos casos, los radares pueden afectar solo a uno o más carriles específicos, como se muestra en el ejemplo con "Fijo carril 4".</li>
+            <li><strong>Longitud del inicio del tramo:</strong> En algunos radares, puede indicarse la longitud del inicio del tramo donde se encuentra ubicado, aunque este campo puede tener valores "NULL" cuando no se dispone de la información completa.</li>
+            <li><strong>Latitud del inicio del tramo:</strong> Similar a la longitud del inicio del tramo, este campo indica la latitud exacta en la que comienza el tramo del radar. Si la información no está disponible, se presenta como "NULL".</li>
+            <li><strong>Coordenada X:</strong> Esta columna ofrece la coordenada X del radar, un valor geográfico que determina la ubicación horizontal del radar en el sistema de coordenadas geográficas.</li>
+            <li><strong>Coordenada Y:</strong> Similar a la coordenada X, esta columna indica la coordenada Y del radar, que representa la ubicación vertical del radar en el sistema geográfico.</li>
+            <li><strong>Longitud:</strong> La longitud especifica la distancia en metros, usualmente en relación con un punto de referencia o inicio de tramo. En algunos casos puede ser "NULL" si no se proporciona.</li>
+            <li><strong>Latitud:</strong> La latitud es la ubicación geográfica vertical del radar en grados. Al igual que la longitud, puede ser "NULL" si no se cuenta con esta información específica.</li>
+            <li><strong>Velocidad límite:</strong> La velocidad límite puede tomar los valores 90, 70 o 50, indicando el límite de velocidad en la zona donde se encuentra el radar.</li>
+            <li><strong>Responsable:</strong> El responsable del radar puede ser DGP (Dirección General de Policía) o DGGVC (Dirección General de Gestión de Vehículos y Circulación).</li>
+        </ul>
+    </section>
+
+</body>
+</html>
